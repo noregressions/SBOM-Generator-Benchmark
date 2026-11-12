@@ -1,0 +1,17 @@
+{
+  "name": "sbom-sample-node",
+  "version": "1.0.0",
+  "description": "Small Node.js app used as a target for SBOM generation tools",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": { "start": "node index.js" },
+  "dependencies": {
+    "express": "4.19.2",
+    "lodash": "4.17.21",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}

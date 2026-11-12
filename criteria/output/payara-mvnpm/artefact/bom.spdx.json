@@ -1,0 +1,46 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "payara-mvnpm",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-12T11:44:22Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/criteria/payara-mvnpm",
+  "documentDescribes": [
+    "SPDXRef-File-work-testcases-payara-mvnpm-project-target-payara-mvnpm-trace-lab-1.0.0.war"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-work-testcases-payara-mvnpm-project-target-payara-mvnpm-trace-lab-1.0.0.war",
+      "fileName": "work/testcases/payara-mvnpm/project/target/payara-mvnpm-trace-lab-1.0.0.war",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4d72d6ee018e4e85086347ccadf797fe5832f481"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d2b0672a75ba0fe8112143ab3b4e87b0586860a27582c7bf8b7e1a3a98a6aab0"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "7b882faa29490145c82b82b74efd5caaf0f6a7615d21235411a80410a94013c242978f3a009eab4691c1e7750f042d3c9311132d0adcedc0c4daf1c0da93f90a"
+        }
+      ]
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

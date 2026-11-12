@@ -1,0 +1,132 @@
+NAME                               VERSION     TYPE                            
+Simple Launcher                    1.1.0.14    binary         (+5 duplicates)  
+accepts                            1.3.8       npm                             
+actions/checkout                   v2          github-action                   
+actions/setup-node                 v1          github-action                   
+array-flatten                      1.1.1       npm                             
+blinker                            1.9.0       python                          
+body-parser                        1.20.2      npm                             
+bumpalo                            3.20.3      rust-crate                      
+bytes                              3.1.2       npm                             
+call-bind-apply-helpers            1.0.2       npm                             
+call-bound                         1.0.4       npm                             
+certifi                            2026.10.23  python                          
+cfg-if                             1.0.5       rust-crate                      
+charset-normalizer                 3.5.2       python                          
+click                              8.5.1       python                          
+commons-lang3                      3.14.0      java-archive   (+1 duplicate)   
+content-disposition                0.5.4       npm                             
+content-type                       1.0.5       npm                             
+cookie                             0.6.0       npm                             
+cookie-signature                   1.0.6       npm                             
+debug                              2.6.9       npm                             
+depd                               2.0.0       npm                             
+destroy                            1.2.0       npm                             
+dunder-proto                       1.0.1       npm                             
+ee-first                           1.1.1       npm                             
+encodeurl                          1.0.2       npm                             
+es-define-property                 1.0.1       npm                             
+es-errors                          1.3.0       npm                             
+es-object-atoms                    1.1.2       npm                             
+escape-html                        1.0.3       npm                             
+etag                               1.8.1       npm                             
+express                            4.19.2      npm                             
+finalhandler                       1.2.0       npm                             
+flask                              3.0.3       python         (+1 duplicate)   
+forwarded                          0.2.0       npm                             
+fresh                              0.5.2       npm                             
+function-bind                      1.1.2       npm                             
+futures-core                       0.3.34      rust-crate                      
+futures-task                       0.3.34      rust-crate                      
+futures-util                       0.3.34      rust-crate                      
+get-intrinsic                      1.3.0       npm                             
+get-proto                          1.0.1       npm                             
+getrandom                          0.4.3       rust-crate                      
+github.com/example/sbom-sample-go  UNKNOWN     go-module                       
+github.com/google/uuid             v1.6.0      go-module      (+1 duplicate)   
+github.com/gorilla/mux             v1.8.1      go-module      (+1 duplicate)   
+gopd                               1.2.0       npm                             
+gopkg.in/yaml.v3                   v3.0.1      go-module      (+1 duplicate)   
+has-symbols                        1.1.0       npm                             
+hasown                             2.0.4       npm                             
+http-errors                        2.0.0       npm                             
+iconv-lite                         0.4.24      npm                             
+idna                               3.20        python                          
+inherits                           2.0.4       npm                             
+ipaddr.js                          1.9.1       npm                             
+itoa                               1.0.19      rust-crate                      
+itsdangerous                       2.2.0       python                          
+jackson-annotations                2.17.2      java-archive                    
+jackson-core                       2.17.2      java-archive                    
+jackson-databind                   2.17.2      java-archive   (+1 duplicate)   
+jinja2                             3.1.6       python                          
+js-sys                             0.3.107     rust-crate                      
+junit-jupiter                      5.10.2      java-archive                    
+libc                               0.2.191     rust-crate                      
+lodash                             4.17.21     npm                             
+markupsafe                         3.0.4       python                          
+math-intrinsics                    1.1.0       npm                             
+media-typer                        0.3.0       npm                             
+memchr                             2.8.3       rust-crate                      
+merge-descriptors                  1.0.1       npm                             
+methods                            1.1.2       npm                             
+mime                               1.6.0       npm                             
+mime-db                            1.52.0      npm                             
+mime-types                         2.1.35      npm                             
+ms                                 2.0.0       npm                             
+ms                                 2.1.3       npm                             
+negotiator                         0.6.3       npm                             
+object-inspect                     1.13.4      npm                             
+on-finished                        2.4.1       npm                             
+parseurl                           1.3.3       npm                             
+path-to-regexp                     0.1.7       npm                             
+pin-project-lite                   0.2.17      rust-crate                      
+pip                                26.1.2      python                          
+proc-macro2                        1.0.107     rust-crate                      
+proxy-addr                         2.0.8       npm                             
+pyyaml                             6.0.2       python         (+1 duplicate)   
+qs                                 6.11.0      npm                             
+quote                              1.0.47      rust-crate                      
+r-efi                              6.0.0       rust-crate                      
+range-parser                       1.2.1       npm                             
+raw-body                           2.5.2       npm                             
+requests                           2.32.3      python         (+1 duplicate)   
+rustversion                        1.0.23      rust-crate                      
+safe-buffer                        5.2.1       npm                             
+safer-buffer                       2.1.2       npm                             
+sbom-sample-gradle                 1.0.0       java-archive   (+1 duplicate)   
+sbom-sample-maven                  1.0.0       java-archive   (+1 duplicate)   
+sbom-sample-node                   1.0.0       npm                             
+sbom-sample-rust                   1.0.0       rust-crate                      
+send                               0.18.0      npm                             
+serde                              1.0.229     rust-crate                      
+serde_core                         1.0.229     rust-crate                      
+serde_derive                       1.0.229     rust-crate                      
+serde_json                         1.0.154     rust-crate                      
+serve-static                       1.15.0      npm                             
+setprototypeof                     1.2.0       npm                             
+side-channel                       1.1.1       npm                             
+side-channel-list                  1.0.1       npm                             
+side-channel-map                   1.0.1       npm                             
+side-channel-weakmap               1.0.2       npm                             
+slab                               0.4.12      rust-crate                      
+slf4j-api                          2.0.13      java-archive   (+1 duplicate)   
+slf4j-simple                       2.0.13      java-archive   (+1 duplicate)   
+statuses                           2.0.1       npm                             
+stdlib                             go1.21.13   go-module                       
+syn                                3.0.10      rust-crate                      
+toidentifier                       1.0.1       npm                             
+type-is                            1.6.18      npm                             
+unicode-ident                      1.0.27      rust-crate                      
+unpipe                             1.0.0       npm                             
+urllib3                            2.8.0       python                          
+utils-merge                        1.0.1       npm                             
+uuid                               1.29.2      rust-crate                      
+uuid                               9.0.1       npm                             
+vary                               1.1.2       npm                             
+wasm-bindgen                       0.2.130     rust-crate                      
+wasm-bindgen-macro                 0.2.130     rust-crate                      
+wasm-bindgen-macro-support         0.2.130     rust-crate                      
+wasm-bindgen-shared                0.2.130     rust-crate                      
+werkzeug                           3.1.9       python                          
+zmij                               1.0.23      rust-crate                      

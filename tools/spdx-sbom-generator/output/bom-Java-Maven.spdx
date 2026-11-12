@@ -1,0 +1,128 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SBOM-Sample-(Maven)-1.0.0
+DocumentNamespace: http://spdx.org/spdxpackages/SBOM-Sample-(Maven)-1.0.0-0457365a-f2a2-4e32-8e1f-889a4d62b72e
+Creator: Tool: spdx-sbom-generator-source-code
+Created: 2026-11-10T11:56:57Z
+
+
+##### Package representing the SBOM-Sample-(Maven)
+
+PackageName: SBOM-Sample-(Maven)
+SPDXID: SPDXRef-Package-SBOM-Sample-(Maven)
+PackageVersion: 1.0.0
+PackageSupplier: Organization: SBOM Sample (Maven)
+PackageDownloadLocation: https://mvnrepository.com/artifact/com.example
+FilesAnalyzed: false
+PackageChecksum: SHA1: 7e84213ef76615fe410ce90dd78ceb312056b6da
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the jackson-databind
+
+PackageName: jackson-databind
+SPDXID: SPDXRef-Package-jackson-databind-2.17.2
+PackageVersion: 2.17.2
+PackageSupplier: Organization: jackson-databind
+PackageDownloadLocation: https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.17.2
+FilesAnalyzed: false
+PackageChecksum: SHA1: 7d03e73aa50d143b3ecbdea2c0c9e158e5ed8021
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the commons-lang3
+
+PackageName: commons-lang3
+SPDXID: SPDXRef-Package-commons-lang3-3.14.0
+PackageVersion: 3.14.0
+PackageSupplier: Organization: commons-lang3
+PackageDownloadLocation: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3/3.14.0
+FilesAnalyzed: false
+PackageChecksum: SHA1: ee0d3c2f844bbd50acd87f9180ba6e54f21a66f8
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the slf4j-api
+
+PackageName: slf4j-api
+SPDXID: SPDXRef-Package-slf4j-api-2.0.13
+PackageVersion: 2.0.13
+PackageSupplier: Organization: slf4j-api
+PackageDownloadLocation: https://mvnrepository.com/artifact/org.slf4j/slf4j-api/2.0.13
+FilesAnalyzed: false
+PackageChecksum: SHA1: 1f5d1163f93cc80861f59ac7e0ca1136f79765e8
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the slf4j-simple
+
+PackageName: slf4j-simple
+SPDXID: SPDXRef-Package-slf4j-simple-2.0.13
+PackageVersion: 2.0.13
+PackageSupplier: Organization: slf4j-simple
+PackageDownloadLocation: https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/2.0.13
+FilesAnalyzed: false
+PackageChecksum: SHA1: b50dd3a79a66863ef43981f1359b7ed5f7cf6882
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the junit-jupiter
+
+PackageName: junit-jupiter
+SPDXID: SPDXRef-Package-junit-jupiter-5.10.2
+PackageVersion: 5.10.2
+PackageSupplier: Organization: junit-jupiter
+PackageDownloadLocation: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.10.2
+FilesAnalyzed: false
+PackageChecksum: SHA1: f2c05fa818d60e7afea449ab2939750e7923a348
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the maven-dependency-plugin
+
+PackageName: maven-dependency-plugin
+SPDXID: SPDXRef-Package-maven-dependency-plugin-list (default-cli)
+PackageVersion: list (default-cli)
+PackageSupplier: Organization: maven-dependency-plugin
+PackageDownloadLocation: https://mvnrepository.com/artifact/Failed to execute goal org.apache.maven.plugins/maven-dependency-plugin/list (default-cli)
+FilesAnalyzed: false
+PackageChecksum: SHA1: 454728243c5e9d592dd26e4ef4626a78a51b041f
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-SBOM-Sample-(Maven)
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-jackson-databind-2.17.2
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-commons-lang3-3.14.0
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-slf4j-api-2.0.13
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-slf4j-simple-2.0.13
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-junit-jupiter-5.10.2
+Relationship: SPDXRef-Package-SBOM-Sample-(Maven) DEPENDS_ON SPDXRef-Package-maven-dependency-plugin-list (default-cli)

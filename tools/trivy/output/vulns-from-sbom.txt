@@ -1,0 +1,198 @@
+
+Report Summary
+
+┌─────────────────────────┬───────┬─────────────────┐
+│         Target          │ Type  │ Vulnerabilities │
+├─────────────────────────┼───────┼─────────────────┤
+│ go/go.mod               │ gomod │        0        │
+├─────────────────────────┼───────┼─────────────────┤
+│ java-maven/pom.xml      │  pom  │       17        │
+├─────────────────────────┼───────┼─────────────────┤
+│ node/package-lock.json  │  npm  │       17        │
+├─────────────────────────┼───────┼─────────────────┤
+│ python/requirements.txt │  pip  │        3        │
+├─────────────────────────┼───────┼─────────────────┤
+│ rust/Cargo.lock         │ cargo │        0        │
+└─────────────────────────┴───────┴─────────────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+java-maven/pom.xml (pom)
+========================
+Total: 17 (UNKNOWN: 0, LOW: 0, MEDIUM: 9, HIGH: 8, CRITICAL: 0)
+
+┌─────────────────────────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│                   Library                   │ Vulnerability  │ Severity │ Status │ Installed Version │         Fixed Version         │                            Title                             │
+├─────────────────────────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-core     │ CVE-2026-68494 │ HIGH     │ fixed  │ 2.17.2            │ 2.18.8, 2.21.4                │ com.fasterxml.jackson.core/jackson-core:                     │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-core: jackson-core: Denial of     │
+│                                             │                │          │        │                   │                               │ Service via incomplete fix in async JSON...                  │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-68494                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-89407 │          │        │                   │ 2.18.11, 2.21.7, 2.22.3       │ com.fasterxml.jackson/jackson-core:                          │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-core: Jackson-core: Denial of     │
+│                                             │                │          │        │                   │                               │ Service via regular expression backtracking                  │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-89407                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-89425 │          │        │                   │ 2.21.7, 2.22.3, 2.18.11       │ com.fasterxml.jackson.core/jackson-core: Jackson-core:       │
+│                                             │                │          │        │                   │                               │ Denial of Service via unbounded StringBuilder growth during  │
+│                                             │                │          │        │                   │                               │ malformed token...                                           │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-89425                   │
+│                                             ├────────────────┼──────────┤        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-18401 │ MEDIUM   │        │                   │ 2.21.1, 2.18.6                │ tools.jackson.core/jackson-core:                             │
+│                                             │                │          │        │                   │                               │ com.fasterxml.jackson.core/jackson-core: jackson-core:       │
+│                                             │                │          │        │                   │                               │ Denial of Service due to number length bypass in...          │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-18401                   │
+├─────────────────────────────────────────────┼────────────────┼──────────┤        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ com.fasterxml.jackson.core:jackson-databind │ CVE-2026-54512 │ HIGH     │        │                   │ 2.18.8, 3.1.4, 2.21.4         │ jackson-databind: jackson-databind: Arbitrary code execution │
+│                                             │                │          │        │                   │                               │ via PolymorphicTypeValidator bypass                          │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-54512                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-54513 │          │        │                   │ 2.18.8, 2.21.4, 3.1.4         │ jackson-databind: Jackson-databind: Security bypass allows   │
+│                                             │                │          │        │                   │                               │ arbitrary code execution                                     │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-54513                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-68497 │          │        │                   │ 2.18.10, 2.21.6, 2.22.2       │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-databind: jackson-databind: CPU   │
+│                                             │                │          │        │                   │                               │ Denial of Service via unbounded numeric parsing              │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-68497                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-91776 │          │        │                   │ 2.18.11, 2.21.7, 2.22.3       │ jackson-databind: com.fasterxml.jackson/jackson-core:        │
+│                                             │                │          │        │                   │                               │ jackson-databind: Denial of Service via unbounded cache      │
+│                                             │                │          │        │                   │                               │ growth in TypeDeserializerBase...                            │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-91776                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-91777 │          │        │                   │ 2.21.7, 2.18.11, 2.22.3       │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ tools.jackson.core:jackson-databind: Jackson-databind:       │
+│                                             │                │          │        │                   │                               │ Denial of Service via quadratic forward-reference completion │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-91777                   │
+│                                             ├────────────────┼──────────┤        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-19032 │ MEDIUM   │        │                   │ 2.18.10, 2.21.6, 2.22.2       │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-databind: Jackson-databind:       │
+│                                             │                │          │        │                   │                               │ Uncontrolled URI scheme resolution in Path deserialization   │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-19032                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-54514 │          │        │                   │ 2.18.8, 2.21.4, 3.1.4         │ jackson-databind: jackson-databind: Information Disclosure   │
+│                                             │                │          │        │                   │                               │ via Eager DNS Resolution                                     │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-54514                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-54515 │          │        │                   │ 3.1.4, 2.18.9, 2.21.5, 2.22.1 │ jackson-databind: jackson-databind: Ignored properties can   │
+│                                             │                │          │        │                   │                               │ be unexpectedly modified                                     │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-54515                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-59888 │          │        │                   │ 2.18.8, 2.21.4                │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-databind: jackson-databind:       │
+│                                             │                │          │        │                   │                               │ @JsonIgnore bypass in Java Records                           │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-59888                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-59889 │          │        │                   │ 2.21.5, 2.18.9, 2.22.1        │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ Jackson-databind: Privilege escalation via improper handling │
+│                                             │                │          │        │                   │                               │ of @JsonUnwrapped properties                                 │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-59889                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-77310 │          │        │                   │ 2.18.9, 2.21.5, 2.22.1        │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ jackson-databind: Server-Side Request Forgery and internal   │
+│                                             │                │          │        │                   │                               │ host enumeration via eager DNS...                            │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-77310                   │
+│                                             ├────────────────┤          │        │                   ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                             │ CVE-2026-83557 │          │        │                   │ 2.18.10, 2.21.6, 2.22.2       │ com.fasterxml.jackson.core/jackson-databind:                 │
+│                                             │                │          │        │                   │                               │ tools.jackson.core/jackson-databind: jackson-databind: Path  │
+│                                             │                │          │        │                   │                               │ traversal via incomplete type validation                     │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2026-83557                   │
+├─────────────────────────────────────────────┼────────────────┤          │        ├───────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.apache.commons:commons-lang3            │ CVE-2025-48924 │          │        │ 3.14.0            │ 3.18.0                        │ commons-lang/commons-lang: org.apache.commons/commons-lang3: │
+│                                             │                │          │        │                   │                               │ Uncontrolled Recursion vulnerability in Apache Commons Lang  │
+│                                             │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2025-48924                   │
+└─────────────────────────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+node/package-lock.json (npm)
+============================
+Total: 17 (UNKNOWN: 0, LOW: 6, MEDIUM: 5, HIGH: 6, CRITICAL: 0)
+
+┌────────────────┬─────────────────┬──────────┬────────┬───────────────────┬────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│    Library     │  Vulnerability  │ Severity │ Status │ Installed Version │           Fixed Version            │                            Title                             │
+├────────────────┼─────────────────┼──────────┼────────┼───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ body-parser    │ CVE-2024-45590  │ HIGH     │ fixed  │ 1.20.2            │ 1.20.3                             │ body-parser: Denial of Service Vulnerability in body-parser  │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-45590                   │
+│                ├─────────────────┤          │        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-111181 │          │        │                   │ 2.4.0, 1.20.9                      │ body-parser: body-parser: Denial of Service via unhandled    │
+│                │                 │          │        │                   │                                    │ decompression stream error                                   │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-111181                  │
+│                ├─────────────────┼──────────┤        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-12590  │ LOW      │        │                   │ 1.20.6, 2.3.0                      │ body-parser: body-parser: Denial of Service via invalid      │
+│                │                 │          │        │                   │                                    │ limit option                                                 │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-12590                   │
+├────────────────┼─────────────────┤          │        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ cookie         │ CVE-2024-47764  │          │        │ 0.6.0             │ 0.7.0                              │ cookie: cookie accepts cookie name, path, and domain with    │
+│                │                 │          │        │                   │                                    │ out of bounds...                                             │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-47764                   │
+├────────────────┼─────────────────┤          │        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ express        │ CVE-2024-43796  │          │        │ 4.19.2            │ 4.20.0, 5.0.0                      │ express: Improper Input Handling in Express Redirects        │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43796                   │
+├────────────────┼─────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ lodash         │ CVE-2026-4800   │ HIGH     │        │ 4.17.21           │ 4.18.0                             │ lodash: lodash: Arbitrary code execution via untrusted input │
+│                │                 │          │        │                   │                                    │ in template imports                                          │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-4800                    │
+│                ├─────────────────┼──────────┤        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2025-13465  │ MEDIUM   │        │                   │ 4.17.23                            │ lodash: prototype pollution in _.unset and _.omit functions  │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2025-13465                   │
+├────────────────┼─────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ path-to-regexp │ CVE-2024-45296  │ HIGH     │        │ 0.1.7             │ 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0 │ path-to-regexp: Backtracking regular expressions cause ReDoS │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-45296                   │
+│                ├─────────────────┤          │        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2024-52798  │          │        │                   │ 0.1.12                             │ path-to-regexp: path-to-regexp Unpatched `path-to-regexp`    │
+│                │                 │          │        │                   │                                    │ ReDoS in 0.1.x                                               │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-52798                   │
+│                ├─────────────────┤          │        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-4867   │          │        │                   │ 0.1.13                             │ path-to-regexp: path-to-regexp: Denial of Service via        │
+│                │                 │          │        │                   │                                    │ catastrophic backtracking from malformed URL parameters...   │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-4867                    │
+├────────────────┼─────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ qs             │ CVE-2025-15284  │ MEDIUM   │        │ 6.11.0            │ 6.14.1                             │ qs: qs: Denial of Service via improper input validation in   │
+│                │                 │          │        │                   │                                    │ array parsing...                                             │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2025-15284                   │
+│                ├─────────────────┤          │        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-110816 │          │        │                   │ 6.16.1                             │ qs: qs: Denial of Service via unhandled exception during     │
+│                │                 │          │        │                   │                                    │ array serialization                                          │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-110816                  │
+│                ├─────────────────┤          │        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-82417  │          │        │                   │ 6.16.0                             │ qs: qs: Denial of Service via improper validation in         │
+│                │                 │          │        │                   │                                    │ stringify function                                           │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-82417                   │
+│                ├─────────────────┼──────────┤        │                   ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │ CVE-2026-2391   │ LOW      │        │                   │ 6.14.2                             │ qs: qs's arrayLimit bypass in comma parsing allows denial of │
+│                │                 │          │        │                   │                                    │ service                                                      │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-2391                    │
+├────────────────┼─────────────────┤          │        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ send           │ CVE-2024-43799  │          │        │ 0.18.0            │ 0.19.0                             │ send: Code Execution Vulnerability in Send Library           │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43799                   │
+├────────────────┼─────────────────┤          │        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ serve-static   │ CVE-2024-43800  │          │        │ 1.15.0            │ 1.16.0, 2.1.0                      │ serve-static: Improper Sanitization in serve-static          │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43800                   │
+├────────────────┼─────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ uuid           │ CVE-2026-41907  │ MEDIUM   │        │ 9.0.1             │ 11.1.1, 12.0.1, 13.0.1             │ uuid: uuid: Out-of-bounds write vulnerability impacts data   │
+│                │                 │          │        │                   │                                    │ integrity and confidentiality                                │
+│                │                 │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2026-41907                   │
+└────────────────┴─────────────────┴──────────┴────────┴───────────────────┴────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
+python/requirements.txt (pip)
+=============================
+Total: 3 (UNKNOWN: 0, LOW: 1, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
+
+┌──────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│ Library  │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
+├──────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ flask    │ CVE-2026-27205 │ LOW      │ fixed  │ 3.0.3             │ 3.1.3         │ flask: Flask: Information disclosure via improper caching of │
+│          │                │          │        │                   │               │ session data                                                 │
+│          │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2026-27205                   │
+├──────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ requests │ CVE-2024-47081 │ MEDIUM   │        │ 2.32.3            │ 2.32.4        │ requests: Requests vulnerable to .netrc credentials leak via │
+│          │                │          │        │                   │               │ malicious URLs                                               │
+│          │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-47081                   │
+│          ├────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2026-25645 │          │        │                   │ 2.33.0        │ requests: Requests: Security bypass due to predictable       │
+│          │                │          │        │                   │               │ temporary file creation                                      │
+│          │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2026-25645                   │
+└──────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘

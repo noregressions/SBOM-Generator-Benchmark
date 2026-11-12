@@ -1,0 +1,47 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "maven-jar",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-10T11:55:57Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/sbom/jar",
+  "documentDescribes": [
+    "SPDXRef-File-Users-spoole-claudeC95projects-SBOMExamples-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-Users-spoole-claudeC95projects-SBOMExamples-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar",
+      "fileName": "Users/spoole/claude_projects/SBOMExamples/sample-app/java-maven/target/sbom-sample-maven-1.0.0.jar",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e39538f150d8ed884424a88ecde377f3ec92323e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9297aa213a644233e9529de3423e6b4653bf19619e619ff0eef98749585afb02"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9704e3cd58fa9f1f04637c41baa9e0ebfd74640174d9ce93c3594b9d069d36bd034a61b4e417aef6126ce7b885213d1e708b8c7e714586a4bdf3d3ca2cbd3720"
+        }
+      ]
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

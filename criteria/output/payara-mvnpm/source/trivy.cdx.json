@@ -1,0 +1,119 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:a531b8cf-ab14-43a5-8fa5-d2c18352ea50",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:44:21+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "a5b84ff7-b046-43f3-9859-2f933f720ef2",
+      "type": "application",
+      "name": "/tmp/criteria-6/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "b7457208-8f2f-4d92-9882-120bcadcf744",
+      "type": "application",
+      "name": "pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "payara-mvnpm-trace-lab",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:payara-mvnpm-trace-lab:1.0.0::8ff31baf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "type": "library",
+      "group": "org.apache.commons",
+      "name": "commons-lang3",
+      "version": "3.18.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.commons:commons-lang3:3.18.0::c731998c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "a5b84ff7-b046-43f3-9859-2f933f720ef2",
+      "dependsOn": [
+        "b7457208-8f2f-4d92-9882-120bcadcf744"
+      ]
+    },
+    {
+      "ref": "b7457208-8f2f-4d92-9882-120bcadcf744",
+      "dependsOn": [
+        "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.commons/commons-lang3@3.18.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

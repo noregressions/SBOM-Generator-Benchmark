@@ -1,0 +1,43 @@
+{
+  "target": "python-pep517",
+  "title": "Direct pip dependency pulls a transitive sdist whose PEP 517 backend generates the installed module",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "pypi"
+  ],
+  "stages": {
+    "source": {
+      "path": ".",
+      "python": "requirements.txt",
+      "exclude": [
+        "/.venv",
+        "/trace-output"
+      ],
+      "exclude_note": "paths removed from the scratch copy scanners see at source stage: build outputs and caches only, anchored to the project root so node_modules/*/dist and the like stay intact"
+    },
+    "artefact": {
+      "path": ".venv",
+      "kind": "venv"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:pypi/reportkit@1.0.0",
+      "note": "the only declared dependency"
+    },
+    {
+      "purl": "pkg:pypi/tracehook-demo@1.0.0",
+      "alt": [
+        "pkg:pypi/tracehook_demo@1.0.0"
+      ],
+      "hidden": "pep517-generated",
+      "note": "transitive, sdist-only; its __init__.py and build-hook.json were created by tracehook_backend during pip install"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:pypi/pip@*",
+      "kind": "build-tooling"
+    }
+  ]
+}

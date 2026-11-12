@@ -1,0 +1,14 @@
+[project]
+name = "sbom-sample-python"
+version = "1.0.0"
+description = "Small Python app used as a target for SBOM generation tools"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+  "requests==2.32.3",
+  "flask==3.0.3",
+  "pyyaml==6.0.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.2.0"]

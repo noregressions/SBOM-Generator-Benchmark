@@ -1,0 +1,42 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:006342ea-11c9-4f82-8226-8f2b30fd5679",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:44:23+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "8abeeec8-7e3c-4829-ac8b-fd08d6be2a70",
+      "type": "application",
+      "name": "/work/testcases/payara-mvnpm/project/target/payara-mvnpm-trace-lab-1.0.0.war",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "8abeeec8-7e3c-4829-ac8b-fd08d6be2a70",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

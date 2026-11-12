@@ -1,0 +1,134 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: sbom-sample-go
+DocumentNamespace: https://example.com/sbom/go
+Creator: Organization: Kubernetes Release Engineering
+Creator: Tool: bom-v0.8.0
+LicenseListVersion: 3.28
+Created: 2026-11-10T11:55:47Z
+
+
+##### Package: github.com/example/sbom-sample-go
+
+PackageName: github.com/example/sbom-sample-go
+SPDXID: SPDXRef-Package-github.com-example-sbom-sample-go
+PackageDownloadLocation: NONE
+FilesAnalyzed: true
+PackageVerificationCode: 6bfbcc6a3a86f629ca0d9ad8be4f9f768e0beeb9
+PackageLicenseConcluded: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/example/sbom-sample-go
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+FileName: go.mod
+SPDXID: SPDXRef-File-github.com-example-sbom-sample-go-go.mod
+FileChecksum: SHA1: 3b41ee01c76a97ad47c74a1cfd1427c6a2e3f0c1
+FileChecksum: SHA256: d55d7d81cbb94a70a62fbb94653a41be9cb0d22fbfa2fdfb3a63f57da34063c9
+FileChecksum: SHA512: 6c37b9e069f4b5783e661534e010b25f5600838677410aaae05a3264ea2c9a69c3f008f606103f1525c269b54e699f8643189fc441244ba78ee55989d6facb41
+FileType: OTHER
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go CONTAINS SPDXRef-File-github.com-example-sbom-sample-go-go.mod
+FileName: go.sum
+SPDXID: SPDXRef-File-github.com-example-sbom-sample-go-go.sum
+FileChecksum: SHA1: 7b351e3dc5faee5765b017e0cd69e62604e67a8f
+FileChecksum: SHA256: f2a0e0c7ae6cb53b034bd0d216bd1b9b2a7800ce8314fbf92b0afe7a967ec1a1
+FileChecksum: SHA512: 854f195266b2a928504451da12bc6624481140533ad25e6cdb25bf3d95c3c1661f7dc27555308e0b53f4f6436172cee07f9c429d99d11d2f7176df509d028007
+FileType: OTHER
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go CONTAINS SPDXRef-File-github.com-example-sbom-sample-go-go.sum
+FileName: main.go
+SPDXID: SPDXRef-File-github.com-example-sbom-sample-go-main.go
+FileChecksum: SHA1: f4bfd7ac6911ed7c0cfc5624303b3bde7750fa42
+FileChecksum: SHA256: 640b54da7a138921a63f12139b146a21308e76baf73cb4fd562d8c1176aeda8e
+FileChecksum: SHA512: 11b24784a49ce1065037e7ac111c754111538fc08aa4da8ca1dcbf0ee15635bb087496bc0eef2d3ba8ac726dbccc458147ecd7b7bcdad6182e7410f850cc3d36
+FileType: SOURCE
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go CONTAINS SPDXRef-File-github.com-example-sbom-sample-go-main.go
+FileName: sbom-sample-go
+SPDXID: SPDXRef-File-github.com-example-sbom-sample-go-sbom-sample-go
+FileChecksum: SHA1: 95b518e08364d2df5c9167c8beb6b01a96c0d13c
+FileChecksum: SHA256: 74581dbd2e3d63916fad1044a25116f676fe3f1476f48bcd7029aa1dd65b9af1
+FileChecksum: SHA512: 03425c38b57e2984e252769e744d1c7537cc463d89d6ff5f970275924abfe5bb3e16057aef14933436d90fd482ae766e657106e882d5dcc73d58496da1dfbdb3
+FileType: BINARY
+FileType: APPLICATION
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go CONTAINS SPDXRef-File-github.com-example-sbom-sample-go-sbom-sample-go
+##### Package: github.com/google/uuid
+
+PackageName: github.com/google/uuid
+SPDXID: SPDXRef-Package-github.com-google-uuid-v1.6.0
+PackageDownloadLocation: https://proxy.golang.org/github.com/google/uuid/@v/v1.6.0.zip
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageVersion: v1.6.0
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: OTHER vcs https://github.com/google/uuid
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/google/uuid@v1.6.0
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go DEPENDS_ON SPDXRef-Package-github.com-google-uuid-v1.6.0
+##### Package: github.com/gorilla/mux
+
+PackageName: github.com/gorilla/mux
+SPDXID: SPDXRef-Package-github.com-gorilla-mux-v1.8.1
+PackageDownloadLocation: https://proxy.golang.org/github.com/gorilla/mux/@v/v1.8.1.zip
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageVersion: v1.8.1
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: OTHER vcs https://github.com/gorilla/mux
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/gorilla/mux@v1.8.1
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go DEPENDS_ON SPDXRef-Package-github.com-gorilla-mux-v1.8.1
+##### Package: gopkg.in/yaml.v3
+
+PackageName: gopkg.in/yaml.v3
+SPDXID: SPDXRef-Package-gopkg.in-yaml.v3-v3.0.1
+PackageDownloadLocation: https://proxy.golang.org/gopkg.in/yaml.v3/@v/v3.0.1.zip
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageVersion: v3.0.1
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: OTHER vcs https://gopkg.in/yaml.v3
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/gopkg.in/yaml.v3@v3.0.1
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go DEPENDS_ON SPDXRef-Package-gopkg.in-yaml.v3-v3.0.1
+##### Package: stdlib
+
+PackageName: stdlib
+SPDXID: SPDXRef-Package-stdlib-1.21
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageVersion: 1.21
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/stdlib@1.21
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+
+
+Relationship: SPDXRef-Package-github.com-example-sbom-sample-go DEPENDS_ON SPDXRef-Package-stdlib-1.21
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-github.com-example-sbom-sample-go
+

@@ -1,0 +1,73 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:02643bc8-d3f8-4f0b-9601-9487751ba54c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:47:38Z",
+    "lifecycles": [
+      {
+        "phase": "pre-build"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "name": "sbom4python",
+          "version": "0.12.6",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "Python-/work/testcases/python-pep517/project/requirements.txt"
+    },
+    "distributionConstraints": {
+      "tlp": "CLEAR"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-reportkit",
+      "name": "reportkit",
+      "version": "1.0.0",
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/project/reportkit/1.0.0/#files",
+          "type": "distribution",
+          "comment": "Download location for component"
+        }
+      ],
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "/work/testcases/python-pep517/project/requirements.txt"
+          }
+        ]
+      },
+      "purl": "pkg:pypi/reportkit@1.0.0",
+      "properties": [
+        {
+          "name": "language",
+          "value": "Python"
+        },
+        {
+          "name": "python_version",
+          "value": "3.15.2"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-reportkit"
+      ]
+    }
+  ]
+}

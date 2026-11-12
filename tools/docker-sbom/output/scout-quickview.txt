@@ -1,0 +1,31 @@
+    i New version 1.29.0 available (installed version is 1.24.0) at https://github.com/docker/scout-cli
+    ...Storing image for indexing
+    ✓ Image stored for indexing
+    ...Indexing
+    ✓ Indexed 137 packages
+    ✓ Provenance obtained from attestation
+    ...Evaluating policies
+    ✓ Policy evaluation completed
+
+ Target     │  sbom-sample:local  │    0C     2H     8M    29L  
+   digest   │  9de3dcf49c98       │                             
+ Base image │  python:3.12-slim   │    0C     2H     6M    28L  
+
+Policy status  FAILED  (3/7 policies met)
+Health score  D  (50%)
+
+ Status │                     Policy                     │           Results           
+────────┼────────────────────────────────────────────────┼─────────────────────────────
+ !      │ Image runs as the root user                    │                             
+ !      │ Copyleft licensed packages found               │    368 packages             
+ !      │ Fixable critical or high vulnerabilities found │    0C     2H     0M     0L  
+ ✓      │ No high-profile vulnerabilities                │    0C     0H     0M     0L  
+ ✓      │ No outdated base images                        │                             
+ ✓      │ No unapproved base images                      │    0 deviations             
+ !      │ Required supply chain attestations missing     │    1 deviation              
+
+What's next:
+    View policy violations → docker scout policy sbom-sample:local
+    View vulnerabilities → docker scout cves sbom-sample:local
+    Compare with the latest in the registry → docker scout compare --to-latest sbom-sample:local
+

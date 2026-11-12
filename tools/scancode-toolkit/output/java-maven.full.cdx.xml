@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.3" version="1" serialNumber="urn:uuid:22a425ba-628b-4564-b3f8-785b480b509d">
+  <metadata>
+    <timestamp>2026-11-10T12:01:27Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AboutCode.org</vendor>
+        <name>scancode-toolkit</name>
+        <version>32.5.0</version>
+      </tool>
+    </tools>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:maven/com.example/sbom-sample-maven@1.0.0">
+      <name>sbom-sample-maven</name>
+      <version>1.0.0</version>
+      <description>SBOM Sample (Maven)
+Small Java app used as a target for SBOM generation tools</description>
+      <group>com.example</group>
+      <scope>required</scope>
+      <purl>pkg:maven/com.example/sbom-sample-maven@1.0.0</purl>
+      <externalReferences>
+        <reference type="bom">
+          <url>https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/sbom-sample-maven-1.0.0.pom</url>
+        </reference>
+        <reference type="distribution">
+          <url>https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/sbom-sample-maven-1.0.0.jar</url>
+        </reference>
+        <reference type="website">
+          <url>https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+</bom>

@@ -1,0 +1,54 @@
+{
+  "target": "maven-plugin-hidden-content",
+  "title": "Zero declared dependencies; a Maven plugin's transitive payload generates runtime code during the build",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "maven"
+  ],
+  "maven_repo_local": ".maven-repo",
+  "stages": {
+    "source": {
+      "path": ".",
+      "maven": "single",
+      "exclude": [
+        "/target",
+        "/.maven-repo",
+        "/trace-output",
+        "/tooling"
+      ],
+      "exclude_note": "tooling/ holds the SOURCE of the plugin and payload, co-located only so the workshop is self-contained; in real life they live in another repository, so the source stage must not see them"
+    },
+    "artefact": {
+      "path": "target/maven-plugin-hidden-content-1.0.0.jar",
+      "kind": "jar"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/maven-plugin-hidden-content@1.0.0",
+      "note": "primary component; the only package in the jar"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/trace-injector-maven-plugin@1.0.0",
+      "kind": "build-tooling",
+      "hidden": "plugin-realm",
+      "note": "bound to generate-sources; generates GeneratedTraceRoute.java and ServiceLoader metadata"
+    },
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/trace-route-payload@1.0.0",
+      "kind": "build-tooling",
+      "hidden": "plugin-realm",
+      "note": "transitive dependency of the plugin; carries the /hidden/build-info route that ends up compiled into the jar"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.14.1",
+      "kind": "build-tooling"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.4.2",
+      "kind": "build-tooling"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "spring-node",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-12T11:48:08Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/criteria/spring-node",
+  "documentDescribes": [
+    "SPDXRef-File-work-testcases-spring-node-project-service-target-service-1.0.0.jar"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-work-testcases-spring-node-project-service-target-service-1.0.0.jar",
+      "fileName": "work/testcases/spring-node/project/service/target/service-1.0.0.jar",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d9b63f2e80936b6084a81b986504317fa406ab7c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15417d42227c3fc2c9789c05a7cb8093599d745a8a88b0c81f254d7eb81ebd4d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3d4a51b61e6418cdd100343d49964be08f9c8c0749e93f5a183979bc254bd2a5f502dab2a0b43878a59a77e4e49f7309a5b039e22068fded675109a291cb804e"
+        }
+      ]
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

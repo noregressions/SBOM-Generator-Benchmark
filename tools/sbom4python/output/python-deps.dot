@@ -1,0 +1,13 @@
+strict digraph sbom {
+	size="8,10.5"; ratio=fill;
+	"Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt" [shape=box, style=filled, fontcolor=white, fillcolor=royalblue label="Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt"];
+	"requests" [shape=box, style=filled, fontcolor=white, fillcolor=darkgreen label="requests
+Apache-2.0"];
+	"Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt" -> "requests";
+	"flask" [shape=box, style=filled, fontcolor=white, fillcolor=darkgreen label="flask
+BSD-3-Clause"];
+	"Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt" -> "flask";
+	"pyyaml" [shape=box, style=filled, fontcolor=white, fillcolor=darkgreen label="pyyaml
+MIT"];
+	"Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt" -> "pyyaml";
+}

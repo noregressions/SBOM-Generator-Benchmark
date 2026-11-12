@@ -1,0 +1,212 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:4847aabe-68e7-45ec-a92c-4a66b858376d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-10T11:56:53Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-gomod",
+        "version": "v1.12.0",
+        "hashes": [
+          {
+            "alg": "MD5",
+            "content": "7687ff398947a65a57bbd0b852667315"
+          },
+          {
+            "alg": "SHA-1",
+            "content": "39151e95285dae4f7cf578b32132ca9dc4afb933"
+          },
+          {
+            "alg": "SHA-256",
+            "content": "7de3fea82c044217afeeeb2160dc1a28ba4a252d3c3680ca801d296aef00a601"
+          },
+          {
+            "alg": "SHA-384",
+            "content": "0e7a42d3067a442bfc3ea8bacc318e7f0ccfc6b88c4453b4db05221940ae09c015b46936b7c69a1245c78fa04cb708be"
+          },
+          {
+            "alg": "SHA-512",
+            "content": "db9be28f2bc6dc57de6a2c427c6b5d30df7b714f566e7a202524dca4d8bbceaf23ce8218ee01f03115b68e9f26c33b56f2d1ecfe5d445dc53dde1c87b2b02c65"
+          }
+        ],
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-gomod",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:golang/github.com/example/sbom-sample-go?type=module",
+      "type": "application",
+      "name": "github.com/example/sbom-sample-go",
+      "purl": "pkg:golang/github.com/example/sbom-sample-go?goarch=arm64\u0026goos=darwin\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/example/sbom-sample-go",
+          "type": "vcs"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "cdx:gomod:binary:hash:MD5",
+        "value": "4b5678d42049d0cecfbfd7d19d4cd053"
+      },
+      {
+        "name": "cdx:gomod:binary:hash:SHA-1",
+        "value": "95b518e08364d2df5c9167c8beb6b01a96c0d13c"
+      },
+      {
+        "name": "cdx:gomod:binary:hash:SHA-256",
+        "value": "74581dbd2e3d63916fad1044a25116f676fe3f1476f48bcd7029aa1dd65b9af1"
+      },
+      {
+        "name": "cdx:gomod:binary:hash:SHA-384",
+        "value": "a15f68f077dfbc0329a1e5487141cd2d471a97f1e1065cbfc87b6a739bebfb595b383f5072a53a1acb40e5fd63b8fa7c"
+      },
+      {
+        "name": "cdx:gomod:binary:hash:SHA-512",
+        "value": "03425c38b57e2984e252769e744d1c7537cc463d89d6ff5f970275924abfe5bb3e16057aef14933436d90fd482ae766e657106e882d5dcc73d58496da1dfbdb3"
+      },
+      {
+        "name": "cdx:gomod:binary:name",
+        "value": "sbom-sample-go"
+      },
+      {
+        "name": "cdx:gomod:build:compiler",
+        "value": "gc"
+      },
+      {
+        "name": "cdx:gomod:build:env:CGO_ENABLED",
+        "value": "1"
+      },
+      {
+        "name": "cdx:gomod:build:env:GOARCH",
+        "value": "arm64"
+      },
+      {
+        "name": "cdx:gomod:build:env:GOOS",
+        "value": "darwin"
+      },
+      {
+        "name": "cdx:gomod:build:env:GOVERSION",
+        "value": "go1.21.13"
+      },
+      {
+        "name": "cdx:gomod:build:vcs",
+        "value": "git"
+      },
+      {
+        "name": "cdx:gomod:build:vcs:modified",
+        "value": "true"
+      }
+    ]
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.6.0?type=module",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.6.0",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "348bda24330eb231c0f27d630212d2833ac0cf2d4782bfa136b6f9edefbde05d"
+        }
+      ],
+      "purl": "pkg:golang/github.com/google/uuid@v1.6.0?goarch=arm64\u0026goos=darwin\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/google/uuid",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.8.1?type=module",
+      "type": "library",
+      "name": "github.com/gorilla/mux",
+      "version": "v1.8.1",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4ee04be3db57c20ac561686aacd82b50d118f76bbcd523e1bbbb137734048966"
+        }
+      ],
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.8.1?goarch=arm64\u0026goos=darwin\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/gorilla/mux",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1?type=module",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7f1566fc6cc0cc45aa2c7baf72d23dd4a4bd8613669963a85aed174d8252ec20"
+        }
+      ],
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1?goarch=arm64\u0026goos=darwin\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/go-yaml/yaml",
+          "type": "vcs"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:golang/github.com/example/sbom-sample-go?type=module",
+      "dependsOn": [
+        "pkg:golang/github.com/google/uuid@v1.6.0?type=module",
+        "pkg:golang/github.com/gorilla/mux@v1.8.1?type=module",
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.1?type=module"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@v1.6.0?type=module"
+    },
+    {
+      "ref": "pkg:golang/github.com/gorilla/mux@v1.8.1?type=module"
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1?type=module"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "dependencies": [
+        "pkg:golang/github.com/example/sbom-sample-go?type=module"
+      ]
+    },
+    {
+      "aggregate": "unknown",
+      "dependencies": [
+        "pkg:golang/github.com/google/uuid@v1.6.0?type=module",
+        "pkg:golang/github.com/gorilla/mux@v1.8.1?type=module",
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.1?type=module"
+      ]
+    }
+  ]
+}

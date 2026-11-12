@@ -1,0 +1,94 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:8a609c12-d176-48e9-93ec-9b150933b20d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:43:58+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "bfd84d22-2daa-4961-9cfa-249a3379a76e",
+      "type": "application",
+      "name": "/tmp/criteria-6/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "9d2cc399-e62b-40be-8e1f-40afd0363eb4",
+      "type": "application",
+      "name": "package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/trace-route-package@1.0.0",
+      "type": "library",
+      "name": "trace-route-package",
+      "version": "1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNLICENSED"
+          }
+        }
+      ],
+      "purl": "pkg:npm/trace-route-package@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "trace-route-package@1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "9d2cc399-e62b-40be-8e1f-40afd0363eb4",
+      "dependsOn": [
+        "pkg:npm/trace-route-package@1.0.0"
+      ]
+    },
+    {
+      "ref": "bfd84d22-2daa-4961-9cfa-249a3379a76e",
+      "dependsOn": [
+        "9d2cc399-e62b-40be-8e1f-40afd0363eb4"
+      ]
+    },
+    {
+      "ref": "pkg:npm/trace-route-package@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

@@ -1,0 +1,77 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: github.com/example/sbom-sample-go
+DocumentNamespace: http://spdx.org/spdxpackages/github.com/example/sbom-sample-go-1a72fc39-c3cb-4485-af24-40de2c6968e8
+Creator: Tool: spdx-sbom-generator-source-code
+Created: 2026-11-10T11:57:01Z
+
+
+##### Package representing the github.com/example/sbom-sample-go
+
+PackageName: github.com/example/sbom-sample-go
+SPDXID: SPDXRef-Package-github.com.example.sbom-sample-go
+
+PackageSupplier: Organization: github.com/example/sbom-sample-go
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageChecksum: SHA256: 6e516710e1eb12572369f5f96fa7bdbb2c6bc19949e61ea533875aec3c9f7a49
+PackageHomePage: https://github.com/example/sbom-sample-go
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the github.com/google/uuid
+
+PackageName: github.com/google/uuid
+SPDXID: SPDXRef-Package-github.com.google.uuid-v1.6.0
+PackageVersion: v1.6.0
+PackageSupplier: Organization: github.com/google/uuid
+PackageDownloadLocation: https://github.com/google/uuid/releases/tag/v1.6.0
+FilesAnalyzed: false
+PackageChecksum: SHA256: 39f4195a2a9540325f3551ae707c7f9842c3c3efc48226613042604fbef35da1
+PackageHomePage: https://github.com/google/uuid
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the github.com/gorilla/mux
+
+PackageName: github.com/gorilla/mux
+SPDXID: SPDXRef-Package-github.com.gorilla.mux-v1.8.1
+PackageVersion: v1.8.1
+PackageSupplier: Organization: github.com/gorilla/mux
+PackageDownloadLocation: https://github.com/gorilla/mux/releases/tag/v1.8.1
+FilesAnalyzed: false
+PackageChecksum: SHA256: fbf089d1f55ecbb0c070db29f5081123e192e3459641513885fa30b3529bdcac
+PackageHomePage: https://github.com/gorilla/mux
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the gopkg.in/yaml.v3
+
+PackageName: gopkg.in/yaml.v3
+SPDXID: SPDXRef-Package-gopkg.in.yaml.v3-v3.0.1
+PackageVersion: v3.0.1
+PackageSupplier: Organization: gopkg.in/yaml.v3
+PackageDownloadLocation: https://gopkg.in/yaml.v3
+FilesAnalyzed: false
+PackageChecksum: SHA256: f00f2470bd3c08d71239da7b7ce405f3421e529f23d8eb44689c392284cbb4e3
+PackageHomePage: https://gopkg.in/yaml.v3
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-github.com.example.sbom-sample-go
+Relationship: SPDXRef-Package-github.com.example.sbom-sample-go DEPENDS_ON SPDXRef-Package-github.com.google.uuid-v1.6.0
+Relationship: SPDXRef-Package-github.com.example.sbom-sample-go DEPENDS_ON SPDXRef-Package-github.com.gorilla.mux-v1.8.1
+Relationship: SPDXRef-Package-github.com.example.sbom-sample-go DEPENDS_ON SPDXRef-Package-gopkg.in.yaml.v3-v3.0.1

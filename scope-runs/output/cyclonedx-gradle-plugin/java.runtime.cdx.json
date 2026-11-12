@@ -1,0 +1,493 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:a6b478d8-d5db-4b1b-a12a-4046c7b5f26d",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-10T16:00:31Z",
+    "tools" : {
+      "components" : [
+        {
+          "type" : "application",
+          "author" : "CycloneDX",
+          "name" : "cyclonedx-gradle-plugin",
+          "version" : "2.3.1"
+        }
+      ],
+      "services" : [ ]
+    },
+    "component" : {
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.example/sbom-sample-gradle@1.0.0?project_path=%3A",
+      "group" : "com.example",
+      "name" : "sbom-sample-gradle",
+      "version" : "1.0.0",
+      "purl" : "pkg:maven/com.example/sbom-sample-gradle@1.0.0?project_path=%3A",
+      "modified" : false,
+      "externalReferences" : [ ]
+    },
+    "licenses" : [ ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.17.2",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e68e7e593ae47e106421688707683297"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "147b7b9412ffff24339f8aba080b292448e08698"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "873a606e23507969f9bbbea939d5e19274a88775ea5a169ba7e2d795aa5156e1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "006d3a054b22daa7f378b005cc29b3544dc7f3b509176e0eac946e0a3bafa73b824bae61b5183b61938b19044d2142a285da2fce2ffdaef5bfe91b2d8dcb6804"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "edb09e196ede070ba1ab1b99e96be6049f60b664eb89e60e28f08327e510e7aedf8c4696bc719113d24fe3367b8b89b7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9c54c25762e7b5e05c5e17deaa35ef5b9af764fb3e19bd790479920d9fb7084f3e89dd2ea2ef2fd680e72aebe74ab271"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5d1625676fc95b4625ef73658e47074a24804518d1455a610ff40b3017b1b86e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b4354ed913789689ac4f7dc7385aa2de383324a6b8ff59a2497b6b605c2451bec372c8a4335189c916b24c7a68e83102e0f53fca54c2389f2006ccc84a5eaa17"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.17.2",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "50c2dab1f29136714d5ef5c6c640336c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "969a35cb35c86512acbadcdbbbfb044c877db814"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "721a189241dab0525d9e858e5cb604d3ecc0ede081e2de77d6f34fa5779a5b46"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "694ae3bf756421d925f833f59a6309c7748ac3a68b28ed4de8ce0d6f93347dfc19991d1106db911c7da78e20734e6f44a02caef751150378a6ffa638c80fc75b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "acc969e3c312f9d2694e3202eb601dbe2317cb9a444dcb67f6e0f00871f6d5593bebcba272afab55f2541c6a7a107842"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "890610781e8f8c3c1283d8f6bd446d19dd5d83107a852f1446d5d2a4fdb57ff611b36b2267eba46746a305607c5e586a"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a4b8acc3fd90cc86a9a1507a3e51abf984521f9189218f17a3b551e0a7ccdf44"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f55e7d0b7a68919c8f8d3b5472796ecb82df852a97b1bb4bb0b45d1f9408d50545b717e8632f7ff975b77541e4d4b35de6ed32eeaff556677227b0985a74172b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.17.2",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3e1ff7c1f0fda885946619a47ef9d5de"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e6deb029e5901e027c129341fac39e515066b68c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c04993f33c0f845342653784f14f38373d005280e6359db5f808701cfae73c0c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "ec62267bf58aea531ec7f253e67974fac89e8aa61e7b54a7fb00edf3132ecb969b510630fd353adbbd2ab7d845a25702f168c296c57983a00bd6abc9ce3630f9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "d2de4602f779a456d0037f9d64efa8bcf9a1a9f06e3c628b2a3b2313319e22209cdfab9157f9251243bc05da870bdcf4"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "14618ad7737700ccd941feefd0bbbb7235ecbc1ac0cf22ba1bd72155eb68a800e98fe72f6ea03ab71cb9927a1d117d39"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "800f9886351c0968d6640e9c7e312c963b0146022fcfc27b173d06fe0c581041"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "49ff7e89ab8936043ac9371cc05c57bf88899a91ca11bd50227c58da9e6716c270e38c34bade5ba5cf39ed6443edf538bd25e85127c3e22f6788b84e14f3019a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson",
+      "name" : "jackson-bom",
+      "version" : "2.17.2",
+      "description" : "Bill of Materials pom for getting full, complete set of compatible versions of Jackson components maintained by FasterXML.com",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://fasterxml.com/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-bom"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "group" : "org.apache.commons",
+      "name" : "commons-lang3",
+      "version" : "3.14.0",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4e5c3f5e6b0b965ef241d7d72ac8971f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ed471194b02f2c6cb734a0cd6f6f107c673afae"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0338b50767166e5746ada6d6aa2e071e7221d699323bfb629f7f204b294c1dc4cad140610a129ed751798443b43e74e0818989c7df7d33c5915aa29742be9ba8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "908d0a22dc17aaa04caa5104cff7cad5b88b77eecb78dd5b3b3fefa22ff71ac50a4fb9e31c897ac243f9d841e4b3453d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8a7f2e061b998780870eddd571620fbf3d3c70bcb54e24539d0db504f59d65bc6bda58136284498babe29fcc5eabb7a6"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "022bf1f8039fcea717e9e34dd96eb80cfff05b43c9cbb76e9739b2421e2d027c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0bcbc4edce974ea970c46e2da12ec98d9fd962c2cf64f757ac97136dec5623ca52af0c225895303c17ffabb57090e6772d7bd326d5e7438cef5454f8bbaeecfa"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LANG"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "2.0.13",
+      "description" : "The slf4j API",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7f4028aa04f75427327f3f30cd62ba4e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "80229737f704b121a318bba5d5deacbcf395bc77"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e7c2a48e8515ba1f49fa637d57b4e2f590b3f5bd97407ac699c3aa5efb1204a9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b4eeb5757118e264ec7f107d879270784357380d6f53471b7874dd7e0166fdf5686a95eb66bab867abbe9536da032ab052e207165211391c293cbf6178431fb6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b67cbb4ef32141423000dd4e067bf32e0c1dd2c4689c611522b9fedfc1744513175a22f4b1276f2cec4721c9467cf882"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "817fc9641f4fc52bfd76006886c6eba975f6f09b2a7cc59334729a8cc033807c8e89be9ec4309acfc16ed65ff6eee018"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f26080cceb5a2e605f3844d6dc8dd3f14c543cb14510765d841d71a64fa454dc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "00646c78d65ec854e157638f40735f1888aa585ede59915d58386c599c2fe54ec8c1da73284aeff00ce3142165e33c4c995ad39d08843c31e9e4d7e32c746836"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "modified" : false,
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "group" : "org.slf4j",
+      "name" : "slf4j-simple",
+      "version" : "2.0.13",
+      "description" : "SLF4J Simple Provider",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4196990c1480726609474e897fe0bdc7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "be11a3f05f7cf546524b07ad252719d840f4daed"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "3153fe1d689cffb94f1530b58470c306685ba68844de8857116e3b6ebb81d9f7"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9e79240611ecb9847391937a9c0e83b1ce619a370a0ee61d66d41117c44f453df7af69853268f023dda46b1209b1cad0f0e2ede4581c8bce60e72083ae017e4d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "755532c356fb975146c27df0159513b3c28033fa70409078db2b0619733698b3df480cdc66448c55cd871c38816b6a28"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ca83a11ffc1a45d44f9bb9e1fce2404c226c5236f109484684308a366928d0acd23bbab27bf0d229cb6a31bd438a6252"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "56c7d2f5786de03c09ee0b9d2f58fe88fba6869ef6b2a4e59daf2fbf27ce2ae4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2a020ca02c100d460843788a868283da12ec6d6b81e10fb476aa929f39a2d2e886bf86663db13272fc19166fdcad8f25796103b7c37490ec1a9926ae4acd4fc7"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "modified" : false,
+      "properties" : [
+        {
+          "name" : "cdx:maven:package:test",
+          "value" : "false"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/com.example/sbom-sample-gradle@1.0.0?project_path=%3A",
+      "dependsOn" : [
+        "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+        "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson/jackson-bom@2.17.2?type=pom",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:fc71d220-cbde-48d1-b94c-56146ecb92e5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:47:34+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "730771c3-cce7-4d39-ae0f-bccdf69c8013",
+      "type": "application",
+      "name": "/tmp/criteria-6/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "6e4fa98c-0e04-4768-9ffb-8788ec9210ba",
+      "type": "application",
+      "name": "requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/reportkit@1.0.0",
+      "type": "library",
+      "name": "reportkit",
+      "version": "1.0.0",
+      "purl": "pkg:pypi/reportkit@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "6e4fa98c-0e04-4768-9ffb-8788ec9210ba",
+      "dependsOn": [
+        "pkg:pypi/reportkit@1.0.0"
+      ]
+    },
+    {
+      "ref": "730771c3-cce7-4d39-ae0f-bccdf69c8013",
+      "dependsOn": [
+        "6e4fa98c-0e04-4768-9ffb-8788ec9210ba"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/reportkit@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

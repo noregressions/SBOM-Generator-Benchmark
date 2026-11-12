@@ -1,0 +1,540 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: 
+DocumentNamespace: http://spdx.org/spdxpackages/-f3d291f9-70dc-42b1-92c5-590eb4f2e2c9
+Creator: Tool: spdx-sbom-generator-source-code
+Created: 2026-11-10T11:57:04Z
+
+
+##### Package representing the 
+
+PackageName: 
+SPDXID: SPDXRef-Package-
+
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the bumpalo
+
+PackageName: bumpalo
+SPDXID: SPDXRef-Package-bumpalo-3.20.3
+PackageVersion: 3.20.3
+PackageSupplier: Person: Nick Fitzgerald (fitzgen@gmail.com)
+PackageDownloadLocation: https://github.com/fitzgen/bumpalo
+FilesAnalyzed: false
+PackageChecksum: SHA1: a3e3ef095e5db348f2f4f5e409bcc4b7dd06f23a
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the cfg-if
+
+PackageName: cfg-if
+SPDXID: SPDXRef-Package-cfg-if-1.0.5
+PackageVersion: 1.0.5
+PackageSupplier: Person: Alex Crichton (alex@alexcrichton.com)
+PackageDownloadLocation: https://github.com/rust-lang/cfg-if
+FilesAnalyzed: false
+PackageChecksum: SHA1: cb81d33ae54d7dfa0c4a58d959aa4602adba061c
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the futures-core
+
+PackageName: futures-core
+SPDXID: SPDXRef-Package-futures-core-0.3.34
+PackageVersion: 0.3.34
+PackageSupplier: Organization: futures-core
+PackageDownloadLocation: https://github.com/rust-lang/futures-rs
+FilesAnalyzed: false
+PackageChecksum: SHA1: 8aeeaa50e4388ca098159d122f440006e34de50b
+PackageHomePage: https://rust-lang.github.io/futures-rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the futures-task
+
+PackageName: futures-task
+SPDXID: SPDXRef-Package-futures-task-0.3.34
+PackageVersion: 0.3.34
+PackageSupplier: Organization: futures-task
+PackageDownloadLocation: https://github.com/rust-lang/futures-rs
+FilesAnalyzed: false
+PackageChecksum: SHA1: 27dc8d2a55dab7e10f7db153c060ac9100978ce3
+PackageHomePage: https://rust-lang.github.io/futures-rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the futures-util
+
+PackageName: futures-util
+SPDXID: SPDXRef-Package-futures-util-0.3.34
+PackageVersion: 0.3.34
+PackageSupplier: Organization: futures-util
+PackageDownloadLocation: https://github.com/rust-lang/futures-rs
+FilesAnalyzed: false
+PackageChecksum: SHA1: f30f5826d038e82aa96b3206dcd83fdddd431faa
+PackageHomePage: https://rust-lang.github.io/futures-rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the getrandom
+
+PackageName: getrandom
+SPDXID: SPDXRef-Package-getrandom-0.4.3
+PackageVersion: 0.4.3
+PackageSupplier: Organization: The Rand Project Developers
+PackageDownloadLocation: https://github.com/rust-random/getrandom
+FilesAnalyzed: false
+PackageChecksum: SHA1: 2f26856d98ae14cfa93274d64091b218389a4e7c
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the itoa
+
+PackageName: itoa
+SPDXID: SPDXRef-Package-itoa-1.0.19
+PackageVersion: 1.0.19
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/itoa
+FilesAnalyzed: false
+PackageChecksum: SHA1: f90162c6df06653b85ca85c4e3f7cd81f33bb36b
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the js-sys
+
+PackageName: js-sys
+SPDXID: SPDXRef-Package-js-sys-0.3.107
+PackageVersion: 0.3.107
+PackageSupplier: Organization: The wasm-bindgen Developers
+PackageDownloadLocation: https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/js-sys
+FilesAnalyzed: false
+PackageChecksum: SHA1: 4dc599cf7c933bdfecf21a451c68bc580dfa2270
+PackageHomePage: https://wasm-bindgen.github.io/wasm-bindgen/
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the libc
+
+PackageName: libc
+SPDXID: SPDXRef-Package-libc-0.2.191
+PackageVersion: 0.2.191
+PackageSupplier: Organization: libc
+PackageDownloadLocation: https://github.com/rust-lang/libc
+FilesAnalyzed: false
+PackageChecksum: SHA1: 400c1c7e1c54ba2ad787b5057d9543ce43eac2e9
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the memchr
+
+PackageName: memchr
+SPDXID: SPDXRef-Package-memchr-2.8.3
+PackageVersion: 2.8.3
+PackageSupplier: Person: Andrew Gallant (jamslam@gmail.com)
+PackageDownloadLocation: https://github.com/BurntSushi/memchr
+FilesAnalyzed: false
+PackageChecksum: SHA1: 5325dcf309a23861bee2f55ac991a7b7ea71a3dd
+PackageHomePage: https://github.com/BurntSushi/memchr
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the pin-project-lite
+
+PackageName: pin-project-lite
+SPDXID: SPDXRef-Package-pin-project-lite-0.2.17
+PackageVersion: 0.2.17
+PackageSupplier: Organization: pin-project-lite
+PackageDownloadLocation: https://github.com/taiki-e/pin-project-lite
+FilesAnalyzed: false
+PackageChecksum: SHA1: 903a2a5bb5b8b69acf68bcf27df03190475336b2
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the proc-macro2
+
+PackageName: proc-macro2
+SPDXID: SPDXRef-Package-proc-macro2-1.0.107
+PackageVersion: 1.0.107
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/proc-macro2
+FilesAnalyzed: false
+PackageChecksum: SHA1: d23a54ec9c8705a54ae17b96e14036b748c74472
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the quote
+
+PackageName: quote
+SPDXID: SPDXRef-Package-quote-1.0.47
+PackageVersion: 1.0.47
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/quote
+FilesAnalyzed: false
+PackageChecksum: SHA1: d03f4f13f3f52180ea2e1fe1613bb4cff7adc7e0
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the r-efi
+
+PackageName: r-efi
+SPDXID: SPDXRef-Package-r-efi-6.0.0
+PackageVersion: 6.0.0
+PackageSupplier: Organization: r-efi
+PackageDownloadLocation: https://github.com/r-efi/r-efi
+FilesAnalyzed: false
+PackageChecksum: SHA1: a2f4e144095811ca585d3a27736cfbc2e5a00c3b
+PackageHomePage: https://github.com/r-efi/r-efi/wiki
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the rustversion
+
+PackageName: rustversion
+SPDXID: SPDXRef-Package-rustversion-1.0.23
+PackageVersion: 1.0.23
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/rustversion
+FilesAnalyzed: false
+PackageChecksum: SHA1: 1814b4c7bd56c7c4e65b276453647b9804554b3d
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the serde
+
+PackageName: serde
+SPDXID: SPDXRef-Package-serde-1.0.229
+PackageVersion: 1.0.229
+PackageSupplier: Person: Erick Tryzelaar (erick.tryzelaar@gmail.com)
+PackageDownloadLocation: https://github.com/serde-rs/serde
+FilesAnalyzed: false
+PackageChecksum: SHA1: e1477c5803a705174803cb65b3da371e134373e3
+PackageHomePage: https://serde.rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the serde_core
+
+PackageName: serde_core
+SPDXID: SPDXRef-Package-serde-core-1.0.229
+PackageVersion: 1.0.229
+PackageSupplier: Person: Erick Tryzelaar (erick.tryzelaar@gmail.com)
+PackageDownloadLocation: https://github.com/serde-rs/serde
+FilesAnalyzed: false
+PackageChecksum: SHA1: f5f31780e2d0bbd90ff43ff9fe8b5bdd9b2af186
+PackageHomePage: https://serde.rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the serde_derive
+
+PackageName: serde_derive
+SPDXID: SPDXRef-Package-serde-derive-1.0.229
+PackageVersion: 1.0.229
+PackageSupplier: Person: Erick Tryzelaar (erick.tryzelaar@gmail.com)
+PackageDownloadLocation: https://github.com/serde-rs/serde
+FilesAnalyzed: false
+PackageChecksum: SHA1: c79b014289e4af74476f3d70bc9d10a62c2a8119
+PackageHomePage: https://serde.rs
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the serde_json
+
+PackageName: serde_json
+SPDXID: SPDXRef-Package-serde-json-1.0.154
+PackageVersion: 1.0.154
+PackageSupplier: Organization: serde_json
+PackageDownloadLocation: https://github.com/serde-rs/json
+FilesAnalyzed: false
+PackageChecksum: SHA1: 58789327351c1705eb8ed000b6ebc90f1fae1391
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the slab
+
+PackageName: slab
+SPDXID: SPDXRef-Package-slab-0.4.12
+PackageVersion: 0.4.12
+PackageSupplier: Person: Carl Lerche (me@carllerche.com)
+PackageDownloadLocation: https://github.com/tokio-rs/slab
+FilesAnalyzed: false
+PackageChecksum: SHA1: bc11d42a36466522261894f6f25710b96273bd63
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the syn
+
+PackageName: syn
+SPDXID: SPDXRef-Package-syn-3.0.10
+PackageVersion: 3.0.10
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/syn
+FilesAnalyzed: false
+PackageChecksum: SHA1: c4d9c3773449115f34966bba12f7bba6ec537b39
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the unicode-ident
+
+PackageName: unicode-ident
+SPDXID: SPDXRef-Package-unicode-ident-1.0.27
+PackageVersion: 1.0.27
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/unicode-ident
+FilesAnalyzed: false
+PackageChecksum: SHA1: 6c17db181d43cd701f681bc0c2139533e79e281b
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the uuid
+
+PackageName: uuid
+SPDXID: SPDXRef-Package-uuid-1.29.2
+PackageVersion: 1.29.2
+PackageSupplier: Organization: uuid
+PackageDownloadLocation: https://github.com/uuid-rs/uuid
+FilesAnalyzed: false
+PackageChecksum: SHA1: 3fecd930fdbcd3fb7d90c4785f4890c3df9c11ef
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the wasm-bindgen
+
+PackageName: wasm-bindgen
+SPDXID: SPDXRef-Package-wasm-bindgen-0.2.130
+PackageVersion: 0.2.130
+PackageSupplier: Organization: The wasm-bindgen Developers
+PackageDownloadLocation: https://github.com/wasm-bindgen/wasm-bindgen
+FilesAnalyzed: false
+PackageChecksum: SHA1: 6bb46f94b3e8036d94558e18a481db82a83465d8
+PackageHomePage: https://wasm-bindgen.github.io/wasm-bindgen
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the wasm-bindgen-macro
+
+PackageName: wasm-bindgen-macro
+SPDXID: SPDXRef-Package-wasm-bindgen-macro-0.2.130
+PackageVersion: 0.2.130
+PackageSupplier: Organization: The wasm-bindgen Developers
+PackageDownloadLocation: https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro
+FilesAnalyzed: false
+PackageChecksum: SHA1: 1e2814280d9d9143ef7111ce16603db1a5658a24
+PackageHomePage: https://wasm-bindgen.github.io/wasm-bindgen/
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the wasm-bindgen-macro-support
+
+PackageName: wasm-bindgen-macro-support
+SPDXID: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130
+PackageVersion: 0.2.130
+PackageSupplier: Organization: The wasm-bindgen Developers
+PackageDownloadLocation: https://github.com/wasm-bindgen/wasm-bindgen/tree/main/crates/macro-support
+FilesAnalyzed: false
+PackageChecksum: SHA1: 4c6852f78e60ed51905e09f596d70faef004a726
+PackageHomePage: https://wasm-bindgen.github.io/wasm-bindgen/
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the wasm-bindgen-shared
+
+PackageName: wasm-bindgen-shared
+SPDXID: SPDXRef-Package-wasm-bindgen-shared-0.2.130
+PackageVersion: 0.2.130
+PackageSupplier: Organization: The wasm-bindgen Developers
+PackageDownloadLocation: https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/shared
+FilesAnalyzed: false
+PackageChecksum: SHA1: fefc9aa4d22a33b582eeba9112af94568624f47d
+PackageHomePage: https://wasm-bindgen.github.io/wasm-bindgen/
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+##### Package representing the zmij
+
+PackageName: zmij
+SPDXID: SPDXRef-Package-zmij-1.0.23
+PackageVersion: 1.0.23
+PackageSupplier: Person: David Tolnay (dtolnay@gmail.com)
+PackageDownloadLocation: https://github.com/dtolnay/zmij
+FilesAnalyzed: false
+PackageChecksum: SHA1: 0e811f89e842c924d642600755069d04db4d6906
+PackageHomePage: https://github.com/rust-lang/crates.io-index
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-
+Relationship: SPDXRef-Package-bumpalo-3.20.3 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-bumpalo-3.20.3 DEPENDS_ON SPDXRef-Package-serde-json-1.0.154
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-pin-project-lite-0.2.17
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-slab-0.4.12
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-futures-core-0.3.34
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-futures-task-0.3.34
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-libc-0.2.191
+Relationship: SPDXRef-Package-futures-util-0.3.34 DEPENDS_ON SPDXRef-Package-memchr-2.8.3
+Relationship: SPDXRef-Package-getrandom-0.4.3 DEPENDS_ON SPDXRef-Package-cfg-if-1.0.5
+Relationship: SPDXRef-Package-getrandom-0.4.3 DEPENDS_ON SPDXRef-Package-libc-0.2.191
+Relationship: SPDXRef-Package-getrandom-0.4.3 DEPENDS_ON SPDXRef-Package-wasm-bindgen-0.2.130
+Relationship: SPDXRef-Package-getrandom-0.4.3 DEPENDS_ON SPDXRef-Package-js-sys-0.3.107
+Relationship: SPDXRef-Package-getrandom-0.4.3 DEPENDS_ON SPDXRef-Package-r-efi-6.0.0
+Relationship: SPDXRef-Package-js-sys-0.3.107 DEPENDS_ON SPDXRef-Package-cfg-if-1.0.5
+Relationship: SPDXRef-Package-js-sys-0.3.107 DEPENDS_ON SPDXRef-Package-futures-core-0.3.34
+Relationship: SPDXRef-Package-js-sys-0.3.107 DEPENDS_ON SPDXRef-Package-futures-util-0.3.34
+Relationship: SPDXRef-Package-js-sys-0.3.107 DEPENDS_ON SPDXRef-Package-wasm-bindgen-0.2.130
+Relationship: SPDXRef-Package-pin-project-lite-0.2.17 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-proc-macro2-1.0.107 DEPENDS_ON SPDXRef-Package-unicode-ident-1.0.27
+Relationship: SPDXRef-Package-proc-macro2-1.0.107 DEPENDS_ON SPDXRef-Package-quote-1.0.47
+Relationship: SPDXRef-Package-proc-macro2-1.0.107 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-quote-1.0.47 DEPENDS_ON SPDXRef-Package-proc-macro2-1.0.107
+Relationship: SPDXRef-Package-quote-1.0.47 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-serde-1.0.229 DEPENDS_ON SPDXRef-Package-serde-core-1.0.229
+Relationship: SPDXRef-Package-serde-1.0.229 DEPENDS_ON SPDXRef-Package-serde-derive-1.0.229
+Relationship: SPDXRef-Package-serde-core-1.0.229 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-serde-core-1.0.229 DEPENDS_ON SPDXRef-Package-serde-derive-1.0.229
+Relationship: SPDXRef-Package-serde-derive-1.0.229 DEPENDS_ON SPDXRef-Package-syn-3.0.10
+Relationship: SPDXRef-Package-serde-derive-1.0.229 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-serde-derive-1.0.229 DEPENDS_ON SPDXRef-Package-proc-macro2-1.0.107
+Relationship: SPDXRef-Package-serde-derive-1.0.229 DEPENDS_ON SPDXRef-Package-quote-1.0.47
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-serde-core-1.0.229
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-zmij-1.0.23
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-serde-derive-1.0.229
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-itoa-1.0.19
+Relationship: SPDXRef-Package-serde-json-1.0.154 DEPENDS_ON SPDXRef-Package-memchr-2.8.3
+Relationship: SPDXRef-Package-slab-0.4.12 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-syn-3.0.10 DEPENDS_ON SPDXRef-Package-proc-macro2-1.0.107
+Relationship: SPDXRef-Package-syn-3.0.10 DEPENDS_ON SPDXRef-Package-quote-1.0.47
+Relationship: SPDXRef-Package-syn-3.0.10 DEPENDS_ON SPDXRef-Package-unicode-ident-1.0.27
+Relationship: SPDXRef-Package-syn-3.0.10 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-getrandom-0.4.3
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-serde-core-1.0.229
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-serde-derive-1.0.229
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-serde-json-1.0.154
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-wasm-bindgen-0.2.130
+Relationship: SPDXRef-Package-uuid-1.29.2 DEPENDS_ON SPDXRef-Package-js-sys-0.3.107
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-cfg-if-1.0.5
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-serde-1.0.229
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-serde-json-1.0.154
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-wasm-bindgen-macro-0.2.130
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-wasm-bindgen-shared-0.2.130
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-rustversion-1.0.23
+Relationship: SPDXRef-Package-wasm-bindgen-0.2.130 DEPENDS_ON SPDXRef-Package-serde-derive-1.0.229
+Relationship: SPDXRef-Package-wasm-bindgen-macro-0.2.130 DEPENDS_ON SPDXRef-Package-quote-1.0.47
+Relationship: SPDXRef-Package-wasm-bindgen-macro-0.2.130 DEPENDS_ON SPDXRef-Package-wasm-bindgen-macro-support-0.2.130
+Relationship: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130 DEPENDS_ON SPDXRef-Package-bumpalo-3.20.3
+Relationship: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130 DEPENDS_ON SPDXRef-Package-proc-macro2-1.0.107
+Relationship: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130 DEPENDS_ON SPDXRef-Package-quote-1.0.47
+Relationship: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130 DEPENDS_ON SPDXRef-Package-syn-3.0.10
+Relationship: SPDXRef-Package-wasm-bindgen-macro-support-0.2.130 DEPENDS_ON SPDXRef-Package-wasm-bindgen-shared-0.2.130
+Relationship: SPDXRef-Package-wasm-bindgen-shared-0.2.130 DEPENDS_ON SPDXRef-Package-unicode-ident-1.0.27

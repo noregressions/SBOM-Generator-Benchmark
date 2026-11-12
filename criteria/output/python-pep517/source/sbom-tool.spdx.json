@@ -1,0 +1,418 @@
+{
+  "files": [
+    {
+      "fileName": "./.gitignore",
+      "SPDXID": "SPDXRef-File--.gitignore-11072B42D72DC2E23FEA4DE305DB3A6C8144A01A",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ca7c7e814854c1975f8876bbd420fc4845c3bda091be54bfe1a9d93e30c3054b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "11072b42d72dc2e23fea4de305db3a6c8144a01a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/trace-python.sh",
+      "SPDXID": "SPDXRef-File--scripts-trace-python.sh-0EACB57693B1586671C52D0C02A706CA80D5DD60",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "20d6bf8fcb115599936e0fc59bd037969d7acaaf17ba8fdb6d3e28f227a670e7"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0eacb57693b1586671c52d0c02a706ca80d5dd60"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/stop.sh",
+      "SPDXID": "SPDXRef-File--scripts-stop.sh-47BF5C52D40CD46420F820D5D980A5B157B070AB",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "08d7838c871ff1e89e1c3f94e7f25442d2ff67dbfa9ccef60439402c77bb75c6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "47bf5c52d40cd46420f820d5d980a5b157b070ab"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/rebuild-python-repo.py",
+      "SPDXID": "SPDXRef-File--scripts-rebuild-python-repo.py-475334BEA157574F02B9FDF57DC01D944280D684",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e9905784a719354dbc73afbe664a0eba928d390c661d0b4a9601c5226a5d22e8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "475334bea157574f02b9fdf57dc01d944280d684"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-sources/reportkit/reportkit/__init__.py",
+      "SPDXID": "SPDXRef-File--python-sources-reportkit-reportkit---init--.py-160C2462FDA4499335C919A7B555D224B884E69F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0249bb450f4517ff2ccb5eaeedf8750a665b28fc6f8420c83cf44fda88a27ad"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "160c2462fda4499335c919a7b555d224b884e69f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/clean.sh",
+      "SPDXID": "SPDXRef-File--scripts-clean.sh-1F491F4CD20DE7CD3AA4E6CC7517F542A256952C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "184f7fa7fa97ed6cc3c95259e448d0cb76c139b40f70314deaad633344237372"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1f491f4cd20de7cd3aa4e6cc7517f542a256952c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-repo/reportkit-1.0.0-py3-none-any.whl",
+      "SPDXID": "SPDXRef-File--python-repo-reportkit-1.0.0-py3-none-any.whl-8B7C75E4F6D8D01D182E0E8C879B4EF298008D7A",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "14565f2ad1458c4835309bd87005748a07efb8a99d1a6405470f71ed395d0939"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8b7c75e4f6d8d01d182e0e8c879b4ef298008d7a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/build.sh",
+      "SPDXID": "SPDXRef-File--scripts-build.sh-CE4C91880C3AE1053C46C58DF4AFD15BB6518439",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9838275481b9edb5be1bc10a5d250dfe58426c5246e7ff4bc6f43f2b1ee42bb3"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ce4c91880c3ae1053c46c58df4afd15bb6518439"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-sources/reportkit/METADATA.template",
+      "SPDXID": "SPDXRef-File--python-sources-reportkit-METADATA.template-9EF2643FFD4BB4B8F6E6D29260500F1FD5028692",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9ae41365f8548fdb5d497d9e3f31c371d3503d78ff6aefae335e90f20c932158"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9ef2643ffd4bb4b8f6e6d29260500f1fd5028692"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-sources/tracehook-demo/pyproject.toml",
+      "SPDXID": "SPDXRef-File--python-sources-tracehook-demo-pyproject.toml-7F02767A4D91085DBEC1C2566BF779BAD29DBFC5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "693a222bfb6526c22da83d2875b7d6efaf655db498e220d09119ef4eef337a46"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7f02767a4d91085dbec1c2566bf779bad29dbfc5"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./LESSON.md",
+      "SPDXID": "SPDXRef-File--LESSON.md-6AD81FDCE98AE8F730B221314F2C58B5971B6528",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06ae1b1103091dea1fd33bcfae3fb57ee340aa223556ed2f4a34edefb7d897b9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6ad81fdce98ae8f730b221314f2c58b5971b6528"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/run.sh",
+      "SPDXID": "SPDXRef-File--scripts-run.sh-BA2AA8B1E1935792E3F34B325604AD1A32A25BB4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bf97298c3762538b600ce1344dbc7ab3c27a9149bef6d7c22af2af1603349762"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ba2aa8b1e1935792e3f34b325604ad1a32a25bb4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-sources/tracehook-demo/tracehook_backend.py",
+      "SPDXID": "SPDXRef-File--python-sources-tracehook-demo-tracehook-backend.py-2A70B01FDF7DFBFAF363E2E707A11B469FBBE406",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bcd5b75fffb6e9436183ddd6ff259a5f75e0cf7453daa40ef68b62de3c959d47"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2a70b01fdf7dfbfaf363e2e707a11b469fbbe406"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./src/app.py",
+      "SPDXID": "SPDXRef-File--src-app.py-A3053FF7051B6901BD702A305F4206C13D0EF29F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8ced4a60436dec9826cfb03497bc2ad1fac7cfe394733657ff11f0e89a91137"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a3053ff7051b6901bd702a305f4206c13d0ef29f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./python-repo/tracehook_demo-1.0.0.tar.gz",
+      "SPDXID": "SPDXRef-File--python-repo-tracehook-demo-1.0.0.tar.gz-9DEE64926A580C7A2CE284D1A93DCF4201731EFD",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "33f79aa8ef770f12934a520a8a7639c771af172c2686c197ad7e0ca8d061c9d9"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9dee64926a580c7a2ce284d1a93dcf4201731efd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./requirements.txt",
+      "SPDXID": "SPDXRef-File--requirements.txt-EB11229A3B41152B08FCB3B7B9997885092F0185",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aff5f0b1deb37d55c04961fba4ade7b66917402f0ba80428a6c1ea0a3a969c7e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "eb11229a3b41152b08fcb3b7b9997885092f0185"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/proof-check.sh",
+      "SPDXID": "SPDXRef-File--scripts-proof-check.sh-A412B998D6B56FB597B92203C0E2884F3D66F657",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cd6ac6c1c4862e71817bfe968b32f27f4ae0400ffa171346c0cdee49c9064c8b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a412b998d6b56fb597b92203c0e2884f3d66f657"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "reportkit",
+      "SPDXID": "SPDXRef-Package-6EE3DD88A408A9E8297FDDF7A3355CD5681518B1813416BD1382D17E6DE11B77",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/reportkit@1.0.0"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "python-pep517",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "3f13f1cee4bee48fb6030a7ab57e1d728660e949"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:swid/criteria/example.com/python-pep517@1.0.0?tag_id=0d8c32ed-9e96-46e1-8ed6-c7fa15a4ffa9"
+        }
+      ],
+      "supplier": "Organization: criteria",
+      "hasFiles": [
+        "SPDXRef-File--python-repo-tracehook-demo-1.0.0.tar.gz-9DEE64926A580C7A2CE284D1A93DCF4201731EFD",
+        "SPDXRef-File--src-app.py-A3053FF7051B6901BD702A305F4206C13D0EF29F",
+        "SPDXRef-File--python-sources-tracehook-demo-pyproject.toml-7F02767A4D91085DBEC1C2566BF779BAD29DBFC5",
+        "SPDXRef-File--scripts-stop.sh-47BF5C52D40CD46420F820D5D980A5B157B070AB",
+        "SPDXRef-File--scripts-proof-check.sh-A412B998D6B56FB597B92203C0E2884F3D66F657",
+        "SPDXRef-File--requirements.txt-EB11229A3B41152B08FCB3B7B9997885092F0185",
+        "SPDXRef-File--python-sources-reportkit-METADATA.template-9EF2643FFD4BB4B8F6E6D29260500F1FD5028692",
+        "SPDXRef-File--scripts-build.sh-CE4C91880C3AE1053C46C58DF4AFD15BB6518439",
+        "SPDXRef-File--python-repo-reportkit-1.0.0-py3-none-any.whl-8B7C75E4F6D8D01D182E0E8C879B4EF298008D7A",
+        "SPDXRef-File--scripts-clean.sh-1F491F4CD20DE7CD3AA4E6CC7517F542A256952C",
+        "SPDXRef-File--python-sources-tracehook-demo-tracehook-backend.py-2A70B01FDF7DFBFAF363E2E707A11B469FBBE406",
+        "SPDXRef-File--scripts-run.sh-BA2AA8B1E1935792E3F34B325604AD1A32A25BB4",
+        "SPDXRef-File--LESSON.md-6AD81FDCE98AE8F730B221314F2C58B5971B6528",
+        "SPDXRef-File--scripts-trace-python.sh-0EACB57693B1586671C52D0C02A706CA80D5DD60",
+        "SPDXRef-File--.gitignore-11072B42D72DC2E23FEA4DE305DB3A6C8144A01A",
+        "SPDXRef-File--python-sources-reportkit-reportkit---init--.py-160C2462FDA4499335C919A7B555D224B884E69F",
+        "SPDXRef-File--scripts-rebuild-python-repo.py-475334BEA157574F02B9FDF57DC01D944280D684"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-6EE3DD88A408A9E8297FDDF7A3355CD5681518B1813416BD1382D17E6DE11B77",
+      "spdxElementId": "SPDXRef-RootPackage"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "python-pep517 1.0.0",
+  "documentNamespace": "https://example.com/criteria/python-pep517/1.0.0/dawpAvcoYUq1lYApkg6ZsQ",
+  "creationInfo": {
+    "created": "2026-11-12T11:51:16Z",
+    "creators": [
+      "Organization: criteria",
+      "Tool: Microsoft.SBOMTool-4.1.13"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}

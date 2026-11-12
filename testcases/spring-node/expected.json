@@ -1,0 +1,763 @@
+{
+  "target": "spring-node",
+  "title": "Spring Boot service + React/Vite frontend + shaded library, shipped as one Boot jar on a Temurin JRE image",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "maven",
+    "npm"
+  ],
+  "stages": {
+    "source": {
+      "path": ".",
+      "maven": "aggregate",
+      "npm": "frontend",
+      "exclude": [
+        "/normalizer/target",
+        "/service/target",
+        "/target",
+        "/frontend/dist",
+        "/trace-output",
+        "/ship-check",
+        "/work"
+      ],
+      "exclude_note": "paths removed from the scratch copy scanners see at source stage: build outputs and caches only, anchored to the project root so node_modules/*/dist and the like stay intact"
+    },
+    "artefact": {
+      "path": "service/target/service-1.0.0.jar",
+      "kind": "jar",
+      "embedded_jars": "BOOT-INF/lib/"
+    },
+    "image": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "tag": "criteria-spring-node:local"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/service@1.0.0",
+      "note": "primary component (Boot jar)"
+    },
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "note": "sibling module, packaged as a nested jar"
+    },
+    {
+      "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "hidden": "shaded",
+      "note": "relocated to com.acme.internal.codec inside normalizer-1.0.0.jar; only META-INF/maven pom.properties survives"
+    },
+    {
+      "purl": "pkg:maven/commons-codec/commons-codec@1.18.0",
+      "note": "second, un-shaded copy pulled in by Spring Boot"
+    },
+    {
+      "purl": "pkg:npm/lodash@4.17.21",
+      "hidden": "bundled",
+      "note": "bundled by Vite into BOOT-INF/classes/static/assets/index-*.js; no package boundary survives"
+    },
+    {
+      "purl": "pkg:npm/react@18.3.1",
+      "hidden": "bundled"
+    },
+    {
+      "purl": "pkg:npm/react-dom@18.3.1",
+      "hidden": "bundled"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4",
+      "note": "version chosen by spring-boot-dependencies, not by the service POM"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4"
+    },
+    {
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4"
+    },
+    {
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1"
+    },
+    {
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17"
+    },
+    {
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.17"
+    },
+    {
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3"
+    },
+    {
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3"
+    },
+    {
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.32"
+    },
+    {
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32"
+    },
+    {
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.15.10"
+    },
+    {
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.15.10"
+    },
+    {
+      "purl": "pkg:maven/org.yaml/snakeyaml@2.4"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-aop@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-beans@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-context@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-core@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-expression@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-web@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-jarmode-tools@3.5.12",
+      "note": "added by spring-boot-maven-plugin repackaging, not by dependency resolution"
+    },
+    {
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52"
+    },
+    {
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52"
+    },
+    {
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52"
+    },
+    {
+      "purl": "pkg:npm/loose-envify@1.4.0",
+      "note": "transitive of react/react-dom, bundled with them"
+    },
+    {
+      "purl": "pkg:npm/js-tokens@4.0.0",
+      "note": "transitive of react/react-dom, bundled with them"
+    },
+    {
+      "purl": "pkg:npm/scheduler@0.23.2",
+      "note": "transitive of react/react-dom, bundled with them"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-shade-plugin@3.6.2",
+      "kind": "build-tooling",
+      "hidden": "plugin-realm",
+      "note": "the tool that relocated commons-codec"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-maven-plugin@3.5.12",
+      "kind": "build-tooling",
+      "hidden": "plugin-realm",
+      "note": "repackaged the jar and added jarmode-tools"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.14.0",
+      "kind": "build-tooling"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-surefire-plugin@3.5.2",
+      "kind": "build-tooling"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.5.12",
+      "kind": "bom-import",
+      "hidden": "bom-import",
+      "note": "decided every Spring/Jackson version above"
+    },
+    {
+      "purl": "pkg:maven/com.jayway.jsonpath/json-path@2.9.0",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.17.8",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/net.minidev/accessors-smart@2.5.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/net.minidev/json-smart@2.5.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.assertj/assertj-core@3.27.7",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.awaitility/awaitility@4.2.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.hamcrest/hamcrest@3.0",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.mockito/mockito-core@5.17.0",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.objenesis/objenesis@3.3",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.ow2.asm/asm@9.7.1",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.skyscreamer/jsonassert@1.5.3",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.5.12",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.springframework/spring-test@6.2.17",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:maven/org.xmlunit/xmlunit-core@2.10.4",
+      "kind": "test"
+    },
+    {
+      "purl": "pkg:npm/@babel/code-frame@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/compat-data@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/core@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/generator@7.29.8",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-compilation-targets@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-globals@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-module-imports@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-module-transforms@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-plugin-utils@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-string-parser@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-validator-identifier@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helper-validator-option@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/helpers@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/parser@7.29.8",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/plugin-transform-react-jsx-self@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/plugin-transform-react-jsx-source@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/template@7.29.7",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/traverse@7.29.8",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@babel/types@7.29.8",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/aix-ppc64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/android-arm@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/android-arm64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/android-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/darwin-arm64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/darwin-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/freebsd-arm64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/freebsd-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-arm@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-arm64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-ia32@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-loong64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-mips64el@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-ppc64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-riscv64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-s390x@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/linux-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/netbsd-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/openbsd-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/sunos-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/win32-arm64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/win32-ia32@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@esbuild/win32-x64@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@jridgewell/gen-mapping@0.3.13",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@jridgewell/remapping@2.3.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@jridgewell/resolve-uri@3.1.2",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@jridgewell/sourcemap-codec@1.5.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@jridgewell/trace-mapping@0.3.31",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@napi-rs/lzma-linux-x64-gnu@1.5.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rolldown/pluginutils@1.0.0-beta.27",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-android-arm-eabi@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-android-arm64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-darwin-arm64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-darwin-x64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-freebsd-arm64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-freebsd-x64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-arm-gnueabihf@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-arm-musleabihf@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-arm64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-arm64-musl@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-loong64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-loong64-musl@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-ppc64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-ppc64-musl@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-riscv64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-riscv64-musl@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-s390x-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-x64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-linux-x64-musl@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-openbsd-x64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-openharmony-arm64@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-win32-arm64-msvc@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-win32-ia32-msvc@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-win32-x64-gnu@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@rollup/rollup-win32-x64-msvc@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@types/babel__core@7.20.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@types/babel__generator@7.27.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@types/babel__template@7.4.4",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@types/babel__traverse@7.28.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@types/estree@1.0.9",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/@vitejs/plugin-react@4.7.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/baseline-browser-mapping@2.11.17",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/browserslist@4.28.8",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/caniuse-lite@1.0.30001809",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/convert-source-map@2.0.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/debug@4.4.3",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/electron-to-chromium@1.5.412",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/esbuild@0.21.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/escalade@3.2.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/fsevents@2.3.3",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/gensync@1.0.0-beta.2",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/jsesc@3.1.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/json5@2.2.3",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/lru-cache@5.1.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/ms@2.1.3",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/nanoid@3.3.18",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/node-releases@2.0.53",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/picocolors@1.1.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/postcss@8.5.26",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/react-refresh@0.17.0",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/rollup@4.62.5",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/semver@6.3.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/source-map-js@1.2.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/update-browserslist-db@1.3.1",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/vite@5.4.21",
+      "kind": "dev"
+    },
+    {
+      "purl": "pkg:npm/yallist@3.1.1",
+      "kind": "dev"
+    }
+  ],
+  "not_shipped_note": "test entries are the full test-scope closure of the service module (mvn dependency:list -DincludeScope=test minus runtime), so a tool that lists them unlabelled is scored as leaking; dev entries are every package marked dev:true in frontend/package-lock.json",
+  "neutral": [
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12",
+      "note": "starter POMs: real graph nodes that resolve to the jars above and ship nothing themselves; neither a hit nor a leak"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12"
+    },
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/software-supply-chain-trace-lab@1.0.0",
+      "note": "the aggregator/parent POM"
+    },
+    {
+      "purl": "pkg:npm/checkout-trace-frontend@1.0.0",
+      "note": "the frontend's own package.json; it is the service's static content, not a dependency"
+    }
+  ]
+}

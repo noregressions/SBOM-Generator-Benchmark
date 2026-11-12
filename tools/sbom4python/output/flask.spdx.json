@@ -1,0 +1,253 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "comment": "SBOM Type: Build - This document has been automatically generated.",
+    "creators": [
+      "Tool: sbom4python-0.12.6"
+    ],
+    "created": "2026-11-10T11:57:21Z",
+    "licenseListVersion": "3.28.0"
+  },
+  "name": "Python-flask",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-flask-619bdffa-dbb4-4e4b-883a-f401c7cc2f14",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-1-flask",
+      "name": "flask",
+      "versionInfo": "3.0.3",
+      "primaryPackagePurpose": "APPLICATION",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/flask/3.0.3/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34e815dfaa43340d1d15a5c3a02b8476004037eb4840b34910c6e21679d288f3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "A simple framework for building complex web applications.",
+      "releaseDate": "2024-04-07T19:26:08Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flask@3.0.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-2-blinker",
+      "name": "blinker",
+      "versionInfo": "1.9.0",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "Person: Jason Kirtland",
+      "downloadLocation": "https://pypi.org/project/blinker/1.9.0/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba0efaa9080b619ff2f3459d1d500c57bddea4a6b424b60a91141db6fd2f08bc"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "Fast, simple object-to-object and broadcast signaling",
+      "releaseDate": "2024-11-08T17:25:46Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/blinker@1.9.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:jason_kirtland:blinker:1.9.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-3-click",
+      "name": "click",
+      "versionInfo": "8.5.1",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/click/8.5.1/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8bb5376d2006950386f8c6427613334a2acadc5f559cb80e638d00b4df957e37"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "Composable command line interface toolkit",
+      "releaseDate": "2026-11-06T17:36:59Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/click@8.5.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-4-itsdangerous",
+      "name": "itsdangerous",
+      "versionInfo": "2.2.0",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/itsdangerous/2.2.0/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c6242fc49e35958c8b15141343aa660db5fc54d4f13a1db01a3f5891b98700ef"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "Safely pass data to untrusted environments and back.",
+      "releaseDate": "2024-04-16T21:28:14Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/itsdangerous@2.2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-5-jinja2",
+      "name": "jinja2",
+      "versionInfo": "3.1.6",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/jinja2/3.1.6/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "A very fast and expressive template engine.",
+      "releaseDate": "2025-03-05T20:05:00Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jinja2@3.1.6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-6-markupsafe",
+      "name": "markupsafe",
+      "versionInfo": "3.0.4",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/markupsafe/3.0.4/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dd8ea6ebee7aedbf7c749fa80521d9ccf1ba473e0d1e14805caafbaad281c889"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "Safely add untrusted strings to HTML/XML markup.",
+      "releaseDate": "2026-10-02T23:04:20Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/markupsafe@3.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-7-werkzeug",
+      "name": "werkzeug",
+      "versionInfo": "3.1.9",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/werkzeug/3.1.9/#files",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6392e50c78460ba618e5b21f08a71f59c99ce99cdc6cf6e3dd7e6ccca8754fab"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "summary": "The comprehensive WSGI web application library.",
+      "releaseDate": "2026-09-27T18:33:39Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/werkzeug@3.1.9"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-1-flask",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-1-flask",
+      "relatedSpdxElement": "SPDXRef-2-blinker",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-1-flask",
+      "relatedSpdxElement": "SPDXRef-3-click",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-1-flask",
+      "relatedSpdxElement": "SPDXRef-4-itsdangerous",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-1-flask",
+      "relatedSpdxElement": "SPDXRef-5-jinja2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-5-jinja2",
+      "relatedSpdxElement": "SPDXRef-6-markupsafe",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-1-flask",
+      "relatedSpdxElement": "SPDXRef-7-werkzeug",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-7-werkzeug",
+      "relatedSpdxElement": "SPDXRef-6-markupsafe",
+      "relationshipType": "DEPENDS_ON"
+    }
+  ]
+}

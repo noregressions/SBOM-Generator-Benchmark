@@ -1,0 +1,51 @@
+    i New version 1.29.0 available (installed version is 1.24.0) at https://github.com/docker/scout-cli
+    ...Storing image for indexing
+    ✓ Image stored for indexing
+    ...Indexing
+    ✓ Indexed 137 packages
+    ✓ Provenance obtained from attestation
+    ✗ Detected 1 vulnerable package with 2 vulnerabilities
+
+
+## Overview
+
+                   │       Analyzed Image        
+───────────────────┼─────────────────────────────
+ Target            │  sbom-sample:local          
+   digest          │  9de3dcf49c98               
+   platform        │ linux/arm64                 
+   vulnerabilities │    0C     2H     0M     0L  
+   size            │ 50 MB                       
+   packages        │ 137                         
+                   │                             
+ Base image        │  python:3.12-slim           
+                   │  5e2bdb1b0d54               
+
+
+## Packages and Vulnerabilities
+
+   0C     2H     0M     0L  zlib 1:1.3.dfsg+really1.3.1-1
+pkg:deb/debian/zlib@1%3A1.3.dfsg%2Breally1.3.1-1?os_distro=trixie&os_name=debian&os_version=13
+
+    ✗ HIGH CVE-2026-85091
+      https://scout.docker.com/v/CVE-2026-85091?s=debian&n=zlib&ns=debian&t=deb&osn=debian&osv=13&vr=%3C1%3A1.3.dfsg%2Breally1.3.1-1%2Bdeb13u1
+      Affected range : <1:1.3.dfsg+really1.3.1-1+deb13u1 
+      Fixed version  : 1:1.3.dfsg+really1.3.1-1+deb13u1  
+    
+    ✗ HIGH CVE-2026-76844
+      https://scout.docker.com/v/CVE-2026-76844?s=debian&n=zlib&ns=debian&t=deb&osn=debian&osv=13&vr=%3C1%3A1.3.dfsg%2Breally1.3.1-1%2Bdeb13u1
+      Affected range : <1:1.3.dfsg+really1.3.1-1+deb13u1 
+      Fixed version  : 1:1.3.dfsg+really1.3.1-1+deb13u1  
+    
+
+
+2 vulnerabilities found in 1 package
+  CRITICAL  0 
+  HIGH      2 
+  MEDIUM    0 
+  LOW       0 
+
+
+What's next:
+    View base image update recommendations → docker scout recommendations sbom-sample:local
+

@@ -1,0 +1,2282 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:f551c90b-d0bd-39d1-b26c-b5977451f79e",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-12T11:44:11Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0?type=war",
+      "group" : "dev.noregressions.trace",
+      "name" : "payara-mvnpm-trace-lab",
+      "version" : "1.0.0",
+      "purl" : "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0?type=war"
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.platform",
+      "name" : "jakarta.jakartaee-web-api",
+      "version" : "11.0.0",
+      "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1cf0f2583c8af855becce58ad2bb81cc"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "82743558663a068d1e947166e05885fa96995228"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "0cf94f76a21c47bef23e4a85a161bb5abe08866afa58e17771f2870d24f2d2b9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4024dc9ab0db82a88d86d9f661b86cc46e0caf5990e9dd3ffd94f269b486b9b25a50670a182821f9c90147d88e0a24f23c2f0d0d93e3e3e24c5d07bdb8b52b94"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8de1f832635db00b40d3bf8a3799cf07e41b3449d71fc0e49661723f3a0d7512d99c1869c80220c882cf5a49232828ce"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e77c6ee297120d50ea52928192034b09d94cf6abca73b04e6b2c21c6698b81f10332ef24fbde07bd12ea34f32f966df3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ce80ca670ff856cff9ad634f1bfe23eb6a2a18732846b9cebc642f624e3981aa"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c49cd3d7911c622e773c0d749cbe6d1e9805d7de2de7588e9b23a836847935679be0906ac3a2d22b3f7f7582d8d1cfda3970d18e600575e77f5aa1495547a4e0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j/jakarta.jakartaee-web-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/jakartaee-api-parent/jakarta.jakartaee-web-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.platform",
+      "name" : "jakarta.jakartaee-core-api",
+      "version" : "11.0.0",
+      "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "27ee9d0e27ad03f42df10808d6a4d1f6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "0eda53d5dbeab9fe18163ee95a9b3e745c5bb564"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "4c354cec3217727ecf58aa8441b4bbee2b9f8f35da4c12432b2bd7131293d0c0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c3057e9e7d2142801917dbefe9e1cba2fae022ada2a7927a009731f9c1fde0516f7bde99d5caf66e0363ce08296292ef9460e34b307314376c5c2ec23c7df4f8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "ca3642ff5b2788c2e40107d6a7d5e3be5cc5793e1ea9ccfab20501a4d5719b825f8dd62723ff6d2b3436f5015907d9d5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b88e15a0919a677e757136722eb010379d2d6e5ed1c173fa8102c629e1cbeba39b7a7837ca894d486f9514dad732653c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "341140a4be5b27ab3e5302903403b0632dee001e518fb15364a0e393dfe1bf27"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0975cb3901657f72f04f22d790d723f3786ef549d66a3af05af6c42d3f28a0f7d09567ef85f1384bf5bf9deec5df47b1ad561ba77c95e8b441769cb9fee8f5a4"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j/jakarta.jakartaee-core-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/jakartaee-api-parent/jakarta.jakartaee-core-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.ws.rs",
+      "name" : "jakarta.ws.rs-api",
+      "version" : "4.0.0",
+      "description" : "Jakarta RESTful Web Services",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9b7cc90c000f193157d60d95caf45972"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c27a67f84ca491efcb3fa68f4df926e8a110069e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6368b126cbcf34e694bb9ba5b9fe3e5040b7acea7ce622e636d698bb085fd2a6"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e423f90e5f20d133986c60c3fc2f63cfc74531d51b57bf38942cf8e603d8c6817005708117b0bb07e242eae3ba6e1cf23c6ded8fb2776274a9382505ea726ac1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "494b2962ad17d9477d58125cd99d4c0e52e58e10b7ad81e66196649da6651a3187d1ccf64e642083d0a6e54c70f07401"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1803d40582c05b6956cfeb2cfc7b39c03f2211d4d8511b2b9df2fc4c5830f5a1f8e05d86731f4b168caa3a78bae28d69"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5e91619ebc4cc811f1639acf926dc4935ac38808d5d834b6d6f26784d7299e9b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "48c8ed0acd56c83a0d9413bdaa950c92345ac0f36491745e8675b96909c35311fcb05bd80839d0d1247eb5b373754ce5d922d99d06cd1ef9f6063a491e51d671"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0",
+            "url" : "https://www.eclipse.org/legal/epl-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/rest/jakarta.ws.rs-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/rest/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "jaxrs-dev@eclipse.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/rest/jakarta.ws.rs-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.json/jakarta.json-api@2.1.3?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.json",
+      "name" : "jakarta.json-api",
+      "version" : "2.1.3",
+      "description" : "Jakarta JSON Processing defines a Java(R) based framework for parsing, generating, transforming, and querying JSON documents.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "596997520702889d4afef9cffbd4b71a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4febd83e1d9d1561d078af460ecd19532383735c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "bc934142805ea1d794f1440563965a3861a2a9fb7414ecd3fe44f26500734414"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "5a6566f0ceaa8b0ca40ae643942c0d46acd118a3b4d85af5f3a977e738465e8c8d4bc977f0c3e4b51f4471e408c28f66dbc0b19adf61237f6f6f7fa1d0dacc31"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1a17b8a416692ba0e485d7290782b2b5c4de8cb65c2043f221381deee668953655c221dc3efa29d3c65c8b2c1fab173f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4c009f9fec6b1e14b2c675ee7addb49ebd047d71d7aaf31601ccea3ffe4af1d82838a3452b0e5d7c2814e27861cd3ffd"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5b839f4645dbac0d1bc76a91e168a52574c2bb6de0b7e92cd14aafd0ad6a28b0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "fedcd8618f44ab0b771bef7d2fcb61d49021eb2e592d8d3058d3f57e7fe0ed1a9239cac859fe534dd0629aaf577fb8f77841412dbb3ae58b8d8cd0754da2ec48"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0",
+            "url" : "https://www.eclipse.org/legal/epl-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://projects.eclipse.org/license/secondary-gpl-2.0-cp"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.json/jakarta.json-api@2.1.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/eclipse-ee4j/jsonp"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/jsonp"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.json.bind",
+      "name" : "jakarta.json.bind-api",
+      "version" : "3.0.1",
+      "description" : "Jakarta JSON Binding is a standard binding layer for converting Java objects to/from JSON documents.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "579e56e9b32fedf2d67bdb2310b54b7c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "af7f10b8aa6475b6f6cc9d47ad85748629d05b79"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d937f01c12d416f0a615a87cd8251c2bdd45f750244ebe288c4ba6d469db0377"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a8954aab87e21cc8b03f02254e27efc2feec3cb23cb4d0c55e3a4b537deb32ae2711bb0c3c83e4fa6c9ff2651f9f9d0f9f1b7bc85ce21fd4bf7a2c9f092562ee"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "08beba91eb79896ff1388705c63d8887c955a5cc2a3ebe0293dd12617c9a6a0d86643fb7587a5d94200fb770d9d057a8"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d03a53281b8a09372cadb3639b54b1c11fd0b667bbdbeb7141bc9491db5e3c7a637ba8d6920ff419e15b6d2de3d121ae"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b28c7f95571b1012931cd110ee383fe27da2c756652ea9407a2ccf2cd8e11f3b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c25025163b413da2ce47ae8fcea4f2b9a6816522d5e471a10aad80a8dd4e431de44911c828ed70a2360519657880ecf427773a6ba40aa000ab08608cdc4a6ef6"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0",
+            "url" : "https://www.eclipse.org/legal/epl-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://projects.eclipse.org/license/secondary-gpl-2.0-cp"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://jakartaee.github.io/jsonb-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/jsonb-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "jsonb-dev@eclipse.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/jsonb-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.annotation",
+      "name" : "jakarta.annotation-api",
+      "version" : "3.0.0",
+      "description" : "Jakarta Annotations API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7faffaab962918da4cf5ddfd76609dd2"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "54f928fadec906a99d558536756d171917b9d936"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b01f55552284cfb149411e64eabca75e942d26d2e1786b32914250e4330afaa2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2bd5a16684c4e8144897ba6dc467628d1b8a85326235240e4c20101b6df3681d23aeebc30ca99e395ec848f33cb5244085031b2a0fbce746c8ede7148a5e7c1d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1a12cb78019d310eb08314f863c2a0e48aa2845bde844f8204e653ec50713bf135cc58cce882e14ef631327952b5ad99"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a0dd7dd32e8dc5ed679589f6066f16593b52334b9947a71381aeab44b3cbe295ec24dfef4fbfa5514ba24ea60fe042a9"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6ae915a05b483f75c51f3a109cf368842d186b2996758b8a106377a7a9485c12"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "52f611aa0a98812e525be2b9d5a5712aef660598cff64282dbd9afc237560f442ab745fc95c919216f9cb4197c224ba6c7317282962c638fee956925bfa031c0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.ca"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/common-annotations-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/ca-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/common-annotations-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0?type=jar",
+      "group" : "jakarta.interceptor",
+      "name" : "jakarta.interceptor-api",
+      "version" : "2.2.0",
+      "description" : "Jakarta Interceptors defines a means of interposing on business method invocations and specific events—such as lifecycle events and timeout events—that occur on instances of Jakarta EE components and other managed classes.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ef5c0cb454edafbd9e5b3cb0f728f61f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ed3605f9c5428d45549d4720235f3e943339f39a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d240d72b4dd38a2e431c804079810010cb97903678fa5f987fb7434878b04398"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "65bb8203b716886bdaef6e244609c62242414b6b52121730351e1aa8125d99ffff9914dbf4ec2b91b67b935190d0b8090cd01dc76d379bb0f21c3bd1130f2374"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f43a91e011b4b827883dcbdb821338dd285bc19f2908fe8d6e495eb0c2436e368a20856ace2bff346105c8a2b2ce3ca3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "73d34e495d749d8f1347a064434f8d28c0fcfd9a275c19ebf2cedeff465c037932dcfcf6cc767137bd235207ca3a5eca"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "358609dd821720006541fe8e8fda87280a979f6d3b3064fefbff8b1bd671069c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "50272716c6fa952a6b9652fe791571d3f80fa88e95970837534216c6e3713354eb68dc47ec5601ea56708987449eb47bf242697302592b30c13cdc0ce77d26f3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/interceptors"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/interceptors"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.enterprise",
+      "name" : "jakarta.enterprise.cdi-api",
+      "version" : "4.1.0",
+      "description" : "APIs for CDI (Contexts and Dependency Injection for Java)",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f72ee39b19274ffe26cac952acae6dc3"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fed9518709d33252bfe0817fe61ad4dfd1b2e848"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c42c808f17925129a0800f618febe050d966e181a4c7384c8a5e7a0283d68699"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6fa4bb391e04096f6d703a64fd1f25f1201016fce330877d41f6b5f13e33704789f21f3fc015ad903a3f0802ca392adb2d5b28a3daa9f4274e071fc484a33344"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5b6bf4c4deaf6b97702841785d7c172fc634ff4b00424d1d79849feecdf4f82ba5817b6c86e36a1e05b4223de5d67cd4"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7732dda6a04a288f0fbab63ea90bb36a9761a64713e9bf46210033bc0cbe448ce729326071169d5cdc77f930be95de58"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "04b61fb30d2fb7c5c5bd09a963f7fc403ed6ff1932ed2db657ea640fe90751c6"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "63cc1e4b85f5fc4e52ade472764b28fd6b39d765c29c994cc88944758ad1c3fdb89fd9f047aaf125b716df0a67f4b99554b13c8337f361815bb9280c1cb92ec0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://cdi-spec.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakarta/cdi/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "scm:git:git@github.com:cdi-spec/cdi.git"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.inject",
+      "name" : "jakarta.inject-api",
+      "version" : "2.0.1",
+      "description" : "Jakarta Dependency Injection",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "72003bf6efcc8455d414bbd7da86c11c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4c28afe1991a941d7702fe1362c365f0a8641d1e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "f7dc98062fccf14126abb751b64fab12c312566e8cbdc8483598bffcea93af7c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f186b2ada470abba1cc3b4f8c4373d940fb7c71a051b2c26f7c204ad4dfb69235fbf3f9c33da36d744cb90f52d921c51d76c0ff263bacb35eafb66cab83dc47d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "405bd297a73901f013d48a0da028d04d400f3e61f4997c0e7297eb08120670a0e242e0002db8f130c33ab16cb02feb2d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4db7e54434d0a208c876868f5595b808f2728c0455feaa752ab7b569a2186fc37cb891c9aa0076de3d08f6da6ff06eba"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "3a5aba9f1ff1a130b76af886123eb375fa578498490df3dc60bb7ce7d59e9404"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "00bba8efc2d6e7f0a509b321868d75f1aaf0681a750d089d913bde8424ab7bb88aadf49de6e291e352523e4f8c117b1b48033ff31d4d665dcc43c4c6ea000ba9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/eclipse-ee4j/injection-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/injection-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.enterprise",
+      "name" : "jakarta.enterprise.lang-model",
+      "version" : "4.1.0",
+      "description" : "Build Compatible (Reflection-Free) Java Language Model for CDI",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fd9efbe0808984a89690e04ea28cd368"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "9270ae3df4239d4f337215403ebc9801fe659a2b"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "bb56f571f60d2862b2387d5468fe8f5540f8094727283ed991f89082708095ee"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e5c3e8f38814be3715cc063e717e03084a754642b453148bbcb450e923cc4bd58bee22c27f2fe7033859a2cc07c9b352ce022825b99e0ee7ad8ee219458c32bf"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c18eb1e055af26a82e5d6408f207da4263a0d283ccedb53bea79179fb7bbfc6acf0fc01ce526be985fde1ecddaab0a56"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "27eb70531c47123172b25339ff2da6e4a7bd86f3c5dd09b4ebdebd1c1e35a9d08a25fa77ef1cc6f5d52226d6b6bb72d1"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "35114f5fb918be3fed31f0c46a14a59eca837a767c29b4c079300286b9295a63"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c19c02f80a737dbd74953021d4053d751d84ae1e3e3e92f9c95418f6d3cade727ddb166766581d800cca1dab0080ac9bc87e599525330e1a5d752dddedd03db5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j/jakarta.enterprise.cdi-parent/jakarta.enterprise.lang-model"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/cdi/jakarta.enterprise.lang-model"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.servlet",
+      "name" : "jakarta.servlet-api",
+      "version" : "6.1.0",
+      "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "314c930b3e40ac1abc3529c7c9942f09"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1169a246913fe3823782af7943e7a103634867c5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8a31f465f3593bf2351531a5c952014eb839da96a605b5825b93dd54714c48c4"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "8651fc14b79e284fe29dff5b2cadbf6748615ececde798c42687472f4f6fd1f80ee05ec53794021c62a11abed0c0170bb08b28d3f9cd7f562eb320bc9870ddec"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "48b2a26351619286ffe41d25e5e61cbc0eb8a5a648a205d0f8db48178278cb16850469fe8dbc219aee0ee37f4081c248"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "2047f0b88a12619fb3f07a98048fc405e9cec4ddee6af2a2efc06c1172d2bebefc6c23bdb4df0a1054060f91d5cc5617"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "4b506d06772f32251cadc40251623ebd4f3144531249ce4821787b1a9c4a55b3"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "07632a67f7ca7b460cfc3042ecf97f9097e7d7638209434def89a3bd55da5a31e287f32def27ce776d5775ec0629979abb08fe2836d88d638802194af0320fe0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.servlet"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/servlet-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/servlet-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/servlet-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.servlet.jsp",
+      "name" : "jakarta.servlet.jsp-api",
+      "version" : "4.0.0",
+      "description" : "Jakarta Server Pages API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6fddc938119e00e6f934c1b37120e338"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a8de3741b91ba7427306104979ab2f084e831438"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "873b7d0c2b5734ef8847634299b67ce879080cdece8426147522c4db8e37c14e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "ef2cce7838808082f1de88a99313f4e089ec5a326b44753b4241b04e64272532565443bb2c44abf1099814165b1d00ffd1dda1f0d57cfcac42fc16d8ed8560a4"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f4445deb7a91d408d3532ad606358dd8bba36c920d03fa4ce46bbc1694339fc2f16fdfd314c18874853fdbc0cb652716"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3adc8d0e70854f6c5d9d9714ab1cc81778c56f8ecdca3e0fe09ec014d7f2c66bc9b67a373720e4e1e5e100b7b221f1d5"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "c57502cf26b26bd5fdcf26afdf1cfa0f7078c58a0ba8ef7aba9ccfc3657802d6"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0b7d6a09c1b43e77138f556cb6558fa7ea69838f6c2052a914723fa6d8b371704c2eb48f63965cbc187548445ff454ff539578466ef924de01d60000569b7a75"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.jsp"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/jsp-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jsp-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/jsp-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.data/jakarta.data-api@1.0.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.data",
+      "name" : "jakarta.data-api",
+      "version" : "1.0.1",
+      "description" : "Jakarta Data :: API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "fa0ad657a269791738edafd6fdd51721"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e6181c60a6e8b2278b76e066021d2f870e594554"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "68fcefdf0e9e6804edd0050f740d181b6902fb40fa4de0345aeec06dfddc1861"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "8ad29fce722982f5f3141338c18165ea130ce75d4537a38ce23695b1d8a7fe0856003b763da23ae5640bfdcb25bf6535dbdd5c4d7bdb080cdb488082b936b020"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f1be52cd1d17022899291c64b6921fe5d1f3829d414a145be3407c63149fd8c0757f641659a4bd6921c55bddd187bc7e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "dbaf79fa5bdf3de3160f10d17d8e13399c8d121c8877d74d2fa41ed090521b2ff4e8b60c08c63139262ce1d5ac4a3ad9"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cd57efd92c17672073fa23564a77c79182561831aee1e870b1917c99bdfb68d5"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "373664b4d990d5b71bf17709d7fc14f4c2219b0c6204657cfa9d7ac2184b69aff48eadd6f4628e325b427b977e0e0d9acd686b8dd194d2f50414f281aa1746f3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.data/jakarta.data-api@1.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "www.eclipse.org/ee4j/data/jakarta.data-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/data/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/data/jakarta.data-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.enterprise",
+      "name" : "jakarta.enterprise.cdi-el-api",
+      "version" : "4.1.0",
+      "description" : "API for integrating CDI with Unified EL",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "42de9379a161c1f80797fe6e06b85ee0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e828a0a57b258c9e155a22a8c7ad726e2a675090"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e414c05d2434386387914e38c7419fa77d163cbbd1e5b0fb2b480f26a63b6d77"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3c884f5bb5c7e51fc5d3bb40d212cc9f6f262331ea52f51b1fb67b4458b8d339d89ffb7546fcbf1397a68c8da61a5e0a63483f3c95f8436147ea6fb098515502"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "78e3486648f62dae0b1e66fd33976f0da9955d129ec9f0d1d7029e5a0be27d8dfb8a81d91dee8164e1c443d21ea92177"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "bd06e1dcd55e62b9b96f7cc002689479867950a5cec78b32948d0da02a923283eefb9d0d79f9c10bea5ca45a2c5e766b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b8a8ff64ffc0906d47bf14c8aa9aec3908792e7b56a0920f87d3041c8140c2e0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b573d468fd89b08858a9b670f5ce6c4b9e9505708f132d9acc61490614f0b3e361e816ab1d7ffea0b6d70f6c7b12ad99d7ea81cb4398eea58abb44d9e400d724"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j/jakarta.enterprise.cdi-parent/jakarta.enterprise.cdi-el-api"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/cdi/jakarta.enterprise.cdi-el-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.el/jakarta.el-api@6.0.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.el",
+      "name" : "jakarta.el-api",
+      "version" : "6.0.1",
+      "description" : "Jakarta Expression Language defines an expression language for Java applications",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "a98f097e059552a75748fcdd067e5c16"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c7c4a2eb1e40e0ff45ab5e2e52bd77d8c7a75176"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7e84b5bed49de32b79cc5e85d90b6f5adb1a953ac67283adbb41c1e297f9c605"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fbab7bdf18e9bfb316b519a8c3b3d1f2e769e3f318b72e46cf33621f2942b84eede9b97970ff46fe29b54f8d61cb0df9e584d371f10e56bf0050d7727eb0ee23"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8c9c0712f90e359567fb2f080a18d38227ebd3096730980aeec86ee290b79f79cb4cf9888f72944ac240c01330828344"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3c82d728737f09f400956a25664b008a307a359f33084ae9304ecf850b2b8448b27a7f017a6630299b7bd7ea4dddc239"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2e870db1b8d460705534cba4ccd57b2d8247db1ff9bba831e2b2aef28261b4ea"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d7eba15a92c49d1061ed4ac4c6a298dcd5b17896d8de214d5ad560624c2e2c855e9846626821754c47b898dea656ab516138d0ef607d5faf7c1dbed8c660ee6f"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.el/jakarta.el-api@6.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.el"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/el-ri/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/el-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/el-ri"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.servlet.jsp.jstl",
+      "name" : "jakarta.servlet.jsp.jstl-api",
+      "version" : "3.0.2",
+      "description" : "Jakarta Standard Tag Library API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "a9426f66c4019d38042c4b446f66b95e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "3993114cd341afa42b2c2841c88ef653fa7ef3ee"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d55951aefedb543cb16193a873b92d22c40c3b8ba26cfa7ed9229eb118bb9c9b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "244bf503d2f501c474e5da82b3adf94715cbaf942eee8915e4670a0ca402a6d60fafe8f7c0680f2ac7a7f92e26fd8012870b3736b1d85f6f685a7d2f5c1beb61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "79eccac9e308dc71787b98fd556171a1497e8c0ecdebce9433467236bd6fb3b8043d213bb4eec913b741f7c882f30b38"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0aeaf3ad5132ddc085bf4284d3b774e0285ee89456308f199afd0196060cde84c3a721aa6b1b53e7dcb3769875c7cf39"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "0c13993967dbdf98f7ba925036fd208313c76d6c3d8cca2689887d8d379538fa"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "45239cb0272261bd66f7962a35ca6e2a954f6cc72e6ad227baea872f7271f916a88dd6d427c2ba76bceb5f42152c1e5d1aec713348da71a5968d4efbb89659a3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.jstl"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/jstl-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jstl-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/jstl-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2?type=jar",
+      "group" : "jakarta.faces",
+      "name" : "jakarta.faces-api",
+      "version" : "4.1.2",
+      "description" : "Jakarta Faces defines an MVC framework for building user interfaces for web applications, including UI components, state management, event handing, input validation, page navigation, and support for internationalization and accessibility.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7d8f4a2b8e98665611d1f6cad8fa96d0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fce1ece1f71967d04218bb68e0bddedd22569f1b"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1fe1895697ba9f189b1c86b0c732964eadeee76ded5e22ccd198bb85aac257cb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b1116cac51f4aeee3f09689052e8ae9c8e67759d38ea7098ca9c2fa6431052558c5991e894c895a8de09d88f6ca3a6c0c82692402c56016b68ec9f7f4b2f5061"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "7658566ae781d2123fd60be2b459f75724a9c642e8ae213ed929647cf80b1d6787cb10fe5a669250d673d5edf91fe009"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "109b90d8c2fa357347c091baf57ff7f0fb740167a7b12bc7eb34a494d308cc6c756adce02f13c32fddaaf72032ccb4b7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "1b878900e1e029bd187e47bcc26958f46da7d364fac44b9422e3283325280ba8"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "dc531e3f91a853fec306232e90c46745b437568869291b8cbeefde7ea80024eed9734d68e1169886df52022e198ebd4749e6e5a7f0401be539e66664a3615602"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/eclipse-ee4j/faces-api"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/ee4j/jakarta.faces-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.websocket",
+      "name" : "jakarta.websocket-api",
+      "version" : "2.2.0",
+      "description" : "Jakarta WebSocket - Server API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "b1098129a9c74ae03d618fb841990ab0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "60e525188fdb42120506debd90ffd4e204fd6f24"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "541d00436cbca0a5e1f6a457c9f70a64f00bd2f83e10ed89c2b372bc34843b7e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "bb90cfd335eb8fbe0df1d4844e3784f9118fac70df405edec00d70097c3253cfff11d3fc238469a04d36a0e58ed9147096f13d58278c800c85b2f47a67bd3266"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "76c80ed1c08ca7157ea05b7cfa5031fab366df638b26294af52444713ac5f88adbb0096d159abfe8b437adc63c82fbda"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "61ba9ceb5af546e30ea8ab7392fd22edb1092ce0af0affbbb45de71021806654568c4f310b3c5cf762d5ea2d118621e5"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "61c09d97dfe0b2505e363e61944e8c62f01a53940c3a6a9f36dac033ae63cf2a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c45459a7c51f288ea702ea4a91d25abdd13381ebafa1d51d6b3050bd6317bb5e23df87a9e56c52dbff9ff340aafef82e31aa2b266aace9809d3cfae3f23de6b0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.websocket"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/websocket-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/websocket-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/websocket-api/jakarta.websocket-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.websocket",
+      "name" : "jakarta.websocket-client-api",
+      "version" : "2.2.0",
+      "description" : "Jakarta WebSocket - Client API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9c363a8d4ab7b78b6160569e27568c1a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "cf7eafc1b929a80429c77e4450c6720a7de56814"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "aa6fa9331a3f470daee0dbfcf084abfbd7a49507297575d5bb8bfbf3d62fe8c0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d5c684bd0f64283b98a321014b484240823a38b8b3e7d21dc9b5ccacd954a321a8e7f8e3cb2216bb2b6dd42ce45ed00976eba3e5f84efd424404998f400c5ed0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "be4f28146659827a12761fd7ef28c7303cc400f3dad0a5bdd6065ca131ffa4a42339eecad2585b425298e31aa01e4864"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "25c9cbbc10a1c14bfa8af4bd58c68b641e098718915efd824d3f1015294be664a640b01776f06803bbdd28f8d8e667d3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d1720bbf5d46462af8aeb7bb89064ef017581683fbddcfc2a0e9b2021a2931d9"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b38f5dfe1720904771b2df5ceaee4aa9f3da9fb99618304df4dd8d2d045bef0f8cc33c6dd6df1810f652d26bbc06c091c9ad50dbff7bc64d39601af4713c6627"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "name" : "GNU General Public License, version 2 with the GNU Classpath Exception",
+            "url" : "https://www.gnu.org/software/classpath/license.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.websocket"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/websocket-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/websocket-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/websocket-api/jakarta.websocket-client-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.ejb/jakarta.ejb-api@4.0.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.ejb",
+      "name" : "jakarta.ejb-api",
+      "version" : "4.0.1",
+      "description" : "Jakarta Enterprise Beans API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1e506e2052807570f819df6ff3f69fef"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "70f6c55dad415f58b8428ae4bb215484368b8764"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "46ca52e9a1df47012ebcccb5319b5709f5b0c7214f954f3337e6edd2dfe6cb15"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a7c262fb3021a1e576dd712c1a4992dd46baa305f36994aefd752900cb39103d794c3846bff224325d2e12e3173cc1f9c7a8f6c82d3e9b987db1b9d849631432"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "93758f01dc9348734183b4cc4554770d291f5af6c495355a397d0318b30dc9c82ec071f60d96ede596c7c6697b3775c1"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "23d6dd4e2a2809c0be12b3c172e3ffbded40b7d9855e9262fda278a0b574b8a2936dcf0019bc33cd3cac7ca0cffc7316"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f914c1686e5a501b179ebf49da900661454e08a69fe73dbca1ba71bcef7e6612"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8095d021ee374ea61f6e8600d529c099466a7f1b6328ca5906d3b5ebe1cd0c21a953ec3b760d5810e43206f59794a0af0d4f99d33c9f9288a9f379a1cdd4d049"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.ejb/jakarta.ejb-api@4.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/enterprise-beans"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/enterprise-beans/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "http://www.eclipse.org/lists/ejb-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/enterprise-beans"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "publisher" : "EE4J Community",
+      "group" : "jakarta.transaction",
+      "name" : "jakarta.transaction-api",
+      "version" : "2.0.1",
+      "description" : "Jakarta Transactions",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "5315974a3935e342b40849478e1c9966"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "51a520e3fae406abb84e2e1148e6746ce3f80a1a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "50c0a7c760c13ae6c042acf182b28f0047413db95b4636fb8879bcffab5ba875"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "13c1a21af3c8030794155a62b4cdc70ba1d951fbfc0aead9e89f3f529e7bb4473a070bd4a6c593ce1c0cfb781332bd62d21cf0b34e3751f99b0de463f566ec61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9484a0adc05a5ea5377f6037ac2d1efa1d59d172ac03b683580f7d3e542d6e26779128dd1a7fab41f7061156f66c3b44"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "064434509905dcaaeebd4e1eaeb26446cb911ff74f30d49e1b0c7f29a0e62fd9f5b84114129ec845eb99cc37cc4b5048"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7d865d16dc3e2a2b7e097a305a33f7fd419ec4dcea2df1e278b66a74e59325bd"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "efe99bb4d2397b5d004b7aac679ec2ea0c13ce6c06fdcaec56b12f07d5938ac5f07df2937478b551955382612e2544819ea7f5827e0f6ea2726bbc1643dfdab3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.jta"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/jta-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jta-dev/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/jta-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.persistence",
+      "name" : "jakarta.persistence-api",
+      "version" : "3.2.0",
+      "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "79acec18d202797dcba1fff596a47684"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "bb75a113f3fa191c2c7ee7b206d8e674251b3129"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "be8a26b0e75c84c1b7600f759256fbc68d60333d89ec0ce3f784fc3ffa09aa8c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "2913707daaad67506551f016fb582612cf76565386b48e9b27ac96ac72f5763ecd1bf8b25fdb06ea94e57782eeaaf6378c709d13221634a23dabbadf3eeadb18"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "26b919c9c720a6ef60ee071787099b9f72096870132bd0df05a258b25ce465e3f0bc0bd9196cd39def76ddf2d22f0e6c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0469ec95cf94bc641edad7085a1afcea5a9533090617900fb1e41c9b3e817bfec560a861ea3271fbd2701b41ab463c36"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "991f44eb42c824663e55cc0e3dd70447381806021d7a1cbffebf51c316112a7a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2e094d39690bee54c2933cbe4de425d65ed965739526cff65a4f6265d85df1dcec0b71cba9629405880cf4141daeb435489c9f27d708d148072202867ee541a0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/persistence"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/jakartaee/persistence/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jpa-dev/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/persistence.git"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.validation",
+      "name" : "jakarta.validation-api",
+      "version" : "3.1.1",
+      "description" : "Jakarta Validation API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "93ce96e77734f4280157edeffcae44e8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ec8622148afc5564235d17af80ea80288d0e7f92"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "63ce00156388c365f3ac1be71fcfaf114682fc0c452020b5df6e7ec236e142ab"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "02483f9d631538a71f436982ed3842c5d054781ec58350ba33fd0e0db92db531caa17abd2e7aa25a062ba4cd5e85b63a27b615041df236ffb979a73fdd121e18"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8e4a235fb69ebf7327fe8947b0be32c76ae8ebb748d0b3195efb87cd1d57ea92402403a59e2c4312a11a3a2300bbb4d6"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7f52280ddd46c87e00c6b10f708aa77d571e68942651ada952b4b9e58805a0216394a31a4666c88908af0a6408c9b64d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "21e404a7897b223e9324f7b709c3038f4ca01599896a0e166cee4eb714b9e600"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6bc15a9beecdbdb881c1ed5d7682156417db766898a14e205a496b8d7e0e552a4e4c2303727b1c4dbc2391d62257b1b9a9504827dc6b8ceff149225d94bf10a9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://beanvalidation.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://hibernate.atlassian.net/projects/BVAL/"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/jakarta.ee-community/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/validation"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.authentication/jakarta.authentication-api@3.1.0?type=jar",
+      "group" : "jakarta.authentication",
+      "name" : "jakarta.authentication-api",
+      "version" : "3.1.0",
+      "description" : "Jakarta Authentication defines a general low-level SPI for authentication mechanisms, which are controllers that interact with a caller and a container's environment to obtain the caller's credentials, validate these, and pass an authenticated identity (such as name and groups) to the container. Jakarta Authentication consists of several profiles, with each profile telling how a specific container (such as Jakarta Servlet) can integrate with- and adapt to this SPI.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "38948ed95369103e7ec3eafbbde0e627"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d06859cab1228a7524bf620a0daf120dc979ecae"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "07307889ba23d7152b6735a30b660207cc1783807cb7b76ebf15e305a6572e7e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "570831b719a9267b4965b42ad6a9ed96a7775937c56d4e5ba016c03195de7f5ecca354e353af98a60fe4552484c2796e1bcdec171bc03306a7bfd17e01bef9af"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "aa52f80cd8de0b3a7397137b551ac3f38021b1be9399d67b68136047f9d0153c246a8d35a5c2456e80a30ffa20d74c0d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4d7a18b50fd3ee52b143ef6e0af7a7230a3bcf9aae389ce9f0232999d706f1389900b6743339227b2dfdd379c4366820"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "fbcec708347c3b4142107b9cfa2addc5d3cff1cd18ecc50a6f1ddc66f2be2efb"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1d221d0a00ce40e3c6fd2f2f2714d1d2b9a156cbfeddfa6fe45e0262c8c9e4f0b58d8cc324bbd52066c1384a73d6a3a78c45a94c4690a91f51bf5829688d5498"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.authentication/jakarta.authentication-api@3.1.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/authentication"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/authentication"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0?type=jar",
+      "group" : "jakarta.security.enterprise",
+      "name" : "jakarta.security.enterprise-api",
+      "version" : "4.0.0",
+      "description" : "Jakarta Security defines a standard for creating secure Jakarta EE applications in modern application paradigms. It defines an overarching (end-user targeted) Security API for Jakarta EE Applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0acff0b7b69ba35203b8626496640092"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ea039393041a99ed6f6b3c5a072303519cd332a5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e9e225c5279790502b5c0c3116a54f90d6b3d5167bbbbae8f71ba2faecf0a7d9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9431dd5bf934aad692f231e86e97ba562df1554a1ab1eb02e846770e9884b4698ac31b0b18703f9fb5b2f9211cdf9aaf7e6fafc8d49efe58fcf7d49a57885802"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "3afe1e7e706e970b173d39e2a41d2ab9119201729832da532399aeb3c24cfcfba4ff68c6ea40ffa6157602dccb9b5db3"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "78b439811ca038d4c4fee4d022e5f046a3dd8e61cd5d3c615b4eed550e9c913823acee924964563b91afab77f8a629f2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "68c0cb4cabce7d772251de9883ccf95dd0343f58f62f791461b63b39c54ff5b4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "001896557883ae4352c33001ff7a6c640688cb146e5640da9e27da5c3a92aaa0d10743e08a9065b3ce570beaa6c0b665b186a1369a7602fca138699d89e39f47"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j/jakarta.security.enterprise-api"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/security-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1?type=jar",
+      "group" : "jakarta.enterprise.concurrent",
+      "name" : "jakarta.enterprise.concurrent-api",
+      "version" : "3.1.1",
+      "description" : "Jakarta Concurrency provides a specification for using concurrency from application components without compromising container integrity while still preserving the Jakarta EE platform’s fundamental benefits.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "665e7b94cbd924d613a5e1aca8a766ad"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "173033bc9291f7fa6170853df9e901437790d507"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "4e96fe31b9e64d8a9a8ddc68189e7f2bc39aa50feea4c65665a26662f9e8bd98"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b8b8971b0983c3f4c4be5596f505f60666c44f1546d5e125d9078026e603320376b7f1ad1257122637b893e850a8424ab14e91c53cfe6ce0d542180dad633e97"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a3c9d56d743e50239c0f98131f60b5543763bc97cb2f9550e30a36263cfb24b545d5fe1f278d0248d9734ba307d59fca"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d0fe3d945143f38d97315babd7a79a2ff8d5278bfa7a2c18e9b17f049a09e3d8c86276e87db66c2daaf1afa81bf8ce9b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "e1b60719e36f0ece87313cfd4d959d3bcc397f25b0f21db7f07bc5c920c33b15"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d17f2ff17b81f8e1b124d74d860f609e0567c76d28dc0a797da399d27e8d5a5695e690d4478f7f791f2cfca4097192dcfc3f30cf83e94d9a283bea8ebd6263b1"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/jakartaee/concurrency"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/jakartaee/concurrency"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.18.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.commons",
+      "name" : "commons-lang3",
+      "version" : "3.18.0",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang. The code is tested using the latest revision of the JDK for supported LTS releases: 8, 11, 17 and 21 currently. See https://github.com/apache/commons-lang/blob/master/.github/workflows/maven.yml Please ensure your build environment is up-to-date and kindly report any build issues.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "48b9886957920a4cdb602780ca345087"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fb14946f0e39748a6571de0635acbe44e7885491"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "4eeeae8d20c078abb64b015ec158add383ac581571cddc45c68f0c9ae0230720"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c2c9d497fc1be411050f4011b2407764b78aa098eb42925af8a197eabdbc25b507f09fb898805e9bed4815f35236a508ee5b096e36f363df4d407232d50fc832"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "4fb3f101106e4ce3666d5c15d276ba86f7683a0ef35f0384edfcd579ea454275edbb7400795d265ec3a38e39997e79b8"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "aada7e3612cf3f6190a19fa7c3db74df1e13ec56b300be9bb4317d261d5877c84ab59ba9a09168becdbd82cd41961395"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "306d286d0bd7549c203cc802fd755d354c4f7926fa023f4e83623ba1a6261250"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f6f1ecc684e309d7b9fc5c343792508fee935cd2119d962721662c5af88e4864ba6f47a863e083714f315f926c156de1970cd2fb577449bdfdc7bf98a4a451fa"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.18.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://commons.apache.org/proper/commons-lang/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/commons-lang/actions"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LANG"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf/commons-lang.git"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0?type=war",
+      "dependsOn" : [
+        "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0?type=jar",
+        "pkg:maven/org.apache.commons/commons-lang3@3.18.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0?type=jar",
+        "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0?type=jar",
+        "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0?type=jar",
+        "pkg:maven/jakarta.data/jakarta.data-api@1.0.1?type=jar",
+        "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0?type=jar",
+        "pkg:maven/jakarta.el/jakarta.el-api@6.0.1?type=jar",
+        "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2?type=jar",
+        "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2?type=jar",
+        "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0?type=jar",
+        "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0?type=jar",
+        "pkg:maven/jakarta.ejb/jakarta.ejb-api@4.0.1?type=jar",
+        "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+        "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0?type=jar",
+        "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1?type=jar",
+        "pkg:maven/jakarta.authentication/jakarta.authentication-api@3.1.0?type=jar",
+        "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0?type=jar",
+        "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0?type=jar",
+        "pkg:maven/jakarta.json/jakarta.json-api@2.1.3?type=jar",
+        "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1?type=jar",
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0?type=jar",
+        "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0?type=jar",
+        "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0?type=jar",
+        "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?type=jar",
+        "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.json/jakarta.json-api@2.1.3?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.data/jakarta.data-api@1.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0?type=jar",
+        "pkg:maven/jakarta.el/jakarta.el-api@6.0.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.el/jakarta.el-api@6.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.ejb/jakarta.ejb-api@4.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.authentication/jakarta.authentication-api@3.1.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.18.0?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

@@ -1,0 +1,1086 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:5b9a8bd0-03ee-34df-a853-3f894a32aac3",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-10T16:00:26Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar",
+      "group" : "com.example",
+      "name" : "sbom-sample-maven",
+      "version" : "1.0.0",
+      "description" : "Small Java app used as a target for SBOM generation tools",
+      "purl" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar"
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system,test"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.17.2",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3e1ff7c1f0fda885946619a47ef9d5de"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e6deb029e5901e027c129341fac39e515066b68c"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c04993f33c0f845342653784f14f38373d005280e6359db5f808701cfae73c0c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "ec62267bf58aea531ec7f253e67974fac89e8aa61e7b54a7fb00edf3132ecb969b510630fd353adbbd2ab7d845a25702f168c296c57983a00bd6abc9ce3630f9"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "d2de4602f779a456d0037f9d64efa8bcf9a1a9f06e3c628b2a3b2313319e22209cdfab9157f9251243bc05da870bdcf4"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "14618ad7737700ccd941feefd0bbbb7235ecbc1ac0cf22ba1bd72155eb68a800e98fe72f6ea03ab71cb9927a1d117d39"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "800f9886351c0968d6640e9c7e312c963b0146022fcfc27b173d06fe0c581041"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "49ff7e89ab8936043ac9371cc05c57bf88899a91ca11bd50227c58da9e6716c270e38c34bade5ba5cf39ed6443edf538bd25e85127c3e22f6788b84e14f3019a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-databind/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.17.2",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e68e7e593ae47e106421688707683297"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "147b7b9412ffff24339f8aba080b292448e08698"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "873a606e23507969f9bbbea939d5e19274a88775ea5a169ba7e2d795aa5156e1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "006d3a054b22daa7f378b005cc29b3544dc7f3b509176e0eac946e0a3bafa73b824bae61b5183b61938b19044d2142a285da2fce2ffdaef5bfe91b2d8dcb6804"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "edb09e196ede070ba1ab1b99e96be6049f60b664eb89e60e28f08327e510e7aedf8c4696bc719113d24fe3367b8b89b7"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9c54c25762e7b5e05c5e17deaa35ef5b9af764fb3e19bd790479920d9fb7084f3e89dd2ea2ef2fd680e72aebe74ab271"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5d1625676fc95b4625ef73658e47074a24804518d1455a610ff40b3017b1b86e"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b4354ed913789689ac4f7dc7385aa2de383324a6b8ff59a2497b6b605c2451bec372c8a4335189c916b24c7a68e83102e0f53fca54c2389f2006ccc84a5eaa17"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-annotations/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.17.2",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "50c2dab1f29136714d5ef5c6c640336c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "969a35cb35c86512acbadcdbbbfb044c877db814"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "721a189241dab0525d9e858e5cb604d3ecc0ede081e2de77d6f34fa5779a5b46"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "694ae3bf756421d925f833f59a6309c7748ac3a68b28ed4de8ce0d6f93347dfc19991d1106db911c7da78e20734e6f44a02caef751150378a6ffa638c80fc75b"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "acc969e3c312f9d2694e3202eb601dbe2317cb9a444dcb67f6e0f00871f6d5593bebcba272afab55f2541c6a7a107842"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "890610781e8f8c3c1283d8f6bd446d19dd5d83107a852f1446d5d2a4fdb57ff611b36b2267eba46746a305607c5e586a"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a4b8acc3fd90cc86a9a1507a3e51abf984521f9189218f17a3b551e0a7ccdf44"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f55e7d0b7a68919c8f8d3b5472796ecb82df852a97b1bb4bb0b45d1f9408d50545b717e8632f7ff975b77541e4d4b35de6ed32eeaff556677227b0985a74172b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/jackson-core/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.commons",
+      "name" : "commons-lang3",
+      "version" : "3.14.0",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4e5c3f5e6b0b965ef241d7d72ac8971f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1ed471194b02f2c6cb734a0cd6f6f107c673afae"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0338b50767166e5746ada6d6aa2e071e7221d699323bfb629f7f204b294c1dc4cad140610a129ed751798443b43e74e0818989c7df7d33c5915aa29742be9ba8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "908d0a22dc17aaa04caa5104cff7cad5b88b77eecb78dd5b3b3fefa22ff71ac50a4fb9e31c897ac243f9d841e4b3453d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8a7f2e061b998780870eddd571620fbf3d3c70bcb54e24539d0db504f59d65bc6bda58136284498babe29fcc5eabb7a6"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "022bf1f8039fcea717e9e34dd96eb80cfff05b43c9cbb76e9739b2421e2d027c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0bcbc4edce974ea970c46e2da12ec98d9fd962c2cf64f757ac97136dec5623ca52af0c225895303c17ffabb57090e6772d7bd326d5e7438cef5454f8bbaeecfa"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0",
+            "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://commons.apache.org/proper/commons-lang/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/commons-parent/actions"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LANG"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "publisher" : "QOS.ch",
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "2.0.13",
+      "description" : "The slf4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "7f4028aa04f75427327f3f30cd62ba4e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "80229737f704b121a318bba5d5deacbcf395bc77"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e7c2a48e8515ba1f49fa637d57b4e2f590b3f5bd97407ac699c3aa5efb1204a9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b4eeb5757118e264ec7f107d879270784357380d6f53471b7874dd7e0166fdf5686a95eb66bab867abbe9536da032ab052e207165211391c293cbf6178431fb6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b67cbb4ef32141423000dd4e067bf32e0c1dd2c4689c611522b9fedfc1744513175a22f4b1276f2cec4721c9467cf882"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "817fc9641f4fc52bfd76006886c6eba975f6f09b2a7cc59334729a8cc033807c8e89be9ec4309acfc16ed65ff6eee018"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f26080cceb5a2e605f3844d6dc8dd3f14c543cb14510765d841d71a64fa454dc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "00646c78d65ec854e157638f40735f1888aa585ede59915d58386c599c2fe54ec8c1da73284aeff00ce3142165e33c4c995ad39d08843c31e9e4d7e32c746836"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.slf4j.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qos-ch/slf4j/slf4j-parent/slf4j-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "publisher" : "QOS.ch",
+      "group" : "org.slf4j",
+      "name" : "slf4j-simple",
+      "version" : "2.0.13",
+      "description" : "SLF4J Simple Provider",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4196990c1480726609474e897fe0bdc7"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "be11a3f05f7cf546524b07ad252719d840f4daed"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "3153fe1d689cffb94f1530b58470c306685ba68844de8857116e3b6ebb81d9f7"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "9e79240611ecb9847391937a9c0e83b1ce619a370a0ee61d66d41117c44f453df7af69853268f023dda46b1209b1cad0f0e2ede4581c8bce60e72083ae017e4d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "755532c356fb975146c27df0159513b3c28033fa70409078db2b0619733698b3df480cdc66448c55cd871c38816b6a28"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ca83a11ffc1a45d44f9bb9e1fce2404c226c5236f109484684308a366928d0acd23bbab27bf0d229cb6a31bd438a6252"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "56c7d2f5786de03c09ee0b9d2f58fe88fba6869ef6b2a4e59daf2fbf27ce2ae4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2a020ca02c100d460843788a868283da12ec6d6b81e10fb476aa929f39a2d2e886bf86663db13272fc19166fdcad8f25796103b7c37490ec1a9926ae4acd4fc7"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/license/mit/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.slf4j.org"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/qos-ch/slf4j/slf4j-parent/slf4j-simple"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter",
+      "version" : "5.10.2",
+      "description" : "Module \"junit-jupiter\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "74440a4d6c038ccfe822debfa779a9fd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "831c0b86ddc2ce38391c5b81ea662b0cfdc02cce"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "263e43447f4b40f126ad6b1dcbd7df379448413bdedb8e0d240c5bcbba7c7a4f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d10edf43b62c5947b50c506e84d65829138970acd6a85c066d7c6ca192477bed197af77866f6b18ea7b8ebc8a1a16666dc7982a967533079e8927a65aa3b484d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "95f57bca7cd4a7aac1f61512fecfe589a11899b6dfd078799199d49f67c8e4994ed535c8cfec5926a1d268f07131934a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7bbb2cbfa394b688c7114f0e2b48d3fb691fadd815058ad4ab5f014610a803088e737e32115715d54f12c9817eba7e20"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "80db7332d1d4c805df1731295415eeb78efd69b6ac716108c058c4c58c918d11"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "489f5f58ab03be0b2841370e12c361487798fce1414f12cebbab736ae22b9cb191ac36ee22c1bb4eac4b6405b3e38defef1efa7020dfe2c92a42afe4b9c3b9f4"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-api",
+      "version" : "5.10.2",
+      "description" : "Module \"junit-jupiter-api\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6e691e23a36de8cbda5cbcc9f31461e3"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fb55d6e2bce173f35fd28422e7975539621055ef"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "afff77c186cd317275803872fa5133aa801fd6ac40bd91c78a6cf8009b4b17cc"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7dfb74405cc011bf0b9176f2093686680225ef32658ec82b55bad9857eb38999b8ac25c23f920127b426120bfc20938f2d9dc8df111a509d9858d350e5ff7685"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5ef5590ce923e0e5b33e821e1ef650ff30be70433fdd03ab0986ad68f71e18a804c43a8736e5ee619b676218de4d6142"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "dfe5609aa1e95c4156fe2f0143ffb9d327d734a372ccccaca1d2d307b370fb79c5eacc8f228f90d5382f64cd0508447e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "db3d74ba82ebe3eed0779121c694d3f40932c8c6f1f5985ec0187ebc6af6cfde"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "43cf8157d2de72a4fbbd6c0f92adb32d9454e3b1e32667d11b98916a3310f0835a0a38766ac0e56387e87e916fc4d18cd6b953150e404bc05a743605be90250c"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "group" : "org.opentest4j",
+      "name" : "opentest4j",
+      "version" : "1.3.0",
+      "description" : "Open Test Alliance for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "03c404f727531f3fd3b4c73997899327"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "78fc698a7871bb50305e3657893c10500595f043348d875f57bc39ca4a6a51eda3967b7c8c8a7ec3e8f85f2171bca4aa98823e912e416e87e81c6ba5b70a37c3"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "10398b6998c9202a0731e2e19ae1c3f9d8a83582c2663fe7bdda15794ee6fa816727dbd8f7c7164bd5395ee1cfe7c97e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3abe706fd78509c25a402c7bbf6f9ddf71ffb5b35054864ba0fdf7902207115f888a0ba728fd71d2e87a9360d2498121"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d961907a1bfa1dcda329dca494ffbc251b31fabcaca5ab7095661a8ce3c1d654"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0ad661617bcac51bcd26f7ad4611c69b1fd9811b50dbf734e041a3243ab1f845e7796620e8a7c40c4a2df3946864598b1251396c7d9bd813203d82710788cce0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2?type=jar",
+      "group" : "org.junit.platform",
+      "name" : "junit-platform-commons",
+      "version" : "1.10.2",
+      "description" : "Module \"junit-platform-commons\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ae199049daca42c359e64974009025c5"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "3197154a1f0c88da46c47a9ca27611ac7ec5d797"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b56a5ec000a479df4973b18bba24c98fe0db8faa14c8907d3ef451d8c71fd8ae"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "aa739ee21b91fd4476aa5f9ad975f83cd440b6fbac71c8cc15816e3924710c0d70838465ee22a1b7390c2bae42ef1809868fa7ae0169b75f437cd95baac539d1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "0963ac9cf11f6312a807b4068dacd66cab7f6378445b4dc2cfd62b62dd7afe609fe389aff4fd2006cdcc564670e849af"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "64688f7803aff2ac8d536c5f9e11891f6b5bfae23580b2513ff4fde3c1f28509a27c483e91fd974e1fbca4a7cbaf3f87"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "83d491a6808587990e165c5065a7c938760065248083d9d05e81d9e4802d7764"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "1d54bed73766715b245012bce223e440703ff2fb8c7d5cfd208393060c2d63178e69e21aa739e5196599dcd1a79decf595cf142abc34ade6bd45a2b1d269f724"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "group" : "org.apiguardian",
+      "name" : "apiguardian-api",
+      "version" : "1.1.2",
+      "description" : "@API Guardian",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8c7de3f82037fa4a2e8be2a2f13092af"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a231e0d844d2721b0fa1b238006d15c6ded6842a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d7ccd0e7019f1a997de39d66dc0ad4efe150428fdd7f4c743c93884f1602a3e90135ad34baea96d5b6d925ad6c0c8487c8e78304f0a089a12383d4a62e2c9a61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5ae11cfedcee7da43a506a67946ddc8a7a2622284a924ba78f74541e9a22db6868a15f5d84edb91a541e38afded734ea"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c146116b3dfd969200b2ce52d96b92dd02d6f5a45a86e7e85edf35600ddbc2f3c6e8a1ad7e2db4dcd2c398c09fad0927"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b4b436d7f615fc0b820204e69f83c517d1c1ccc5f6b99e459209ede4482268de"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7b95b7ac68a6891b8901b5507acd2c24a0c1e20effa63cd513764f513eab4eb55f8de5178edbe0a400c11f3a18d3f56243569d6d663100f06dd98288504c09c5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-params",
+      "version" : "5.10.2",
+      "description" : "Module \"junit-jupiter-params\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2f33df4bff7fbfb15352803fa575b88d"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "359132c82a9d3fa87a325db6edd33b5fdc67a3d8"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "edb1e43ff0b8067626ffb55e5e9eeca1d9ab2478141a7c7f253d115b29cc7cf2"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "002b2010769413f1bc86cf95a48f679eeb7a372379e8f401f892d03bd1089483937a77f08c095579f81b8f0a27896fac6bebdc4c09a2dff9f5459e09207ac0d8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f026f977c21b4d19611ea2ac8a18cb7c6110787241fd47f650557e427db0289aadd12a1069b46e73cb807bf45bb69455"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "210369e1ccd3a70a0b4fd785777367994414163361ed9d9c449b0b2364dd43122579d48ebb8feb923548c8f43eb74067"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "3714beec66c923801a378969a1d370a43761a5f18e86e26c8161763ad19adb69"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "edcd46e165d048ad49e023c1a71d14b9046c8dd1be20f908b63bde859dad2c76e6b84e8c100ca0e17008f22c3cddd1b4d427b7c4041e6cceea559ef707cfd024"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-engine",
+      "version" : "5.10.2",
+      "description" : "Module \"junit-jupiter-engine\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "830301d576c574fbf82320f93f8abacd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f1f8fe97bd58e85569205f071274d459c2c4f8cd"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b6df35da750a546ae932376f11b3c0df841f0c90c7cb2944cd39adb432886e4b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0a95745a7d7b7d1cc4974e946cb0ab2696d7739ec1cee8545a34d6f14e63f065d06ab1363e4fc1b588d5197107f9ffc42537bebcd7b10a945fae316e5fdbc103"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e25eda0e686e407053368c09ae28fb95a229d88cedcfa674b74397979f0c7ff36cb410b64c71aef2dda037a5fde2bfcc"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "ac6c8e106d16838f365f701a9fd768f30cd312c903ff117d060383a04043daa92645fb0544917aacd5f116d6272b7e64"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "70d7684eb70992e6a66da5df9bbf23c938f49ec2883320ae57d69930d26a03a3"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "090afd1efec0951d4b8dd870afedf5967281e3e9adad0cb0974d9b06a1c2d9740e102d47f2a0d46013ae65515ba97fbed29083ab4aac84d47b2d0b36fa6204b1"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2?type=jar",
+      "group" : "org.junit.platform",
+      "name" : "junit-platform-engine",
+      "version" : "1.10.2",
+      "description" : "Module \"junit-platform-engine\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "0bab6a13692441a957234370baae15f0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d53bb4e0ce7f211a498705783440614bfaf0df2e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "905cba9b4998ccc29d1239085a7fb1fe0e28024d7526152356d810edec0a49a3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "5ca468aff73099673266e4e1431189023b0a660292f4f6c101dc4b03b8ab3643392731aa55455bf3a5079331a563dacda0c6b3cf3df64563ca6e0201af609e27"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "7e883fc0a9cd5f3d6a792f26a43eddbe1e8e6583cedfba48690679ca43bf46482967c6e5a91c9b32f8904eaa54b7b759"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "25d922124644f344ec96487622c34c0e853c7a6a70858a3fae3572b0c03d7b7fec4f297f66d37311f87dcdf7c3c58f18"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "90615525738990e5226ec73729c052cb9ee2a8212b263c3214d71fcb28c41118"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "3cbd7d8afa9f1953fef49c010f04f47b286f0cc40ddc3766928801202cf08539919f4018ece569c251d198a1a6e3258bc48d4b2facd2bb7f2d5d675fc34c7dff"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+        "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+        "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.14.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.13?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    }
+  ]
+}

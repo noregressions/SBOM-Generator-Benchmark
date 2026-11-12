@@ -1,0 +1,231 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.3",
+  "serialNumber": "urn:uuid:58d617ed-1e7d-4420-a31a-d595dffc83a9",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-10T12:00:55Z",
+    "tools": [
+      {
+        "vendor": "AboutCode.org",
+        "name": "scancode-toolkit",
+        "version": "32.5.0"
+      }
+    ],
+    "properties": [
+      {
+        "name": "notice",
+        "value": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download."
+      },
+      {
+        "name": "errors",
+        "value": []
+      },
+      {
+        "name": "warnings",
+        "value": []
+      },
+      {
+        "name": "message",
+        "value": null
+      },
+      {
+        "name": "system_environment",
+        "value": {
+          "operating_system": "mac",
+          "cpu_architecture": "64",
+          "platform": "macOS-27.0.1-arm64-arm-64bit",
+          "platform_version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:16 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8112",
+          "python_version": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 21.0.0 (clang-2100.0.123.102)]"
+        }
+      },
+      {
+        "name": "spdx_license_list_version",
+        "value": "3.27"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "sbom-sample-go",
+      "version": null,
+      "bom-ref": "pkg:golang/github.com/example/sbom-sample-go",
+      "group": "github.com/example",
+      "type": "library",
+      "scope": "required",
+      "copyright": null,
+      "author": null,
+      "description": null,
+      "purl": "pkg:golang/github.com/example/sbom-sample-go",
+      "hashes": [],
+      "licenses": [],
+      "externalReferences": [
+        {
+          "url": "https://pkg.go.dev/github.com/example/sbom-sample-go",
+          "type": "website",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://pkg.go.dev/github.com/example/sbom-sample-go",
+          "type": "website",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://github.com/example/sbom-sample-go.git",
+          "type": "vcs",
+          "comment": null,
+          "hashes": []
+        }
+      ],
+      "properties": [
+        {
+          "name": "WARNING",
+          "value": "WARNING: component skipped in CycloneDX output: purl: pkg:golang/github.com/example/sbom-sample-go at datafile_paths: ['go/go.mod']"
+        }
+      ]
+    },
+    {
+      "name": "sbom-sample-maven",
+      "version": "1.0.0",
+      "bom-ref": "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+      "group": "com.example",
+      "type": "library",
+      "scope": "required",
+      "copyright": null,
+      "author": null,
+      "description": "SBOM Sample (Maven)\nSmall Java app used as a target for SBOM generation tools",
+      "purl": "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+      "hashes": [],
+      "licenses": [],
+      "externalReferences": [
+        {
+          "url": "https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/sbom-sample-maven-1.0.0.pom",
+          "type": "bom",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/sbom-sample-maven-1.0.0.jar",
+          "type": "distribution",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://repo1.maven.org/maven2/com/example/sbom-sample-maven/1.0.0/",
+          "type": "website",
+          "comment": null,
+          "hashes": []
+        }
+      ],
+      "properties": []
+    },
+    {
+      "name": "sbom-sample-node",
+      "version": "1.0.0",
+      "bom-ref": "pkg:npm/sbom-sample-node@1.0.0",
+      "group": null,
+      "type": "library",
+      "scope": "required",
+      "copyright": null,
+      "author": null,
+      "description": "Small Node.js app used as a target for SBOM generation tools",
+      "purl": "pkg:npm/sbom-sample-node@1.0.0",
+      "hashes": [],
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/sbom-sample-node/-/sbom-sample-node-1.0.0.tgz",
+          "type": "distribution",
+          "comment": null,
+          "hashes": []
+        }
+      ],
+      "properties": []
+    },
+    {
+      "name": "sbom-sample-python",
+      "version": "1.0.0",
+      "bom-ref": "pkg:pypi/sbom-sample-python@1.0.0",
+      "group": null,
+      "type": "library",
+      "scope": "required",
+      "copyright": null,
+      "author": null,
+      "description": "Small Python app used as a target for SBOM generation tools",
+      "purl": "pkg:pypi/sbom-sample-python@1.0.0",
+      "hashes": [],
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "externalReferences": [
+        {
+          "url": "https://pypi.org/pypi/sbom-sample-python/1.0.0/json",
+          "type": "bom",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://pypi.org/packages/source/s/sbom-sample-python/sbom-sample-python-1.0.0.tar.gz",
+          "type": "distribution",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://pypi.org/project/sbom-sample-python",
+          "type": "website",
+          "comment": null,
+          "hashes": []
+        }
+      ],
+      "properties": []
+    },
+    {
+      "name": "sbom-sample-rust",
+      "version": "1.0.0",
+      "bom-ref": "pkg:cargo/sbom-sample-rust@1.0.0",
+      "group": null,
+      "type": "library",
+      "scope": "required",
+      "copyright": null,
+      "author": null,
+      "description": "Small Rust app used as a target for SBOM generation tools",
+      "purl": "pkg:cargo/sbom-sample-rust@1.0.0",
+      "hashes": [],
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "externalReferences": [
+        {
+          "url": "https://crates.io/api/v1/crates/sbom-sample-rust",
+          "type": "bom",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://crates.io/api/v1/crates/sbom-sample-rust/1.0.0/download",
+          "type": "distribution",
+          "comment": null,
+          "hashes": []
+        },
+        {
+          "url": "https://crates.io/crates/sbom-sample-rust",
+          "type": "website",
+          "comment": null,
+          "hashes": []
+        }
+      ],
+      "properties": []
+    }
+  ],
+  "dependencies": []
+}

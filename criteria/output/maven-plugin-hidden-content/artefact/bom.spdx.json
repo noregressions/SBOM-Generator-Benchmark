@@ -1,0 +1,47 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "maven-plugin-hidden-content",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-12T11:43:48Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/criteria/maven-plugin-hidden-content",
+  "documentDescribes": [
+    "SPDXRef-File-work-testcases-maven-plugin-hidden-content-project-target-maven-plugin-hidden-content-1.0.0.jar"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-work-testcases-maven-plugin-hidden-content-project-target-maven-plugin-hidden-content-1.0.0.jar",
+      "fileName": "work/testcases/maven-plugin-hidden-content/project/target/maven-plugin-hidden-content-1.0.0.jar",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ea8df17876a387178eedae8efdaa6bc734bf68b9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5fdfdd37fd9e1b0687fee301a72b27a7ae55eede7742aaa6a2aa678a2b556edc"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f4aec4585f7518923ec4d6a39d39f23d56d3382cbc57cb9b062e8c5977907ba279507f68751b041f915973e6f2115273743d8872583a1ba58d115ed6dabfee19"
+        }
+      ]
+    }
+  ],
+  "packages": [],
+  "relationships": []
+}

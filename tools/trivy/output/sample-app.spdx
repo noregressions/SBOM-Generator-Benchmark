@@ -1,0 +1,1862 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: /Users/spoole/claude_projects/SBOMExamples/sample-app
+DocumentNamespace: http://trivy.dev/filesystem//Users/spoole/claude_projects/SBOMExamples/sample-app-3e2abdba-fb62-4920-9943-eb2b628bb32d
+Creator: Organization: aquasecurity
+Creator: Tool: trivy-0.74.0
+Created: 2026-11-10T11:51:07Z
+
+##### Package: rust/Cargo.lock
+
+PackageName: rust/Cargo.lock
+SPDXID: SPDXRef-Application-2a2d9a0724376d12
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: APPLICATION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: java-maven/pom.xml
+
+PackageName: java-maven/pom.xml
+SPDXID: SPDXRef-Application-463e2a7a402fcfb7
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: APPLICATION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: go/go.mod
+
+PackageName: go/go.mod
+SPDXID: SPDXRef-Application-64b795298504bc18
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: APPLICATION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: python/requirements.txt
+
+PackageName: python/requirements.txt
+SPDXID: SPDXRef-Application-6c1f1071116c5353
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: APPLICATION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: node/package-lock.json
+
+PackageName: node/package-lock.json
+SPDXID: SPDXRef-Application-febac334e7443225
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: APPLICATION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: /Users/spoole/claude_projects/SBOMExamples/sample-app
+
+PackageName: /Users/spoole/claude_projects/SBOMExamples/sample-app
+SPDXID: SPDXRef-Filesystem-c6d9995000cf4fd9
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: SOURCE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: path-to-regexp
+
+PackageName: path-to-regexp
+SPDXID: SPDXRef-Package-13a6441574c9a49f
+PackageVersion: 0.1.7
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/path-to-regexp@0.1.7
+
+##### Package: side-channel-weakmap
+
+PackageName: side-channel-weakmap
+SPDXID: SPDXRef-Package-13c2a74e8fa1baaf
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/side-channel-weakmap@1.0.2
+
+##### Package: itoa
+
+PackageName: itoa
+SPDXID: SPDXRef-Package-1409da22a5c25e3a
+PackageVersion: 1.0.19
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/itoa@1.0.19
+
+##### Package: com.fasterxml.jackson.core:jackson-core
+
+PackageName: com.fasterxml.jackson.core:jackson-core
+SPDXID: SPDXRef-Package-142a0410cd798f26
+PackageVersion: 2.17.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2
+
+##### Package: slab
+
+PackageName: slab
+SPDXID: SPDXRef-Package-14cc18d9d051d
+PackageVersion: 0.4.12
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/slab@0.4.12
+
+##### Package: org.slf4j:slf4j-api
+
+PackageName: org.slf4j:slf4j-api
+SPDXID: SPDXRef-Package-1655fe2d783ee664
+PackageVersion: 2.0.13
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/org.slf4j/slf4j-api@2.0.13
+
+##### Package: ms
+
+PackageName: ms
+SPDXID: SPDXRef-Package-1881c28ff2be1c7d
+PackageVersion: 2.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/ms@2.0.0
+
+##### Package: object-inspect
+
+PackageName: object-inspect
+SPDXID: SPDXRef-Package-192e01d186fc138e
+PackageVersion: 1.13.4
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/object-inspect@1.13.4
+
+##### Package: github.com/example/sbom-sample-go
+
+PackageName: github.com/example/sbom-sample-go
+SPDXID: SPDXRef-Package-1a0bffbd60c1f96a
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: go/go.mod
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/example/sbom-sample-go
+
+##### Package: serde_derive
+
+PackageName: serde_derive
+SPDXID: SPDXRef-Package-1a5c1eb204e05bd9
+PackageVersion: 1.0.229
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/serde_derive@1.0.229
+
+##### Package: cookie-signature
+
+PackageName: cookie-signature
+SPDXID: SPDXRef-Package-1b4e5c5910e369cf
+PackageVersion: 1.0.6
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/cookie-signature@1.0.6
+
+##### Package: github.com/gorilla/mux
+
+PackageName: github.com/gorilla/mux
+SPDXID: SPDXRef-Package-1c0b4aff5ff290b
+PackageVersion: v1.8.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: go/go.mod
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/gorilla/mux@v1.8.1
+
+##### Package: wasm-bindgen-macro-support
+
+PackageName: wasm-bindgen-macro-support
+SPDXID: SPDXRef-Package-1e0f221dadfd7d32
+PackageVersion: 0.2.130
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/wasm-bindgen-macro-support@0.2.130
+
+##### Package: body-parser
+
+PackageName: body-parser
+SPDXID: SPDXRef-Package-1eb952d6ccece89a
+PackageVersion: 1.20.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/body-parser@1.20.2
+
+##### Package: getrandom
+
+PackageName: getrandom
+SPDXID: SPDXRef-Package-2091c45f28940736
+PackageVersion: 0.4.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/getrandom@0.4.3
+
+##### Package: depd
+
+PackageName: depd
+SPDXID: SPDXRef-Package-20bd96b1b950eb12
+PackageVersion: 2.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/depd@2.0.0
+
+##### Package: r-efi
+
+PackageName: r-efi
+SPDXID: SPDXRef-Package-2192400c55bfe32a
+PackageVersion: 6.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/r-efi@6.0.0
+
+##### Package: libc
+
+PackageName: libc
+SPDXID: SPDXRef-Package-222032a09aba62f8
+PackageVersion: 0.2.191
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/libc@0.2.191
+
+##### Package: parseurl
+
+PackageName: parseurl
+SPDXID: SPDXRef-Package-22780f885f5ab255
+PackageVersion: 1.3.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/parseurl@1.3.3
+
+##### Package: function-bind
+
+PackageName: function-bind
+SPDXID: SPDXRef-Package-25c5d93ab88cbf53
+PackageVersion: 1.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/function-bind@1.1.2
+
+##### Package: cookie
+
+PackageName: cookie
+SPDXID: SPDXRef-Package-286e53c00f23a9c6
+PackageVersion: 0.6.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/cookie@0.6.0
+
+##### Package: cfg-if
+
+PackageName: cfg-if
+SPDXID: SPDXRef-Package-2882864e2b3cc83
+PackageVersion: 1.0.5
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/cfg-if@1.0.5
+
+##### Package: mime
+
+PackageName: mime
+SPDXID: SPDXRef-Package-2921434cfb9d16bb
+PackageVersion: 1.6.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/mime@1.6.0
+
+##### Package: dunder-proto
+
+PackageName: dunder-proto
+SPDXID: SPDXRef-Package-2bc0b071ee536213
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/dunder-proto@1.0.1
+
+##### Package: rustversion
+
+PackageName: rustversion
+SPDXID: SPDXRef-Package-2c91ada99d2be9b
+PackageVersion: 1.0.23
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/rustversion@1.0.23
+
+##### Package: wasm-bindgen
+
+PackageName: wasm-bindgen
+SPDXID: SPDXRef-Package-2f2aaaf3a1a875b6
+PackageVersion: 0.2.130
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/wasm-bindgen@0.2.130
+
+##### Package: math-intrinsics
+
+PackageName: math-intrinsics
+SPDXID: SPDXRef-Package-318017b44f78eb82
+PackageVersion: 1.1.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/math-intrinsics@1.1.0
+
+##### Package: pin-project-lite
+
+PackageName: pin-project-lite
+SPDXID: SPDXRef-Package-36144a7e053ead5a
+PackageVersion: 0.2.17
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/pin-project-lite@0.2.17
+
+##### Package: gopkg.in/check.v1
+
+PackageName: gopkg.in/check.v1
+SPDXID: SPDXRef-Package-3a9cbdd397d15621
+PackageVersion: v0.0.0-20161208181325-20d25e280405
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: go/go.mod
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405
+
+##### Package: finalhandler
+
+PackageName: finalhandler
+SPDXID: SPDXRef-Package-3c4fe8c2bd12566b
+PackageVersion: 1.2.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/finalhandler@1.2.0
+
+##### Package: bytes
+
+PackageName: bytes
+SPDXID: SPDXRef-Package-40071874dce6d5bc
+PackageVersion: 3.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/bytes@3.1.2
+
+##### Package: qs
+
+PackageName: qs
+SPDXID: SPDXRef-Package-40439ea4745f9065
+PackageVersion: 6.11.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/qs@6.11.0
+
+##### Package: range-parser
+
+PackageName: range-parser
+SPDXID: SPDXRef-Package-4465c22909783804
+PackageVersion: 1.2.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/range-parser@1.2.1
+
+##### Package: github.com/google/uuid
+
+PackageName: github.com/google/uuid
+SPDXID: SPDXRef-Package-4b682b40767af829
+PackageVersion: v1.6.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: go/go.mod
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/github.com/google/uuid@v1.6.0
+
+##### Package: mime-db
+
+PackageName: mime-db
+SPDXID: SPDXRef-Package-507adb7949d11a1e
+PackageVersion: 1.52.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/mime-db@1.52.0
+
+##### Package: es-object-atoms
+
+PackageName: es-object-atoms
+SPDXID: SPDXRef-Package-53fa72c5a2320ca4
+PackageVersion: 1.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/es-object-atoms@1.1.2
+
+##### Package: get-proto
+
+PackageName: get-proto
+SPDXID: SPDXRef-Package-59a56de1f3087ea2
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/get-proto@1.0.1
+
+##### Package: merge-descriptors
+
+PackageName: merge-descriptors
+SPDXID: SPDXRef-Package-5a358dd6b45d496f
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/merge-descriptors@1.0.1
+
+##### Package: debug
+
+PackageName: debug
+SPDXID: SPDXRef-Package-5b66cec61f969e8c
+PackageVersion: 2.6.9
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/debug@2.6.9
+
+##### Package: futures-task
+
+PackageName: futures-task
+SPDXID: SPDXRef-Package-5bd493b9b12090e8
+PackageVersion: 0.3.34
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/futures-task@0.3.34
+
+##### Package: requests
+
+PackageName: requests
+SPDXID: SPDXRef-Package-5c3b0e367c1e760e
+PackageVersion: 2.32.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: python/requirements.txt
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/requests@2.32.3
+
+##### Package: bumpalo
+
+PackageName: bumpalo
+SPDXID: SPDXRef-Package-5e166df96ca3087a
+PackageVersion: 3.20.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/bumpalo@3.20.3
+
+##### Package: serde
+
+PackageName: serde
+SPDXID: SPDXRef-Package-5f297594a11bafc4
+PackageVersion: 1.0.229
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/serde@1.0.229
+
+##### Package: methods
+
+PackageName: methods
+SPDXID: SPDXRef-Package-6074171c41462e69
+PackageVersion: 1.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/methods@1.1.2
+
+##### Package: safe-buffer
+
+PackageName: safe-buffer
+SPDXID: SPDXRef-Package-6294ddc17533ba81
+PackageVersion: 5.2.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/safe-buffer@5.2.1
+
+##### Package: memchr
+
+PackageName: memchr
+SPDXID: SPDXRef-Package-64c8c4496eb4a907
+PackageVersion: 2.8.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/memchr@2.8.3
+
+##### Package: utils-merge
+
+PackageName: utils-merge
+SPDXID: SPDXRef-Package-674c225bb8b969a2
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/utils-merge@1.0.1
+
+##### Package: escape-html
+
+PackageName: escape-html
+SPDXID: SPDXRef-Package-67e20a6e60078102
+PackageVersion: 1.0.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/escape-html@1.0.3
+
+##### Package: raw-body
+
+PackageName: raw-body
+SPDXID: SPDXRef-Package-683ba1e55e00e9d1
+PackageVersion: 2.5.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/raw-body@2.5.2
+
+##### Package: com.fasterxml.jackson.core:jackson-annotations
+
+PackageName: com.fasterxml.jackson.core:jackson-annotations
+SPDXID: SPDXRef-Package-692e3bd0ed993f6d
+PackageVersion: 2.17.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2
+
+##### Package: iconv-lite
+
+PackageName: iconv-lite
+SPDXID: SPDXRef-Package-69c6ed2ad5566076
+PackageVersion: 0.4.24
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/iconv-lite@0.4.24
+
+##### Package: quote
+
+PackageName: quote
+SPDXID: SPDXRef-Package-6a29ff8ad338bea8
+PackageVersion: 1.0.47
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/quote@1.0.47
+
+##### Package: uuid
+
+PackageName: uuid
+SPDXID: SPDXRef-Package-6d0c55863d194c4b
+PackageVersion: 9.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/uuid@9.0.1
+
+##### Package: destroy
+
+PackageName: destroy
+SPDXID: SPDXRef-Package-6fe4d1cec3e038a8
+PackageVersion: 1.2.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/destroy@1.2.0
+
+##### Package: express
+
+PackageName: express
+SPDXID: SPDXRef-Package-75e3b01efc408c0a
+PackageVersion: 4.19.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/express@4.19.2
+
+##### Package: side-channel-list
+
+PackageName: side-channel-list
+SPDXID: SPDXRef-Package-75ff69543c31fd40
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/side-channel-list@1.0.1
+
+##### Package: com.example:sbom-sample-maven
+
+PackageName: com.example:sbom-sample-maven
+SPDXID: SPDXRef-Package-7625dbe6c32a5f5
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/com.example/sbom-sample-maven@1.0.0
+
+##### Package: etag
+
+PackageName: etag
+SPDXID: SPDXRef-Package-77a2a1122924e062
+PackageVersion: 1.8.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/etag@1.8.1
+
+##### Package: es-define-property
+
+PackageName: es-define-property
+SPDXID: SPDXRef-Package-7b97bd8d9bad27f4
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/es-define-property@1.0.1
+
+##### Package: sbom-sample-rust
+
+PackageName: sbom-sample-rust
+SPDXID: SPDXRef-Package-80aee6c64561b9b0
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/sbom-sample-rust@1.0.0
+
+##### Package: flask
+
+PackageName: flask
+SPDXID: SPDXRef-Package-89c5f35efc53efeb
+PackageVersion: 3.0.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: python/requirements.txt
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/flask@3.0.3
+
+##### Package: http-errors
+
+PackageName: http-errors
+SPDXID: SPDXRef-Package-8a258fe7930ca4a0
+PackageVersion: 2.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/http-errors@2.0.0
+
+##### Package: encodeurl
+
+PackageName: encodeurl
+SPDXID: SPDXRef-Package-8c2feb0cc795c38e
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/encodeurl@1.0.2
+
+##### Package: call-bound
+
+PackageName: call-bound
+SPDXID: SPDXRef-Package-8d7c0c0b352f1391
+PackageVersion: 1.0.4
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/call-bound@1.0.4
+
+##### Package: inherits
+
+PackageName: inherits
+SPDXID: SPDXRef-Package-985359f05407ea2
+PackageVersion: 2.0.4
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/inherits@2.0.4
+
+##### Package: serve-static
+
+PackageName: serve-static
+SPDXID: SPDXRef-Package-98e94c2e28864a7b
+PackageVersion: 1.15.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/serve-static@1.15.0
+
+##### Package: es-errors
+
+PackageName: es-errors
+SPDXID: SPDXRef-Package-99f27f3e4ca0502
+PackageVersion: 1.3.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/es-errors@1.3.0
+
+##### Package: uuid
+
+PackageName: uuid
+SPDXID: SPDXRef-Package-9c7cd2a9d70b4263
+PackageVersion: 1.29.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/uuid@1.29.2
+
+##### Package: call-bind-apply-helpers
+
+PackageName: call-bind-apply-helpers
+SPDXID: SPDXRef-Package-9fd6d743f5076047
+PackageVersion: 1.0.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/call-bind-apply-helpers@1.0.2
+
+##### Package: has-symbols
+
+PackageName: has-symbols
+SPDXID: SPDXRef-Package-a0d61925a8307f6a
+PackageVersion: 1.1.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/has-symbols@1.1.0
+
+##### Package: negotiator
+
+PackageName: negotiator
+SPDXID: SPDXRef-Package-a1862cec3787cefe
+PackageVersion: 0.6.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/negotiator@0.6.3
+
+##### Package: side-channel
+
+PackageName: side-channel
+SPDXID: SPDXRef-Package-a926f1fd334dd0aa
+PackageVersion: 1.1.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/side-channel@1.1.1
+
+##### Package: js-sys
+
+PackageName: js-sys
+SPDXID: SPDXRef-Package-ab240196fb9857e4
+PackageVersion: 0.3.107
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/js-sys@0.3.107
+
+##### Package: pyyaml
+
+PackageName: pyyaml
+SPDXID: SPDXRef-Package-ac4685b17fc4c164
+PackageVersion: 6.0.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: python/requirements.txt
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/pyyaml@6.0.2
+
+##### Package: mime-types
+
+PackageName: mime-types
+SPDXID: SPDXRef-Package-af9562f4befa7533
+PackageVersion: 2.1.35
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/mime-types@2.1.35
+
+##### Package: setprototypeof
+
+PackageName: setprototypeof
+SPDXID: SPDXRef-Package-afa77281cb1082fc
+PackageVersion: 1.2.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/setprototypeof@1.2.0
+
+##### Package: vary
+
+PackageName: vary
+SPDXID: SPDXRef-Package-b07aada5602dbc5d
+PackageVersion: 1.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/vary@1.1.2
+
+##### Package: futures-util
+
+PackageName: futures-util
+SPDXID: SPDXRef-Package-b0b1bd7381913f3e
+PackageVersion: 0.3.34
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/futures-util@0.3.34
+
+##### Package: proxy-addr
+
+PackageName: proxy-addr
+SPDXID: SPDXRef-Package-b0e57dbd31ec90e1
+PackageVersion: 2.0.8
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/proxy-addr@2.0.8
+
+##### Package: wasm-bindgen-macro
+
+PackageName: wasm-bindgen-macro
+SPDXID: SPDXRef-Package-b27e7dc35afc8803
+PackageVersion: 0.2.130
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/wasm-bindgen-macro@0.2.130
+
+##### Package: safer-buffer
+
+PackageName: safer-buffer
+SPDXID: SPDXRef-Package-b3b0f1bea8fb718a
+PackageVersion: 2.1.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/safer-buffer@2.1.2
+
+##### Package: proc-macro2
+
+PackageName: proc-macro2
+SPDXID: SPDXRef-Package-b3bbad566c74c74c
+PackageVersion: 1.0.107
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/proc-macro2@1.0.107
+
+##### Package: side-channel-map
+
+PackageName: side-channel-map
+SPDXID: SPDXRef-Package-b6c1f54ad38d5761
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/side-channel-map@1.0.1
+
+##### Package: syn
+
+PackageName: syn
+SPDXID: SPDXRef-Package-b7586bfec26de8c9
+PackageVersion: 3.0.10
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/syn@3.0.10
+
+##### Package: ipaddr.js
+
+PackageName: ipaddr.js
+SPDXID: SPDXRef-Package-bae8adbc1a113a5f
+PackageVersion: 1.9.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/ipaddr.js@1.9.1
+
+##### Package: statuses
+
+PackageName: statuses
+SPDXID: SPDXRef-Package-be98301cca777ab3
+PackageVersion: 2.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/statuses@2.0.1
+
+##### Package: gopd
+
+PackageName: gopd
+SPDXID: SPDXRef-Package-c3015f52cf655e1e
+PackageVersion: 1.2.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/gopd@1.2.0
+
+##### Package: get-intrinsic
+
+PackageName: get-intrinsic
+SPDXID: SPDXRef-Package-c5a8e4e4e088c285
+PackageVersion: 1.3.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/get-intrinsic@1.3.0
+
+##### Package: ee-first
+
+PackageName: ee-first
+SPDXID: SPDXRef-Package-c77be9b924b82ad4
+PackageVersion: 1.1.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/ee-first@1.1.1
+
+##### Package: ms
+
+PackageName: ms
+SPDXID: SPDXRef-Package-cd44685b4c64c421
+PackageVersion: 2.1.3
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/ms@2.1.3
+
+##### Package: zmij
+
+PackageName: zmij
+SPDXID: SPDXRef-Package-ceae82965de364c3
+PackageVersion: 1.0.23
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/zmij@1.0.23
+
+##### Package: media-typer
+
+PackageName: media-typer
+SPDXID: SPDXRef-Package-d12f8ab5f5a0033f
+PackageVersion: 0.3.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/media-typer@0.3.0
+
+##### Package: org.slf4j:slf4j-simple
+
+PackageName: org.slf4j:slf4j-simple
+SPDXID: SPDXRef-Package-d3bbbc7ddf3572b7
+PackageVersion: 2.0.13
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/org.slf4j/slf4j-simple@2.0.13
+
+##### Package: org.apache.commons:commons-lang3
+
+PackageName: org.apache.commons:commons-lang3
+SPDXID: SPDXRef-Package-d4b6c1e1643fe17f
+PackageVersion: 3.14.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/org.apache.commons/commons-lang3@3.14.0
+
+##### Package: type-is
+
+PackageName: type-is
+SPDXID: SPDXRef-Package-d7ade8d31bd569cb
+PackageVersion: 1.6.18
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/type-is@1.6.18
+
+##### Package: com.fasterxml.jackson.core:jackson-databind
+
+PackageName: com.fasterxml.jackson.core:jackson-databind
+SPDXID: SPDXRef-Package-d8136474db9624f9
+PackageVersion: 2.17.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: java-maven/pom.xml
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+ExternalRef: PACKAGE-MANAGER purl pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2
+
+##### Package: accepts
+
+PackageName: accepts
+SPDXID: SPDXRef-Package-d857d40970a477fe
+PackageVersion: 1.3.8
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/accepts@1.3.8
+
+##### Package: wasm-bindgen-shared
+
+PackageName: wasm-bindgen-shared
+SPDXID: SPDXRef-Package-d874d8cd0de6dd14
+PackageVersion: 0.2.130
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/wasm-bindgen-shared@0.2.130
+
+##### Package: send
+
+PackageName: send
+SPDXID: SPDXRef-Package-db443790faf4e75d
+PackageVersion: 0.18.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/send@0.18.0
+
+##### Package: fresh
+
+PackageName: fresh
+SPDXID: SPDXRef-Package-dd4bd4e9e7151f48
+PackageVersion: 0.5.2
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/fresh@0.5.2
+
+##### Package: unicode-ident
+
+PackageName: unicode-ident
+SPDXID: SPDXRef-Package-df05d458778e3657
+PackageVersion: 1.0.27
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/unicode-ident@1.0.27
+
+##### Package: content-type
+
+PackageName: content-type
+SPDXID: SPDXRef-Package-e236acc0c98a723d
+PackageVersion: 1.0.5
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/content-type@1.0.5
+
+##### Package: on-finished
+
+PackageName: on-finished
+SPDXID: SPDXRef-Package-e3e6353eb0f1b323
+PackageVersion: 2.4.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/on-finished@2.4.1
+
+##### Package: toidentifier
+
+PackageName: toidentifier
+SPDXID: SPDXRef-Package-e7f9de8c642d4a51
+PackageVersion: 1.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/toidentifier@1.0.1
+
+##### Package: unpipe
+
+PackageName: unpipe
+SPDXID: SPDXRef-Package-e84b86fb7f56ec9d
+PackageVersion: 1.0.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/unpipe@1.0.0
+
+##### Package: content-disposition
+
+PackageName: content-disposition
+SPDXID: SPDXRef-Package-e94c67fa9498870f
+PackageVersion: 0.5.4
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/content-disposition@0.5.4
+
+##### Package: serde_json
+
+PackageName: serde_json
+SPDXID: SPDXRef-Package-f11f20c7fae81c11
+PackageVersion: 1.0.154
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/serde_json@1.0.154
+
+##### Package: hasown
+
+PackageName: hasown
+SPDXID: SPDXRef-Package-f1b8371f841a8df5
+PackageVersion: 2.0.4
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/hasown@2.0.4
+
+##### Package: lodash
+
+PackageName: lodash
+SPDXID: SPDXRef-Package-f5238ba95b007a8e
+PackageVersion: 4.17.21
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/lodash@4.17.21
+
+##### Package: array-flatten
+
+PackageName: array-flatten
+SPDXID: SPDXRef-Package-f608fe97556e665d
+PackageVersion: 1.1.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/array-flatten@1.1.1
+
+##### Package: serde_core
+
+PackageName: serde_core
+SPDXID: SPDXRef-Package-f73c047eb9638cd
+PackageVersion: 1.0.229
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/serde_core@1.0.229
+
+##### Package: gopkg.in/yaml.v3
+
+PackageName: gopkg.in/yaml.v3
+SPDXID: SPDXRef-Package-f7a8b7041e85414a
+PackageVersion: v3.0.1
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: go/go.mod
+PackageLicenseConcluded: Apache-2.0 AND MIT
+PackageLicenseDeclared: Apache-2.0 AND MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:golang/gopkg.in/yaml.v3@v3.0.1
+
+##### Package: futures-core
+
+PackageName: futures-core
+SPDXID: SPDXRef-Package-fa84ae159e3aecf6
+PackageVersion: 0.3.34
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: rust/Cargo.lock
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:cargo/futures-core@0.3.34
+
+##### Package: forwarded
+
+PackageName: forwarded
+SPDXID: SPDXRef-Package-fbb4dfc25f92f621
+PackageVersion: 0.2.0
+PackageSupplier: NOASSERTION
+PackageDownloadLocation: NONE
+PrimaryPackagePurpose: LIBRARY
+FilesAnalyzed: false
+PackageSourceInfo: package found in: node/package-lock.json
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+ExternalRef: PACKAGE-MANAGER purl pkg:npm/forwarded@0.2.0
+
+##### Relationships
+
+Relationship: SPDXRef-Application-2a2d9a0724376d12 CONTAINS SPDXRef-Package-80aee6c64561b9b0
+Relationship: SPDXRef-Application-463e2a7a402fcfb7 CONTAINS SPDXRef-Package-7625dbe6c32a5f5
+Relationship: SPDXRef-Application-64b795298504bc18 CONTAINS SPDXRef-Package-1a0bffbd60c1f96a
+Relationship: SPDXRef-Application-6c1f1071116c5353 CONTAINS SPDXRef-Package-5c3b0e367c1e760e
+Relationship: SPDXRef-Application-6c1f1071116c5353 CONTAINS SPDXRef-Package-89c5f35efc53efeb
+Relationship: SPDXRef-Application-6c1f1071116c5353 CONTAINS SPDXRef-Package-ac4685b17fc4c164
+Relationship: SPDXRef-Application-febac334e7443225 CONTAINS SPDXRef-Package-6d0c55863d194c4b
+Relationship: SPDXRef-Application-febac334e7443225 CONTAINS SPDXRef-Package-75e3b01efc408c0a
+Relationship: SPDXRef-Application-febac334e7443225 CONTAINS SPDXRef-Package-f5238ba95b007a8e
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Filesystem-c6d9995000cf4fd9
+Relationship: SPDXRef-Filesystem-c6d9995000cf4fd9 CONTAINS SPDXRef-Application-2a2d9a0724376d12
+Relationship: SPDXRef-Filesystem-c6d9995000cf4fd9 CONTAINS SPDXRef-Application-463e2a7a402fcfb7
+Relationship: SPDXRef-Filesystem-c6d9995000cf4fd9 CONTAINS SPDXRef-Application-64b795298504bc18
+Relationship: SPDXRef-Filesystem-c6d9995000cf4fd9 CONTAINS SPDXRef-Application-6c1f1071116c5353
+Relationship: SPDXRef-Filesystem-c6d9995000cf4fd9 CONTAINS SPDXRef-Application-febac334e7443225
+Relationship: SPDXRef-Package-13c2a74e8fa1baaf DEPENDS_ON SPDXRef-Package-192e01d186fc138e
+Relationship: SPDXRef-Package-13c2a74e8fa1baaf DEPENDS_ON SPDXRef-Package-8d7c0c0b352f1391
+Relationship: SPDXRef-Package-13c2a74e8fa1baaf DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-13c2a74e8fa1baaf DEPENDS_ON SPDXRef-Package-b6c1f54ad38d5761
+Relationship: SPDXRef-Package-13c2a74e8fa1baaf DEPENDS_ON SPDXRef-Package-c5a8e4e4e088c285
+Relationship: SPDXRef-Package-1a0bffbd60c1f96a DEPENDS_ON SPDXRef-Package-1c0b4aff5ff290b
+Relationship: SPDXRef-Package-1a0bffbd60c1f96a DEPENDS_ON SPDXRef-Package-4b682b40767af829
+Relationship: SPDXRef-Package-1a0bffbd60c1f96a DEPENDS_ON SPDXRef-Package-f7a8b7041e85414a
+Relationship: SPDXRef-Package-1a5c1eb204e05bd9 DEPENDS_ON SPDXRef-Package-6a29ff8ad338bea8
+Relationship: SPDXRef-Package-1a5c1eb204e05bd9 DEPENDS_ON SPDXRef-Package-b3bbad566c74c74c
+Relationship: SPDXRef-Package-1a5c1eb204e05bd9 DEPENDS_ON SPDXRef-Package-b7586bfec26de8c9
+Relationship: SPDXRef-Package-1e0f221dadfd7d32 DEPENDS_ON SPDXRef-Package-5e166df96ca3087a
+Relationship: SPDXRef-Package-1e0f221dadfd7d32 DEPENDS_ON SPDXRef-Package-6a29ff8ad338bea8
+Relationship: SPDXRef-Package-1e0f221dadfd7d32 DEPENDS_ON SPDXRef-Package-b3bbad566c74c74c
+Relationship: SPDXRef-Package-1e0f221dadfd7d32 DEPENDS_ON SPDXRef-Package-b7586bfec26de8c9
+Relationship: SPDXRef-Package-1e0f221dadfd7d32 DEPENDS_ON SPDXRef-Package-d874d8cd0de6dd14
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-20bd96b1b950eb12
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-40071874dce6d5bc
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-40439ea4745f9065
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-5b66cec61f969e8c
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-683ba1e55e00e9d1
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-69c6ed2ad5566076
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-6fe4d1cec3e038a8
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-8a258fe7930ca4a0
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-d7ade8d31bd569cb
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-e236acc0c98a723d
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-e3e6353eb0f1b323
+Relationship: SPDXRef-Package-1eb952d6ccece89a DEPENDS_ON SPDXRef-Package-e84b86fb7f56ec9d
+Relationship: SPDXRef-Package-2091c45f28940736 DEPENDS_ON SPDXRef-Package-2192400c55bfe32a
+Relationship: SPDXRef-Package-2091c45f28940736 DEPENDS_ON SPDXRef-Package-222032a09aba62f8
+Relationship: SPDXRef-Package-2091c45f28940736 DEPENDS_ON SPDXRef-Package-2882864e2b3cc83
+Relationship: SPDXRef-Package-2bc0b071ee536213 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-2bc0b071ee536213 DEPENDS_ON SPDXRef-Package-9fd6d743f5076047
+Relationship: SPDXRef-Package-2bc0b071ee536213 DEPENDS_ON SPDXRef-Package-c3015f52cf655e1e
+Relationship: SPDXRef-Package-2f2aaaf3a1a875b6 DEPENDS_ON SPDXRef-Package-2882864e2b3cc83
+Relationship: SPDXRef-Package-2f2aaaf3a1a875b6 DEPENDS_ON SPDXRef-Package-2c91ada99d2be9b
+Relationship: SPDXRef-Package-2f2aaaf3a1a875b6 DEPENDS_ON SPDXRef-Package-b27e7dc35afc8803
+Relationship: SPDXRef-Package-2f2aaaf3a1a875b6 DEPENDS_ON SPDXRef-Package-d874d8cd0de6dd14
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-22780f885f5ab255
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-5b66cec61f969e8c
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-67e20a6e60078102
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-8c2feb0cc795c38e
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-be98301cca777ab3
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-e3e6353eb0f1b323
+Relationship: SPDXRef-Package-3c4fe8c2bd12566b DEPENDS_ON SPDXRef-Package-e84b86fb7f56ec9d
+Relationship: SPDXRef-Package-40439ea4745f9065 DEPENDS_ON SPDXRef-Package-a926f1fd334dd0aa
+Relationship: SPDXRef-Package-53fa72c5a2320ca4 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-59a56de1f3087ea2 DEPENDS_ON SPDXRef-Package-2bc0b071ee536213
+Relationship: SPDXRef-Package-59a56de1f3087ea2 DEPENDS_ON SPDXRef-Package-53fa72c5a2320ca4
+Relationship: SPDXRef-Package-5b66cec61f969e8c DEPENDS_ON SPDXRef-Package-1881c28ff2be1c7d
+Relationship: SPDXRef-Package-5f297594a11bafc4 DEPENDS_ON SPDXRef-Package-1a5c1eb204e05bd9
+Relationship: SPDXRef-Package-5f297594a11bafc4 DEPENDS_ON SPDXRef-Package-f73c047eb9638cd
+Relationship: SPDXRef-Package-683ba1e55e00e9d1 DEPENDS_ON SPDXRef-Package-40071874dce6d5bc
+Relationship: SPDXRef-Package-683ba1e55e00e9d1 DEPENDS_ON SPDXRef-Package-69c6ed2ad5566076
+Relationship: SPDXRef-Package-683ba1e55e00e9d1 DEPENDS_ON SPDXRef-Package-8a258fe7930ca4a0
+Relationship: SPDXRef-Package-683ba1e55e00e9d1 DEPENDS_ON SPDXRef-Package-e84b86fb7f56ec9d
+Relationship: SPDXRef-Package-69c6ed2ad5566076 DEPENDS_ON SPDXRef-Package-b3b0f1bea8fb718a
+Relationship: SPDXRef-Package-6a29ff8ad338bea8 DEPENDS_ON SPDXRef-Package-b3bbad566c74c74c
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-13a6441574c9a49f
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-1b4e5c5910e369cf
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-1eb952d6ccece89a
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-20bd96b1b950eb12
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-22780f885f5ab255
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-286e53c00f23a9c6
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-3c4fe8c2bd12566b
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-40439ea4745f9065
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-4465c22909783804
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-5a358dd6b45d496f
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-5b66cec61f969e8c
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-6074171c41462e69
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-6294ddc17533ba81
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-674c225bb8b969a2
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-67e20a6e60078102
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-77a2a1122924e062
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-8a258fe7930ca4a0
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-8c2feb0cc795c38e
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-98e94c2e28864a7b
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-afa77281cb1082fc
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-b07aada5602dbc5d
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-b0e57dbd31ec90e1
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-be98301cca777ab3
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-d7ade8d31bd569cb
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-d857d40970a477fe
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-db443790faf4e75d
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-dd4bd4e9e7151f48
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-e236acc0c98a723d
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-e3e6353eb0f1b323
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-e94c67fa9498870f
+Relationship: SPDXRef-Package-75e3b01efc408c0a DEPENDS_ON SPDXRef-Package-f608fe97556e665d
+Relationship: SPDXRef-Package-75ff69543c31fd40 DEPENDS_ON SPDXRef-Package-192e01d186fc138e
+Relationship: SPDXRef-Package-75ff69543c31fd40 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-7625dbe6c32a5f5 DEPENDS_ON SPDXRef-Package-1655fe2d783ee664
+Relationship: SPDXRef-Package-7625dbe6c32a5f5 DEPENDS_ON SPDXRef-Package-d3bbbc7ddf3572b7
+Relationship: SPDXRef-Package-7625dbe6c32a5f5 DEPENDS_ON SPDXRef-Package-d4b6c1e1643fe17f
+Relationship: SPDXRef-Package-7625dbe6c32a5f5 DEPENDS_ON SPDXRef-Package-d8136474db9624f9
+Relationship: SPDXRef-Package-80aee6c64561b9b0 DEPENDS_ON SPDXRef-Package-5f297594a11bafc4
+Relationship: SPDXRef-Package-80aee6c64561b9b0 DEPENDS_ON SPDXRef-Package-9c7cd2a9d70b4263
+Relationship: SPDXRef-Package-80aee6c64561b9b0 DEPENDS_ON SPDXRef-Package-f11f20c7fae81c11
+Relationship: SPDXRef-Package-8a258fe7930ca4a0 DEPENDS_ON SPDXRef-Package-20bd96b1b950eb12
+Relationship: SPDXRef-Package-8a258fe7930ca4a0 DEPENDS_ON SPDXRef-Package-985359f05407ea2
+Relationship: SPDXRef-Package-8a258fe7930ca4a0 DEPENDS_ON SPDXRef-Package-afa77281cb1082fc
+Relationship: SPDXRef-Package-8a258fe7930ca4a0 DEPENDS_ON SPDXRef-Package-be98301cca777ab3
+Relationship: SPDXRef-Package-8a258fe7930ca4a0 DEPENDS_ON SPDXRef-Package-e7f9de8c642d4a51
+Relationship: SPDXRef-Package-8d7c0c0b352f1391 DEPENDS_ON SPDXRef-Package-9fd6d743f5076047
+Relationship: SPDXRef-Package-8d7c0c0b352f1391 DEPENDS_ON SPDXRef-Package-c5a8e4e4e088c285
+Relationship: SPDXRef-Package-98e94c2e28864a7b DEPENDS_ON SPDXRef-Package-22780f885f5ab255
+Relationship: SPDXRef-Package-98e94c2e28864a7b DEPENDS_ON SPDXRef-Package-67e20a6e60078102
+Relationship: SPDXRef-Package-98e94c2e28864a7b DEPENDS_ON SPDXRef-Package-8c2feb0cc795c38e
+Relationship: SPDXRef-Package-98e94c2e28864a7b DEPENDS_ON SPDXRef-Package-db443790faf4e75d
+Relationship: SPDXRef-Package-9c7cd2a9d70b4263 DEPENDS_ON SPDXRef-Package-2091c45f28940736
+Relationship: SPDXRef-Package-9c7cd2a9d70b4263 DEPENDS_ON SPDXRef-Package-2f2aaaf3a1a875b6
+Relationship: SPDXRef-Package-9c7cd2a9d70b4263 DEPENDS_ON SPDXRef-Package-ab240196fb9857e4
+Relationship: SPDXRef-Package-9fd6d743f5076047 DEPENDS_ON SPDXRef-Package-25c5d93ab88cbf53
+Relationship: SPDXRef-Package-9fd6d743f5076047 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-a926f1fd334dd0aa DEPENDS_ON SPDXRef-Package-13c2a74e8fa1baaf
+Relationship: SPDXRef-Package-a926f1fd334dd0aa DEPENDS_ON SPDXRef-Package-192e01d186fc138e
+Relationship: SPDXRef-Package-a926f1fd334dd0aa DEPENDS_ON SPDXRef-Package-75ff69543c31fd40
+Relationship: SPDXRef-Package-a926f1fd334dd0aa DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-a926f1fd334dd0aa DEPENDS_ON SPDXRef-Package-b6c1f54ad38d5761
+Relationship: SPDXRef-Package-ab240196fb9857e4 DEPENDS_ON SPDXRef-Package-2882864e2b3cc83
+Relationship: SPDXRef-Package-ab240196fb9857e4 DEPENDS_ON SPDXRef-Package-2f2aaaf3a1a875b6
+Relationship: SPDXRef-Package-ab240196fb9857e4 DEPENDS_ON SPDXRef-Package-b0b1bd7381913f3e
+Relationship: SPDXRef-Package-af9562f4befa7533 DEPENDS_ON SPDXRef-Package-507adb7949d11a1e
+Relationship: SPDXRef-Package-b0b1bd7381913f3e DEPENDS_ON SPDXRef-Package-14cc18d9d051d
+Relationship: SPDXRef-Package-b0b1bd7381913f3e DEPENDS_ON SPDXRef-Package-36144a7e053ead5a
+Relationship: SPDXRef-Package-b0b1bd7381913f3e DEPENDS_ON SPDXRef-Package-5bd493b9b12090e8
+Relationship: SPDXRef-Package-b0b1bd7381913f3e DEPENDS_ON SPDXRef-Package-fa84ae159e3aecf6
+Relationship: SPDXRef-Package-b0e57dbd31ec90e1 DEPENDS_ON SPDXRef-Package-bae8adbc1a113a5f
+Relationship: SPDXRef-Package-b0e57dbd31ec90e1 DEPENDS_ON SPDXRef-Package-fbb4dfc25f92f621
+Relationship: SPDXRef-Package-b27e7dc35afc8803 DEPENDS_ON SPDXRef-Package-1e0f221dadfd7d32
+Relationship: SPDXRef-Package-b27e7dc35afc8803 DEPENDS_ON SPDXRef-Package-6a29ff8ad338bea8
+Relationship: SPDXRef-Package-b3bbad566c74c74c DEPENDS_ON SPDXRef-Package-df05d458778e3657
+Relationship: SPDXRef-Package-b6c1f54ad38d5761 DEPENDS_ON SPDXRef-Package-192e01d186fc138e
+Relationship: SPDXRef-Package-b6c1f54ad38d5761 DEPENDS_ON SPDXRef-Package-8d7c0c0b352f1391
+Relationship: SPDXRef-Package-b6c1f54ad38d5761 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-b6c1f54ad38d5761 DEPENDS_ON SPDXRef-Package-c5a8e4e4e088c285
+Relationship: SPDXRef-Package-b7586bfec26de8c9 DEPENDS_ON SPDXRef-Package-6a29ff8ad338bea8
+Relationship: SPDXRef-Package-b7586bfec26de8c9 DEPENDS_ON SPDXRef-Package-b3bbad566c74c74c
+Relationship: SPDXRef-Package-b7586bfec26de8c9 DEPENDS_ON SPDXRef-Package-df05d458778e3657
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-25c5d93ab88cbf53
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-318017b44f78eb82
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-53fa72c5a2320ca4
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-59a56de1f3087ea2
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-7b97bd8d9bad27f4
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-99f27f3e4ca0502
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-9fd6d743f5076047
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-a0d61925a8307f6a
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-c3015f52cf655e1e
+Relationship: SPDXRef-Package-c5a8e4e4e088c285 DEPENDS_ON SPDXRef-Package-f1b8371f841a8df5
+Relationship: SPDXRef-Package-d3bbbc7ddf3572b7 DEPENDS_ON SPDXRef-Package-1655fe2d783ee664
+Relationship: SPDXRef-Package-d7ade8d31bd569cb DEPENDS_ON SPDXRef-Package-af9562f4befa7533
+Relationship: SPDXRef-Package-d7ade8d31bd569cb DEPENDS_ON SPDXRef-Package-d12f8ab5f5a0033f
+Relationship: SPDXRef-Package-d8136474db9624f9 DEPENDS_ON SPDXRef-Package-142a0410cd798f26
+Relationship: SPDXRef-Package-d8136474db9624f9 DEPENDS_ON SPDXRef-Package-692e3bd0ed993f6d
+Relationship: SPDXRef-Package-d857d40970a477fe DEPENDS_ON SPDXRef-Package-a1862cec3787cefe
+Relationship: SPDXRef-Package-d857d40970a477fe DEPENDS_ON SPDXRef-Package-af9562f4befa7533
+Relationship: SPDXRef-Package-d874d8cd0de6dd14 DEPENDS_ON SPDXRef-Package-df05d458778e3657
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-20bd96b1b950eb12
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-2921434cfb9d16bb
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-4465c22909783804
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-5b66cec61f969e8c
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-67e20a6e60078102
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-6fe4d1cec3e038a8
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-77a2a1122924e062
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-8a258fe7930ca4a0
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-8c2feb0cc795c38e
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-be98301cca777ab3
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-cd44685b4c64c421
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-dd4bd4e9e7151f48
+Relationship: SPDXRef-Package-db443790faf4e75d DEPENDS_ON SPDXRef-Package-e3e6353eb0f1b323
+Relationship: SPDXRef-Package-e3e6353eb0f1b323 DEPENDS_ON SPDXRef-Package-c77be9b924b82ad4
+Relationship: SPDXRef-Package-e94c67fa9498870f DEPENDS_ON SPDXRef-Package-6294ddc17533ba81
+Relationship: SPDXRef-Package-f11f20c7fae81c11 DEPENDS_ON SPDXRef-Package-1409da22a5c25e3a
+Relationship: SPDXRef-Package-f11f20c7fae81c11 DEPENDS_ON SPDXRef-Package-5f297594a11bafc4
+Relationship: SPDXRef-Package-f11f20c7fae81c11 DEPENDS_ON SPDXRef-Package-64c8c4496eb4a907
+Relationship: SPDXRef-Package-f11f20c7fae81c11 DEPENDS_ON SPDXRef-Package-ceae82965de364c3
+Relationship: SPDXRef-Package-f11f20c7fae81c11 DEPENDS_ON SPDXRef-Package-f73c047eb9638cd
+Relationship: SPDXRef-Package-f1b8371f841a8df5 DEPENDS_ON SPDXRef-Package-25c5d93ab88cbf53
+Relationship: SPDXRef-Package-f73c047eb9638cd DEPENDS_ON SPDXRef-Package-1a5c1eb204e05bd9
+Relationship: SPDXRef-Package-f7a8b7041e85414a DEPENDS_ON SPDXRef-Package-3a9cbdd397d15621
+

@@ -1,0 +1,2711 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:14c41dee-bdf9-40df-9c70-76f5a2d7d4d7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T11:47:57+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "3aec86da-58c0-4b0e-bd35-569fc322444c",
+      "type": "application",
+      "name": "/tmp/criteria-6/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "0145def3-c24d-41af-94ca-83af4bfc5d9b",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-autoconfigure",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-autoconfigure:3.5.12::487d7498"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "04af3b07-1a15-4d7b-8817-815ae85cb172",
+      "type": "library",
+      "group": "io.micrometer",
+      "name": "micrometer-observation",
+      "version": "1.15.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.15.10",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "io.micrometer:micrometer-observation:1.15.10::644c2b9f"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "076d2ec5-5b30-4709-9ab2-893ffd41c379",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-web",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-web@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-web:6.2.17::ea966572"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0bd83517-910e-44b7-80e8-b6359f6f2f7b",
+      "type": "application",
+      "name": "service/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0d867871-2ca8-4fa4-a594-2419ada2ddc1",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "normalizer",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:normalizer:1.0.0::bd89cc97"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1638a0d2-e64f-4a1c-b6c1-3742488b9e3a",
+      "type": "library",
+      "group": "org.yaml",
+      "name": "snakeyaml",
+      "version": "2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.yaml/snakeyaml@2.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.yaml:snakeyaml:2.4::8514c315"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1ac4b5a3-7b1e-4714-9c7c-24dfdbb3db17",
+      "type": "library",
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jdk8",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.19.4::fb6ea3b0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1cbfca60-b024-49e3-99fe-ca64c2b3f9a2",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "jul-to-slf4j",
+      "version": "2.0.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.slf4j:jul-to-slf4j:2.0.17::c8b4bbaf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1cc7a7b0-31e1-4c10-87dc-1b57c3bf1779",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "jul-to-slf4j",
+      "version": "2.0.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.slf4j:jul-to-slf4j:2.0.17::c8b4bbaf"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "212368bc-104c-46a9-87ee-79fc6d5096af",
+      "type": "library",
+      "group": "io.micrometer",
+      "name": "micrometer-observation",
+      "version": "1.15.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.15.10",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "io.micrometer:micrometer-observation:1.15.10::644c2b9f"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2d18d3a6-c619-42fa-b544-aead164d4642",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.slf4j:slf4j-api:2.0.17::b9a4c7be"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "33170e1a-5718-4dd0-999c-a7248bef2115",
+      "type": "library",
+      "group": "io.micrometer",
+      "name": "micrometer-commons",
+      "version": "1.15.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.15.10",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "io.micrometer:micrometer-commons:1.15.10::94289f98"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "35f330e1-deae-4416-af4a-fd29b5dcb2e7",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-core",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-core:10.1.52::e86bcb0b"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "37afdd3b-ec78-4d2d-8659-735c312c0414",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-expression",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-expression:6.2.17::b3506c48"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3cc1fb85-2ad2-4315-883b-16b40085a57c",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter:3.5.12::c862382e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3ed34bb8-c02c-49e2-882c-79555c557932",
+      "type": "library",
+      "group": "com.fasterxml.jackson.module",
+      "name": "jackson-module-parameter-names",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.19.4::7165305a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4204fac2-4605-49b5-af5e-7edb4d91c40f",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot:3.5.12::5e7d0a4a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "464c22ab-c48c-477a-90b3-551193d0548b",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-core:2.19.4::f12569a7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4659b246-2583-4b49-98de-064302d2a7b8",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-json",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-json:3.5.12::bd6206ff"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4a12bfd1-317e-4d6d-84fe-537b5df19a25",
+      "type": "library",
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-to-slf4j",
+      "version": "2.24.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.logging.log4j:log4j-to-slf4j:2.24.3::39d9c405"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4e184729-6ded-491b-80af-93ddd177d9cc",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-logging",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-logging:3.5.12::94acb869"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "52ef091c-6189-4907-9efa-a78c081e44a4",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-tomcat:3.5.12::f48fa7f9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "577ce199-e7f7-469f-bde0-f031ac4d133f",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-web",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-web@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-web:6.2.17::ea966572"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5795d5da-db21-461d-a037-2801897c9136",
+      "type": "application",
+      "name": "frontend/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5d350fcc-377e-4396-8df0-f426bfdded49",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-tomcat:3.5.12::f48fa7f9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5f35fbd8-4694-48e5-b616-600c88caf84d",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-annotations:2.19.4::78d8cfc9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-beans",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-beans@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-beans:6.2.17::1dbfe4b2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "63a172b2-cbfd-4c26-a92c-09a48398f619",
+      "type": "library",
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jsr310",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.19.4::8ab600f0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6553272b-e1d5-4687-939b-9198cd28808e",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "service",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/service@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:service:1.0.0::ebbe8307"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "655ceea6-f550-4340-be96-a9ccc7ab94d9",
+      "type": "library",
+      "group": "io.micrometer",
+      "name": "micrometer-commons",
+      "version": "1.15.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.15.10",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "io.micrometer:micrometer-commons:1.15.10::94289f98"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "67abc0bb-ea58-49da-8a44-d9f9a979331d",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "normalizer",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:normalizer:1.0.0::eee990a9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6a7f3699-9512-40ac-b714-d6fe69beb9c5",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-expression",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-expression:6.2.17::b3506c48"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6bd340cf-7ae2-4853-90c8-b7e03b32c3ad",
+      "type": "application",
+      "name": "pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6d655af0-6dce-439a-8b8b-49308ec8c97f",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-web",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-web:3.5.12::4268b087"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6e972d92-ac3b-45ed-90b8-e00fa8fa9250",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-web",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-web:3.5.12::4268b087"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "71d78244-0abe-47f3-9e38-cb096228f588",
+      "type": "library",
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.24.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.logging.log4j:log4j-api:2.24.3::b4add207"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "72e09e57-6119-4a23-99fa-a2e36d5e7d45",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "service",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/service@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:service:1.0.0::ebbe8307"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "796f43d0-f592-40fe-a6df-253cee8246f7",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-aop",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-aop@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-aop:6.2.17::11a3b77a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7b5c8798-a469-4dd6-88d5-54d533abda9e",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-websocket",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-websocket:10.1.52::992d7cf3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7c7a0b49-4735-495c-b7f7-0a8f5a1fc9a0",
+      "type": "library",
+      "group": "commons-codec",
+      "name": "commons-codec",
+      "version": "1.17.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "commons-codec:commons-codec:1.17.1::efd829be"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7cc25221-6252-4b74-b7fd-af0b106c4c80",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter:3.5.12::c862382e"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8135c8f1-cc74-4b61-8f6d-c565219ec765",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-logging",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-logging:3.5.12::94acb869"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "81cf3414-f218-4287-b58b-ea820acfc5e9",
+      "type": "library",
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-to-slf4j",
+      "version": "2.24.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.logging.log4j:log4j-to-slf4j:2.24.3::39d9c405"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "842ff8cc-ea8e-42c1-9ee1-0d6028bcef34",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ch.qos.logback:logback-classic:1.5.32::ecfd17a4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "85ada975-1b4a-4424-a5d7-43c5908643ac",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-core:2.19.4::f12569a7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "890215b1-2d1e-42a5-bc52-671fb67dd1c7",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-webmvc",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-webmvc:6.2.17::ce8a935a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8a7970df-e8f1-4000-9ff5-8435dd850785",
+      "type": "library",
+      "group": "commons-codec",
+      "name": "commons-codec",
+      "version": "1.17.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "commons-codec:commons-codec:1.17.1::efd829be"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-core",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-core@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-core:6.2.17::5e787616"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9e649418-621a-4d7d-b3ae-49369388eb01",
+      "type": "library",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.slf4j:slf4j-api:2.0.17::b9a4c7be"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a099072b-3dfc-48ae-b078-d5f40a1eedff",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-aop",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-aop@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-aop:6.2.17::11a3b77a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a98b0b72-0bbb-4e5e-ba56-b364ff1c295f",
+      "type": "library",
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jsr310",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.19.4::8ab600f0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ac483aa4-b117-4459-ac3a-55b7f5186f72",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-autoconfigure",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-autoconfigure:3.5.12::487d7498"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b337062f-0e71-4874-9fcb-74cdfced8737",
+      "type": "library",
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jdk8",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.19.4::fb6ea3b0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-core",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-core@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-core:6.2.17::5e787616"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bc846522-7e45-41d9-ba0e-4f3a6f3fec63",
+      "type": "library",
+      "group": "org.yaml",
+      "name": "snakeyaml",
+      "version": "2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.yaml/snakeyaml@2.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.yaml:snakeyaml:2.4::8514c315"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bfe98b46-6165-4e24-a111-96d85ce05a22",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-json",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot-starter-json:3.5.12::bd6206ff"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c053502c-f732-46c3-8aab-dbe4418fa1c4",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-websocket",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-websocket:10.1.52::992d7cf3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c137b5a0-9126-496e-aab9-78e7ee6d2425",
+      "type": "library",
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.24.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.logging.log4j:log4j-api:2.24.3::b4add207"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c1ca9308-edab-4e21-9771-606dc2958110",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "normalizer",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:normalizer:1.0.0::bd89cc97"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c49be211-ff73-4f90-8e14-90356cffcdc0",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-jcl",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-jcl:6.2.17::2f9d1d8a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c86c9f69-6e41-4e36-a4d9-e8da0568fb81",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-webmvc",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-webmvc:6.2.17::ce8a935a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cb7c3683-c022-4fe3-8dde-71969471e17a",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-core",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-core:10.1.52::e86bcb0b"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ccb885b5-f40d-4c16-a07f-e118861d0990",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-context",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-context@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-context:6.2.17::fed7e2b2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-databind:2.19.4::14616abb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cfd8b722-fa8b-40cc-83f3-269d2e9a91a5",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ch.qos.logback:logback-core:1.5.32::5c529ab4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5e24d7b-1a3d-4009-8f55-3cc36c5b3c42",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-context",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-context@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-context:6.2.17::fed7e2b2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7e10167-56a8-4150-a50d-1fea299e48c2",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-databind:2.19.4::14616abb"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7ea360a-969a-40fb-921c-3752c194dc9f",
+      "type": "library",
+      "group": "jakarta.annotation",
+      "name": "jakarta.annotation-api",
+      "version": "2.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH classpath-exception"
+          }
+        }
+      ],
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "jakarta.annotation:jakarta.annotation-api:2.1.1::61504b52"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7ffa810-d9aa-4ecd-93c0-809e51558f3d",
+      "type": "library",
+      "group": "com.fasterxml.jackson.module",
+      "name": "jackson-module-parameter-names",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.19.4::7165305a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dab915d8-314e-4828-a38e-7255ac861ae3",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-el",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-el:10.1.52::e37ec1ce"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dcf83ba1-71f7-44a4-9f3e-b0444ac32a14",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.5.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ch.qos.logback:logback-classic:1.5.32::ecfd17a4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0cfcbcc-9330-4aca-9c5c-65f3683f3cf6",
+      "type": "library",
+      "group": "jakarta.annotation",
+      "name": "jakarta.annotation-api",
+      "version": "2.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH classpath-exception"
+          }
+        }
+      ],
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "jakarta.annotation:jakarta.annotation-api:2.1.1::61504b52"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e4606673-c643-4f24-a277-af86c1acc3e2",
+      "type": "application",
+      "name": "normalizer/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e6f05a48-556e-4b26-b4fc-213310bb3ebd",
+      "type": "library",
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-el",
+      "version": "10.1.52",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.apache.tomcat.embed:tomcat-embed-el:10.1.52::e37ec1ce"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e85cf929-f60e-4eef-a0ad-280f56f252f1",
+      "type": "library",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.5.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ch.qos.logback:logback-core:1.5.32::5c529ab4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e8e435cf-edb2-4fc9-90cc-80e7f466e66c",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "normalizer",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:normalizer:1.0.0::eee990a9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e9219368-84fe-49a5-8aa0-85767833af4f",
+      "type": "library",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.19.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.fasterxml.jackson.core:jackson-annotations:2.19.4::78d8cfc9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f24ea144-0679-4504-81ea-2116c72349c7",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-jcl",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-jcl:6.2.17::2f9d1d8a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f2e6bf00-03a1-4551-813d-7bece04048f1",
+      "type": "library",
+      "group": "org.springframework.boot",
+      "name": "spring-boot",
+      "version": "3.5.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework.boot:spring-boot:3.5.12::5e7d0a4a"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f3728b73-e501-437e-8539-235cb0a7a7e0",
+      "type": "library",
+      "group": "org.springframework",
+      "name": "spring-beans",
+      "version": "6.2.17",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-beans@6.2.17",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "org.springframework:spring-beans:6.2.17::1dbfe4b2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/dev.noregressions.trace/software-supply-chain-trace-lab@1.0.0",
+      "type": "library",
+      "group": "dev.noregressions.trace",
+      "name": "software-supply-chain-trace-lab",
+      "version": "1.0.0",
+      "purl": "pkg:maven/dev.noregressions.trace/software-supply-chain-trace-lab@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dev.noregressions.trace:software-supply-chain-trace-lab:1.0.0::801283f9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/js-tokens@4.0.0",
+      "type": "library",
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/js-tokens@4.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "js-tokens@4.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/lodash@4.17.21",
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/lodash@4.17.21",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "lodash@4.17.21"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/loose-envify@1.4.0",
+      "type": "library",
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/loose-envify@1.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "loose-envify@1.4.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/react-dom@18.3.1",
+      "type": "library",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react-dom@18.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "react-dom@18.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/react@18.3.1",
+      "type": "library",
+      "name": "react",
+      "version": "18.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react@18.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "react@18.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/scheduler@0.23.2",
+      "type": "library",
+      "name": "scheduler",
+      "version": "0.23.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/scheduler@0.23.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "scheduler@0.23.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "0145def3-c24d-41af-94ca-83af4bfc5d9b",
+      "dependsOn": [
+        "f2e6bf00-03a1-4551-813d-7bece04048f1"
+      ]
+    },
+    {
+      "ref": "04af3b07-1a15-4d7b-8817-815ae85cb172",
+      "dependsOn": [
+        "655ceea6-f550-4340-be96-a9ccc7ab94d9"
+      ]
+    },
+    {
+      "ref": "076d2ec5-5b30-4709-9ab2-893ffd41c379",
+      "dependsOn": [
+        "04af3b07-1a15-4d7b-8817-815ae85cb172",
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "f3728b73-e501-437e-8539-235cb0a7a7e0"
+      ]
+    },
+    {
+      "ref": "0bd83517-910e-44b7-80e8-b6359f6f2f7b",
+      "dependsOn": [
+        "6553272b-e1d5-4687-939b-9198cd28808e"
+      ]
+    },
+    {
+      "ref": "0d867871-2ca8-4fa4-a594-2419ada2ddc1",
+      "dependsOn": [
+        "8a7970df-e8f1-4000-9ff5-8435dd850785"
+      ]
+    },
+    {
+      "ref": "1638a0d2-e64f-4a1c-b6c1-3742488b9e3a",
+      "dependsOn": []
+    },
+    {
+      "ref": "1ac4b5a3-7b1e-4714-9c7c-24dfdbb3db17",
+      "dependsOn": [
+        "85ada975-1b4a-4424-a5d7-43c5908643ac",
+        "d7e10167-56a8-4150-a50d-1fea299e48c2"
+      ]
+    },
+    {
+      "ref": "1cbfca60-b024-49e3-99fe-ca64c2b3f9a2",
+      "dependsOn": [
+        "9e649418-621a-4d7d-b3ae-49369388eb01"
+      ]
+    },
+    {
+      "ref": "1cc7a7b0-31e1-4c10-87dc-1b57c3bf1779",
+      "dependsOn": [
+        "2d18d3a6-c619-42fa-b544-aead164d4642"
+      ]
+    },
+    {
+      "ref": "212368bc-104c-46a9-87ee-79fc6d5096af",
+      "dependsOn": [
+        "33170e1a-5718-4dd0-999c-a7248bef2115"
+      ]
+    },
+    {
+      "ref": "2d18d3a6-c619-42fa-b544-aead164d4642",
+      "dependsOn": []
+    },
+    {
+      "ref": "33170e1a-5718-4dd0-999c-a7248bef2115",
+      "dependsOn": []
+    },
+    {
+      "ref": "35f330e1-deae-4416-af4a-fd29b5dcb2e7",
+      "dependsOn": []
+    },
+    {
+      "ref": "37afdd3b-ec78-4d2d-8659-735c312c0414",
+      "dependsOn": [
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde"
+      ]
+    },
+    {
+      "ref": "3aec86da-58c0-4b0e-bd35-569fc322444c",
+      "dependsOn": [
+        "0bd83517-910e-44b7-80e8-b6359f6f2f7b",
+        "5795d5da-db21-461d-a037-2801897c9136",
+        "6bd340cf-7ae2-4853-90c8-b7e03b32c3ad",
+        "e4606673-c643-4f24-a277-af86c1acc3e2"
+      ]
+    },
+    {
+      "ref": "3cc1fb85-2ad2-4315-883b-16b40085a57c",
+      "dependsOn": [
+        "0145def3-c24d-41af-94ca-83af4bfc5d9b",
+        "1638a0d2-e64f-4a1c-b6c1-3742488b9e3a",
+        "8135c8f1-cc74-4b61-8f6d-c565219ec765",
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+        "e0cfcbcc-9330-4aca-9c5c-65f3683f3cf6",
+        "f2e6bf00-03a1-4551-813d-7bece04048f1"
+      ]
+    },
+    {
+      "ref": "3ed34bb8-c02c-49e2-882c-79555c557932",
+      "dependsOn": [
+        "85ada975-1b4a-4424-a5d7-43c5908643ac",
+        "d7e10167-56a8-4150-a50d-1fea299e48c2"
+      ]
+    },
+    {
+      "ref": "4204fac2-4605-49b5-af5e-7edb4d91c40f",
+      "dependsOn": [
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "d5e24d7b-1a3d-4009-8f55-3cc36c5b3c42"
+      ]
+    },
+    {
+      "ref": "464c22ab-c48c-477a-90b3-551193d0548b",
+      "dependsOn": []
+    },
+    {
+      "ref": "4659b246-2583-4b49-98de-064302d2a7b8",
+      "dependsOn": [
+        "076d2ec5-5b30-4709-9ab2-893ffd41c379",
+        "1ac4b5a3-7b1e-4714-9c7c-24dfdbb3db17",
+        "3ed34bb8-c02c-49e2-882c-79555c557932",
+        "7cc25221-6252-4b74-b7fd-af0b106c4c80",
+        "a98b0b72-0bbb-4e5e-ba56-b364ff1c295f",
+        "d7e10167-56a8-4150-a50d-1fea299e48c2"
+      ]
+    },
+    {
+      "ref": "4a12bfd1-317e-4d6d-84fe-537b5df19a25",
+      "dependsOn": [
+        "71d78244-0abe-47f3-9e38-cb096228f588",
+        "9e649418-621a-4d7d-b3ae-49369388eb01"
+      ]
+    },
+    {
+      "ref": "4e184729-6ded-491b-80af-93ddd177d9cc",
+      "dependsOn": [
+        "1cc7a7b0-31e1-4c10-87dc-1b57c3bf1779",
+        "81cf3414-f218-4287-b58b-ea820acfc5e9",
+        "842ff8cc-ea8e-42c1-9ee1-0d6028bcef34"
+      ]
+    },
+    {
+      "ref": "52ef091c-6189-4907-9efa-a78c081e44a4",
+      "dependsOn": [
+        "c053502c-f732-46c3-8aab-dbe4418fa1c4",
+        "cb7c3683-c022-4fe3-8dde-71969471e17a",
+        "d7ea360a-969a-40fb-921c-3752c194dc9f",
+        "e6f05a48-556e-4b26-b4fc-213310bb3ebd"
+      ]
+    },
+    {
+      "ref": "577ce199-e7f7-469f-bde0-f031ac4d133f",
+      "dependsOn": [
+        "212368bc-104c-46a9-87ee-79fc6d5096af",
+        "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68"
+      ]
+    },
+    {
+      "ref": "5795d5da-db21-461d-a037-2801897c9136",
+      "dependsOn": [
+        "pkg:npm/lodash@4.17.21",
+        "pkg:npm/react-dom@18.3.1",
+        "pkg:npm/react@18.3.1"
+      ]
+    },
+    {
+      "ref": "5d350fcc-377e-4396-8df0-f426bfdded49",
+      "dependsOn": [
+        "35f330e1-deae-4416-af4a-fd29b5dcb2e7",
+        "7b5c8798-a469-4dd6-88d5-54d533abda9e",
+        "dab915d8-314e-4828-a38e-7255ac861ae3",
+        "e0cfcbcc-9330-4aca-9c5c-65f3683f3cf6"
+      ]
+    },
+    {
+      "ref": "5f35fbd8-4694-48e5-b616-600c88caf84d",
+      "dependsOn": []
+    },
+    {
+      "ref": "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+      "dependsOn": [
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68"
+      ]
+    },
+    {
+      "ref": "63a172b2-cbfd-4c26-a92c-09a48398f619",
+      "dependsOn": [
+        "464c22ab-c48c-477a-90b3-551193d0548b",
+        "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2",
+        "e9219368-84fe-49a5-8aa0-85767833af4f"
+      ]
+    },
+    {
+      "ref": "6553272b-e1d5-4687-939b-9198cd28808e",
+      "dependsOn": [
+        "6e972d92-ac3b-45ed-90b8-e00fa8fa9250",
+        "d7e10167-56a8-4150-a50d-1fea299e48c2",
+        "e8e435cf-edb2-4fc9-90cc-80e7f466e66c"
+      ]
+    },
+    {
+      "ref": "655ceea6-f550-4340-be96-a9ccc7ab94d9",
+      "dependsOn": []
+    },
+    {
+      "ref": "67abc0bb-ea58-49da-8a44-d9f9a979331d",
+      "dependsOn": []
+    },
+    {
+      "ref": "6a7f3699-9512-40ac-b714-d6fe69beb9c5",
+      "dependsOn": [
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68"
+      ]
+    },
+    {
+      "ref": "6bd340cf-7ae2-4853-90c8-b7e03b32c3ad",
+      "dependsOn": [
+        "pkg:maven/dev.noregressions.trace/software-supply-chain-trace-lab@1.0.0"
+      ]
+    },
+    {
+      "ref": "6d655af0-6dce-439a-8b8b-49308ec8c97f",
+      "dependsOn": [
+        "3cc1fb85-2ad2-4315-883b-16b40085a57c",
+        "577ce199-e7f7-469f-bde0-f031ac4d133f",
+        "5d350fcc-377e-4396-8df0-f426bfdded49",
+        "890215b1-2d1e-42a5-bc52-671fb67dd1c7",
+        "bfe98b46-6165-4e24-a111-96d85ce05a22"
+      ]
+    },
+    {
+      "ref": "6e972d92-ac3b-45ed-90b8-e00fa8fa9250",
+      "dependsOn": [
+        "076d2ec5-5b30-4709-9ab2-893ffd41c379",
+        "4659b246-2583-4b49-98de-064302d2a7b8",
+        "52ef091c-6189-4907-9efa-a78c081e44a4",
+        "7cc25221-6252-4b74-b7fd-af0b106c4c80",
+        "c86c9f69-6e41-4e36-a4d9-e8da0568fb81"
+      ]
+    },
+    {
+      "ref": "71d78244-0abe-47f3-9e38-cb096228f588",
+      "dependsOn": []
+    },
+    {
+      "ref": "72e09e57-6119-4a23-99fa-a2e36d5e7d45",
+      "dependsOn": [
+        "67abc0bb-ea58-49da-8a44-d9f9a979331d",
+        "6d655af0-6dce-439a-8b8b-49308ec8c97f",
+        "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2"
+      ]
+    },
+    {
+      "ref": "796f43d0-f592-40fe-a6df-253cee8246f7",
+      "dependsOn": [
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "f3728b73-e501-437e-8539-235cb0a7a7e0"
+      ]
+    },
+    {
+      "ref": "7b5c8798-a469-4dd6-88d5-54d533abda9e",
+      "dependsOn": [
+        "35f330e1-deae-4416-af4a-fd29b5dcb2e7"
+      ]
+    },
+    {
+      "ref": "7c7a0b49-4735-495c-b7f7-0a8f5a1fc9a0",
+      "dependsOn": []
+    },
+    {
+      "ref": "7cc25221-6252-4b74-b7fd-af0b106c4c80",
+      "dependsOn": [
+        "4204fac2-4605-49b5-af5e-7edb4d91c40f",
+        "4e184729-6ded-491b-80af-93ddd177d9cc",
+        "ac483aa4-b117-4459-ac3a-55b7f5186f72",
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "bc846522-7e45-41d9-ba0e-4f3a6f3fec63",
+        "d7ea360a-969a-40fb-921c-3752c194dc9f"
+      ]
+    },
+    {
+      "ref": "8135c8f1-cc74-4b61-8f6d-c565219ec765",
+      "dependsOn": [
+        "1cbfca60-b024-49e3-99fe-ca64c2b3f9a2",
+        "4a12bfd1-317e-4d6d-84fe-537b5df19a25",
+        "dcf83ba1-71f7-44a4-9f3e-b0444ac32a14"
+      ]
+    },
+    {
+      "ref": "81cf3414-f218-4287-b58b-ea820acfc5e9",
+      "dependsOn": [
+        "2d18d3a6-c619-42fa-b544-aead164d4642",
+        "c137b5a0-9126-496e-aab9-78e7ee6d2425"
+      ]
+    },
+    {
+      "ref": "842ff8cc-ea8e-42c1-9ee1-0d6028bcef34",
+      "dependsOn": [
+        "2d18d3a6-c619-42fa-b544-aead164d4642",
+        "cfd8b722-fa8b-40cc-83f3-269d2e9a91a5"
+      ]
+    },
+    {
+      "ref": "85ada975-1b4a-4424-a5d7-43c5908643ac",
+      "dependsOn": []
+    },
+    {
+      "ref": "890215b1-2d1e-42a5-bc52-671fb67dd1c7",
+      "dependsOn": [
+        "577ce199-e7f7-469f-bde0-f031ac4d133f",
+        "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+        "6a7f3699-9512-40ac-b714-d6fe69beb9c5",
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+        "a099072b-3dfc-48ae-b078-d5f40a1eedff",
+        "ccb885b5-f40d-4c16-a07f-e118861d0990"
+      ]
+    },
+    {
+      "ref": "8a7970df-e8f1-4000-9ff5-8435dd850785",
+      "dependsOn": []
+    },
+    {
+      "ref": "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+      "dependsOn": [
+        "f24ea144-0679-4504-81ea-2116c72349c7"
+      ]
+    },
+    {
+      "ref": "9e649418-621a-4d7d-b3ae-49369388eb01",
+      "dependsOn": []
+    },
+    {
+      "ref": "a099072b-3dfc-48ae-b078-d5f40a1eedff",
+      "dependsOn": [
+        "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68"
+      ]
+    },
+    {
+      "ref": "a98b0b72-0bbb-4e5e-ba56-b364ff1c295f",
+      "dependsOn": [
+        "5f35fbd8-4694-48e5-b616-600c88caf84d",
+        "85ada975-1b4a-4424-a5d7-43c5908643ac",
+        "d7e10167-56a8-4150-a50d-1fea299e48c2"
+      ]
+    },
+    {
+      "ref": "ac483aa4-b117-4459-ac3a-55b7f5186f72",
+      "dependsOn": [
+        "4204fac2-4605-49b5-af5e-7edb4d91c40f"
+      ]
+    },
+    {
+      "ref": "b337062f-0e71-4874-9fcb-74cdfced8737",
+      "dependsOn": [
+        "464c22ab-c48c-477a-90b3-551193d0548b",
+        "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2"
+      ]
+    },
+    {
+      "ref": "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+      "dependsOn": [
+        "c49be211-ff73-4f90-8e14-90356cffcdc0"
+      ]
+    },
+    {
+      "ref": "bc846522-7e45-41d9-ba0e-4f3a6f3fec63",
+      "dependsOn": []
+    },
+    {
+      "ref": "bfe98b46-6165-4e24-a111-96d85ce05a22",
+      "dependsOn": [
+        "3cc1fb85-2ad2-4315-883b-16b40085a57c",
+        "577ce199-e7f7-469f-bde0-f031ac4d133f",
+        "63a172b2-cbfd-4c26-a92c-09a48398f619",
+        "b337062f-0e71-4874-9fcb-74cdfced8737",
+        "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2",
+        "d7ffa810-d9aa-4ecd-93c0-809e51558f3d"
+      ]
+    },
+    {
+      "ref": "c053502c-f732-46c3-8aab-dbe4418fa1c4",
+      "dependsOn": [
+        "cb7c3683-c022-4fe3-8dde-71969471e17a"
+      ]
+    },
+    {
+      "ref": "c137b5a0-9126-496e-aab9-78e7ee6d2425",
+      "dependsOn": []
+    },
+    {
+      "ref": "c1ca9308-edab-4e21-9771-606dc2958110",
+      "dependsOn": [
+        "7c7a0b49-4735-495c-b7f7-0a8f5a1fc9a0"
+      ]
+    },
+    {
+      "ref": "c49be211-ff73-4f90-8e14-90356cffcdc0",
+      "dependsOn": []
+    },
+    {
+      "ref": "c86c9f69-6e41-4e36-a4d9-e8da0568fb81",
+      "dependsOn": [
+        "076d2ec5-5b30-4709-9ab2-893ffd41c379",
+        "37afdd3b-ec78-4d2d-8659-735c312c0414",
+        "796f43d0-f592-40fe-a6df-253cee8246f7",
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "d5e24d7b-1a3d-4009-8f55-3cc36c5b3c42",
+        "f3728b73-e501-437e-8539-235cb0a7a7e0"
+      ]
+    },
+    {
+      "ref": "cb7c3683-c022-4fe3-8dde-71969471e17a",
+      "dependsOn": []
+    },
+    {
+      "ref": "ccb885b5-f40d-4c16-a07f-e118861d0990",
+      "dependsOn": [
+        "212368bc-104c-46a9-87ee-79fc6d5096af",
+        "607a4732-cf88-40d7-b588-f8fb1e66fd4a",
+        "6a7f3699-9512-40ac-b714-d6fe69beb9c5",
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+        "a099072b-3dfc-48ae-b078-d5f40a1eedff"
+      ]
+    },
+    {
+      "ref": "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2",
+      "dependsOn": [
+        "464c22ab-c48c-477a-90b3-551193d0548b",
+        "e9219368-84fe-49a5-8aa0-85767833af4f"
+      ]
+    },
+    {
+      "ref": "cfd8b722-fa8b-40cc-83f3-269d2e9a91a5",
+      "dependsOn": []
+    },
+    {
+      "ref": "d5e24d7b-1a3d-4009-8f55-3cc36c5b3c42",
+      "dependsOn": [
+        "04af3b07-1a15-4d7b-8817-815ae85cb172",
+        "37afdd3b-ec78-4d2d-8659-735c312c0414",
+        "796f43d0-f592-40fe-a6df-253cee8246f7",
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde",
+        "f3728b73-e501-437e-8539-235cb0a7a7e0"
+      ]
+    },
+    {
+      "ref": "d7e10167-56a8-4150-a50d-1fea299e48c2",
+      "dependsOn": [
+        "5f35fbd8-4694-48e5-b616-600c88caf84d",
+        "85ada975-1b4a-4424-a5d7-43c5908643ac"
+      ]
+    },
+    {
+      "ref": "d7ea360a-969a-40fb-921c-3752c194dc9f",
+      "dependsOn": []
+    },
+    {
+      "ref": "d7ffa810-d9aa-4ecd-93c0-809e51558f3d",
+      "dependsOn": [
+        "464c22ab-c48c-477a-90b3-551193d0548b",
+        "ccff0e1d-d5b5-4c2b-9280-4cf8cbfffbe2"
+      ]
+    },
+    {
+      "ref": "dab915d8-314e-4828-a38e-7255ac861ae3",
+      "dependsOn": []
+    },
+    {
+      "ref": "dcf83ba1-71f7-44a4-9f3e-b0444ac32a14",
+      "dependsOn": [
+        "9e649418-621a-4d7d-b3ae-49369388eb01",
+        "e85cf929-f60e-4eef-a0ad-280f56f252f1"
+      ]
+    },
+    {
+      "ref": "e0cfcbcc-9330-4aca-9c5c-65f3683f3cf6",
+      "dependsOn": []
+    },
+    {
+      "ref": "e4606673-c643-4f24-a277-af86c1acc3e2",
+      "dependsOn": [
+        "0d867871-2ca8-4fa4-a594-2419ada2ddc1"
+      ]
+    },
+    {
+      "ref": "e6f05a48-556e-4b26-b4fc-213310bb3ebd",
+      "dependsOn": []
+    },
+    {
+      "ref": "e85cf929-f60e-4eef-a0ad-280f56f252f1",
+      "dependsOn": []
+    },
+    {
+      "ref": "e8e435cf-edb2-4fc9-90cc-80e7f466e66c",
+      "dependsOn": []
+    },
+    {
+      "ref": "e9219368-84fe-49a5-8aa0-85767833af4f",
+      "dependsOn": []
+    },
+    {
+      "ref": "f24ea144-0679-4504-81ea-2116c72349c7",
+      "dependsOn": []
+    },
+    {
+      "ref": "f2e6bf00-03a1-4551-813d-7bece04048f1",
+      "dependsOn": [
+        "8bae160a-dc39-47b3-a9fa-e2d6eb8cbe68",
+        "ccb885b5-f40d-4c16-a07f-e118861d0990"
+      ]
+    },
+    {
+      "ref": "f3728b73-e501-437e-8539-235cb0a7a7e0",
+      "dependsOn": [
+        "b376eb3a-2b11-445a-b8f9-fb6da27eadde"
+      ]
+    },
+    {
+      "ref": "pkg:maven/dev.noregressions.trace/software-supply-chain-trace-lab@1.0.0",
+      "dependsOn": [
+        "72e09e57-6119-4a23-99fa-a2e36d5e7d45",
+        "c1ca9308-edab-4e21-9771-606dc2958110"
+      ]
+    },
+    {
+      "ref": "pkg:npm/js-tokens@4.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lodash@4.17.21",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/loose-envify@1.4.0",
+      "dependsOn": [
+        "pkg:npm/js-tokens@4.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/react-dom@18.3.1",
+      "dependsOn": [
+        "pkg:npm/loose-envify@1.4.0",
+        "pkg:npm/react@18.3.1",
+        "pkg:npm/scheduler@0.23.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/react@18.3.1",
+      "dependsOn": [
+        "pkg:npm/loose-envify@1.4.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/scheduler@0.23.2",
+      "dependsOn": [
+        "pkg:npm/loose-envify@1.4.0"
+      ]
+    }
+  ],
+  "vulnerabilities": []
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:spdx="http://spdx.org/rdf/terms#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <spdx:SpdxDocument rdf:about="http://spdx.org/spdxdocs/java_maven-005511cf-cfa9-49f4-97be-85616b1da7df#SPDXRef-DOCUMENT">
+    <spdx:creationInfo>
+      <spdx:CreationInfo rdf:nodeID="Na3d9cbe9fb5c4e28be9107f481046634">
+        <spdx:creator>Tool: scancode-toolkit 32.5.0</spdx:creator>
+        <spdx:licenseListVersion>3.27</spdx:licenseListVersion>
+        <spdx:created>2026-11-10T12:01:28Z</spdx:created>
+      </spdx:CreationInfo>
+    </spdx:creationInfo>
+    <spdx:name>SPDX Document created by ScanCode Toolkit</spdx:name>
+    <spdx:specVersion>SPDX-2.2</spdx:specVersion>
+    <spdx:dataLicense rdf:resource="http://spdx.org/licenses/CC0-1.0"/>
+    <rdfs:comment>Generated with ScanCode and provided on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied. No content created from
+ScanCode should be considered or used as legal advice. Consult an Attorney
+for any legal advice.
+ScanCode is a free software code scanning tool from nexB Inc. and others.
+Visit https://github.com/nexB/scancode-toolkit/ for support and download.
+SPDX License List: 3.27</rdfs:comment>
+  </spdx:SpdxDocument>
+  <spdx:Package rdf:about="http://spdx.org/spdxdocs/java_maven-005511cf-cfa9-49f4-97be-85616b1da7df#SPDXRef-001">
+    <spdx:relationship>
+      <spdx:Relationship rdf:nodeID="N46d1f584f9c9418683dc6e353cd21711">
+        <spdx:relatedSpdxElement>
+          <spdx:File rdf:about="http://spdx.org/spdxdocs/java_maven-005511cf-cfa9-49f4-97be-85616b1da7df#SPDXRef-1">
+            <spdx:copyrightText>NONE</spdx:copyrightText>
+            <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+            <spdx:fileName>./pom.xml</spdx:fileName>
+            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/rdf/terms#none"/>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="Nef8bf46844e04e959aa9c45ecc99fc1f">
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+                <spdx:checksumValue>be41a174b763e6b98bffcf2ee8e522108cf912eb</spdx:checksumValue>
+              </spdx:Checksum>
+            </spdx:checksum>
+          </spdx:File>
+        </spdx:relatedSpdxElement>
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
+      </spdx:Relationship>
+    </spdx:relationship>
+    <spdx:relationship>
+      <spdx:Relationship rdf:nodeID="N8dbe162c1939468da9c5448d87dea890">
+        <spdx:relatedSpdxElement>
+          <spdx:File rdf:about="http://spdx.org/spdxdocs/java_maven-005511cf-cfa9-49f4-97be-85616b1da7df#SPDXRef-7">
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="N9644daf0338a455c8ff0f6c265d054c6">
+                <spdx:checksumValue>b51e3fb9898df7ed79fe0503942c625094ce8831</spdx:checksumValue>
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:copyrightText>NONE</spdx:copyrightText>
+            <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+            <spdx:fileName>./src/main/java/com/example/App.java</spdx:fileName>
+            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/rdf/terms#none"/>
+          </spdx:File>
+        </spdx:relatedSpdxElement>
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
+      </spdx:Relationship>
+    </spdx:relationship>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</spdx:filesAnalyzed>
+    <spdx:copyrightText>NONE</spdx:copyrightText>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>java_maven</spdx:name>
+    <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/rdf/terms#none"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:packageVerificationCode>
+      <spdx:PackageVerificationCode rdf:nodeID="N915230ab833c40d6aa584916905e1186">
+        <spdx:packageVerificationCodeValue>1428a8b35c8eadb38aeca86eab20b8c6025f9968</spdx:packageVerificationCodeValue>
+      </spdx:PackageVerificationCode>
+    </spdx:packageVerificationCode>
+  </spdx:Package>
+</rdf:RDF>

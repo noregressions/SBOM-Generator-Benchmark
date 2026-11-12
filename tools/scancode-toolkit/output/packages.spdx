@@ -1,0 +1,223 @@
+## Document Information
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SPDX Document created by ScanCode Toolkit
+DocumentNamespace: http://spdx.org/spdxdocs/sample_app-18139dd8-1749-43a0-874e-248c08d7f88a
+DocumentComment: <text>Generated with ScanCode and provided on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied. No content created from
+ScanCode should be considered or used as legal advice. Consult an Attorney
+for any legal advice.
+ScanCode is a free software code scanning tool from nexB Inc. and others.
+Visit https://github.com/nexB/scancode-toolkit/ for support and download.
+SPDX License List: 3.27</text>
+
+## Creation Information
+LicenseListVersion: 3.27
+Creator: Tool: scancode-toolkit 32.5.0
+Created: 2026-11-10T12:00:55Z
+
+## Package Information
+PackageName: sample_app
+SPDXID: SPDXRef-001
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageVerificationCode: fe12204f4b82435b868b7ef3441c8efa8d820944
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseInfoFromFiles: NONE
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./Dockerfile
+SPDXID: SPDXRef-1
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./go/go.mod
+SPDXID: SPDXRef-3
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./go/go.sum
+SPDXID: SPDXRef-4
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./go/main.go
+SPDXID: SPDXRef-5
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./go/sbom-sample-go
+SPDXID: SPDXRef-6
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./java-gradle/build.gradle.kts
+SPDXID: SPDXRef-8
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./java-gradle/settings.gradle.kts
+SPDXID: SPDXRef-9
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./java-gradle/src/main/java/com/example/App.java
+SPDXID: SPDXRef-46
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./java-maven/pom.xml
+SPDXID: SPDXRef-48
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./java-maven/src/main/java/com/example/App.java
+SPDXID: SPDXRef-54
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./node/index.js
+SPDXID: SPDXRef-67
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./node/package-lock.json
+SPDXID: SPDXRef-68
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./node/package.json
+SPDXID: SPDXRef-69
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/app.py
+SPDXID: SPDXRef-913
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/pyproject.toml
+SPDXID: SPDXRef-914
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/requirements.txt
+SPDXID: SPDXRef-915
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/sbom_sample_python.egg-info/dependency_links.txt
+SPDXID: SPDXRef-1130
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/sbom_sample_python.egg-info/PKG-INFO
+SPDXID: SPDXRef-1131
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/sbom_sample_python.egg-info/requires.txt
+SPDXID: SPDXRef-1132
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/sbom_sample_python.egg-info/SOURCES.txt
+SPDXID: SPDXRef-1133
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./python/sbom_sample_python.egg-info/top_level.txt
+SPDXID: SPDXRef-1134
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./rust/Cargo.lock
+SPDXID: SPDXRef-1136
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./rust/Cargo.toml
+SPDXID: SPDXRef-1137
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+## File Information
+FileName: ./rust/src/main.rs
+SPDXID: SPDXRef-1139
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+

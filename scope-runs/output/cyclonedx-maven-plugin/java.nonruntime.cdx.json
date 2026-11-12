@@ -1,0 +1,154 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:fd1424a8-4416-39de-ac79-605543f7b233",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-10T16:00:24Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.1",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "9c7a565cf28cce58557d0c621c5ea4b1"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "be882d5a22050bfa9d19090b1420c188617d0e1c"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "698e0f37184a5b28c245c4065fd036dfce253b52f82fbb7113d81d36326cc249"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "c0f0b11026858166f872a2eb54719492e5cecaa0bc9cd6b30b3ecb4a174eed220f4a1b5829d18d6734128e778d3cb3db7ffed177c92866133129cb29081814a0"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "d80964707dfe5caca8c70521d5066f57589304c0a657e6fbc7c0614ea0fc7b3b3dbe7778361eee0f54ba111e9cb0ffcb"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "80bc3a275d9514bc457461ff52a72add8c7ecbbc01d8912efce57139016c544ee776981851be0a58fa977ab4221f703f"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "142317d6f245390f4fd2d0c100b16281b8dfc5c0c2cff86943bdcc97039cb699"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "af0fb9137c90b65d1a07f72e4d51ae509956cdb8800f35c961b037cdda1fe4a14ce3b496cef71ba85f1621affcfe29cd42704ae4191ff0b090a9602087c8997b"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar",
+      "group" : "com.example",
+      "name" : "sbom-sample-maven",
+      "version" : "1.0.0",
+      "description" : "Small Java app used as a target for SBOM generation tools",
+      "purl" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar"
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "test"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter",
+      "version" : "5.10.2",
+      "description" : "Module \"junit-jupiter\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "74440a4d6c038ccfe822debfa779a9fd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "831c0b86ddc2ce38391c5b81ea662b0cfdc02cce"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "263e43447f4b40f126ad6b1dcbd7df379448413bdedb8e0d240c5bcbba7c7a4f"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d10edf43b62c5947b50c506e84d65829138970acd6a85c066d7c6ca192477bed197af77866f6b18ea7b8ebc8a1a16666dc7982a967533079e8927a65aa3b484d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "95f57bca7cd4a7aac1f61512fecfe589a11899b6dfd078799199d49f67c8e4994ed535c8cfec5926a1d268f07131934a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7bbb2cbfa394b688c7114f0e2b48d3fb691fadd815058ad4ab5f014610a803088e737e32115715d54f12c9817eba7e20"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "80db7332d1d4c805df1731295415eeb78efd69b6ac716108c058c4c58c918d11"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "489f5f58ab03be0b2841370e12c361487798fce1414f12cebbab736ae22b9cb191ac36ee22c1bb4eac4b6405b3e38defef1efa7020dfe2c92a42afe4b9c3b9f4"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/junit5/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit5"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/com.example/sbom-sample-maven@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

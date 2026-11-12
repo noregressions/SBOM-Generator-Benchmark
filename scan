@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Run the evaluator's tools against any source tree and write the SBOMs and a report into it.
+#
+#   ./scan /path/to/project
+#   ./scan /path/to/project --artefact target/app.jar      also scan a built artefact (a path inside the tree)
+#   ./scan /path/to/project --image myapp:latest           also scan a container image the local Docker daemon has
+#   ./scan /path/to/project --exclude "target node_modules"   paths (from the tree's root) hidden from the source-stage scanners
+#   ./scan /path/to/project --expected truth.json          ground truth in the testcases/ expected.json format; adds accuracy columns
+#   ./scan /path/to/project --out reports/sbom             where to write, inside the tree (default: sbom-report)
+#   ./scan /path/to/project --tools "syft trivy"           only these tools (folder names under tools/)
+#
+# Output, in <tree>/sbom-report/: report.html, report.md, scores.json, run.json and sboms/<stage>/<tool>.*.json.
+# Needs only Docker. Nothing is built: build the project first if you want its artefact scanned. The Maven plugins
+# (CycloneDX Maven, SBOM+) run Maven in the tree and write under its target/ directory.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+tree=""; art=""; image=""; exclude=""; expected=""; out="sbom-report"; tools=""; REBUILD_IMAGE=0
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --artefact|--artifact) art="$2"; shift ;;
+    --image) image="$2"; shift ;;
+    --exclude) exclude="$2"; shift ;;
+    --expected) expected="$2"; shift ;;
+    --out) out="$2"; shift ;;
+    --tools) tools="$2"; shift ;;
+    --rebuild-image) REBUILD_IMAGE=1 ;;
+    -h|--help) sed -n '2,14p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -*) echo "unknown option: $1" >&2; exit 2 ;;
+    *) [[ -z "$tree" ]] || { echo "one tree at a time" >&2; exit 2; }; tree="$1" ;;
+  esac; shift
+done
+[[ -n "$tree" && -d "$tree" ]] || { echo "usage: ./scan /path/to/project [options]   (./scan --help)" >&2; exit 2; }
+tree="$(cd "$tree" && pwd)"
+# paths inside the tree may be given absolute or relative; the container sees the tree at /tree
+rel(){ local p="$1"; [[ "$p" == "$tree"/* ]] && p="${p#"$tree"/}"; [[ "$p" != /* ]] || { echo "$2 must be inside $tree" >&2; exit 2; }; printf '%s' "$p"; }
+[[ -n "$art" ]] && art="$(rel "$art" --artefact)"
+[[ -n "$expected" ]] && expected="$(rel "$expected" --expected)"
+out="$(rel "$out" --out)"
+
+. "$ROOT/image/run.sh"
+"${RUN[@]}" -v "$ROOT:/work:ro" -v "$tree:/tree" -w /work \
+  -e SCAN_NAME="$(basename "$tree")" -e SCAN_ARTEFACT="$art" -e SCAN_IMAGE="$image" -e SCAN_EXCLUDE="$exclude" \
+  -e SCAN_EXPECTED="$expected" -e SCAN_OUT="$out" -e CRITERIA_TOOLS="$tools" -e PYTHONDONTWRITEBYTECODE=1 \
+  "$IMAGE" criteria/scan-tree.sh
+echo; echo "Report: $tree/$out/report.html"

@@ -1,0 +1,401 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "Kubernetes Release Engineering",
+      "spdxId": "https://example.com/sbom/go#agent-1",
+      "type": "Organization"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "protobom-v0.6.2",
+      "spdxId": "https://example.com/sbom/go#tool-2",
+      "type": "Tool"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "bom-v0.8.0",
+      "spdxId": "https://example.com/sbom/go#tool-3",
+      "type": "Tool"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "go.mod",
+      "software_primaryPurpose": "other",
+      "spdxId": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.mod",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha1",
+          "hashValue": "3b41ee01c76a97ad47c74a1cfd1427c6a2e3f0c1",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha256",
+          "hashValue": "d55d7d81cbb94a70a62fbb94653a41be9cb0d22fbfa2fdfb3a63f57da34063c9",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "6c37b9e069f4b5783e661534e010b25f5600838677410aaae05a3264ea2c9a69c3f008f606103f1525c269b54e699f8643189fc441244ba78ee55989d6facb41",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.mod",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-4",
+      "to": [
+        "https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoneLicense"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "go.sum",
+      "software_primaryPurpose": "other",
+      "spdxId": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.sum",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha1",
+          "hashValue": "7b351e3dc5faee5765b017e0cd69e62604e67a8f",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha256",
+          "hashValue": "f2a0e0c7ae6cb53b034bd0d216bd1b9b2a7800ce8314fbf92b0afe7a967ec1a1",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "854f195266b2a928504451da12bc6624481140533ad25e6cdb25bf3d95c3c1661f7dc27555308e0b53f4f6436172cee07f9c429d99d11d2f7176df509d028007",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.sum",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-5",
+      "to": [
+        "https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoneLicense"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "main.go",
+      "software_primaryPurpose": "source",
+      "spdxId": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-main.go",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha1",
+          "hashValue": "f4bfd7ac6911ed7c0cfc5624303b3bde7750fa42",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha256",
+          "hashValue": "640b54da7a138921a63f12139b146a21308e76baf73cb4fd562d8c1176aeda8e",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "11b24784a49ce1065037e7ac111c754111538fc08aa4da8ca1dcbf0ee15635bb087496bc0eef2d3ba8ac726dbccc458147ecd7b7bcdad6182e7410f850cc3d36",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-main.go",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-6",
+      "to": [
+        "https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoneLicense"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "contentType": "application/octet-stream",
+      "creationInfo": "_:creationinfo",
+      "name": "sbom-sample-go",
+      "software_primaryPurpose": "application",
+      "spdxId": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-sbom-sample-go",
+      "type": "software_File",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha1",
+          "hashValue": "95b518e08364d2df5c9167c8beb6b01a96c0d13c",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha256",
+          "hashValue": "74581dbd2e3d63916fad1044a25116f676fe3f1476f48bcd7029aa1dd65b9af1",
+          "type": "Hash"
+        },
+        {
+          "algorithm": "sha512",
+          "hashValue": "03425c38b57e2984e252769e744d1c7537cc463d89d6ff5f970275924abfe5bb3e16057aef14933436d90fd482ae766e657106e882d5dcc73d58496da1dfbdb3",
+          "type": "Hash"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-sbom-sample-go",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-7",
+      "to": [
+        "https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoneLicense"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:golang/github.com/example/sbom-sample-go"
+        }
+      ],
+      "name": "github.com/example/sbom-sample-go",
+      "software_packageUrl": "pkg:golang/github.com/example/sbom-sample-go",
+      "spdxId": "https://example.com/sbom/go#Package-github.com-example-sbom-sample-go",
+      "type": "software_Package",
+      "verifiedUsing": [
+        {
+          "algorithm": "sha1",
+          "hashValue": "6bfbcc6a3a86f629ca0d9ad8be4f9f768e0beeb9",
+          "type": "PackageVerificationCode"
+        }
+      ]
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:golang/github.com/google/uuid@v1.6.0"
+        }
+      ],
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "vcs",
+          "locator": [
+            "https://github.com/google/uuid"
+          ]
+        }
+      ],
+      "name": "github.com/google/uuid",
+      "software_downloadLocation": "https://proxy.golang.org/github.com/google/uuid/@v/v1.6.0.zip",
+      "software_packageUrl": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "software_packageVersion": "v1.6.0",
+      "software_primaryPurpose": "library",
+      "spdxId": "https://example.com/sbom/go#Package-github.com-google-uuid-v1.6.0",
+      "type": "software_Package"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "BSD-3-Clause",
+      "spdxId": "https://example.com/sbom/go#license-8",
+      "type": "simplelicensing_LicenseExpression"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-github.com-google-uuid-v1.6.0",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-9",
+      "to": [
+        "https://example.com/sbom/go#license-8"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:golang/github.com/gorilla/mux@v1.8.1"
+        }
+      ],
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "vcs",
+          "locator": [
+            "https://github.com/gorilla/mux"
+          ]
+        }
+      ],
+      "name": "github.com/gorilla/mux",
+      "software_downloadLocation": "https://proxy.golang.org/github.com/gorilla/mux/@v/v1.8.1.zip",
+      "software_packageUrl": "pkg:golang/github.com/gorilla/mux@v1.8.1",
+      "software_packageVersion": "v1.8.1",
+      "software_primaryPurpose": "library",
+      "spdxId": "https://example.com/sbom/go#Package-github.com-gorilla-mux-v1.8.1",
+      "type": "software_Package"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-github.com-gorilla-mux-v1.8.1",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-10",
+      "to": [
+        "https://example.com/sbom/go#license-8"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
+        }
+      ],
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "vcs",
+          "locator": [
+            "https://gopkg.in/yaml.v3"
+          ]
+        }
+      ],
+      "name": "gopkg.in/yaml.v3",
+      "software_downloadLocation": "https://proxy.golang.org/gopkg.in/yaml.v3/@v/v3.0.1.zip",
+      "software_packageUrl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "software_packageVersion": "v3.0.1",
+      "software_primaryPurpose": "library",
+      "spdxId": "https://example.com/sbom/go#Package-gopkg.in-yaml.v3-v3.0.1",
+      "type": "software_Package"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MIT",
+      "spdxId": "https://example.com/sbom/go#license-11",
+      "type": "simplelicensing_LicenseExpression"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-gopkg.in-yaml.v3-v3.0.1",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-12",
+      "to": [
+        "https://example.com/sbom/go#license-11"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "externalIdentifier": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "packageUrl",
+          "identifier": "pkg:golang/stdlib@1.21"
+        }
+      ],
+      "name": "stdlib",
+      "software_packageUrl": "pkg:golang/stdlib@1.21",
+      "software_packageVersion": "1.21",
+      "software_primaryPurpose": "library",
+      "spdxId": "https://example.com/sbom/go#Package-stdlib-1.21",
+      "type": "software_Package"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-stdlib-1.21",
+      "relationshipType": "hasDeclaredLicense",
+      "spdxId": "https://example.com/sbom/go#relationship-13",
+      "to": [
+        "https://example.com/sbom/go#license-8"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-github.com-example-sbom-sample-go",
+      "relationshipType": "contains",
+      "spdxId": "https://example.com/sbom/go#relationship-14",
+      "to": [
+        "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.mod",
+        "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-go.sum",
+        "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-main.go",
+        "https://example.com/sbom/go#File-github.com-example-sbom-sample-go-sbom-sample-go"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go#Package-github.com-example-sbom-sample-go",
+      "relationshipType": "dependsOn",
+      "spdxId": "https://example.com/sbom/go#relationship-15",
+      "to": [
+        "https://example.com/sbom/go#Package-github.com-google-uuid-v1.6.0",
+        "https://example.com/sbom/go#Package-github.com-gorilla-mux-v1.8.1",
+        "https://example.com/sbom/go#Package-gopkg.in-yaml.v3-v3.0.1",
+        "https://example.com/sbom/go#Package-stdlib-1.21"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "rootElement": [
+        "https://example.com/sbom/go#Package-github.com-example-sbom-sample-go"
+      ],
+      "software_sbomType": [
+        "source"
+      ],
+      "spdxId": "https://example.com/sbom/go#sbom-16",
+      "type": "software_Sbom"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "name": "sbom-sample-go",
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ],
+      "rootElement": [
+        "https://example.com/sbom/go#sbom-16"
+      ],
+      "spdxId": "https://example.com/sbom/go",
+      "type": "SpdxDocument"
+    },
+    {
+      "creationInfo": "_:creationinfo",
+      "from": "https://example.com/sbom/go",
+      "relationshipType": "describes",
+      "spdxId": "https://example.com/sbom/go#relationship-17",
+      "to": [
+        "https://example.com/sbom/go#sbom-16"
+      ],
+      "type": "Relationship"
+    },
+    {
+      "@id": "_:creationinfo",
+      "created": "2026-11-10T11:55:57Z",
+      "createdBy": [
+        "https://example.com/sbom/go#agent-1"
+      ],
+      "createdUsing": [
+        "https://example.com/sbom/go#tool-2",
+        "https://example.com/sbom/go#tool-3"
+      ],
+      "specVersion": "3.0.1",
+      "type": "CreationInfo"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# Run the evaluation in the canonical tool image and refresh the checked-in report.
+#
+#   ./evaluate                         build every test case, run every tool at every stage, score, rebuild the reports
+#   ./evaluate spring-node             one test case (others keep their previous outputs and scores)
+#   ./evaluate --stages "source artefact"     skip the image stage
+#   ./evaluate --tools "syft trivy"           re-run only these tools
+#   ./evaluate --no-build              do not rebuild the test cases first
+#   ./evaluate --rebuild-image         rebuild the tool image from tools/versions.env, then run
+#   ./evaluate --shell                 open a shell in the image instead
+#
+# To run the tools against some other source tree, use ./scan.
+#
+# Needs only Docker on the host. The image stage builds each test case's container through the host's Docker daemon
+# (the socket is mounted). Docker Scout needs a Docker Hub login: export DOCKER_SCOUT_HUB_USER and
+# DOCKER_SCOUT_HUB_PASSWORD (a personal access token) or it is reported as a failed step.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+
+REBUILD_IMAGE=0; shell=0; build=1; stages=""; tools=""; targets=()
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --rebuild-image) REBUILD_IMAGE=1 ;;
+    --shell) shell=1 ;;
+    --no-build) build=0 ;;
+    --stages) stages="$2"; shift ;;
+    --tools) tools="$2"; shift ;;
+    -h|--help) sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -*) echo "unknown option: $1" >&2; exit 2 ;;
+    *) targets+=("$1") ;;
+  esac; shift
+done
+
+. "$ROOT/image/run.sh"      # ensures the tool image is built; sets IMAGE and the docker run prefix RUN
+run=("${RUN[@]}" -v "$ROOT:/work" -w /work
+     -e CRITERIA_STAGES="$stages" -e CRITERIA_TOOLS="$tools" -e CRITERIA_BUILD="$build" -e CRITERIA_ORT -e CRITERIA_SCANCODE)
+
+if [[ $shell == 1 ]]; then exec "${run[@]}" -it "$IMAGE" bash; fi
+
+"${run[@]}" "$IMAGE" bash -c '
+  set -uo pipefail
+  ./criteria/generate.sh "$@"; gen=$?
+  python3 criteria/score.py && python3 compare-tools.py
+  python3 - <<PY
+import json, os, platform, datetime, pathlib
+v = dict(l.split("=", 1) for l in pathlib.Path("tools/versions.env").read_text().splitlines() if l and not l.startswith("#"))
+pathlib.Path("criteria/output/run.json").write_text(json.dumps({
+    "date": datetime.date.today().isoformat(), "image": os.environ.get("EVALUATOR_IMAGE_ID", ""),
+    "arch": platform.machine(), "versions": v}, indent=2) + "\n")
+PY
+  python3 criteria/build_site.py
+  exit $gen' evaluate ${targets[@]+"${targets[@]}"}
+echo; echo "Report refreshed: docs/ (the site), criteria/SCORECARD.md, COMPARISON.md, criteria/output/{scores,run}.json"

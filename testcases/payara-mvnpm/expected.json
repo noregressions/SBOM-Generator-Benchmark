@@ -1,0 +1,89 @@
+{
+  "target": "payara-mvnpm",
+  "title": "Jakarta WAR with an npm library pulled through mvnpm inside the esbuild plugin realm, deployed on a Payara image",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "maven",
+    "npm"
+  ],
+  "stages": {
+    "source": {
+      "path": ".",
+      "maven": "single",
+      "exclude": [
+        "/target",
+        "/trace-output",
+        "/ship-check"
+      ],
+      "exclude_note": "paths removed from the scratch copy scanners see at source stage: build outputs and caches only, anchored to the project root so node_modules/*/dist and the like stay intact"
+    },
+    "artefact": {
+      "path": "target/payara-mvnpm-trace-lab-1.0.0.war",
+      "kind": "war",
+      "embedded_jars": "WEB-INF/lib/"
+    },
+    "image": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "tag": "criteria-payara-mvnpm:local"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0",
+      "note": "primary component (WAR)"
+    },
+    {
+      "purl": "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "note": "ordinary dependency; survives as WEB-INF/lib/commons-lang3-3.18.0.jar"
+    },
+    {
+      "purl": "pkg:maven/org.mvnpm/lodash-es@4.17.21",
+      "alt": [
+        "pkg:npm/lodash-es@4.17.21"
+      ],
+      "hidden": "plugin-realm+bundled",
+      "note": "a plugin dependency of esbuild-maven-plugin, bundled into assets/app.js; never in the project graph"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0",
+      "kind": "provided",
+      "note": "compile-time only; Payara supplies the implementation at runtime"
+    },
+    {
+      "purl": "pkg:maven/io.mvnpm/esbuild-maven-plugin@2.0.0",
+      "kind": "build-tooling",
+      "hidden": "plugin-realm"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.14.0",
+      "kind": "build-tooling"
+    },
+    {
+      "purl": "pkg:maven/org.apache.maven.plugins/maven-war-plugin@3.4.0",
+      "kind": "build-tooling"
+    }
+  ],
+  "not_shipped_prefixes": [
+    {
+      "prefix": "pkg:maven/jakarta.",
+      "kind": "provided",
+      "note": "the whole jakarta.jakartaee-web-api closure is provided scope: compiled against, supplied by Payara at runtime, absent from the WAR; at image stage Payara's own jakarta.* jars legitimately ship, so the rule applies to source and artefact only",
+      "stages": [
+        "source",
+        "artefact"
+      ]
+    },
+    {
+      "prefix": "pkg:npm/",
+      "kind": "build-tooling",
+      "note": "node_modules/ in the project is the esbuild toolchain the esbuild-maven-plugin installed; no npm package ships as a package (lodash-es ships as bundled bytes and is listed under shipped)",
+      "stages": [
+        "source",
+        "artefact"
+      ]
+    }
+  ]
+}

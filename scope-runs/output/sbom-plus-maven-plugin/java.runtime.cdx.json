@@ -1,0 +1,2115 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:20dd6b36-e151-4b4d-bc60-87144773a695",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-11T15:14:22.592922Z",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "group": "dev.noregressions",
+          "name": "sbom-plus-maven-plugin",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+      "supplier": {
+        "name": "com.example"
+      },
+      "manufacturer": {
+        "name": "com.example"
+      },
+      "group": "com.example",
+      "name": "sbom-sample-maven",
+      "version": "1.0.0",
+      "description": "Small Java app used as a target for SBOM generation tools",
+      "purl": "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+      "properties": [
+        {
+          "name": "bsi:component:filename",
+          "value": "sbom-sample-maven-1.0.0.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+      "supplier": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "manufacturer": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Tatu Saloranta",
+          "email": "tatu@fasterxml.com"
+        }
+      ],
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.17.2",
+      "description": "General data-binding functionality for Jackson: works on core streaming API",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "3e1ff7c1f0fda885946619a47ef9d5de"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "e6deb029e5901e027c129341fac39e515066b68c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c04993f33c0f845342653784f14f38373d005280e6359db5f808701cfae73c0c"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "ec62267bf58aea531ec7f253e67974fac89e8aa61e7b54a7fb00edf3132ecb969b510630fd353adbbd2ab7d845a25702f168c296c57983a00bd6abc9ce3630f9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2008 FasterXML",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-databind"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "3e1ff7c1f0fda885946619a47ef9d5de"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "e6deb029e5901e027c129341fac39e515066b68c"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "c04993f33c0f845342653784f14f38373d005280e6359db5f808701cfae73c0c"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "ec62267bf58aea531ec7f253e67974fac89e8aa61e7b54a7fb00edf3132ecb969b510630fd353adbbd2ab7d845a25702f168c296c57983a00bd6abc9ce3630f9"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "sbom-plus:origin",
+          "value": "BUILD_TOOLING"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "jackson-databind-2.17.2.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+      "supplier": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "manufacturer": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Tatu Saloranta",
+          "email": "tatu@fasterxml.com"
+        }
+      ],
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.17.2",
+      "description": "Core annotations used for value types, used by Jackson data binding package.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "e68e7e593ae47e106421688707683297"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "147b7b9412ffff24339f8aba080b292448e08698"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "873a606e23507969f9bbbea939d5e19274a88775ea5a169ba7e2d795aa5156e1"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "006d3a054b22daa7f378b005cc29b3544dc7f3b509176e0eac946e0a3bafa73b824bae61b5183b61938b19044d2142a285da2fce2ffdaef5bfe91b2d8dcb6804"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2008 FasterXML",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-annotations"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/FasterXML/jackson"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "e68e7e593ae47e106421688707683297"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "147b7b9412ffff24339f8aba080b292448e08698"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "873a606e23507969f9bbbea939d5e19274a88775ea5a169ba7e2d795aa5156e1"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "006d3a054b22daa7f378b005cc29b3544dc7f3b509176e0eac946e0a3bafa73b824bae61b5183b61938b19044d2142a285da2fce2ffdaef5bfe91b2d8dcb6804"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "sbom-plus:origin",
+          "value": "BUILD_TOOLING"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "jackson-annotations-2.17.2.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+      "supplier": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "manufacturer": {
+        "name": "FasterXML",
+        "url": [
+          "http://fasterxml.com/"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Tatu Saloranta",
+          "email": "tatu@fasterxml.com"
+        }
+      ],
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.17.2",
+      "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "50c2dab1f29136714d5ef5c6c640336c"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "969a35cb35c86512acbadcdbbbfb044c877db814"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "721a189241dab0525d9e858e5cb604d3ecc0ede081e2de77d6f34fa5779a5b46"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "694ae3bf756421d925f833f59a6309c7748ac3a68b28ed4de8ce0d6f93347dfc19991d1106db911c7da78e20734e6f44a02caef751150378a6ffa638c80fc75b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2008 FasterXML",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "50c2dab1f29136714d5ef5c6c640336c"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "969a35cb35c86512acbadcdbbbfb044c877db814"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "721a189241dab0525d9e858e5cb604d3ecc0ede081e2de77d6f34fa5779a5b46"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "694ae3bf756421d925f833f59a6309c7748ac3a68b28ed4de8ce0d6f93347dfc19991d1106db911c7da78e20734e6f44a02caef751150378a6ffa638c80fc75b"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "sbom-plus:origin",
+          "value": "BUILD_TOOLING"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "jackson-core-2.17.2.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+      "supplier": {
+        "name": "The Apache Software Foundation",
+        "url": [
+          "https://www.apache.org/"
+        ]
+      },
+      "manufacturer": {
+        "name": "The Apache Software Foundation",
+        "url": [
+          "https://www.apache.org/"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Daniel Rall",
+          "email": "dlr@finemaltcoding.com"
+        },
+        {
+          "name": "Stephen Colebourne",
+          "email": "scolebourne@joda.org"
+        },
+        {
+          "name": "Henri Yandell",
+          "email": "bayard@apache.org"
+        },
+        {
+          "name": "Steven Caswell",
+          "email": "stevencaswell@apache.org"
+        },
+        {
+          "name": "Robert Burrell Donkin",
+          "email": "rdonkin@apache.org"
+        },
+        {
+          "name": "Gary Gregory"
+        },
+        {
+          "name": "Fredrik Westermarck"
+        },
+        {
+          "name": "James Carman",
+          "email": "jcarman@apache.org"
+        },
+        {
+          "name": "Niall Pemberton"
+        },
+        {
+          "name": "Matt Benson"
+        },
+        {
+          "name": "Joerg Schaible",
+          "email": "joerg.schaible@gmx.de"
+        },
+        {
+          "name": "Oliver Heger",
+          "email": "oheger@apache.org"
+        },
+        {
+          "name": "Paul Benedict",
+          "email": "pbenedict@apache.org"
+        },
+        {
+          "name": "Benedikt Ritter",
+          "email": "britter@apache.org"
+        },
+        {
+          "name": "Duncan Jones",
+          "email": "djones@apache.org"
+        },
+        {
+          "name": "Loic Guibert",
+          "email": "lguibert@apache.org"
+        },
+        {
+          "name": "Rob Tompkins",
+          "email": "chtompki@apache.org"
+        }
+      ],
+      "group": "org.apache.commons",
+      "name": "commons-lang3",
+      "version": "3.14.0",
+      "description": "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "4e5c3f5e6b0b965ef241d7d72ac8971f"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "1ed471194b02f2c6cb734a0cd6f6f107c673afae"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "0338b50767166e5746ada6d6aa2e071e7221d699323bfb629f7f204b294c1dc4cad140610a129ed751798443b43e74e0818989c7df7d33c5915aa29742be9ba8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2001 The Apache Software Foundation",
+      "purl": "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
+        },
+        {
+          "type": "website",
+          "url": "https://commons.apache.org/proper/commons-lang/"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "4e5c3f5e6b0b965ef241d7d72ac8971f"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "1ed471194b02f2c6cb734a0cd6f6f107c673afae"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "0338b50767166e5746ada6d6aa2e071e7221d699323bfb629f7f204b294c1dc4cad140610a129ed751798443b43e74e0818989c7df7d33c5915aa29742be9ba8"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "commons-lang3-3.14.0.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+      "supplier": {
+        "name": "QOS.ch",
+        "url": [
+          "http://www.qos.ch"
+        ]
+      },
+      "manufacturer": {
+        "name": "QOS.ch",
+        "url": [
+          "http://www.qos.ch"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Ceki Gulcu",
+          "email": "ceki@qos.ch"
+        }
+      ],
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.13",
+      "description": "The slf4j API",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "7f4028aa04f75427327f3f30cd62ba4e"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "80229737f704b121a318bba5d5deacbcf395bc77"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e7c2a48e8515ba1f49fa637d57b4e2f590b3f5bd97407ac699c3aa5efb1204a9"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "b4eeb5757118e264ec7f107d879270784357380d6f53471b7874dd7e0166fdf5686a95eb66bab867abbe9536da032ab052e207165211391c293cbf6178431fb6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2005 QOS.ch",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/qos-ch/slf4j/slf4j-parent/slf4j-api"
+        },
+        {
+          "type": "website",
+          "url": "http://www.slf4j.org"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "7f4028aa04f75427327f3f30cd62ba4e"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "80229737f704b121a318bba5d5deacbcf395bc77"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e7c2a48e8515ba1f49fa637d57b4e2f590b3f5bd97407ac699c3aa5efb1204a9"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "b4eeb5757118e264ec7f107d879270784357380d6f53471b7874dd7e0166fdf5686a95eb66bab867abbe9536da032ab052e207165211391c293cbf6178431fb6"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "slf4j-api-2.0.13.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-simple@2.0.13",
+      "supplier": {
+        "name": "QOS.ch",
+        "url": [
+          "http://www.qos.ch"
+        ]
+      },
+      "manufacturer": {
+        "name": "QOS.ch",
+        "url": [
+          "http://www.qos.ch"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Ceki Gulcu",
+          "email": "ceki@qos.ch"
+        }
+      ],
+      "group": "org.slf4j",
+      "name": "slf4j-simple",
+      "version": "2.0.13",
+      "description": "SLF4J Simple Provider",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "MD5",
+          "content": "4196990c1480726609474e897fe0bdc7"
+        },
+        {
+          "alg": "SHA-1",
+          "content": "be11a3f05f7cf546524b07ad252719d840f4daed"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "3153fe1d689cffb94f1530b58470c306685ba68844de8857116e3b6ebb81d9f7"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "9e79240611ecb9847391937a9c0e83b1ce619a370a0ee61d66d41117c44f453df7af69853268f023dda46b1209b1cad0f0e2ede4581c8bce60e72083ae017e4d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2005 QOS.ch",
+      "purl": "pkg:maven/org.slf4j/slf4j-simple@2.0.13",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/qos-ch/slf4j/slf4j-parent/slf4j-simple"
+        },
+        {
+          "type": "website",
+          "url": "http://www.slf4j.org"
+        },
+        {
+          "type": "distribution",
+          "url": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/2.0.13/slf4j-simple-2.0.13.jar",
+          "hashes": [
+            {
+              "alg": "MD5",
+              "content": "4196990c1480726609474e897fe0bdc7"
+            },
+            {
+              "alg": "SHA-1",
+              "content": "be11a3f05f7cf546524b07ad252719d840f4daed"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "3153fe1d689cffb94f1530b58470c306685ba68844de8857116e3b6ebb81d9f7"
+            },
+            {
+              "alg": "SHA-512",
+              "content": "9e79240611ecb9847391937a9c0e83b1ce619a370a0ee61d66d41117c44f453df7af69853268f023dda46b1209b1cad0f0e2ede4581c8bce60e72083ae017e4d"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "sbom-plus:origin",
+          "value": "MAIN_CLASSPATH"
+        },
+        {
+          "name": "bsi:component:filename",
+          "value": "slf4j-simple-2.0.13.jar"
+        },
+        {
+          "name": "bsi:component:executable",
+          "value": "executable"
+        },
+        {
+          "name": "bsi:component:archive",
+          "value": "archive"
+        },
+        {
+          "name": "bsi:component:structured",
+          "value": "structured"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+        "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+        "pkg:maven/org.slf4j/slf4j-simple@2.0.13",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2",
+        "pkg:maven/org.cyclonedx/cyclonedx-maven-plugin@2.9.1",
+        "pkg:maven/org.apache.maven.plugins/maven-clean-plugin@3.2.0",
+        "pkg:maven/org.apache.maven.plugins/maven-resources-plugin@3.4.0",
+        "pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.5.0",
+        "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.15.0",
+        "pkg:maven/org.apache.maven.plugins/maven-surefire-plugin@3.5.4",
+        "pkg:maven/org.apache.maven.plugins/maven-install-plugin@3.1.4",
+        "pkg:maven/org.apache.maven.plugins/maven-deploy-plugin@3.1.4",
+        "pkg:maven/org.apache.maven.plugins/maven-site-plugin@3.12.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-simple@2.0.13",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2",
+      "dependsOn": [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.cyclonedx/cyclonedx-maven-plugin@2.9.1",
+      "dependsOn": [
+        "pkg:maven/org.cyclonedx/cyclonedx-core-java@9.0.5",
+        "pkg:maven/commons-codec/commons-codec@1.17.1",
+        "pkg:maven/org.apache.commons/commons-lang3@3.17.0",
+        "pkg:maven/org.apache.maven.shared/maven-dependency-tree@3.3.0",
+        "pkg:maven/org.apache.maven.shared/maven-dependency-analyzer@1.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.cyclonedx/cyclonedx-core-java@9.0.5",
+      "dependsOn": [
+        "pkg:maven/commons-io/commons-io@2.16.1",
+        "pkg:maven/org.apache.commons/commons-collections4@4.4",
+        "pkg:maven/com.github.package-url/packageurl-java@1.5.0",
+        "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.2",
+        "pkg:maven/com.networknt/json-schema-validator@1.5.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-io/commons-io@2.16.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-collections4@4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.github.package-url/packageurl-java@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.2",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+        "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2",
+        "pkg:maven/com.fasterxml.woodstox/woodstox-core@6.7.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.woodstox/woodstox-core@6.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.networknt/json-schema-validator@1.5.1",
+      "dependsOn": [
+        "pkg:maven/com.ethlo.time/itu@1.10.2",
+        "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.ethlo.time/itu@1.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.1",
+      "dependsOn": [
+        "pkg:maven/org.yaml/snakeyaml@2.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.yaml/snakeyaml@2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-dependency-tree@3.3.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.4.1",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.4.1",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.4.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-dependency-analyzer@1.14.1",
+      "dependsOn": [
+        "pkg:maven/org.ow2.asm/asm@9.7"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.ow2.asm/asm@9.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-clean-plugin@3.2.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.4",
+      "dependsOn": [
+        "pkg:maven/commons-io/commons-io@2.6"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-io/commons-io@2.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-resources-plugin@3.4.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.shared/maven-filtering@3.4.0",
+        "pkg:maven/org.apache.commons/commons-lang3@3.20.0",
+        "pkg:maven/javax.inject/javax.inject@1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-filtering@3.4.0",
+      "dependsOn": [
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+        "pkg:maven/org.sonatype.plexus/plexus-build-api@0.0.7",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.2",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1",
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.27",
+        "pkg:maven/commons-io/commons-io@2.16.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.sonatype.plexus/plexus-build-api@0.0.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.27",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.20.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/javax.inject/javax.inject@1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.5.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.shared/file-management@3.2.0",
+        "pkg:maven/org.apache.maven/maven-archiver@3.6.5",
+        "pkg:maven/org.codehaus.plexus/plexus-archiver@4.10.4",
+        "pkg:maven/javax.inject/javax.inject@1",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+        "pkg:maven/commons-io/commons-io@2.21.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/file-management@3.2.0",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-archiver@3.6.5",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.28",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.28",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-archiver@4.10.4",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-io@3.6.0",
+        "pkg:maven/org.apache.commons/commons-compress@1.28.0",
+        "pkg:maven/io.airlift/aircompressor@0.27",
+        "pkg:maven/org.tukaani/xz@1.10",
+        "pkg:maven/com.github.luben/zstd-jni@1.5.7-6"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-io@3.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-compress@1.28.0",
+      "dependsOn": [
+        "pkg:maven/commons-codec/commons-codec@1.19.0",
+        "pkg:maven/org.apache.commons/commons-lang3@3.18.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-codec/commons-codec@1.19.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/io.airlift/aircompressor@0.27",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.tukaani/xz@1.10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.github.luben/zstd-jni@1.5.7-6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-io/commons-io@2.21.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.15.0",
+      "dependsOn": [
+        "pkg:maven/org.ow2.asm/asm@9.9.1",
+        "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.4.2",
+        "pkg:maven/org.apache.maven.shared/maven-shared-incremental@1.1",
+        "pkg:maven/org.codehaus.plexus/plexus-java@1.5.2",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-api@2.16.2",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-manager@2.16.2",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-javac@2.16.2",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.ow2.asm/asm@9.9.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.4.2",
+      "dependsOn": [
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+        "pkg:maven/commons-io/commons-io@2.11.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-io/commons-io@2.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-shared-incremental@1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-java@1.5.2",
+      "dependsOn": [
+        "pkg:maven/com.thoughtworks.qdox/qdox@2.2.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.thoughtworks.qdox/qdox@2.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-compiler-api@2.16.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-compiler-manager@2.16.2",
+      "dependsOn": [
+        "pkg:maven/javax.inject/javax.inject@1",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-compiler-javac@2.16.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-surefire-plugin@3.5.4",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.surefire/surefire-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-extensions-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/maven-surefire-common@3.5.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-api@3.5.4",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.surefire/surefire-logger-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-shared-utils@3.5.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-logger-api@3.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-shared-utils@3.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-extensions-api@3.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/maven-surefire-common@3.5.4",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.surefire/surefire-booter@3.5.4",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.4.1",
+        "pkg:maven/org.apache.maven.shared/maven-common-artifact-filters@3.4.0",
+        "pkg:maven/org.codehaus.plexus/plexus-java@1.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-booter@3.5.4",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.surefire/surefire-extensions-spi@3.5.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.surefire/surefire-extensions-spi@3.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.shared/maven-common-artifact-filters@3.4.0",
+      "dependsOn": [
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-java@1.5.0",
+      "dependsOn": [
+        "pkg:maven/org.ow2.asm/asm@9.8",
+        "pkg:maven/com.thoughtworks.qdox/qdox@2.2.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.ow2.asm/asm@9.8",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-install-plugin@3.1.4",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.9.22",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.1",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.9.22",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.9.22"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.9.22",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-deploy-plugin@3.1.4",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.1",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.9.22"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.plugins/maven-site-plugin@3.12.1",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.reporting/maven-reporting-api@3.1.1",
+        "pkg:maven/org.apache.maven.reporting/maven-reporting-exec@1.6.0",
+        "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.4",
+        "pkg:maven/org.apache.maven/maven-archiver@3.5.2",
+        "pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7",
+        "pkg:maven/org.codehaus.plexus/plexus-i18n@1.0-beta-10",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@3.4.2",
+        "pkg:maven/org.apache.maven.doxia/doxia-sink-api@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-core@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml5@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-apt@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xdoc@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-fml@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-markdown@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-confluence@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-docbook-simple@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-twiki@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-decoration-model@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-site-renderer@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-integration-tools@1.11.1",
+        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-webapp@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.46.v20220331"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.reporting/maven-reporting-api@3.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.reporting/maven-reporting-exec@1.6.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven/maven-artifact@3.2.5",
+        "pkg:maven/org.apache.maven/maven-core@3.2.5",
+        "pkg:maven/org.apache.maven/maven-model@3.2.5",
+        "pkg:maven/org.apache.maven/maven-plugin-api@3.2.5",
+        "pkg:maven/org.apache.maven/maven-settings@3.2.5",
+        "pkg:maven/org.apache.maven/maven-settings-builder@3.2.5",
+        "pkg:maven/org.eclipse.aether/aether-util@1.0.0.v20140518"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-artifact@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-core@3.2.5",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven/maven-repository-metadata@3.2.5",
+        "pkg:maven/org.apache.maven/maven-model-builder@3.2.5",
+        "pkg:maven/org.apache.maven/maven-aether-provider@3.2.5",
+        "pkg:maven/org.eclipse.aether/aether-impl@1.0.0.v20140518",
+        "pkg:maven/org.eclipse.aether/aether-api@1.0.0.v20140518",
+        "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.3.5",
+        "pkg:maven/org.sonatype.sisu/sisu-guice@3.2.3?classifier=no_aop",
+        "pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.2",
+        "pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-repository-metadata@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-model-builder@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-aether-provider@3.2.5",
+      "dependsOn": [
+        "pkg:maven/org.eclipse.aether/aether-spi@1.0.0.v20140518"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.aether/aether-spi@1.0.0.v20140518",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.aether/aether-impl@1.0.0.v20140518",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.aether/aether-api@1.0.0.v20140518",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.3.5",
+      "dependsOn": [
+        "pkg:maven/javax.annotation/javax.annotation-api@1.2",
+        "pkg:maven/javax.enterprise/cdi-api@1.2",
+        "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.3.5"
+      ]
+    },
+    {
+      "ref": "pkg:maven/javax.annotation/javax.annotation-api@1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/javax.enterprise/cdi-api@1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.3.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.sonatype.sisu/sisu-guice@3.2.3?classifier=no_aop",
+      "dependsOn": [
+        "pkg:maven/javax.inject/javax.inject@1",
+        "pkg:maven/aopalliance/aopalliance@1.0",
+        "pkg:maven/com.google.guava/guava@16.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/aopalliance/aopalliance@1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.google.guava/guava@16.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3",
+      "dependsOn": [
+        "pkg:maven/org.sonatype.plexus/plexus-cipher@1.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.sonatype.plexus/plexus-cipher@1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-model@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-plugin-api@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-settings@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-settings-builder@3.2.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.aether/aether-util@1.0.0.v20140518",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven/maven-archiver@3.5.2",
+      "dependsOn": [
+        "pkg:maven/org.apache.commons/commons-compress@1.20",
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-compress@1.20",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-io@3.2.0",
+        "pkg:maven/org.iq80.snappy/snappy@0.4",
+        "pkg:maven/org.tukaani/xz@1.9"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-io@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.iq80.snappy/snappy@0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.tukaani/xz@1.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-i18n@1.0-beta-10",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-utils@3.4.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-sink-api@1.11.1",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.doxia/doxia-logging-api@1.11.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-logging-api@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-core@1.11.1",
+      "dependsOn": [
+        "pkg:maven/org.codehaus.plexus/plexus-container-default@2.1.0",
+        "pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.1.1",
+        "pkg:maven/org.apache.commons/commons-lang3@3.8.1",
+        "pkg:maven/org.apache.commons/commons-text@1.3",
+        "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13",
+        "pkg:maven/org.apache.httpcomponents/httpcore@4.4.14"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-container-default@2.1.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.xbean/xbean-reflect@3.7",
+        "pkg:maven/com.google.collections/google-collections@1.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.xbean/xbean-reflect@3.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.google.collections/google-collections@1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-lang3@3.8.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.commons/commons-text@1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13",
+      "dependsOn": [
+        "pkg:maven/commons-logging/commons-logging@1.2",
+        "pkg:maven/commons-codec/commons-codec@1.11"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-logging/commons-logging@1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-codec/commons-codec@1.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml5@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-apt@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-xdoc@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-fml@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-markdown@1.11.1",
+      "dependsOn": [
+        "pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14",
+      "dependsOn": [
+        "pkg:maven/com.vladsch.flexmark/flexmark@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14",
+      "dependsOn": [
+        "pkg:maven/org.nibor.autolink/autolink@0.6.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.nibor.autolink/autolink@0.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14",
+      "dependsOn": [
+        "pkg:maven/org.jsoup/jsoup@1.10.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.jsoup/jsoup@1.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-confluence@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-docbook-simple@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-module-twiki@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-decoration-model@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-site-renderer@1.11.1",
+      "dependsOn": [
+        "pkg:maven/org.apache.maven.doxia/doxia-skin-model@1.11.1",
+        "pkg:maven/org.codehaus.plexus/plexus-velocity@1.2",
+        "pkg:maven/org.apache.velocity/velocity@1.7",
+        "pkg:maven/org.apache.velocity/velocity-tools@2.0",
+        "pkg:maven/commons-collections/commons-collections@3.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-skin-model@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.codehaus.plexus/plexus-velocity@1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.velocity/velocity@1.7",
+      "dependsOn": [
+        "pkg:maven/commons-lang/commons-lang@2.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-lang/commons-lang@2.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.velocity/velocity-tools@2.0",
+      "dependsOn": [
+        "pkg:maven/commons-beanutils/commons-beanutils@1.7.0",
+        "pkg:maven/commons-digester/commons-digester@1.8",
+        "pkg:maven/commons-chain/commons-chain@1.1",
+        "pkg:maven/dom4j/dom4j@1.1",
+        "pkg:maven/oro/oro@2.0.8"
+      ]
+    },
+    {
+      "ref": "pkg:maven/commons-beanutils/commons-beanutils@1.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-digester/commons-digester@1.8",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-chain/commons-chain@1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/dom4j/dom4j@1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/oro/oro@2.0.8",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/commons-collections/commons-collections@3.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.maven.doxia/doxia-integration-tools@1.11.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-server@9.4.46.v20220331",
+      "dependsOn": [
+        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
+        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.46.v20220331"
+      ]
+    },
+    {
+      "ref": "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-http@9.4.46.v20220331",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-io@9.4.46.v20220331",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.46.v20220331",
+      "dependsOn": [
+        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.46.v20220331"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-security@9.4.46.v20220331",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.46.v20220331",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-webapp@9.4.46.v20220331",
+      "dependsOn": [
+        "pkg:maven/org.eclipse.jetty/jetty-xml@9.4.46.v20220331"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-xml@9.4.46.v20220331",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.jetty/jetty-util@9.4.46.v20220331",
+      "dependsOn": []
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "dependencies": [
+        "pkg:maven/com.example/sbom-sample-maven@1.0.0",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+        "pkg:maven/org.apache.commons/commons-lang3@3.14.0",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+        "pkg:maven/org.slf4j/slf4j-simple@2.0.13",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.2",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.2",
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.10.2",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.2",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.2",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.10.2",
+        "pkg:maven/org.cyclonedx/cyclonedx-maven-plugin@2.9.1",
+        "pkg:maven/org.cyclonedx/cyclonedx-core-java@9.0.5",
+        "pkg:maven/commons-io/commons-io@2.16.1",
+        "pkg:maven/org.apache.commons/commons-collections4@4.4",
+        "pkg:maven/com.github.package-url/packageurl-java@1.5.0",
+        "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.2",
+        "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2",
+        "pkg:maven/com.fasterxml.woodstox/woodstox-core@6.7.0",
+        "pkg:maven/com.networknt/json-schema-validator@1.5.1",
+        "pkg:maven/com.ethlo.time/itu@1.10.2",
+        "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml@2.17.1",
+        "pkg:maven/org.yaml/snakeyaml@2.2",
+        "pkg:maven/commons-codec/commons-codec@1.17.1",
+        "pkg:maven/org.apache.commons/commons-lang3@3.17.0",
+        "pkg:maven/org.apache.maven.shared/maven-dependency-tree@3.3.0",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.4.1",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.4.1",
+        "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+        "pkg:maven/org.apache.maven.shared/maven-dependency-analyzer@1.14.1",
+        "pkg:maven/org.ow2.asm/asm@9.7",
+        "pkg:maven/org.apache.maven.plugins/maven-clean-plugin@3.2.0",
+        "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.3.4",
+        "pkg:maven/commons-io/commons-io@2.6",
+        "pkg:maven/org.apache.maven.plugins/maven-resources-plugin@3.4.0",
+        "pkg:maven/org.apache.maven.shared/maven-filtering@3.4.0",
+        "pkg:maven/org.sonatype.plexus/plexus-build-api@0.0.7",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.2",
+        "pkg:maven/org.codehaus.plexus/plexus-xml@3.0.1",
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.27",
+        "pkg:maven/org.apache.commons/commons-lang3@3.20.0",
+        "pkg:maven/javax.inject/javax.inject@1",
+        "pkg:maven/org.apache.maven.plugins/maven-jar-plugin@3.5.0",
+        "pkg:maven/org.apache.maven.shared/file-management@3.2.0",
+        "pkg:maven/org.apache.maven/maven-archiver@3.6.5",
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.28",
+        "pkg:maven/org.codehaus.plexus/plexus-archiver@4.10.4",
+        "pkg:maven/org.codehaus.plexus/plexus-io@3.6.0",
+        "pkg:maven/org.apache.commons/commons-compress@1.28.0",
+        "pkg:maven/commons-codec/commons-codec@1.19.0",
+        "pkg:maven/org.apache.commons/commons-lang3@3.18.0",
+        "pkg:maven/io.airlift/aircompressor@0.27",
+        "pkg:maven/org.tukaani/xz@1.10",
+        "pkg:maven/com.github.luben/zstd-jni@1.5.7-6",
+        "pkg:maven/commons-io/commons-io@2.21.0",
+        "pkg:maven/org.apache.maven.plugins/maven-compiler-plugin@3.15.0",
+        "pkg:maven/org.ow2.asm/asm@9.9.1",
+        "pkg:maven/org.apache.maven.shared/maven-shared-utils@3.4.2",
+        "pkg:maven/commons-io/commons-io@2.11.0",
+        "pkg:maven/org.apache.maven.shared/maven-shared-incremental@1.1",
+        "pkg:maven/org.codehaus.plexus/plexus-java@1.5.2",
+        "pkg:maven/com.thoughtworks.qdox/qdox@2.2.0",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-api@2.16.2",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-manager@2.16.2",
+        "pkg:maven/org.codehaus.plexus/plexus-compiler-javac@2.16.2",
+        "pkg:maven/org.apache.maven.plugins/maven-surefire-plugin@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-logger-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-shared-utils@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-extensions-api@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/maven-surefire-common@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-booter@3.5.4",
+        "pkg:maven/org.apache.maven.surefire/surefire-extensions-spi@3.5.4",
+        "pkg:maven/org.apache.maven.shared/maven-common-artifact-filters@3.4.0",
+        "pkg:maven/org.codehaus.plexus/plexus-java@1.5.0",
+        "pkg:maven/org.ow2.asm/asm@9.8",
+        "pkg:maven/org.apache.maven.plugins/maven-install-plugin@3.1.4",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-util@1.9.22",
+        "pkg:maven/org.apache.maven.resolver/maven-resolver-api@1.9.22",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@4.0.1",
+        "pkg:maven/org.apache.maven.plugins/maven-deploy-plugin@3.1.4",
+        "pkg:maven/org.apache.maven.plugins/maven-site-plugin@3.12.1",
+        "pkg:maven/org.apache.maven.reporting/maven-reporting-api@3.1.1",
+        "pkg:maven/org.apache.maven.reporting/maven-reporting-exec@1.6.0",
+        "pkg:maven/org.apache.maven/maven-artifact@3.2.5",
+        "pkg:maven/org.apache.maven/maven-core@3.2.5",
+        "pkg:maven/org.apache.maven/maven-repository-metadata@3.2.5",
+        "pkg:maven/org.apache.maven/maven-model-builder@3.2.5",
+        "pkg:maven/org.apache.maven/maven-aether-provider@3.2.5",
+        "pkg:maven/org.eclipse.aether/aether-spi@1.0.0.v20140518",
+        "pkg:maven/org.eclipse.aether/aether-impl@1.0.0.v20140518",
+        "pkg:maven/org.eclipse.aether/aether-api@1.0.0.v20140518",
+        "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.plexus@0.3.5",
+        "pkg:maven/javax.annotation/javax.annotation-api@1.2",
+        "pkg:maven/javax.enterprise/cdi-api@1.2",
+        "pkg:maven/org.eclipse.sisu/org.eclipse.sisu.inject@0.3.5",
+        "pkg:maven/org.sonatype.sisu/sisu-guice@3.2.3?classifier=no_aop",
+        "pkg:maven/aopalliance/aopalliance@1.0",
+        "pkg:maven/com.google.guava/guava@16.0.1",
+        "pkg:maven/org.codehaus.plexus/plexus-classworlds@2.5.2",
+        "pkg:maven/org.sonatype.plexus/plexus-sec-dispatcher@1.3",
+        "pkg:maven/org.sonatype.plexus/plexus-cipher@1.4",
+        "pkg:maven/org.apache.maven/maven-model@3.2.5",
+        "pkg:maven/org.apache.maven/maven-plugin-api@3.2.5",
+        "pkg:maven/org.apache.maven/maven-settings@3.2.5",
+        "pkg:maven/org.apache.maven/maven-settings-builder@3.2.5",
+        "pkg:maven/org.eclipse.aether/aether-util@1.0.0.v20140518",
+        "pkg:maven/org.apache.maven/maven-archiver@3.5.2",
+        "pkg:maven/org.apache.commons/commons-compress@1.20",
+        "pkg:maven/org.codehaus.plexus/plexus-interpolation@1.26",
+        "pkg:maven/org.codehaus.plexus/plexus-archiver@4.2.7",
+        "pkg:maven/org.codehaus.plexus/plexus-io@3.2.0",
+        "pkg:maven/org.iq80.snappy/snappy@0.4",
+        "pkg:maven/org.tukaani/xz@1.9",
+        "pkg:maven/org.codehaus.plexus/plexus-i18n@1.0-beta-10",
+        "pkg:maven/org.codehaus.plexus/plexus-utils@3.4.2",
+        "pkg:maven/org.apache.maven.doxia/doxia-sink-api@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-logging-api@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-core@1.11.1",
+        "pkg:maven/org.codehaus.plexus/plexus-container-default@2.1.0",
+        "pkg:maven/org.apache.xbean/xbean-reflect@3.7",
+        "pkg:maven/com.google.collections/google-collections@1.0",
+        "pkg:maven/org.codehaus.plexus/plexus-component-annotations@2.1.1",
+        "pkg:maven/org.apache.commons/commons-lang3@3.8.1",
+        "pkg:maven/org.apache.commons/commons-text@1.3",
+        "pkg:maven/org.apache.httpcomponents/httpclient@4.5.13",
+        "pkg:maven/commons-logging/commons-logging@1.2",
+        "pkg:maven/commons-codec/commons-codec@1.11",
+        "pkg:maven/org.apache.httpcomponents/httpcore@4.4.14",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xhtml5@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-apt@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-xdoc@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-fml@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-markdown@1.11.1",
+        "pkg:maven/com.vladsch.flexmark/flexmark-all@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-abbreviation@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-admonition@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-anchorlink@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-aside@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-attributes@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-autolink@0.42.14",
+        "pkg:maven/org.nibor.autolink/autolink@0.6.0",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-definition@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-emoji@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-enumerated-reference@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-escaped-character@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-footnotes@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-issues@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-strikethrough@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tables@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-tasklist@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gfm-users@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-gitlab@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-front-matter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-jekyll-tag@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-media-tags@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-macros@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-ins@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-xwiki-macros@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-superscript@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-tables@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-toc@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-typographic@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-wikilink@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-yaml-front-matter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-ext-youtube-embedded@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-formatter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-html-parser@0.42.14",
+        "pkg:maven/org.jsoup/jsoup@1.10.2",
+        "pkg:maven/com.vladsch.flexmark/flexmark-jira-converter@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-profile-pegdown@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-util@0.42.14",
+        "pkg:maven/com.vladsch.flexmark/flexmark-youtrack-converter@0.42.14",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-confluence@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-docbook-simple@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-module-twiki@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-decoration-model@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-site-renderer@1.11.1",
+        "pkg:maven/org.apache.maven.doxia/doxia-skin-model@1.11.1",
+        "pkg:maven/org.codehaus.plexus/plexus-velocity@1.2",
+        "pkg:maven/org.apache.velocity/velocity@1.7",
+        "pkg:maven/commons-lang/commons-lang@2.4",
+        "pkg:maven/org.apache.velocity/velocity-tools@2.0",
+        "pkg:maven/commons-beanutils/commons-beanutils@1.7.0",
+        "pkg:maven/commons-digester/commons-digester@1.8",
+        "pkg:maven/commons-chain/commons-chain@1.1",
+        "pkg:maven/dom4j/dom4j@1.1",
+        "pkg:maven/oro/oro@2.0.8",
+        "pkg:maven/commons-collections/commons-collections@3.2.2",
+        "pkg:maven/org.apache.maven.doxia/doxia-integration-tools@1.11.1",
+        "pkg:maven/org.eclipse.jetty/jetty-server@9.4.46.v20220331",
+        "pkg:maven/javax.servlet/javax.servlet-api@3.1.0",
+        "pkg:maven/org.eclipse.jetty/jetty-http@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-io@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-servlet@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-security@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-util-ajax@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-webapp@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-xml@9.4.46.v20220331",
+        "pkg:maven/org.eclipse.jetty/jetty-util@9.4.46.v20220331"
+      ]
+    }
+  ]
+}

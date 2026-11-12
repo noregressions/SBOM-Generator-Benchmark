@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-12",
+  "image": "sha256:9d096387646717cb289e6accbe3132967f24539feec76022791e779806e1bc16",
+  "arch": "aarch64",
+  "versions": {
+    "PYTHON_IMAGE": "python:3.15.2-slim-trixie",
+    "NODE_IMAGE": "node:26.13.0-trixie-slim",
+    "JDK_IMAGE": "eclipse-temurin:25.0.2_10-jdk",
+    "MAVEN_IMAGE": "maven:3.9.16-eclipse-temurin-25",
+    "DOTNET_IMAGE": "mcr.microsoft.com/dotnet/sdk:10.0",
+    "DOCKER_CLI_IMAGE": "docker:29-cli",
+    "SYFT_VERSION": "1.51.0",
+    "TRIVY_VERSION": "0.74.0",
+    "CDXGEN_VERSION": "11.3.2",
+    "SBOM_TOOL_VERSION": "4.1.13",
+    "BOM_VERSION": "0.8.0",
+    "CYCLONEDX_NPM_VERSION": "6.0.1",
+    "CYCLONEDX_PY_VERSION": "8.0.1",
+    "SBOM4PYTHON_VERSION": "0.12.6",
+    "DOCKER_SCOUT_VERSION": "1.24.0",
+    "CYCLONEDX_MAVEN_PLUGIN": "org.cyclonedx:cyclonedx-maven-plugin:2.9.1",
+    "SBOM_PLUS_MAVEN_PLUGIN": "dev.noregressions:sbom-plus-maven-plugin:1.0.0",
+    "SBOMQS_VERSION": "2.1.3",
+    "CYCLONEDX_CLI_VERSION": "0.33.1",
+    "GRYPE_VERSION": "0.115.0"
+  }
+}

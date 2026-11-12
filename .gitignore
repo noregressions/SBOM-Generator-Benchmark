@@ -1,0 +1,27 @@
+# build outputs of the sample apps
+sample-app/java-maven/target/
+sample-app/java-gradle/build/
+sample-app/java-gradle/.gradle/
+sample-app/node/node_modules/
+sample-app/python/.venv/
+sample-app/python/build/
+sample-app/python/*.egg-info/
+sample-app/go/vendor/
+# tool caches / scratch
+.venv/
+*.log
+.DS_Store
+sample-app/go/sbom-sample-go
+sample-app/rust/target/
+sample-app/dotnet/bin/
+sample-app/dotnet/obj/
+tools/jbom/bin/
+
+# criteria/: image-stage SBOMs are large (Payara ~14 MB); scores are kept in criteria/output/scores.json
+criteria/output/*/image/*.cdx.json
+criteria/output/*/image/*.spdx.json
+
+__pycache__/
+
+# scorer cache files
+*.conformance.json
