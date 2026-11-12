@@ -161,13 +161,13 @@ def write_markdown(exp, stages, out, meta):
           "each document has the fields the baselines ask for; the agreement columns say where the tools differ, which is where to look first.\n")
     for st, s in stages.items():
         P(f"## {st.capitalize()} stage\n")
-        head = "| Tool | Format | Valid | Components | Unique | Missed | Labelled | With hashes | Quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 |"
-        sep = "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"
+        head = "| Tool | Version | Format | Valid | Components | Unique | Missed | Labelled | With hashes | Quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 |"
+        sep = "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"
         if truth:
             head += " Shipped found | Leaked | Wrong purl |"; sep += "---:|---:|---:|"
         P(head); P(sep)
         for d in s["docs"]:
-            row = (f'| {d["tool"]} | {d["conformance"].get("spec") or d["format"]} | {d["conformance"].get("valid", "")} | {d["components"]} | '
+            row = (f'| {d["tool"]} | {score.tool_version(d["tool"], meta["versions"])} | {d["conformance"].get("spec") or d["format"]} | {d["conformance"].get("valid", "")} | {d["components"]} | '
                    f'{len(d["unique"])} | {len(d["missed"])} | {d["labelled"]} | {d["hashed"]} | {conf(d, "quality")} | {conf(d, "ntia-2021")} | {conf(d, "ntia")} | {conf(d, "bsi-v21")} |')
             if truth:
                 a = d["accuracy"]
@@ -210,14 +210,14 @@ def write_html(exp, stages, out, meta):
                  "has the fields the baselines ask for. The agreement columns say where the tools differ, and that is where to look first.</p>")
     for st, s in stages.items():
         B.append(f"<h2>{e(st.capitalize())} stage</h2>")
-        headers = [("Tool", ""), ("Format", ""), ("Valid", ""), ("Components", "num"), ("Unique", "num"), ("Missed", "num"), ("Labelled", "num"),
+        headers = [("Tool", ""), ("Version", ""), ("Format", ""), ("Valid", ""), ("Components", "num"), ("Unique", "num"), ("Missed", "num"), ("Labelled", "num"),
                    ("With hashes", "num"), ("Quality", "num"), ("NTIA 2021", "num"), ("NTIA/CISA 2026", "num"), ("BSI v2.1", "num"), ("FSCT v3", "num")]
         if truth:
             headers += [("Shipped found", "num"), ("Leaked", "num"), ("Wrong purl", "num")]
         rows = []
         for d in s["docs"]:
             valid = d["conformance"].get("valid", "")
-            r = (f'<tr><td><a href="{e(d["file"])}">{e(d["tool"])}</a></td><td>{e(d["conformance"].get("spec") or d["format"])}</td>'
+            r = (f'<tr><td><a href="{e(d["file"])}">{e(d["tool"])}</a></td><td>{e(score.tool_version(d["tool"], meta["versions"]))}</td><td>{e(d["conformance"].get("spec") or d["format"])}</td>'
                  f'<td class="{"bad" if valid == "INVALID" else ""}">{e(valid)}</td><td class="num">{d["components"]}</td>'
                  f'<td class="num">{len(d["unique"])}</td>' + build_site.count(len(d["missed"]), bad=True)
                  + f'<td class="num">{d["labelled"]}</td><td class="num">{d["hashed"]}</td>'
@@ -268,10 +268,7 @@ def report(expected, sboms, out):
     exp = json.loads(Path(expected).read_text())
     sboms, out = Path(sboms), Path(out)
     stages = analyse(exp, sboms)
-    versions = {}
-    vf = Path(__file__).resolve().parent.parent / "tools" / "versions.env"
-    if vf.exists():
-        versions = dict(l.split("=", 1) for l in vf.read_text().splitlines() if l and not l.startswith("#"))
+    versions = score.read_versions()
     meta = {"date": datetime.date.today().isoformat(), "image": os.environ.get("BENCHMARK_IMAGE_ID", ""), "versions": versions}
     (out / "run.json").write_text(json.dumps(meta, indent=2) + "\n")
     slim = {st: {"documents": [{k: (sorted(v) if isinstance(v, set) else dict(v) if isinstance(v, defaultdict) else v) for k, v in d.items() if k != "keys"} for d in s["docs"]],

@@ -12,12 +12,12 @@
   "dataLicense": "CC0-1.0",
   "documentNamespace": "https://example.com/sbom/jar",
   "documentDescribes": [
-    "SPDXRef-File-Users-spoole-claudeC95projects-SBOMExamples-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar"
+    "SPDXRef-File-workspace-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar"
   ],
   "files": [
     {
-      "SPDXID": "SPDXRef-File-Users-spoole-claudeC95projects-SBOMExamples-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar",
-      "fileName": "Users/spoole/claude_projects/SBOMExamples/sample-app/java-maven/target/sbom-sample-maven-1.0.0.jar",
+      "SPDXID": "SPDXRef-File-workspace-sample-app-java-maven-target-sbom-sample-maven-1.0.0.jar",
+      "fileName": "workspace/sample-app/java-maven/target/sbom-sample-maven-1.0.0.jar",
       "copyrightText": "NOASSERTION",
       "fileTypes": [
         "BINARY",

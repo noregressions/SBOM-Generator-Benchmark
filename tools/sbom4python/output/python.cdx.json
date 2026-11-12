@@ -23,7 +23,7 @@
     "component": {
       "type": "application",
       "bom-ref": "CDXRef-DOCUMENT",
-      "name": "Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt"
+      "name": "Python-/workspace/sample-app/python/requirements.txt"
     },
     "distributionConstraints": {
       "tlp": "CLEAR"
@@ -65,7 +65,7 @@
       "evidence": {
         "occurrences": [
           {
-            "location": "/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt"
+            "location": "/workspace/sample-app/python/requirements.txt"
           }
         ]
       },
@@ -125,7 +125,7 @@
       "evidence": {
         "occurrences": [
           {
-            "location": "/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt"
+            "location": "/workspace/sample-app/python/requirements.txt"
           }
         ]
       },
@@ -185,7 +185,7 @@
       "evidence": {
         "occurrences": [
           {
-            "location": "/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt"
+            "location": "/workspace/sample-app/python/requirements.txt"
           }
         ]
       },

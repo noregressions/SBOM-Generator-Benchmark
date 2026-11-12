@@ -1,8 +1,8 @@
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
-DocumentName: Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt
-DocumentNamespace: http://spdx.org/spdxdocs/Python-/Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt-a55a76eb-c435-4c3c-ab71-1a61db955783
+DocumentName: Python-/workspace/sample-app/python/requirements.txt
+DocumentNamespace: http://spdx.org/spdxdocs/Python-/workspace/sample-app/python/requirements.txt-a55a76eb-c435-4c3c-ab71-1a61db955783
 LicenseListVersion: 3.28.0
 Creator: Tool: sbom4python-0.12.6
 Created: 2026-11-10T11:57:16Z
@@ -16,7 +16,7 @@ PrimaryPackagePurpose: APPLICATION
 PackageSupplier: Person: Python Software Foundation
 PackageDownloadLocation: https://pypi.org/project/requests/2.32.3/#files
 FilesAnalyzed: false
-PackageFileName: /Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt
+PackageFileName: /workspace/sample-app/python/requirements.txt
 PackageChecksum: SHA256: 70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6
 PackageLicenseDeclared: Apache-2.0
 PackageLicenseConcluded: Apache-2.0
@@ -34,7 +34,7 @@ PrimaryPackagePurpose: APPLICATION
 PackageSupplier: Person: Pallets (contact@palletsprojects.com)
 PackageDownloadLocation: https://pypi.org/project/flask/3.0.3/#files
 FilesAnalyzed: false
-PackageFileName: /Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt
+PackageFileName: /workspace/sample-app/python/requirements.txt
 PackageChecksum: SHA256: 34e815dfaa43340d1d15a5c3a02b8476004037eb4840b34910c6e21679d288f3
 PackageLicenseDeclared: BSD-3-Clause
 PackageLicenseConcluded: BSD-3-Clause
@@ -52,7 +52,7 @@ PrimaryPackagePurpose: APPLICATION
 PackageSupplier: Person: The YAML Project
 PackageDownloadLocation: https://pypi.org/project/pyyaml/6.0.2/#files
 FilesAnalyzed: false
-PackageFileName: /Users/spoole/claude_projects/SBOMExamples/sample-app/python/requirements.txt
+PackageFileName: /workspace/sample-app/python/requirements.txt
 PackageHomePage: https://pyyaml.org/
 PackageChecksum: SHA256: 0a9a2848a5b7feac301353437eb7d5957887edbf81d56e903999a75a3d743086
 PackageLicenseDeclared: MIT

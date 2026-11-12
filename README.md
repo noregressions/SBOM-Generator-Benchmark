@@ -134,7 +134,8 @@ Write the ground truth from the built artefact, not from what a tool reports.
    locations in environment variables. The adapter writes `<tool>.cdx.json` or `<tool>.spdx.json`, or exits through
    `na` when the stage doesn't apply to it. [`criteria/adapter-lib.sh`](criteria/adapter-lib.sh) documents the
    variables, and [`tools/syft/adapter.sh`](tools/syft/adapter.sh) is a short example.
-3. Run `make evaluate TOOLS=<tool>`. The image rebuilds because `versions.env` changed, and the tool appears in the
+3. Add the tool to `VERSION_KEYS` in `criteria/score.py`, so the reports show its version beside its name.
+4. Run `make evaluate TOOLS=<tool>`. The image rebuilds because `versions.env` changed, and the tool appears in the
    report.
 
 To upgrade a tool, change its line in `versions.env`, run `make`, and read the diff in the scorecard.
@@ -217,6 +218,10 @@ scripts/run-all.sh           # everything, in dependency order (cyclonedx-cli an
 ```
 
 Each `run.sh` is self-contained and prints what it is doing; outputs land in that tool's `output/`.
+
+The demos run on your machine, and SBOM tools record the absolute path they scanned. `scripts/run-all.sh` finishes by
+replacing those paths with `/workspace` and `/home/user`. After running a single demo, run `make scrub` before you
+commit, or your user name and directory layout go into the repository.
 
 ## How the generators compare on the same code
 

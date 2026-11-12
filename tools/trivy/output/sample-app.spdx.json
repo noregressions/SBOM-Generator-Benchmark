@@ -2,8 +2,8 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "/Users/spoole/claude_projects/SBOMExamples/sample-app",
-  "documentNamespace": "http://trivy.dev/filesystem//Users/spoole/claude_projects/SBOMExamples/sample-app-798d6388-b254-4abf-8cdb-bfce51146424",
+  "name": "/workspace/sample-app",
+  "documentNamespace": "http://trivy.dev/filesystem//workspace/sample-app-798d6388-b254-4abf-8cdb-bfce51146424",
   "creationInfo": {
     "creators": [
       "Organization: aquasecurity",
@@ -3871,7 +3871,7 @@
       ]
     },
     {
-      "name": "/Users/spoole/claude_projects/SBOMExamples/sample-app",
+      "name": "/workspace/sample-app",
       "SPDXID": "SPDXRef-Filesystem-c6d9995000cf4fd9",
       "downloadLocation": "NONE",
       "filesAnalyzed": false,

@@ -15,7 +15,7 @@ export BENCHMARK_IMAGE := $(IMAGE_NAME)
 EVALUATE_ARGS := $(if $(STAGES),--stages "$(STAGES)") $(if $(TOOLS),--tools "$(TOOLS)") $(CASE)
 
 .DEFAULT_GOAL := all
-.PHONY: all image build evaluate report scan shell clean distclean help
+.PHONY: all image build evaluate report scan shell scrub clean distclean help
 
 all: ## Image, test cases, every tool, scores and the site: the whole benchmark
 	scripts/evaluate $(EVALUATE_ARGS)
@@ -39,6 +39,9 @@ scan: ## Scan another source tree: make scan TREE=/path [ARTEFACT=..] [SCAN_IMAG
 
 shell: ## Open a shell in the tool image with the repository mounted
 	scripts/evaluate --shell
+
+scrub: ## Replace this machine's paths in the tool demos' output with neutral ones (run after a demo, before committing)
+	scripts/scrub-paths.sh
 
 # `git clean -X` removes only what .gitignore names (target/, node_modules/, .venv/, .maven-repo/ and so on), so it
 # cannot touch a tracked file or anything you have not ignored. The image-stage SBOMs in criteria/output are ignored

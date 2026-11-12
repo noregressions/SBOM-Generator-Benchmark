@@ -1,4 +1,4 @@
-SBOM Quality Score: 6.7/10.0	 Grade: D	Components: 7 	 EngineVersion: 8	File: /Users/spoole/claude_projects/SBOMExamples/tools/cyclonedx-maven-plugin/output/bom.json
+SBOM Quality Score: 6.7/10.0	 Grade: D	Components: 7 	 EngineVersion: 8	File: /workspace/tools/cyclonedx-maven-plugin/output/bom.json
 
 Industry Profile Overviews:
 +--------------------------------+----------+-------+

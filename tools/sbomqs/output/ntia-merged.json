@@ -5,7 +5,7 @@
   "run": {
     "id": "06fa9402-bd5d-4f5e-914a-d631d620fc92",
     "generated_at": "2026-11-11T15:14:45Z",
-    "file_name": "/Users/spoole/claude_projects/SBOMExamples/tools/cyclonedx-cli/output/merged-all-ecosystems.cdx.json",
+    "file_name": "/workspace/tools/cyclonedx-cli/output/merged-all-ecosystems.cdx.json",
     "compliance_engine_version": "1"
   },
   "tool": {

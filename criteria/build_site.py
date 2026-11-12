@@ -7,8 +7,11 @@ HTML with relative links, so GitHub Pages can serve docs/ from the main branch w
 
 Usage: build_site.py            (normally run by `make`, after score.py)
 """
-import html, json, re
+import html, json, re, sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from score import tool_version      # noqa: E402  the tool-name -> versions.env mapping lives with the scorer
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "criteria" / "output"
@@ -89,6 +92,7 @@ def page(title, body, depth=0, crumb=None):
 # What each column heading means, in one sentence. Used as the tooltip on the heading wherever it appears, and
 # written out in full under the summary table on the front page.
 HELP = {
+    "Version": "The version of the tool that produced these documents, as pinned in tools/versions.env for this run.",
     "Docs": "How many SBOM documents this tool produced across all test cases and stages.",
     "Mean recall": "Of the components that really ship, the share the tool named at the exact version, averaged over its documents. Higher is better.",
     "Shipped found": "Components that really ship and that the tool named at the exact version, out of all that ship.",
@@ -229,6 +233,7 @@ def main():
 
     tools = sorted({d["tool"] for c in cases.values() for docs in c["stages"].values() for d in docs})
     per_tool = {t: [(n, st, d) for n, c in cases.items() for st, docs in c["stages"].items() for d in docs if d["tool"] == t] for t in tools}
+    version_of = lambda t: tool_version(t, run.get("versions") or {})     # the versions recorded for this run
     tool_link = lambda t, depth: f'<a href="{"../" * depth}tools/{slug(t)}.html">{e(t)}</a>'
     case_link = lambda n, depth: f'<a href="{"../" * depth}cases/{slug(n)}.html">{e(n)}</a>'
 
@@ -269,14 +274,14 @@ def main():
         docs = [d for _, _, d in per_tool[t]]
         recall = avg([d["shipped_found"] / d["shipped_total"] if d["shipped_total"] else 0 for d in docs])
         conf = lambda k: num(avg([d["conformance"].get(k) for d in docs]))
-        rows.append(f'<tr><td>{tool_link(t, 0)}</td><td class="num">{len(docs)}</td>'
+        rows.append(f'<tr><td>{tool_link(t, 0)}</td><td>{e(version_of(t))}</td><td class="num">{len(docs)}</td>'
                     f'<td class="num recall"><span class="bar" style="width:{recall * 100:.0f}%"></span><span class="val">{pct(recall)}</span></td>'
                     + count(sum(len(d["wrong_purl"]) for d in docs), bad=True) + count(sum(len(d["leaked"]) for d in docs), bad=True)
                     + count(sum(len(d["labelled"]) for d in docs), good=True)
                     + f'<td class="num">{conf("quality")}</td><td class="num">{conf("ntia-2021")}</td><td class="num">{conf("ntia")}</td><td class="num">{conf("bsi-v21")}</td></tr>')
-    B.append(table([("Tool", ""), ("Docs", "num"), ("Mean recall", "num"), ("Wrong purl", "num"), ("Leaked", "num"), ("Labelled", "num"),
+    B.append(table([("Tool", ""), ("Version", ""), ("Docs", "num"), ("Mean recall", "num"), ("Wrong purl", "num"), ("Leaked", "num"), ("Labelled", "num"),
                     ("sbomqs quality", "num"), ("NTIA 2021", "num"), ("NTIA/CISA 2026", "num"), ("BSI v2.1", "num")], rows,
-                   groups=[("", 2), ("Content accuracy", 4), ("Baseline conformance", 4)]))
+                   groups=[("", 3), ("Content accuracy", 4), ("Baseline conformance", 4)]))
     B.append('<dl class="cols">' + "".join(f"<dt>{k}</dt><dd>{e(HELP[k])}</dd>" for k in
              ("Mean recall", "Wrong purl", "Leaked", "Labelled", "sbomqs quality", "NTIA 2021", "NTIA/CISA 2026", "BSI v2.1")) + "</dl>")
     B.append('<p class="muted">Tools run at different stages and on different test cases, so this table is a summary, not a ranking: '
@@ -338,7 +343,7 @@ def main():
                 continue
             rows.append(f'<tr class="stage"><td colspan="{len(DOC_HEADERS) + 1}">{st}</td></tr>')
             for d in c["stages"][st]:
-                rows.append(doc_row(d, f"<td>{tool_link(d['tool'], 1)}</td>"))
+                rows.append(doc_row(d, f"<td>{tool_link(d['tool'], 1)} <span class='muted'>{e(version_of(d['tool']))}</span></td>"))
                 for key, label in (("wrong_purl", "wrong purl (group guessed)"), ("leaked", "leaked unlabelled")):
                     if d[key]:
                         more = " …" if len(d[key]) > 8 else ""
@@ -360,7 +365,7 @@ def main():
         docs = per_tool[t]
         recall = avg([d["shipped_found"] / d["shipped_total"] if d["shipped_total"] else 0 for _, _, d in docs])
         B = [f"<h1>{e(t)}</h1>"]
-        B.append('<dl class="meta">' + f"<dt>Documents</dt><dd>{len(docs)}</dd><dt>Mean recall</dt><dd>{pct(recall)}</dd>"
+        B.append('<dl class="meta">' + f"<dt>Version</dt><dd>{e(version_of(t)) or 'not pinned'}</dd><dt>Documents</dt><dd>{len(docs)}</dd><dt>Mean recall</dt><dd>{pct(recall)}</dd>"
                  f'<dt>Leaked</dt><dd>{sum(len(d["leaked"]) for _, _, d in docs)}</dd>'
                  f'<dt>Formats</dt><dd>{e(", ".join(sorted({d["conformance"].get("spec") or d["format"] for _, _, d in docs})))}</dd></dl>')
         rows = [doc_row(d, f"<td>{case_link(n, 1)}</td><td>{st}</td>") for n, st, d in docs]

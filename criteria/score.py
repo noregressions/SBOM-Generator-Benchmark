@@ -22,6 +22,30 @@ PKG_TYPES = {"library", "application", "framework", None}
 PROFILES = [("ntia-2021", "NTIA 2021"), ("ntia", "NTIA/CISA 2026"), ("bsi-v21", "BSI v2.1"), ("fsct", "FSCT v3")]
 
 
+# Which line of tools/versions.env holds the version of the tool that wrote <tool>.cdx.json / <tool>.spdx.json.
+# A new adapter needs a line here for its version to appear in the reports.
+VERSION_KEYS = {
+    "syft": "SYFT_VERSION", "trivy": "TRIVY_VERSION", "trivy-rawfile": "TRIVY_VERSION", "cdxgen": "CDXGEN_VERSION",
+    "sbom-tool": "SBOM_TOOL_VERSION", "bom": "BOM_VERSION", "docker-scout": "DOCKER_SCOUT_VERSION",
+    "cyclonedx-npm": "CYCLONEDX_NPM_VERSION", "cyclonedx-python": "CYCLONEDX_PY_VERSION", "sbom4python": "SBOM4PYTHON_VERSION",
+    "cyclonedx-maven-plugin": "CYCLONEDX_MAVEN_PLUGIN", "sbom-plus-maven-plugin": "SBOM_PLUS_MAVEN_PLUGIN",
+}
+
+
+def read_versions():
+    """tools/versions.env as a dict."""
+    f = CRIT.parent / "tools" / "versions.env"
+    if not f.exists():
+        return {}
+    return dict(l.split("=", 1) for l in f.read_text().splitlines() if l and not l.startswith("#") and "=" in l)
+
+
+def tool_version(tool, versions):
+    """The pinned version of a tool, or "" if it is not pinned (ORT and ScanCode are opt-in and unpinned)."""
+    v = versions.get(VERSION_KEYS.get(tool, ""), "")
+    return v.rsplit(":", 1)[-1]          # Maven plugins are pinned as group:artifact:version
+
+
 # ----------------------------------------------------------------------------------------------------------- helpers
 def purl_key(p):
     """pkg:type/ns/name@version with qualifiers/subpath stripped; '@*' means any version."""
@@ -391,10 +415,11 @@ def write_scorecard(results):
                 a["recall"].append(x["shipped_found"] / x["shipped_total"] if x["shipped_total"] else 0)
                 a["leak"] += len(x["leaked"]); a["label"] += len(x["labelled"])
     avg = lambda l: f"{sum(l)/len(l):.1f}" if l else "–"
-    P("| Tool | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |")
-    P("|---|---:|---:|---:|---:|---:|---:|---:|")
+    versions = read_versions()
+    P("| Tool | Version | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |")
+    P("|---|---|---:|---:|---:|---:|---:|---:|---:|")
     for tool, a in sorted(agg.items(), key=lambda kv: -sum(kv[1]["recall"]) / max(1, len(kv[1]["recall"]))):
-        P(f'| {tool} | {a["docs"]} | {avg(a["q"])} | {avg(a["ntia"])} | {avg(a["bsi"])} | {sum(a["recall"])/len(a["recall"]):.0%} | {a["leak"]} | {a["label"]} |')
+        P(f'| {tool} | {tool_version(tool, versions)} | {a["docs"]} | {avg(a["q"])} | {avg(a["ntia"])} | {avg(a["bsi"])} | {sum(a["recall"])/len(a["recall"]):.0%} | {a["leak"]} | {a["label"]} |')
     P("")
     (CRIT / "SCORECARD.md").write_text("\n".join(L))
     print(f"wrote {CRIT / 'SCORECARD.md'}")

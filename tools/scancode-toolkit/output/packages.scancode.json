@@ -5,9 +5,9 @@
       "tool_version": "32.5.0",
       "options": {
         "input": [
-          "/Users/spoole/claude_projects/SBOMExamples/sample-app"
+          "/workspace/sample-app"
         ],
-        "--cyclonedx": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/packages.cdx.json",
+        "--cyclonedx": "/workspace/tools/scancode-toolkit/output/packages.cdx.json",
         "--ignore": [
           "*/node_modules/*",
           "*/.venv/*",
@@ -15,12 +15,12 @@
           "*/build/*",
           "*/.gradle/*"
         ],
-        "--json-pp": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/packages.scancode.json",
+        "--json-pp": "/workspace/tools/scancode-toolkit/output/packages.scancode.json",
         "--only-findings": false,
         "--package": true,
         "--processes": "4",
         "--quiet": true,
-        "--spdx-tv": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/packages.spdx",
+        "--spdx-tv": "/workspace/tools/scancode-toolkit/output/packages.spdx",
         "--strip-root": true
       },
       "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",

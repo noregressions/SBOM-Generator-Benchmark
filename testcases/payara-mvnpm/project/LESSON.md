@@ -221,7 +221,7 @@ target/generated-web/assets/app.js
 ```
 
 ```output
--rw-r--r--@ 1 spoole  staff   638K 22 Aug 09:44 target/payara-mvnpm-trace-lab-1.0.0.war
+-rw-r--r--@ 1 user    staff   638K 22 Aug 09:44 target/payara-mvnpm-trace-lab-1.0.0.war
 ```
 
 ## Evidence

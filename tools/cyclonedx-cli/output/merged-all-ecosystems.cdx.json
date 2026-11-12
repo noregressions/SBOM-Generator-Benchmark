@@ -4768,7 +4768,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0",
+      "bom-ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///workspace/sample-app/rust#sbom-sample-rust@1.0.0",
       "name": "sbom-sample-rust",
       "version": "1.0.0",
       "description": "Small Rust app used as a target for SBOM generation tools",
@@ -4782,7 +4782,7 @@
       "components": [
         {
           "type": "application",
-          "bom-ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0 bin-target-0",
+          "bom-ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///workspace/sample-app/rust#sbom-sample-rust@1.0.0 bin-target-0",
           "name": "sbom-sample-rust",
           "version": "1.0.0",
           "licenses": [
@@ -5792,7 +5792,7 @@
       "ref": "github.com/example/sbom-sample-go@v1.0.0:pkg:golang/std@go1.21.13?type=module"
     },
     {
-      "ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0",
+      "ref": "sbom-sample-rust@1.0.0:path\u002Bfile:///workspace/sample-app/rust#sbom-sample-rust@1.0.0",
       "dependsOn": [
         "sbom-sample-rust@1.0.0:registry\u002Bhttps://github.com/rust-lang/crates.io-index#serde@1.0.229",
         "sbom-sample-rust@1.0.0:registry\u002Bhttps://github.com/rust-lang/crates.io-index#serde_json@1.0.154",
@@ -5884,7 +5884,7 @@
         "sbom-sample-node@1.0.0:sbom-sample-node@1.0.0",
         "sbom-sample-python@1.0.0:root-component",
         "github.com/example/sbom-sample-go@v1.0.0:pkg:golang/github.com/example/sbom-sample-go@v1.0.0?type=module",
-        "sbom-sample-rust@1.0.0:path\u002Bfile:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0"
+        "sbom-sample-rust@1.0.0:path\u002Bfile:///workspace/sample-app/rust#sbom-sample-rust@1.0.0"
       ]
     }
   ],

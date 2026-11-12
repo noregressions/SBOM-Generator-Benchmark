@@ -5,7 +5,7 @@
   },
   "ReportID": "01a1c54c-677d-7b89-88fa-695d325c0da4",
   "CreatedAt": "2026-11-10T11:51:21.213756Z",
-  "ArtifactName": "/Users/spoole/claude_projects/SBOMExamples/sample-app",
+  "ArtifactName": "/workspace/sample-app",
   "ArtifactType": "filesystem",
   "Results": [
     {

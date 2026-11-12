@@ -208,17 +208,17 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 
 Averages over every document the tool produced in this run. Recall is shipped-found divided by shipped-total, averaged per document. A high conformance score with low recall means a well-formed document about the wrong inventory.
 
-| Tool | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| sbom-plus-maven-plugin | 3 | 7.9 | 9.9 | 9.2 | 93% | 0 | 67 |
-| sbom-tool | 5 | 5.3 | 5.2 | 3.8 | 89% | 144 | 0 |
-| cyclonedx-maven-plugin | 3 | 6.2 | 7.6 | 4.8 | 83% | 26 | 0 |
-| docker-scout | 2 | 5.5 | 6.6 | 3.6 | 76% | 0 | 0 |
-| cyclonedx-python | 2 | 4.4 | 5.4 | 4.8 | 75% | 1 | 0 |
-| syft | 12 | 4.7 | 4.6 | 3.3 | 70% | 2 | 0 |
-| cyclonedx-npm | 2 | 4.9 | 6.4 | 5.1 | 57% | 0 | 57 |
-| trivy | 12 | 3.9 | 5.2 | 3.9 | 52% | 0 | 0 |
-| cdxgen | 11 | 4.8 | 6.4 | 4.3 | 52% | 0 | 201 |
-| sbom4python | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
-| bom | 3 | 4.4 | 5.6 | 4.3 | 0% | 0 | 0 |
-| trivy-rawfile | 3 | 3.0 | 4.4 | 4.1 | 0% | 0 | 0 |
+| Tool | Version | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| sbom-plus-maven-plugin | 1.1.0 | 3 | 7.9 | 9.9 | 9.2 | 93% | 0 | 67 |
+| sbom-tool | 4.1.13 | 5 | 5.3 | 5.2 | 3.8 | 89% | 144 | 0 |
+| cyclonedx-maven-plugin | 2.9.1 | 3 | 6.2 | 7.6 | 4.8 | 83% | 26 | 0 |
+| docker-scout | 1.24.0 | 2 | 5.5 | 6.6 | 3.6 | 76% | 0 | 0 |
+| cyclonedx-python | 8.0.1 | 2 | 4.4 | 5.4 | 4.8 | 75% | 1 | 0 |
+| syft | 1.51.0 | 12 | 4.7 | 4.6 | 3.3 | 70% | 2 | 0 |
+| cyclonedx-npm | 6.0.1 | 2 | 4.9 | 6.4 | 5.1 | 57% | 0 | 57 |
+| trivy | 0.74.0 | 12 | 3.9 | 5.2 | 3.9 | 52% | 0 | 0 |
+| cdxgen | 11.3.2 | 11 | 4.8 | 6.4 | 4.3 | 52% | 0 | 201 |
+| sbom4python | 0.12.6 | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
+| bom | 0.8.0 | 3 | 4.4 | 5.6 | 4.3 | 0% | 0 | 0 |
+| trivy-rawfile | 0.74.0 | 3 | 3.0 | 4.4 | 4.1 | 0% | 0 | 0 |

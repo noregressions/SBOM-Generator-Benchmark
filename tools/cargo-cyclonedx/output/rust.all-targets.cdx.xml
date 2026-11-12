@@ -9,7 +9,7 @@
         <version>0.5.10</version>
       </tool>
     </tools>
-    <component type="application" bom-ref="path+file:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0">
+    <component type="application" bom-ref="path+file:///workspace/sample-app/rust#sbom-sample-rust@1.0.0">
       <name>sbom-sample-rust</name>
       <version>1.0.0</version>
       <description>Small Rust app used as a target for SBOM generation tools</description>
@@ -19,7 +19,7 @@
       </licenses>
       <purl>pkg:cargo/sbom-sample-rust@1.0.0?download_url=file://.</purl>
       <components>
-        <component type="application" bom-ref="path+file:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0 bin-target-0">
+        <component type="application" bom-ref="path+file:///workspace/sample-app/rust#sbom-sample-rust@1.0.0 bin-target-0">
           <name>sbom-sample-rust</name>
           <version>1.0.0</version>
           <licenses>
@@ -662,7 +662,7 @@
     </component>
   </components>
   <dependencies>
-    <dependency ref="path+file:///Users/spoole/claude_projects/SBOMExamples/sample-app/rust#sbom-sample-rust@1.0.0">
+    <dependency ref="path+file:///workspace/sample-app/rust#sbom-sample-rust@1.0.0">
       <dependency ref="registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229" />
       <dependency ref="registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.154" />
       <dependency ref="registry+https://github.com/rust-lang/crates.io-index#uuid@1.29.2" />

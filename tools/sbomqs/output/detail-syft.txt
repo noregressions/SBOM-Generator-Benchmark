@@ -1,4 +1,4 @@
-SBOM Quality Score: 5.3/10.0	 Grade: D	Components: 198 	 EngineVersion: 8	File: /Users/spoole/claude_projects/SBOMExamples/tools/syft/output/sample-app.cdx.json
+SBOM Quality Score: 5.3/10.0	 Grade: D	Components: 198 	 EngineVersion: 8	File: /workspace/tools/syft/output/sample-app.cdx.json
 
 Industry Profile Overviews:
 +--------------------------------+----------+-------+

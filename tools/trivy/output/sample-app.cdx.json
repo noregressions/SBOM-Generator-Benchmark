@@ -22,7 +22,7 @@
     "component": {
       "bom-ref": "18da1eab-4808-49e8-bf4a-ce1b53d5fa64",
       "type": "application",
-      "name": "/Users/spoole/claude_projects/SBOMExamples/sample-app",
+      "name": "/workspace/sample-app",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",

@@ -11,6 +11,7 @@ for t in "${ORDER[@]}"; do
   echo; echo "################ $t ################"
   if "$ROOT/tools/$t/run.sh"; then pass+=("$t"); else fail+=("$t"); fi
 done
+"$ROOT/scripts/scrub-paths.sh"     # the demos run on the host; take this machine's paths out of their output
 echo; echo "OK:     ${pass[*]}"; echo "FAILED: ${fail[*]:-none}"
 echo; echo "Scope runs (scope-runs/) and the criteria scorecard (criteria/) are separate: scope-runs/run.sh and make"
 echo "make rebuilds COMPARISON.md from all three; after a scope run alone, use python3 scripts/compare-tools.py."

@@ -5,22 +5,22 @@
       "tool_version": "32.5.0",
       "options": {
         "input": [
-          "/Users/spoole/claude_projects/SBOMExamples/sample-app/java-maven"
+          "/workspace/sample-app/java-maven"
         ],
         "--copyright": true,
-        "--cyclonedx-xml": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/java-maven.full.cdx.xml",
-        "--html": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/java-maven.full.html",
+        "--cyclonedx-xml": "/workspace/tools/scancode-toolkit/output/java-maven.full.cdx.xml",
+        "--html": "/workspace/tools/scancode-toolkit/output/java-maven.full.html",
         "--ignore": [
           "*/target/*"
         ],
         "--info": true,
-        "--json-pp": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/java-maven.full.scancode.json",
+        "--json-pp": "/workspace/tools/scancode-toolkit/output/java-maven.full.scancode.json",
         "--license": true,
         "--only-findings": false,
         "--package": true,
         "--processes": "4",
         "--quiet": true,
-        "--spdx-rdf": "/Users/spoole/claude_projects/SBOMExamples/tools/scancode-toolkit/output/java-maven.full.spdx.rdf",
+        "--spdx-rdf": "/workspace/tools/scancode-toolkit/output/java-maven.full.spdx.rdf",
         "--strip-root": true
       },
       "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",

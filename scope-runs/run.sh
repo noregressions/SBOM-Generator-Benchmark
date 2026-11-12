@@ -81,3 +81,4 @@ rm -rf "$TMP"
 
 log "compare"
 python3 "$ROOT/scope-runs/compare.py" "$OUT" > "$ROOT/scope-runs/RESULTS.md" && cat "$ROOT/scope-runs/RESULTS.md"
+"$ROOT/scripts/scrub-paths.sh" "$OUT"     # take this machine's paths out of the output before it is committed
