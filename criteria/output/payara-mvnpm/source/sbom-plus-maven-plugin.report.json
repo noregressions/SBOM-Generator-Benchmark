@@ -1,6 +1,6 @@
 {
   "formatVersion" : 2,
-  "generatedAt" : "2026-11-12T13:16:25.338350838Z",
+  "generatedAt" : "2026-11-12T13:53:20.778501Z",
   "modules" : [ {
     "module" : "dev.noregressions.trace:payara-mvnpm-trace-lab",
     "version" : "1.0.0",

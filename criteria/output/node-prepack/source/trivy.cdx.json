@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:964792bc-e27a-4f73-b0d6-e70afd68c556",
+  "serialNumber": "urn:uuid:20259601-e119-412d-8be4-f47a2e7bbc0a",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:16:04+00:00",
+    "timestamp": "2026-11-12T13:52:43+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "a7f8bce5-4d70-4db9-808c-08acafe3a79a",
+      "bom-ref": "2f98ffce-3a75-45eb-841e-b52dac6d9f3b",
       "type": "application",
       "name": "/tmp/criteria-7/src",
       "properties": [
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "a6cc9780-b7fd-4cc1-a423-e994e665c60a",
+      "bom-ref": "eba62b91-3cca-4739-b3a4-948d9227d6df",
       "type": "application",
       "name": "package-lock.json",
       "properties": [
@@ -74,15 +74,15 @@
   ],
   "dependencies": [
     {
-      "ref": "a6cc9780-b7fd-4cc1-a423-e994e665c60a",
+      "ref": "2f98ffce-3a75-45eb-841e-b52dac6d9f3b",
       "dependsOn": [
-        "pkg:npm/trace-route-package@1.0.0"
+        "eba62b91-3cca-4739-b3a4-948d9227d6df"
       ]
     },
     {
-      "ref": "a7f8bce5-4d70-4db9-808c-08acafe3a79a",
+      "ref": "eba62b91-3cca-4739-b3a4-948d9227d6df",
       "dependsOn": [
-        "a6cc9780-b7fd-4cc1-a423-e994e665c60a"
+        "pkg:npm/trace-route-package@1.0.0"
       ]
     },
     {

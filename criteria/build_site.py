@@ -86,9 +86,34 @@ def page(title, body, depth=0, crumb=None):
 """
 
 
-def table(headers, rows, cls=""):
-    head = "".join(f'<th class="{c}">{h}</th>' for h, c in headers)
-    return f'<div class="scroll"><table class="{cls}"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+# What each column heading means, in one sentence. Used as the tooltip on the heading wherever it appears, and
+# written out in full under the summary table on the front page.
+HELP = {
+    "Docs": "How many SBOM documents this tool produced across all test cases and stages.",
+    "Mean recall": "Of the components that really ship, the share the tool named at the exact version, averaged over its documents. Higher is better.",
+    "Shipped found": "Components that really ship and that the tool named at the exact version, out of all that ship.",
+    "Wrong ver": "Components the tool named, but at a version that does not ship.",
+    "Wrong purl": "Components named with the right name and version but under the wrong group or namespace, so no vulnerability database will match them. Lower is better.",
+    "Leaked": "Things that do not ship (test, dev and build tooling, provided-scope and BOM imports) listed as if they did, with nothing a consumer could filter on. Lower is better.",
+    "Labelled": "Things that do not ship, listed with a scope or property that marks them as such. This is the correct way to include them, so a high number is not a fault.",
+    "Hashes ok": "Hashes the tool emitted that match the real digest of the jar inside the built artefact, out of the hashes it emitted for those jars.",
+    "Comps": "Package components in the document.",
+    "In scope": "Components whose package type is one of the test case's ecosystems. Operating-system packages in images are left out.",
+    "sbomqs quality": "sbomqs' overall quality score for the document, 0 to 10. It measures how complete the fields are, not whether the inventory is right.",
+    "NTIA 2021": "Score out of 10 against the NTIA minimum elements for an SBOM (2021): supplier, name, version, identifiers, dependencies, author, timestamp.",
+    "NTIA/CISA 2026": "Score out of 10 against the 2026 NTIA/CISA revision of the minimum elements, which adds hashes, licences and more.",
+    "BSI v2.1": "Score out of 10 against the German BSI technical guideline TR-03183-2 version 2.1, which asks for more per component than the NTIA lists do.",
+    "Format": "The SBOM format the tool wrote: CycloneDX or SPDX.",
+}
+
+
+def table(headers, rows, cls="", groups=None):
+    """groups: optional [(label, colspan), ...] printed as a row above the headings, to say which score a column belongs to."""
+    top = ""
+    if groups:
+        top = "<tr class='groups'>" + "".join(f'<th colspan="{n}" class="{"group" if g else ""}">{g}</th>' for g, n in groups) + "</tr>"
+    head = "".join(f'<th class="{c}" title="{e(HELP[h])}"><abbr>{h}</abbr></th>' if h in HELP else f'<th class="{c}">{h}</th>' for h, c in headers)
+    return f'<div class="scroll"><table class="{cls}"><thead>{top}<tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
 
 
 CSS = """
@@ -130,6 +155,12 @@ tr.stage td { background:var(--chip); font-weight:600; font-size:12.5px; text-tr
 .cell i.n { color:var(--bad); } .cell i.x { opacity:0.45; }
 dl.meta { display:grid; grid-template-columns:max-content 1fr; gap:2px 16px; font-size:14px; margin:8px 0; }
 dl.meta dt { color:var(--muted); } dl.meta dd { margin:0; }
+tr.groups th { border-bottom:0; padding-bottom:0; text-transform:none; letter-spacing:0; font-size:13px; }
+tr.groups th.group { color:var(--ink); border-left:1px solid var(--line); } thead tr:not(.groups) th { vertical-align:bottom; }
+th abbr { text-decoration:underline dotted; text-underline-offset:3px; cursor:help; }
+dl.cols { display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; font-size:14px; margin:14px 0; max-width:100ch; }
+dl.cols dt { font-weight:600; } dl.cols dd { margin:0; color:var(--muted); }
+@media (max-width:640px) { dl.cols { grid-template-columns:1fr; gap:0; } dl.cols dd { margin-bottom:8px; } }
 ul.notes { font-size:14px; padding-left:20px; max-width:100ch; } ul.notes li { margin:3px 0; }
 """
 
@@ -174,6 +205,8 @@ DOC_HEADERS = [("Format", ""), ("Comps", "num"), ("In scope", "num"), ("Shipped 
                ("Wrong purl", "num"), ("Leaked", "num"), ("Labelled", "num"), ("Hashes ok", "num"),
                ("NTIA 2021", "num"), ("NTIA/CISA 2026", "num"), ("BSI v2.1", "num")]
 
+DOC_GROUPS = [("Content accuracy", 6), ("Baseline conformance", 3)]   # after Format, Comps, In scope
+
 COLUMNS = """<ul class="notes">
 <li><b>In scope</b>: package components whose purl type is one of the test case's ecosystems (OS packages in images are ignored).</li>
 <li><b>Shipped found</b>: recall against what is really in the artefact, at the exact version.</li>
@@ -211,16 +244,25 @@ def main():
     B = []
     B.append("<h1>SBOM Generator Index</h1>")
     B.append('<p class="lede">Free SBOM generators, run against projects where we know exactly what ships, and scored twice: '
-             "on whether the document is true, and on whether it is well formed.</p>")
+             "for content accuracy (is the document true?) and for baseline conformance (does it have the required fields?).</p>")
     n_docs = sum(len(v) for v in per_tool.values())
     meta = [("Test cases", str(len(cases))), ("Tools", str(len(tools))), ("Documents scored", str(n_docs))]
     if run:
         meta += [("Last run", e(run.get("date", ""))), ("Tool image", f'<code>{e(run.get("image", "")[:19])}</code> ({e(run.get("arch", ""))})')]
     B.append('<dl class="meta">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in meta) + "</dl>")
 
-    B.append("<h2>Tools: accuracy next to conformance</h2>")
-    B.append("<p>Averages over every document each tool produced. Mean recall is shipped-found over shipped-total, averaged per document. "
-             "A high conformance score beside low recall, or beside a large leak count, is a well-formed document about the wrong inventory.</p>")
+    B.append("<h2>The two scores</h2>")
+    B.append("<p>Every document a tool produces gets two scores, and every table on this site keeps them in separate, labelled groups of columns.</p>")
+    B.append("<p><b>Content accuracy</b> asks whether the document is true: does it name what actually ships, at the right version, without passing off "
+             "test, dev or build tooling as shipped, and with correct hashes? It is measured against each test case's ground truth.</p>")
+    B.append("<p><b>Baseline conformance</b> asks whether the document is complete: does it carry the fields the published baselines "
+             "(NTIA, NTIA/CISA, BSI) want? It is measured by the <code>sbomqs</code> tool, out of 10.</p>")
+    B.append("<p>The two disagree, and the disagreement is the point. A document can score 10 for baseline conformance while listing a hundred "
+             "components that never ship.</p>")
+
+    B.append("<h2>Tools: content accuracy beside baseline conformance</h2>")
+    B.append("<p>Averages over every document each tool produced. High baseline conformance beside low recall, or beside a large leak count, "
+             "is a well-formed document about the wrong inventory.</p>")
     rows = []
     ranked = sorted(tools, key=lambda t: -avg([d["shipped_found"] / d["shipped_total"] if d["shipped_total"] else 0 for _, _, d in per_tool[t]]))
     for t in ranked:
@@ -233,7 +275,10 @@ def main():
                     + count(sum(len(d["labelled"]) for d in docs), good=True)
                     + f'<td class="num">{conf("quality")}</td><td class="num">{conf("ntia-2021")}</td><td class="num">{conf("ntia")}</td><td class="num">{conf("bsi-v21")}</td></tr>')
     B.append(table([("Tool", ""), ("Docs", "num"), ("Mean recall", "num"), ("Wrong purl", "num"), ("Leaked", "num"), ("Labelled", "num"),
-                    ("sbomqs quality", "num"), ("NTIA 2021", "num"), ("NTIA/CISA 2026", "num"), ("BSI v2.1", "num")], rows))
+                    ("sbomqs quality", "num"), ("NTIA 2021", "num"), ("NTIA/CISA 2026", "num"), ("BSI v2.1", "num")], rows,
+                   groups=[("", 2), ("Content accuracy", 4), ("Baseline conformance", 4)]))
+    B.append('<dl class="cols">' + "".join(f"<dt>{k}</dt><dd>{e(HELP[k])}</dd>" for k in
+             ("Mean recall", "Wrong purl", "Leaked", "Labelled", "sbomqs quality", "NTIA 2021", "NTIA/CISA 2026", "BSI v2.1")) + "</dl>")
     B.append('<p class="muted">Tools run at different stages and on different test cases, so this table is a summary, not a ranking: '
              "a build plugin that only sees source is not competing with a scanner that also reads images. Follow a tool's link for every document it produced.</p>")
 
@@ -258,10 +303,7 @@ def main():
                             + "".join(f"<td>{hidden_cell(c, t, item['purl'])}</td>" for t in tools) + "</tr>")
     B.append(table([("Test case", ""), ("Component", ""), ("Mechanism", "")] + [(e(t), "") for t in tools], rows))
 
-    B.append("<h2>How to read the scores</h2>")
-    B.append("<p><b>Content accuracy</b> asks whether the document names what actually ships, at the right version, without passing off test, dev or build tooling as shipped, and with correct hashes. "
-             "It is measured against each test case's ground truth. <b>Baseline conformance</b> asks whether the document carries the fields the published baselines want. "
-             "The two disagree, and the disagreement is the point.</p>")
+    B.append("<h2>The three stages</h2>")
     B.append("<p>Every test case is scanned at up to three stages: <b>source</b> (the checkout, without build outputs or caches), <b>artefact</b> (the built jar, WAR, package or environment) "
              "and <b>image</b> (the container). The hidden mechanisms show up as differences between stages, which is why one scan is never enough.</p>")
     if run.get("versions"):
@@ -304,7 +346,7 @@ def main():
                 if d["wrong_version"]:
                     notes.append(f'<li><b>{st} / {e(d["tool"])}</b> wrong version: '
                                  + e(", ".join(f"{short(p)} reported as {d['hits'][p][2]}" for p in d["wrong_version"])) + "</li>")
-        B.append(table([("Tool", "")] + DOC_HEADERS, rows))
+        B.append(table([("Tool", "")] + DOC_HEADERS, rows, groups=[("", 4)] + DOC_GROUPS))
         B.append(COLUMNS)
         if notes:
             B.append("<h3>Details</h3><ul class='notes'>" + "".join(notes) + "</ul>")
@@ -323,7 +365,7 @@ def main():
                  f'<dt>Formats</dt><dd>{e(", ".join(sorted({d["conformance"].get("spec") or d["format"] for _, _, d in docs})))}</dd></dl>')
         rows = [doc_row(d, f"<td>{case_link(n, 1)}</td><td>{st}</td>") for n, st, d in docs]
         B.append("<h2>Every document</h2>")
-        B.append(table([("Test case", ""), ("Stage", "")] + DOC_HEADERS, rows))
+        B.append(table([("Test case", ""), ("Stage", "")] + DOC_HEADERS, rows, groups=[("", 5)] + DOC_GROUPS))
         B.append(COLUMNS)
         rows = []
         for n, c in cases.items():

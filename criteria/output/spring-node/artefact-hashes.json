@@ -1,0 +1,162 @@
+{
+ "commons-codec-1.18.0.jar": {
+  "md5": "2abf189633424b9292fd57a3192c0ed5",
+  "sha1": "ee45d1cf6ec2cc2b809ff04b4dc7aec858e0df8f",
+  "sha256": "ba005f304cef92a3dede24a38ad5ac9b8afccf0d8f75839d6c1338634cf7f6e4"
+ },
+ "jackson-annotations-2.19.4.jar": {
+  "md5": "d676ca7a5c3f6d2d3f2c32c57cfd5a52",
+  "sha1": "bbb09b1e7f7f5108890270eb701cb3ddef991c05",
+  "sha256": "ab26383fa3c10c0df1ffd1bb035d81161c059b1af71927d73c24473c058baa16"
+ },
+ "jackson-core-2.19.4.jar": {
+  "md5": "6957ee67737918a9650f801f1a6d1fe1",
+  "sha1": "a720ca9b800742699e041c3890f3731fe516085e",
+  "sha256": "466ae4dc4f7054f51525f4211df411d9a64d65cc169995d32bf49e20e6f586e5"
+ },
+ "jackson-databind-2.19.4.jar": {
+  "md5": "11866a41e8db8fc1219fccb98c5ddd38",
+  "sha1": "7a39bf9257b726b90b80f27fa3f5174bc75162a5",
+  "sha256": "b781c431be870deb0bf84421e99e774c256a701f4ba678df80248f55cd16ff74"
+ },
+ "jackson-datatype-jdk8-2.19.4.jar": {
+  "md5": "fe21cfa5ef77f1abe83c3365e8ee7688",
+  "sha1": "90d304bcdb1a4bacb6f4347be625d75300973c60",
+  "sha256": "c0e0dc3039f9a37a099b2602838f833ea8c15c56445a0eb5463d0c7e0c355da2"
+ },
+ "jackson-datatype-jsr310-2.19.4.jar": {
+  "md5": "b85dc514029abd7235fa0cdd7b2c919d",
+  "sha1": "3cbcf2e636a6b062772299bf19a347536e58c4df",
+  "sha256": "070af4d7c345cf975ff783138050678e6194e5bb88ab489385d0311a5fcb1585"
+ },
+ "jackson-module-parameter-names-2.19.4.jar": {
+  "md5": "e1db337e1fef503be9023f59db9ccf43",
+  "sha1": "502dfea4c83502f444837b3d040a51e8475f15f2",
+  "sha256": "91a1f2f1b595c4d5c902a7d6d383354a3ba9bf87b19bdf1d473f55306f79c6e5"
+ },
+ "jakarta.annotation-api-2.1.1.jar": {
+  "md5": "5dac2f68e8288d0add4dc92cb161711d",
+  "sha1": "48b9bda22b091b1f48b13af03fe36db3be6e1ae3",
+  "sha256": "5f65fdaf424eee2b55e1d882ba9bb376be93fb09b37b808be6e22e8851c909fe"
+ },
+ "jul-to-slf4j-2.0.17.jar": {
+  "md5": "a42936c56611e4794c42908fb3d3a647",
+  "sha1": "524cb6ccc2b68a57604750e1ab8b13b5a786a6aa",
+  "sha256": "a7afcd23b9cfd1475e55c94f943b808c5922035e7e2c2a5c65a487a4106bc538"
+ },
+ "log4j-api-2.24.3.jar": {
+  "md5": "d89516699543c5c21be87ee1760695f3",
+  "sha1": "b02c125db8b6d295adf72ae6e71af5d83bce2370",
+  "sha256": "5b4a0a0cd0e751ded431c162442bdbdd53328d1f8bb2bae5fc1bbeee0f66d80f"
+ },
+ "log4j-to-slf4j-2.24.3.jar": {
+  "md5": "1f4b63f9c41f2f5179aa10b35d76e805",
+  "sha1": "da1143e2a2531ee1c2d90baa98eb50a28a39d5a7",
+  "sha256": "c7f2b0c612a4eb05b1587d1c880eb4cf5f4f53850676a8ede8da2b8fabb4f73f"
+ },
+ "logback-classic-1.5.32.jar": {
+  "md5": "cc1b628dcb1f44089d0decf8a4cf9009",
+  "sha1": "2b1042c50f508f2eb402bd4d22ccbdf94cc37d2e",
+  "sha256": "2d4cf592db78be2de4d6140434c2fec170dcb16a09e8c8b7b207dbf5e31b848a"
+ },
+ "logback-core-1.5.32.jar": {
+  "md5": "053d4a28d6ba4c9b6247c6fd859ca64f",
+  "sha1": "fdfb3ff9a842303d4a95207294a6c6bc64e2605d",
+  "sha256": "6a904d5778d0e361a9692f9cbe68b1b0620ae0f3eda2ec2ed09102755bf036c4"
+ },
+ "micrometer-commons-1.15.10.jar": {
+  "md5": "dd2fb9316047e074c6706aecf53b2de5",
+  "sha1": "57d272e7d7948e88e1edd667672bf5ef8ddc0023",
+  "sha256": "a207f38a0a480de70d88f595f878af915291d348d5828031d05a626ae3cf81a8"
+ },
+ "micrometer-observation-1.15.10.jar": {
+  "md5": "ca89c22c41f205062d0d2eab0c82f445",
+  "sha1": "042999983f290de6ec33be384c5ca846d6a8d4a9",
+  "sha256": "7238ede3111b83829fab3767daa102e1ad8e0aa189cb295f7dd543ab525328c5"
+ },
+ "normalizer-1.0.0.jar": {
+  "md5": "22aab6ec6fa2b0730d0843fdcbc5a1a0",
+  "sha1": "74775c6ad43455831aedf8f01194ce38c3ace23e",
+  "sha256": "71ded6bab3450a5a52a9ecba5f2b4f076484b5891fa2fa2281f855669128728f"
+ },
+ "slf4j-api-2.0.17.jar": {
+  "md5": "b6480d114a23683498ac3f746f959d2f",
+  "sha1": "d9e58ac9c7779ba3bf8142aff6c830617a7fe60f",
+  "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+ },
+ "snakeyaml-2.4.jar": {
+  "md5": "29410ee3a987e3bff7b847933c591972",
+  "sha1": "e0666b825b796f85521f02360e77f4c92c5a7a07",
+  "sha256": "ef779af5d29a9dde8cc70ce0341f5c6f7735e23edff9685ceaa9d35359b7bb7f"
+ },
+ "spring-aop-6.2.17.jar": {
+  "md5": "071b34a8dd98872b29c359bc98637646",
+  "sha1": "f668a8c9a6771eeee4069a720a3e9b9fcfd9e88f",
+  "sha256": "0d6fdfe888c4da686399705762442f08b732b47c2b1d8e8a64a94f406ff9fded"
+ },
+ "spring-beans-6.2.17.jar": {
+  "md5": "74342dd5e759e2bcee0c90bcc4c35e91",
+  "sha1": "8e1bc0b4388c013bb984ba4ea47560b997fc2c77",
+  "sha256": "82bad7c2c66585ec7d4f1fa4e3eae37acc949239ba5e7b0d52a5cc81dfb76d2e"
+ },
+ "spring-boot-3.5.12.jar": {
+  "md5": "2690faecde4a9087020939829b188785",
+  "sha1": "da8301111d026baad823ca00e19b636bc5ef0699",
+  "sha256": "3d99d5fec71431bf3aca0d11c159f1f8b6ac2b727932bff8382e522d02d78228"
+ },
+ "spring-boot-autoconfigure-3.5.12.jar": {
+  "md5": "b275e4b5ff2e9219692365ded483a759",
+  "sha1": "5c150628493f049b93c0e499063167a08ba5e3b6",
+  "sha256": "690b9cc688e086af59065d58fec3aea584c57a920db9d0bc6db87d2c31f41133"
+ },
+ "spring-boot-jarmode-tools-3.5.12.jar": {
+  "md5": "5680346d4a31d2e3cf2c204f1bc60010",
+  "sha1": "1739d0ac3f404ea1203487ecb26ec5ec5c5c9326",
+  "sha256": "9d7a4adde84942a79026e689b6b19ab819ec8df59fe07bad87f239393410d323"
+ },
+ "spring-context-6.2.17.jar": {
+  "md5": "f7498dd1303c7235e8f52309700ef834",
+  "sha1": "6d517bc49acaea046f0daeddc64018dcb8e1f53d",
+  "sha256": "a607dc451e1ac6563e44b456acb0dcb67b887eab7313e760ac80b5fa7db96dc2"
+ },
+ "spring-core-6.2.17.jar": {
+  "md5": "a06fc81869d6111147fe09e7d0a895bd",
+  "sha1": "30e3c17a0df9fab46363a9c2c5a65a997b88fab3",
+  "sha256": "46940284b72219818e396359afdefd7982e421db62d9e2d53082650424e67b7a"
+ },
+ "spring-expression-6.2.17.jar": {
+  "md5": "8ef5556491d0db1130608070edfbde07",
+  "sha1": "d2f104d59e9a2d70c7f55c50c79417a63a24ad86",
+  "sha256": "2c29c8b1099e2cf9c762c1ee6247f0bd2c58ffbc560f16cd872caacd8be27d49"
+ },
+ "spring-jcl-6.2.17.jar": {
+  "md5": "a9a4f00348bfa5e77c2c1a7e0fcd38a4",
+  "sha1": "52bae2d624c7af75bfde0ae749b58e1f7b17a712",
+  "sha256": "4f7ba92439e4587d1eca7274467c3f6124d88c6eda80c93477db8b5b1122f7ce"
+ },
+ "spring-web-6.2.17.jar": {
+  "md5": "c7c75a0a3be0b6d0dfd3826e20d69d49",
+  "sha1": "7ff3be531a63850bb91d31aaeada0578e96a0fec",
+  "sha256": "543a1aa3ba342d868004bfbd5bb330480b6ee78ee8c50adf742539fe3f55ca4e"
+ },
+ "spring-webmvc-6.2.17.jar": {
+  "md5": "93805593c6b65aabe1c69728b69925fa",
+  "sha1": "5c49b782703377274dd1e1405825fa2cd0ca4d8b",
+  "sha256": "8d7a27fa7fc6ae42cced2bc415355de9172607a1b5bdd7793c04ecd856230424"
+ },
+ "tomcat-embed-core-10.1.52.jar": {
+  "md5": "07ade2b34a0b171c18bfd1338a39959d",
+  "sha1": "f512bef2796b51299f4752f95918982c3003131d",
+  "sha256": "522f540d09d14c86e0d300d6c85d9604ccc951ade60678e16822410bad6658a8"
+ },
+ "tomcat-embed-el-10.1.52.jar": {
+  "md5": "86904149380b49701b38d6d2f0f1e295",
+  "sha1": "cd94ce17c5a9937eca365eb494711efa10d49b86",
+  "sha256": "cbb6ed2e5746215273027e8a8083a4e2472e28c0132491f1e772f8fea5a5e0ac"
+ },
+ "tomcat-embed-websocket-10.1.52.jar": {
+  "md5": "a394929a3f7fe04421df356d92b06d7e",
+  "sha1": "9d32b801fb474306349013fcdd8317c8cb4d739e",
+  "sha256": "27b1f5c0c94d96cf8cc222219d189e092fab7b2ddee48e8320a60248aa9d0e75"
+ }
+}

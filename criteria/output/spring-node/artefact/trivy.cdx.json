@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:30ba55bb-7cb5-4968-b646-cecb8c524f3f",
+  "serialNumber": "urn:uuid:ddd4c207-706d-4189-a80d-415738b65149",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:23:34+00:00",
+    "timestamp": "2026-11-12T13:58:15+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "2ee28790-08d5-41d1-a3e2-becef8526f30",
+      "bom-ref": "0e86afb5-df3c-4f13-8427-9493ec0fda16",
       "type": "application",
       "name": "/tmp/criteria-7/a/x",
       "properties": [
@@ -299,7 +299,7 @@
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "dd0e3ed4819f55b60fdb866812cbc037c3e2fbe4"
+          "content": "74775c6ad43455831aedf8f01194ce38c3ace23e"
         }
       ],
       "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
@@ -354,7 +354,7 @@
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "dd0e3ed4819f55b60fdb866812cbc037c3e2fbe4"
+          "content": "74775c6ad43455831aedf8f01194ce38c3ace23e"
         }
       ],
       "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
@@ -1099,7 +1099,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2ee28790-08d5-41d1-a3e2-becef8526f30",
+      "ref": "0e86afb5-df3c-4f13-8427-9493ec0fda16",
       "dependsOn": [
         "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",

@@ -58,25 +58,6 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./LESSON.md",
-      "SPDXID": "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "3d8e1d464a093620ac70371c374cbcc6cf3124a957044647c5418114fa4f3248"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "0929e969588790d3f1098055d9012a1e0d9d62f6"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
       "fileName": "./scripts/run.sh",
       "SPDXID": "SPDXRef-File--scripts-run.sh-B04DDA2F1689D26E316C22C210A2112F2DB4F142",
       "checksums": [
@@ -87,25 +68,6 @@
         {
           "algorithm": "SHA1",
           "checksumValue": "b04dda2f1689d26e316c22c210a2112f2db4f142"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./scripts/stop.sh",
-      "SPDXID": "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "581c5736362b7d76f7f609744540a3fb1bcafb4afcaf97d182ebbea97560bede"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "983d96df6dd165f9473144d01f8dbd98bf59fbcb"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -191,6 +153,44 @@
       "copyrightText": "NOASSERTION"
     },
     {
+      "fileName": "./LESSON.md",
+      "SPDXID": "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3d8e1d464a093620ac70371c374cbcc6cf3124a957044647c5418114fa4f3248"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0929e969588790d3f1098055d9012a1e0d9d62f6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/stop.sh",
+      "SPDXID": "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "581c5736362b7d76f7f609744540a3fb1bcafb4afcaf97d182ebbea97560bede"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "983d96df6dd165f9473144d01f8dbd98bf59fbcb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
       "fileName": "./src/main/java/dev/noregressions/trace/s04/TraceServer.java",
       "SPDXID": "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceServer.java-DD8D5E334899160E4055BCDD266DB7151F737B6B",
       "checksums": [
@@ -248,21 +248,21 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:swid/criteria/example.com/maven-plugin-hidden-content@1.0.0?tag_id=e1639d0c-295e-4d8f-832e-16138794d949"
+          "referenceLocator": "pkg:swid/criteria/example.com/maven-plugin-hidden-content@1.0.0?tag_id=5aa9af39-1edf-4ef3-ae8f-dc5179809cfa"
         }
       ],
       "supplier": "Organization: criteria",
       "hasFiles": [
-        "SPDXRef-File--scripts-run.sh-B04DDA2F1689D26E316C22C210A2112F2DB4F142",
         "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceServer.java-DD8D5E334899160E4055BCDD266DB7151F737B6B",
-        "SPDXRef-File--.gitignore-A80601117460043B367ECDB1E5AA6F389DE488FD",
         "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceRoute.java-0561F207BAE36FB86551DE4BA5C683510FE06E2B",
         "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
         "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
+        "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
         "SPDXRef-File--scripts-build.sh-60286D059C6BC04E2CFD67B0FAB384EC10541772",
+        "SPDXRef-File--scripts-run.sh-B04DDA2F1689D26E316C22C210A2112F2DB4F142",
+        "SPDXRef-File--.gitignore-A80601117460043B367ECDB1E5AA6F389DE488FD",
         "SPDXRef-File--scripts-proof-check.sh-00E2D06AE12231E3EB99FAC81DED4C68AFF8F7C0",
         "SPDXRef-File--pom.xml-7544BAD63DCCB1EDBD752657E6111B738B7457DB",
-        "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
         "SPDXRef-File--scripts-trace-plugin.sh-B679959DC07AB65557894E8E9F5C4CA3B6A25E3D"
       ]
     }
@@ -270,23 +270,23 @@
   "externalDocumentRefs": [],
   "relationships": [
     {
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-RootPackage",
-      "spdxElementId": "SPDXRef-DOCUMENT"
-    },
-    {
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-1B0D3ED6AF16D3E32229E6D6B4B69268AC8BB39A6E913E1A122BFC5DD55E643D",
       "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
     }
   ],
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "maven-plugin-hidden-content 1.0.0",
-  "documentNamespace": "https://example.com/criteria/maven-plugin-hidden-content/1.0.0/p3s9aW1KJ0yAOogckFNjYA",
+  "documentNamespace": "https://example.com/criteria/maven-plugin-hidden-content/1.0.0/Q1neMKyrwUGDlhRFYmUytw",
   "creationInfo": {
-    "created": "2026-11-12T13:15:43Z",
+    "created": "2026-11-12T13:52:23Z",
     "creators": [
       "Organization: criteria",
       "Tool: Microsoft.SBOMTool-4.1.13"

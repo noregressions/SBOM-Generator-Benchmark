@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:720f898b-3c3e-4c97-814f-f8814ef07894",
+  "serialNumber": "urn:uuid:d0ae54bd-b8a5-4a53-aa30-10c5cd1c4fae",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:23:34+00:00",
+    "timestamp": "2026-11-12T13:58:15+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "1ce6786d-aaba-4a8a-bad0-aa81434ba1bf",
+      "bom-ref": "a9511bfc-e760-49d0-b064-383d3e485e0a",
       "type": "application",
       "name": "/work/testcases/spring-node/project/service/target/service-1.0.0.jar",
       "properties": [
@@ -34,7 +34,7 @@
   "components": [],
   "dependencies": [
     {
-      "ref": "1ce6786d-aaba-4a8a-bad0-aa81434ba1bf",
+      "ref": "a9511bfc-e760-49d0-b064-383d3e485e0a",
       "dependsOn": []
     }
   ],

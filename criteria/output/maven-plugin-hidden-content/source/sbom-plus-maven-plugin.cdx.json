@@ -1,10 +1,10 @@
 {
   "bomFormat" : "CycloneDX",
   "specVersion" : "1.6",
-  "serialNumber" : "urn:uuid:3e27df86-8351-490c-a1e8-cfa18dc1bf67",
+  "serialNumber" : "urn:uuid:1c0a2b62-c7a7-4d85-b877-cdb340258765",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2026-11-12T13:15:47.073366Z",
+    "timestamp" : "2026-11-12T13:52:26.961709628Z",
     "lifecycles" : [ {
       "phase" : "build"
     } ],
@@ -13,7 +13,7 @@
         "type" : "application",
         "group" : "dev.noregressions",
         "name" : "sbom-plus-maven-plugin",
-        "version" : "1.0.0"
+        "version" : "1.1.0"
       } ]
     },
     "authors" : [ {
@@ -69,16 +69,16 @@
     "scope" : "excluded",
     "hashes" : [ {
       "alg" : "MD5",
-      "content" : "6cb2c9f40998753d80dab503b079879d"
+      "content" : "798d4bc6466af1ddb7f002a6404eb587"
     }, {
       "alg" : "SHA-1",
-      "content" : "6c061156e2ce0498659c16e49dc7030c1fb483bd"
+      "content" : "6fbd31fba205b76204b7cdfe7b7a8ea4d937f5eb"
     }, {
       "alg" : "SHA-256",
-      "content" : "60d5cbfd27cc60e37846657955566b5eaff5a64f85eafada2fbf7ed73a20d18e"
+      "content" : "cf1c1c9a4495043f93b79cebe7a1cd343c0ddd1f9de586fb7783e3da739ae21d"
     }, {
       "alg" : "SHA-512",
-      "content" : "f7cbea484eebc0550c98482a773c59909ef2504e63e48ae101ed59c32672fccb417b9ec179e8209e31835b61cc352f9ff74fa1208064d14eb33205acc019aa52"
+      "content" : "408401d2196d370fa52174487d546520ca7ff49b2528034ea96b82e32291b978df329383616e956aa00abb482de4a803b7f1cf583855220219219c22481abacb"
     } ],
     "purl" : "pkg:maven/dev.noregressions.trace/trace-injector-maven-plugin@1.0.0",
     "properties" : [ {
@@ -112,16 +112,16 @@
     "scope" : "excluded",
     "hashes" : [ {
       "alg" : "MD5",
-      "content" : "243c63e61b1f6aaa172e20a2aede3d37"
+      "content" : "2af6eb6084f1bc29b2f518b65ff01b21"
     }, {
       "alg" : "SHA-1",
-      "content" : "ead63e75b6f62e187f85550c6a79a20708f429fc"
+      "content" : "6850b9fb34fbd78b46621e3b73f8d2204bea1edb"
     }, {
       "alg" : "SHA-256",
-      "content" : "541a65ad86e36a806c9870ed1ace17e974f3a54e988a346fc05460e62a5d53cb"
+      "content" : "1376fbef22ee13c72a1c43d4877e5c97fd8df83f87b3163271bb5760c180f77e"
     }, {
       "alg" : "SHA-512",
-      "content" : "5e628deb610a4d882f0a574b02233222558a87beb8c18d8d81f07e3b35ae9ab499cdee0aafd31499fe234aa2da74a741f70950d5a21eddf60b9ebe7298d1b116"
+      "content" : "92324b5044739e758aa77149f40b32aa800fbf220071a065e676b1d4d4054ee1feb79dea22c419b8440fdb35351a4b9854d34fcb8ece208af3620ae6f1c2bf8e"
     } ],
     "purl" : "pkg:maven/dev.noregressions.trace/trace-route-payload@1.0.0",
     "properties" : [ {

@@ -1,10 +1,10 @@
 {
   "bomFormat" : "CycloneDX",
   "specVersion" : "1.6",
-  "serialNumber" : "urn:uuid:ab035157-0fcb-467b-8640-51cfa2f79c2d",
+  "serialNumber" : "urn:uuid:19d8aeca-8da4-48d7-a504-40662a5b6f69",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2026-11-12T13:23:21.383672251Z",
+    "timestamp" : "2026-11-12T13:58:03.801583714Z",
     "lifecycles" : [ {
       "phase" : "build"
     } ],
@@ -13,7 +13,7 @@
         "type" : "application",
         "group" : "dev.noregressions",
         "name" : "sbom-plus-maven-plugin",
-        "version" : "1.0.0"
+        "version" : "1.1.0"
       } ]
     },
     "authors" : [ {

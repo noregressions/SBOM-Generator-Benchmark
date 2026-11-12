@@ -5,7 +5,8 @@
 #   scripts/evaluate spring-node             one test case (others keep their previous outputs and scores)
 #   scripts/evaluate --stages "source artefact"     skip the image stage
 #   scripts/evaluate --tools "syft trivy"           re-run only these tools
-#   scripts/evaluate --no-build              do not rebuild the test cases first
+#   scripts/evaluate --no-build              build only the test cases that are not built yet, instead of all of them
+#   scripts/evaluate --report-only           run no tools and build nothing: re-score the existing SBOMs and rebuild the reports
 #   scripts/evaluate --rebuild-image         rebuild the tool image from tools/versions.env, then run
 #   scripts/evaluate --shell                 open a shell in the image instead
 #   scripts/evaluate --image-only            build the tool image (if it is missing or out of date) and stop
@@ -26,10 +27,11 @@ while [[ $# -gt 0 ]]; do
     --shell) shell=1 ;;
     --image-only) only=image ;;
     --build-only) only=build ;;
-    --no-build) build=0 ;;
+    --no-build) build=auto ;;
+    --report-only) build=0; stages=none ;;
     --stages) stages="$2"; shift ;;
     --tools) tools="$2"; shift ;;
-    -h|--help) sed -n '2,19p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h|--help) sed -n '2,20p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     -*) echo "unknown option: $1" >&2; exit 2 ;;
     *) targets+=("$1") ;;
   esac; shift

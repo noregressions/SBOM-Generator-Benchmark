@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:35895076-95d2-434d-8a54-acc7d4a024ae",
+  "serialNumber": "urn:uuid:4de8d9a9-d4cc-4bc7-8974-b5a6b4d61ded",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:16:29+00:00",
+    "timestamp": "2026-11-12T13:53:27+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "bbdd68d3-2f33-4852-9861-51f18605db47",
+      "bom-ref": "b594c863-d0dc-4c79-a52e-b8074233e0d7",
       "type": "application",
       "name": "/work/testcases/payara-mvnpm/project/target/payara-mvnpm-trace-lab-1.0.0.war",
       "properties": [
@@ -34,7 +34,7 @@
   "components": [],
   "dependencies": [
     {
-      "ref": "bbdd68d3-2f33-4852-9861-51f18605db47",
+      "ref": "b594c863-d0dc-4c79-a52e-b8074233e0d7",
       "dependsOn": []
     }
   ],

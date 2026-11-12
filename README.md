@@ -1,8 +1,8 @@
 # SBOM Generator Benchmark
 
 Most SBOM tools look reasonable on a tidy project. This repository runs them against projects built to be awkward,
-where we know what ends up in the artefact, and scores each document twice. The first score asks whether the
-document is true. The second asks whether it carries the fields the published baselines want.
+where we know what ends up in the artefact, and scores each document twice. **Content accuracy** asks whether the
+document is true. **Baseline conformance** asks whether it carries the fields the published baselines want.
 
 The two scores disagree, and that's the reason to keep them apart.
 
@@ -63,7 +63,7 @@ deletes only files that `.gitignore` names, so it can't remove anything tracked.
 ```bash
 make CASE=spring-node              # one test case; the others keep their previous scores
 make STAGES="source artefact"      # skip the image stage
-make evaluate TOOLS="syft trivy"   # re-run only these tools (folder names under tools/), without rebuilding the test cases
+make evaluate TOOLS="syft trivy"   # re-run only these tools (folder names under tools/); builds a test case only if it isn't built
 make report                        # re-score the SBOMs already generated and rebuild docs/; runs no tools
 make image                         # build the tool image only
 make build                         # build the test cases only

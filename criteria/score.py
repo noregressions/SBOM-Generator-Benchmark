@@ -261,10 +261,15 @@ def main():
         exp = json.loads(ef.read_text())
         t = exp["target"]
         scenario = ef.parent / "project"
+        # The digests of the jars inside the built artefact are the reference for "Hashes ok". They are saved beside
+        # the SBOMs so that re-scoring still works after the build outputs have been cleaned away.
+        saved = OUT / t / "artefact-hashes.json"
         try:
             jar_hashes = artefact_hashes(exp, scenario)
+            if jar_hashes and (OUT / t).is_dir():
+                saved.write_text(json.dumps(jar_hashes, indent=1, sort_keys=True) + "\n")
         except Exception:
-            jar_hashes = {}
+            jar_hashes = json.loads(saved.read_text()) if saved.exists() else {}
         results[t] = {"expected": exp, "stages": {}}
         for st in STAGES:
             d = OUT / t / st

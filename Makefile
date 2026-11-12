@@ -26,11 +26,11 @@ image: ## Build the tool image from tools/versions.env (only if missing or out o
 build: ## Build the test cases in the image, without running any tool
 	scripts/evaluate --build-only $(CASE)
 
-evaluate: ## Run the tools and rebuild the report without rebuilding the test cases
+evaluate: ## Run the tools and rebuild the report, building only test cases that are not built yet
 	scripts/evaluate --no-build $(EVALUATE_ARGS)
 
 report: ## Re-score the SBOMs already in criteria/output and rebuild docs/, running no tools
-	scripts/evaluate --no-build --stages none
+	scripts/evaluate --report-only
 
 scan: ## Scan another source tree: make scan TREE=/path [ARTEFACT=..] [SCAN_IMAGE=..] [EXCLUDE=".."] [EXPECTED=..]
 	@test -n "$(TREE)" || { echo 'usage: make scan TREE=/path/to/project [ARTEFACT=target/app.jar] [SCAN_IMAGE=name:tag] [EXCLUDE="target node_modules"] [EXPECTED=truth.json]'; exit 2; }
