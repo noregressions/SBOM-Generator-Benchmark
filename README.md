@@ -14,7 +14,7 @@ The results are published as the **SBOM Generator Index**: the site in [`docs/`]
 The project has three parts: a benchmark, a way to run the same tools on your own code, and a set of demos.
 
 The **benchmark** is the main thing. It has five test cases, each a small project that hides a dependency from SBOM
-tools in a documented way, with a hand-written list of what really ships. It runs eleven free SBOM generators against
+tools in a documented way, with a hand-written list of what really ships. It runs twelve free SBOM generators against
 them at up to three stages, scores every document, and publishes the result as the SBOM Generator Index. Two slower
 tools, ORT and ScanCode, have adapters but only run when you ask for them. One container image holds the tools at
 pinned versions, so a report can be reproduced from the commit that contains it.
@@ -174,9 +174,9 @@ scope-runs/            three SBOMs per tool (runtime / non-runtime / combined) a
 | [`cdxgen`](tools/cdxgen) | OWASP CycloneDX | CycloneDX 1.6 | 20+ ecosystems via their build tools, images (daemon) | yes |
 | [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | Microsoft | SPDX 2.2, 3.0 | build drop + source manifests; validates drops | yes |
 | [`kubernetes-bom`](tools/kubernetes-bom) | Kubernetes SIG Release | SPDX 2.3, 3.0.1 (exp.) | dirs (Go), files, archives, images | yes |
-| [`spdx-sbom-generator`](tools/spdx-sbom-generator) | Linux Foundation | SPDX 2.2 | per-ecosystem manifests | yes (3 of 6 ecosystems worked) |
 | [`scancode-toolkit`](tools/scancode-toolkit) | AboutCode | SPDX, CycloneDX, HTML | every file: licences, copyrights, packages | yes |
 | [`ort`](tools/ort) | OSS Review Toolkit | SPDX, CycloneDX, reports | 20+ ecosystems; full compliance pipeline | yes (via container) |
+| [`capycli`](tools/capycli) | Siemens | CycloneDX 1.6 | `mvn dependency:list` output, `package-lock.json`, `requirements.txt` | benchmark only |
 | [`docker-sbom`](tools/docker-sbom) | Docker | SPDX, CycloneDX | images; BuildKit build-time attestations | yes |
 | [`github-dependency-graph`](tools/github-dependency-graph) | GitHub | SPDX 2.3 | any repo GitHub indexes; submission API | yes |
 
@@ -209,7 +209,7 @@ Grype (Anchore) and `trivy sbom` appear inside the Syft and Trivy demos as consu
 ```bash
 # toolchains the sample app needs: java 17+, maven, gradle, node, python3, go, cargo  (dotnet optional)
 brew install syft trivy cdxgen grype cyclonedx-cli cyclonedx-npm cyclonedx-python cyclonedx-gomod cargo-cyclonedx \
-             spdx-sbom-generator sbom-tool bom sbomqs libmagic gh
+             sbom-tool bom sbomqs libmagic gh
 pipx install sbom4python
 pipx install --python python3.12 scancode-toolkit
 
@@ -244,7 +244,6 @@ One representative SBOM per tool, scored with sbomqs (see [`tools/sbomqs`](tools
 | sbom4python | 4 | 7.2 | 7.3 |
 | cyclonedx-cli merge of the five native SBOMs | 116 | 6.0 | 7.0 |
 | ORT CycloneDX report (whole tree) | 396 | 5.2 | **9.4** |
-| spdx-sbom-generator (Maven) | n/a | unparseable | |
 
 ## Runtime vs non-runtime vs combined
 
@@ -287,7 +286,7 @@ against ground truth (truth), hidden-dependency coverage by mechanism, and runti
 - **Image SBOMs differ in granularity, not just accuracy.** The same `python:3.12-slim` image yields 90 components from Trivy
   (packages only), 381 from cdxgen (packages plus files), 745 from bom (plus layers) and 2756 from Syft's XML (every file).
   See the sbomqs folder for the side-by-side.
-- **Validate everything.** spdx-sbom-generator produced a tag-value file that sbomqs could not parse; cyclonedx-cli's `validate`
+- **Validate everything.** spdx-sbom-generator (since removed from this repository) produced a tag-value file that sbomqs could not parse; cyclonedx-cli's `validate`
   and sbomqs are cheap gates to put in CI.
 - **Build tooling is invisible to every tool but one.** SBOM+ lists 191 Maven plugin artifacts that run on the build
   machine and never ship; the CycloneDX Maven plugin, by design, lists none of them. You need both documents.
@@ -305,6 +304,7 @@ against ground truth (truth), hidden-dependency coverage by mechanism, and runti
 ## Not covered (yet)
 
 Commercial free tiers (Snyk, FOSSA, Mend, Sonatype) are deliberately excluded, as are tools with no release since 2023
-(VMware's Tern, for example: its layer-by-layer attribution idea lives on in `bom` and in BuildKit attestations). Candidates for new folders: `distro2sbom` and the
+(VMware's Tern, for example: its layer-by-layer attribution idea lives on in `bom` and in BuildKit attestations; and
+spdx-sbom-generator, whose last release was in 2022 and whose repository is archived). Candidates for new folders: `distro2sbom` and the
 rest of the `sbom4*` family, `sbom-rs`, Yarn/pnpm CycloneDX generators, `cyclonedx-php-composer`, `cyclonedx-ruby`,
 Dependency-Track as a consumer, and `osv-scanner` as another SBOM consumer.

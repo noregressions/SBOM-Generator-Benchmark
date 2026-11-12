@@ -1,0 +1,1268 @@
+{
+  "components": [
+    {
+      "bom-ref": "pkg:maven/net.minidev/accessors-smart@2.5.2",
+      "name": "accessors-smart",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/net.minidev/accessors-smart@2.5.2",
+      "type": "library",
+      "version": "2.5.2"
+    },
+    {
+      "bom-ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "name": "android-json",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "type": "library",
+      "version": "0.0.20131108.vaadin1"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "name": "apiguardian-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "type": "library",
+      "version": "1.1.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.ow2.asm/asm@9.7.1",
+      "name": "asm",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.ow2.asm/asm@9.7.1",
+      "type": "library",
+      "version": "9.7.1"
+    },
+    {
+      "bom-ref": "pkg:maven/org.assertj/assertj-core@3.27.7",
+      "name": "assertj-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.assertj/assertj-core@3.27.7",
+      "type": "library",
+      "version": "3.27.7"
+    },
+    {
+      "bom-ref": "pkg:maven/org.awaitility/awaitility@4.2.2",
+      "name": "awaitility",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.awaitility/awaitility@4.2.2",
+      "type": "library",
+      "version": "4.2.2"
+    },
+    {
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.17.8",
+      "name": "byte-buddy",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.17.8",
+      "type": "library",
+      "version": "1.17.8"
+    },
+    {
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8",
+      "name": "byte-buddy-agent",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8",
+      "type": "library",
+      "version": "1.17.8"
+    },
+    {
+      "bom-ref": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "name": "commons-codec",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
+      "type": "library",
+      "version": "1.17.1"
+    },
+    {
+      "bom-ref": "pkg:maven/commons-codec/commons-codec@1.18.0",
+      "name": "commons-codec",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.18.0",
+      "type": "library",
+      "version": "1.18.0"
+    },
+    {
+      "bom-ref": "pkg:maven/org.hamcrest/hamcrest@3.0",
+      "name": "hamcrest",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.hamcrest/hamcrest@3.0",
+      "type": "library",
+      "version": "3.0"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4",
+      "name": "jackson-annotations",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+      "name": "jackson-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4",
+      "name": "jackson-databind",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4",
+      "name": "jackson-datatype-jdk8",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4",
+      "name": "jackson-datatype-jsr310",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4",
+      "name": "jackson-module-parameter-names",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4",
+      "type": "library",
+      "version": "2.19.4"
+    },
+    {
+      "bom-ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4",
+      "name": "jakarta.activation-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4",
+      "type": "library",
+      "version": "2.1.4"
+    },
+    {
+      "bom-ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+      "name": "jakarta.annotation-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+      "type": "library",
+      "version": "2.1.1"
+    },
+    {
+      "bom-ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4",
+      "name": "jakarta.xml.bind-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4",
+      "type": "library",
+      "version": "4.0.4"
+    },
+    {
+      "bom-ref": "pkg:maven/com.jayway.jsonpath/json-path@2.9.0",
+      "name": "json-path",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/com.jayway.jsonpath/json-path@2.9.0",
+      "type": "library",
+      "version": "2.9.0"
+    },
+    {
+      "bom-ref": "pkg:maven/net.minidev/json-smart@2.5.2",
+      "name": "json-smart",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/net.minidev/json-smart@2.5.2",
+      "type": "library",
+      "version": "2.5.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.3",
+      "name": "jsonassert",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.skyscreamer/jsonassert@1.5.3",
+      "type": "library",
+      "version": "1.5.3"
+    },
+    {
+      "bom-ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17",
+      "name": "jul-to-slf4j",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17",
+      "type": "library",
+      "version": "2.0.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2",
+      "name": "junit-jupiter",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2",
+      "type": "library",
+      "version": "5.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.12.2",
+      "name": "junit-jupiter-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.12.2",
+      "type": "library",
+      "version": "5.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.12.2",
+      "name": "junit-jupiter-engine",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.12.2",
+      "type": "library",
+      "version": "5.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2",
+      "name": "junit-jupiter-params",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2",
+      "type": "library",
+      "version": "5.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2",
+      "name": "junit-platform-commons",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2",
+      "type": "library",
+      "version": "1.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2",
+      "name": "junit-platform-engine",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2",
+      "type": "library",
+      "version": "1.12.2"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+      "name": "log4j-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+      "type": "library",
+      "version": "2.24.3"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3",
+      "name": "log4j-to-slf4j",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3",
+      "type": "library",
+      "version": "2.24.3"
+    },
+    {
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
+      "name": "logback-classic",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
+      "type": "library",
+      "version": "1.5.32"
+    },
+    {
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+      "name": "logback-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+      "type": "library",
+      "version": "1.5.32"
+    },
+    {
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.15.10",
+      "name": "micrometer-commons",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.15.10",
+      "type": "library",
+      "version": "1.15.10"
+    },
+    {
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.15.10",
+      "name": "micrometer-observation",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.15.10",
+      "type": "library",
+      "version": "1.15.10"
+    },
+    {
+      "bom-ref": "pkg:maven/org.mockito/mockito-core@5.17.0",
+      "name": "mockito-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.mockito/mockito-core@5.17.0",
+      "type": "library",
+      "version": "5.17.0"
+    },
+    {
+      "bom-ref": "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0",
+      "name": "mockito-junit-jupiter",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0",
+      "type": "library",
+      "version": "5.17.0"
+    },
+    {
+      "bom-ref": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "name": "normalizer",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    },
+    {
+      "bom-ref": "pkg:maven/org.objenesis/objenesis@3.3",
+      "name": "objenesis",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.objenesis/objenesis@3.3",
+      "type": "library",
+      "version": "3.3"
+    },
+    {
+      "bom-ref": "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "name": "opentest4j",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "type": "library",
+      "version": "1.3.0"
+    },
+    {
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+      "name": "slf4j-api",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.17",
+      "type": "library",
+      "version": "2.0.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.yaml/snakeyaml@2.4",
+      "name": "snakeyaml",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.yaml/snakeyaml@2.4",
+      "type": "library",
+      "version": "2.4"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.2.17",
+      "name": "spring-aop",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-aop@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.2.17",
+      "name": "spring-beans",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-beans@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+      "name": "spring-boot",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+      "name": "spring-boot-autoconfigure",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12",
+      "name": "spring-boot-starter",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12",
+      "name": "spring-boot-starter-json",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12",
+      "name": "spring-boot-starter-logging",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.5.12",
+      "name": "spring-boot-starter-test",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12",
+      "name": "spring-boot-starter-tomcat",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12",
+      "name": "spring-boot-starter-web",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12",
+      "name": "spring-boot-test",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12",
+      "name": "spring-boot-test-autoconfigure",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12",
+      "type": "library",
+      "version": "3.5.12"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-context@6.2.17",
+      "name": "spring-context",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-context@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-core@6.2.17",
+      "name": "spring-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-core@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.2.17",
+      "name": "spring-expression",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.2.17",
+      "name": "spring-jcl",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-test@6.2.17",
+      "name": "spring-test",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-test@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-web@6.2.17",
+      "name": "spring-web",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-web@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+      "name": "spring-webmvc",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+      "type": "library",
+      "version": "6.2.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+      "name": "tomcat-embed-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+      "type": "library",
+      "version": "10.1.52"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52",
+      "name": "tomcat-embed-el",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52",
+      "type": "library",
+      "version": "10.1.52"
+    },
+    {
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+      "name": "tomcat-embed-websocket",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+      "type": "library",
+      "version": "10.1.52"
+    },
+    {
+      "bom-ref": "pkg:maven/org.xmlunit/xmlunit-core@2.10.4",
+      "name": "xmlunit-core",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Java"
+        }
+      ],
+      "purl": "pkg:maven/org.xmlunit/xmlunit-core@2.10.4",
+      "type": "library",
+      "version": "2.10.4"
+    },
+    {
+      "bom-ref": "pkg:npm/js-tokens@4.0.0",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///js-tokens-4.0.0.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+        }
+      ],
+      "name": "js-tokens",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/js-tokens@4.0.0",
+      "type": "library",
+      "version": "4.0.0"
+    },
+    {
+      "bom-ref": "pkg:npm/lodash@4.17.21",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///lodash-4.17.21.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
+        }
+      ],
+      "name": "lodash",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/lodash@4.17.21",
+      "type": "library",
+      "version": "4.17.21"
+    },
+    {
+      "bom-ref": "pkg:npm/loose-envify@1.4.0",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///loose-envify-1.4.0.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
+        }
+      ],
+      "name": "loose-envify",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/loose-envify@1.4.0",
+      "type": "library",
+      "version": "1.4.0"
+    },
+    {
+      "bom-ref": "pkg:npm/react@18.3.1",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///react-18.3.1.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
+        }
+      ],
+      "name": "react",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/react@18.3.1",
+      "type": "library",
+      "version": "18.3.1"
+    },
+    {
+      "bom-ref": "pkg:npm/react-dom@18.3.1",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///react-dom-18.3.1.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
+        }
+      ],
+      "name": "react-dom",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/react-dom@18.3.1",
+      "type": "library",
+      "version": "18.3.1"
+    },
+    {
+      "bom-ref": "pkg:npm/scheduler@0.23.2",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///scheduler-0.23.2.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz"
+        }
+      ],
+      "name": "scheduler",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/scheduler@0.23.2",
+      "type": "library",
+      "version": "0.23.2"
+    }
+  ],
+  "definitions": {
+    "standards": [
+      {
+        "bom-ref": "standard-bom",
+        "description": "The Standard for Software Bills of Materials in Siemens",
+        "externalReferences": [
+          {
+            "type": "website",
+            "url": "https://sbom.siemens.io/"
+          }
+        ],
+        "name": "Standard BOM",
+        "owner": "Siemens AG",
+        "version": "3.0.0"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-classic@1.5.32"
+    },
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-core@1.5.32"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4"
+    },
+    {
+      "ref": "pkg:maven/com.jayway.jsonpath/json-path@2.9.0"
+    },
+    {
+      "ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1"
+    },
+    {
+      "ref": "pkg:maven/commons-codec/commons-codec@1.17.1"
+    },
+    {
+      "ref": "pkg:maven/commons-codec/commons-codec@1.18.0"
+    },
+    {
+      "ref": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0"
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-commons@1.15.10"
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-observation@1.15.10"
+    },
+    {
+      "ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4"
+    },
+    {
+      "ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1"
+    },
+    {
+      "ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4"
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8"
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy@1.17.8"
+    },
+    {
+      "ref": "pkg:maven/net.minidev/accessors-smart@2.5.2"
+    },
+    {
+      "ref": "pkg:maven/net.minidev/json-smart@2.5.2"
+    },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3"
+    },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3"
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52"
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52"
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52"
+    },
+    {
+      "ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2"
+    },
+    {
+      "ref": "pkg:maven/org.assertj/assertj-core@3.27.7"
+    },
+    {
+      "ref": "pkg:maven/org.awaitility/awaitility@4.2.2"
+    },
+    {
+      "ref": "pkg:maven/org.hamcrest/hamcrest@3.0"
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2"
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-core@5.17.0"
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0"
+    },
+    {
+      "ref": "pkg:maven/org.objenesis/objenesis@3.3"
+    },
+    {
+      "ref": "pkg:maven/org.opentest4j/opentest4j@1.3.0"
+    },
+    {
+      "ref": "pkg:maven/org.ow2.asm/asm@9.7.1"
+    },
+    {
+      "ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.3"
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17"
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot@3.5.12"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-aop@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-beans@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-context@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-core@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-expression@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-jcl@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-test@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-web@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-webmvc@6.2.17"
+    },
+    {
+      "ref": "pkg:maven/org.xmlunit/xmlunit-core@2.10.4"
+    },
+    {
+      "ref": "pkg:maven/org.yaml/snakeyaml@2.4"
+    }
+  ],
+  "metadata": {
+    "licenses": [
+      {
+        "license": {
+          "id": "CC0-1.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "name": "siemens:profile",
+        "value": "clearing"
+      }
+    ],
+    "timestamp": "2026-11-12T14:52:14.176210+00:00",
+    "tools": {
+      "components": [
+        {
+          "externalReferences": [
+            {
+              "type": "website",
+              "url": "https://github.com/sw360/capycli"
+            }
+          ],
+          "name": "CaPyCLI",
+          "supplier": {
+            "name": "Siemens AG"
+          },
+          "type": "application",
+          "version": "2.12.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:b07bc89f-087b-4e39-ac8b-2a6b916f6ba7",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

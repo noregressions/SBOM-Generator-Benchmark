@@ -28,6 +28,7 @@ VERSION_KEYS = {
     "syft": "SYFT_VERSION", "trivy": "TRIVY_VERSION", "trivy-rawfile": "TRIVY_VERSION", "cdxgen": "CDXGEN_VERSION",
     "sbom-tool": "SBOM_TOOL_VERSION", "bom": "BOM_VERSION", "docker-scout": "DOCKER_SCOUT_VERSION",
     "cyclonedx-npm": "CYCLONEDX_NPM_VERSION", "cyclonedx-python": "CYCLONEDX_PY_VERSION", "sbom4python": "SBOM4PYTHON_VERSION",
+    "capycli": "CAPYCLI_VERSION",
     "cyclonedx-maven-plugin": "CYCLONEDX_MAVEN_PLUGIN", "sbom-plus-maven-plugin": "SBOM_PLUS_MAVEN_PLUGIN",
 }
 

@@ -13,6 +13,7 @@ Shipped components: 1; known non-shipping: 4; ecosystems: maven
 
 | Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | capycli | cyc | 0 | 0 | 0/1 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cdxgen | cyc | 0 | 0 | 0/1 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cyclonedx-maven-plugin | cyc | 1 | 1 | 1/1 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | sbom-plus-maven-plugin | cyc | 172 | 172 | 1/1 | 0 | 0 | 0 | 4+167 | 0 | 0/0 |
@@ -32,6 +33,7 @@ Shipped components: 2; known non-shipping: 0; ecosystems: npm
 
 | Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | capycli | cyc | 1 | 1 | 1/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cdxgen | cyc | 2 | 2 | 2/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cyclonedx-npm | cyc | 2 | 2 | 2/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | sbom-tool | spd | 2 | 2 | 2/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
@@ -48,6 +50,7 @@ Shipped components: 3; known non-shipping: 4; ecosystems: maven, npm
 
 | Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | capycli | cyc | 27 | 27 | 1/3 | 0 | 0 | 26 | 0 | 0 | 0/0 |
 | source | cdxgen | cyc | 70 | 70 | 3/3 | 0 | 0 | 0 | 67 | 0 | 0/0 |
 | source | cyclonedx-maven-plugin | cyc | 28 | 28 | 2/3 | 0 | 0 | 26 | 0 | 0 | 1/1 |
 | source | sbom-plus-maven-plugin | cyc | 256 | 256 | 3/3 | 0 | 0 | 0 | 29+222 | 0 | 1/1 |
@@ -64,6 +67,7 @@ Shipped components: 3; known non-shipping: 4; ecosystems: maven, npm
 | image | syft | cyc | 589 | 450 | 2/3 | 0 | 0 | 0 | 0 | 442 | 0/0 |
 | image | trivy | cyc | 583 | 446 | 2/3 | 0 | 0 | 0 | 0 | 438 | 1/1 |
 
+- **source/capycli** leaked unlabelled: jakarta.annotation-api@3.0.0, jakarta.authentication-api@3.1.0, jakarta.data-api@1.0.1, jakarta.ejb-api@4.0.1, jakarta.el-api@6.0.1, jakarta.enterprise.concurrent-api@3.1.1, jakarta.enterprise.cdi-api@4.1.0, jakarta.enterprise.cdi-el-api@4.1.0 …
 - **source/cyclonedx-maven-plugin** leaked unlabelled: jakarta.annotation-api@3.0.0, jakarta.authentication-api@3.1.0, jakarta.data-api@1.0.1, jakarta.ejb-api@4.0.1, jakarta.el-api@6.0.1, jakarta.enterprise.concurrent-api@3.1.1, jakarta.enterprise.cdi-api@4.1.0, jakarta.enterprise.cdi-el-api@4.1.0 …
 - **source/sbom-tool** leaked unlabelled: jakarta.annotation-api@3.0.0, jakarta.authentication-api@3.1.0, jakarta.data-api@1.0.1, jakarta.ejb-api@4.0.1, jakarta.el-api@6.0.1, jakarta.enterprise.concurrent-api@3.1.1, jakarta.enterprise.cdi-api@4.1.0, jakarta.enterprise.cdi-el-api@4.1.0 …
 - **source/syft** leaked unlabelled: jakarta.jakartaee-web-api@11.0.0
@@ -75,6 +79,7 @@ Shipped components: 2; known non-shipping: 1; ecosystems: pypi
 
 | Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | capycli | cyc | 1 | 1 | 1/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cdxgen | cyc | 2 | 2 | 1/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | cyclonedx-python | cyc | 1 | 1 | 1/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | source | sbom-tool | spd | 1 | 1 | 1/2 | 0 | 0 | 0 | 0 | 0 | 0/0 |
@@ -95,6 +100,7 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 
 | Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | capycli | cyc | 72 | 72 | 38/40 | 0 | 0 | 29 | 0 | 0 | 0/0 |
 | source | cdxgen | cyc | 178 | 178 | 38/40 | 0 | 0 | 0 | 134 | 0 | 0/0 |
 | source | cyclonedx-maven-plugin | cyc | 39 | 39 | 33/40 | 0 | 0 | 0 | 0 | 0 | 30/30 |
 | source | cyclonedx-npm | cyc | 64 | 64 | 6/40 | 0 | 0 | 0 | 57 | 0 | 0/0 |
@@ -112,6 +118,7 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 | image | syft | cyc | 179 | 35 | 33/40 | 0 | 1 | 0 | 0 | 1 | 0/0 |
 | image | trivy | cyc | 177 | 34 | 34/40 | 0 | 0 | 0 | 0 | 0 | 32/32 |
 
+- **source/capycli** leaked unlabelled: json-path@2.9.0, android-json@0.0.20131108.vaadin1, jakarta.activation-api@2.1.4, jakarta.xml.bind-api@4.0.4, byte-buddy-agent@1.17.8, byte-buddy@1.17.8, accessors-smart@2.5.2, json-smart@2.5.2 …
 - **source/sbom-tool** leaked unlabelled: json-path@2.9.0, android-json@0.0.20131108.vaadin1, jakarta.activation-api@2.1.4, jakarta.xml.bind-api@4.0.4, byte-buddy-agent@1.17.8, byte-buddy@1.17.8, accessors-smart@2.5.2, json-smart@2.5.2 …
 - **source/syft** wrong version: jackson-databind@2.19.4→UNKNOWN, junit-jupiter@5.12.2→UNKNOWN, spring-boot-starter-test@3.5.12→UNKNOWN
 - **artefact/cdxgen** wrong purl (group guessed): micrometer-commons@1.15.10, micrometer-observation@1.15.10, tomcat-embed-core@10.1.52, tomcat-embed-el@10.1.52, spring-boot-autoconfigure@3.5.12, spring-boot-jarmode-tools@3.5.12 …
@@ -122,21 +129,21 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 
 Cells show one letter per stage the target has, in order source / artefact / image: **Y** named at the right version, **v** named at a wrong version, **p** named under a wrong purl, **n** not named, **·** tool did not run at that stage. For build-tooling rows a **Y** only counts as correct if the row is also labelled (see leaks above); here we only ask whether the tool knew it existed.
 
-| Target | Component | Mechanism | bom | cdxgen | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Yn | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
-| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | Ynn | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
-| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | nnn | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
-| spring-node | commons-codec@1.17.1 | shaded | ·n· | Ynn | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
-| spring-node | lodash@4.17.21 | bundled | ·n· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react@18.3.1 | bundled | ·n· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react-dom@18.3.1 | bundled | ·n· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| Target | Component | Mechanism | bom | capycli | cdxgen | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | n· | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | n· | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Y· | Yn | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
+| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | n·· | Ynn | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
+| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | n·· | nnn | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | n· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
+| spring-node | commons-codec@1.17.1 | shaded | ·n· | Y·· | Ynn | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
+| spring-node | lodash@4.17.21 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react@18.3.1 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react-dom@18.3.1 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
 
 ## 3. Baseline conformance (sbomqs)
 
@@ -144,6 +151,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 
 | Target | Stage | Tool | Spec | Valid | Quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 | FSCT v3 | Shipped found |
 |---|---|---|---|---|---:|---:|---:|---:|---:|---:|
+| maven-plugin-hidden-content | source | capycli | cyclonedx 1.6 | valid | 3.6 | 6.7 | 6 | 5.7 | 2 | 0/1 |
 | maven-plugin-hidden-content | source | cdxgen | cyclonedx 1.6 | valid | 2.2 | 6.7 | 8 | 5.7 | 7.4 | 0/1 |
 | maven-plugin-hidden-content | source | cyclonedx-maven-plugin | cyclonedx 1.6 | valid | 4.8 | 8.8 | 6.2 | 5 | 5.4 | 1/1 |
 | maven-plugin-hidden-content | source | sbom-plus-maven-plugin | cyclonedx 1.6 | valid | 8.0 | 10 | 9.9 | 9.2 | 10.1 | 1/1 |
@@ -155,6 +163,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | maven-plugin-hidden-content | artefact | syft | cyclonedx 1.7 | valid | 4.7 | 4.9 | 4.7 | 3.7 | 3.5 | 1/1 |
 | maven-plugin-hidden-content | artefact | trivy-rawfile | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/1 |
 | maven-plugin-hidden-content | artefact | trivy | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/1 |
+| node-prepack | source | capycli | cyclonedx 1.6 | valid | 4.5 | 8.8 | 5.6 | 4.7 | 3.3 | 1/2 |
 | node-prepack | source | cdxgen | cyclonedx 1.6 | valid | 6.4 | 9.1 | 7.8 | 4.5 | 6.9 | 2/2 |
 | node-prepack | source | cyclonedx-npm | cyclonedx 1.6 | valid | 4.8 | 9.1 | 6.1 | 4.5 | 4.8 | 2/2 |
 | node-prepack | source | sbom-tool | spdx 2.3 | n/a | 5.3 | 10 | 5.5 | 3.8 | 6.4 | 2/2 |
@@ -163,6 +172,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | node-prepack | artefact | cdxgen | cyclonedx 1.6 | valid | 2.2 | 6.7 | 8 | 5.7 | 7.4 | 0/2 |
 | node-prepack | artefact | syft | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/2 |
 | node-prepack | artefact | trivy | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/2 |
+| payara-mvnpm | source | capycli | cyclonedx 1.6 | valid | 4.5 | 8.4 | 4.4 | 3.7 | 4.2 | 1/3 |
 | payara-mvnpm | source | cdxgen | cyclonedx 1.6 | valid | 5.2 | 8.2 | 5.4 | 4.0 | 5.0 | 3/3 |
 | payara-mvnpm | source | cyclonedx-maven-plugin | cyclonedx 1.6 | valid | 6.9 | 8.4 | 8.4 | 4.7 | 7.6 | 2/3 |
 | payara-mvnpm | source | sbom-plus-maven-plugin | cyclonedx 1.6 | valid | 8.0 | 10 | 10.0 | 9.2 | 10.2 | 3/3 |
@@ -178,6 +188,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | payara-mvnpm | image | docker-scout | spdx 2.3 | n/a | 5.4 | 10.0 | 6.2 | 3.5 | 6.3 | 2/3 |
 | payara-mvnpm | image | syft | cyclonedx 1.7 | valid | 4.6 | 2.3 | 4.4 | 2.2 | 3.4 | 2/3 |
 | payara-mvnpm | image | trivy | cyclonedx 1.7 | valid | 4.6 | 8.7 | 7.1 | 3.7 | 6.4 | 2/3 |
+| python-pep517 | source | capycli | cyclonedx 1.6 | valid | 5.0 | 8.8 | 6.9 | 5 | 5.6 | 1/2 |
 | python-pep517 | source | cdxgen | cyclonedx 1.6 | valid | 5.1 | 8.6 | 6.1 | 4.5 | 5.6 | 1/2 |
 | python-pep517 | source | cyclonedx-python | cyclonedx 1.6 | valid | 4.4 | 8.8 | 5.6 | 5.3 | 3.3 | 1/2 |
 | python-pep517 | source | sbom-tool | spdx 2.3 | n/a | 5.3 | 10 | 5.9 | 4.0 | 6.7 | 1/2 |
@@ -187,6 +198,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | python-pep517 | artefact | sbom4python | cyclonedx 1.7 | valid | 4.0 | 6.1 | 5.2 | 4.3 | 3.9 | 1/2 |
 | python-pep517 | artefact | syft | cyclonedx 1.7 | valid | 4.9 | 4.5 | 4.4 | 2.9 | 3.6 | 2/2 |
 | python-pep517 | artefact | trivy | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/2 |
+| spring-node | source | capycli | cyclonedx 1.6 | valid | 4.5 | 8.3 | 4.3 | 3.6 | 4.3 | 38/40 |
 | spring-node | source | cdxgen | cyclonedx 1.6 | valid | 6.5 | 8.3 | 7.0 | 4.0 | 6.4 | 38/40 |
 | spring-node | source | cyclonedx-maven-plugin | cyclonedx 1.6 | valid | 6.8 | 8.4 | 8.3 | 4.7 | 7.4 | 33/40 |
 | spring-node | source | cyclonedx-npm | cyclonedx 1.6 | valid | 5.1 | 8.4 | 6.8 | 5.7 | 6.0 | 6/40 |
@@ -220,5 +232,6 @@ Averages over every document the tool produced in this run. Recall is shipped-fo
 | trivy | 0.74.0 | 12 | 3.9 | 5.2 | 3.9 | 52% | 0 | 0 |
 | cdxgen | 11.3.2 | 11 | 4.8 | 6.4 | 4.3 | 52% | 0 | 201 |
 | sbom4python | 0.12.6 | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
+| capycli | 2.12.0 | 5 | 4.4 | 5.4 | 4.5 | 46% | 55 | 0 |
 | bom | 0.8.0 | 3 | 4.4 | 5.6 | 4.3 | 0% | 0 | 0 |
 | trivy-rawfile | 0.74.0 | 3 | 3.0 | 4.4 | 4.1 | 0% | 0 | 0 |

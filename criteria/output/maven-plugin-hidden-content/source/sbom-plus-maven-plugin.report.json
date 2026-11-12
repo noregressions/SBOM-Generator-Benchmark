@@ -1,6 +1,6 @@
 {
   "formatVersion" : 2,
-  "generatedAt" : "2026-11-12T13:52:26.686041503Z",
+  "generatedAt" : "2026-11-12T14:46:18.861905927Z",
   "modules" : [ {
     "module" : "dev.noregressions.trace:maven-plugin-hidden-content",
     "version" : "1.0.0",
@@ -3749,19 +3749,19 @@
     },
     "pkg:maven/dev.noregressions.trace/trace-injector-maven-plugin@1.0.0" : {
       "hashes" : {
-        "MD5" : "798d4bc6466af1ddb7f002a6404eb587",
-        "SHA-1" : "6fbd31fba205b76204b7cdfe7b7a8ea4d937f5eb",
-        "SHA-256" : "cf1c1c9a4495043f93b79cebe7a1cd343c0ddd1f9de586fb7783e3da739ae21d",
-        "SHA-512" : "408401d2196d370fa52174487d546520ca7ff49b2528034ea96b82e32291b978df329383616e956aa00abb482de4a803b7f1cf583855220219219c22481abacb"
+        "MD5" : "1ce05ac7a099aeae7eb8d0e7286f813a",
+        "SHA-1" : "9e20193234ef018a1c4958c50a79bbea8e4ab60a",
+        "SHA-256" : "1d4f48750b1d02789f8829d956a7a145d3108f62c1873ddd40f6a00894bacb5b",
+        "SHA-512" : "ca252cd7ded555c5723d862f16d98e00d54466f44482f6ce311bb4cf0238dede41d0404ac176c4a5cbb5218a7b76337631fb4161c483f8372b8640da5b99eb65"
       },
       "supplier" : "dev.noregressions.trace"
     },
     "pkg:maven/dev.noregressions.trace/trace-route-payload@1.0.0" : {
       "hashes" : {
-        "MD5" : "2af6eb6084f1bc29b2f518b65ff01b21",
-        "SHA-1" : "6850b9fb34fbd78b46621e3b73f8d2204bea1edb",
-        "SHA-256" : "1376fbef22ee13c72a1c43d4877e5c97fd8df83f87b3163271bb5760c180f77e",
-        "SHA-512" : "92324b5044739e758aa77149f40b32aa800fbf220071a065e676b1d4d4054ee1feb79dea22c419b8440fdb35351a4b9854d34fcb8ece208af3620ae6f1c2bf8e"
+        "MD5" : "4dbd5fc501a5204018f3f98bd680c352",
+        "SHA-1" : "ce2e9dd5fb4cee89ec1ffa5c22984d61fab4713f",
+        "SHA-256" : "75249fd4efd9eb1b83aff8c21de22abec4651b0b56cab0866af21905ee65986c",
+        "SHA-512" : "dc18d75bed4ae3d07de2341a456270dfeac3e27b9fe405d2742cfecf4d403ec789287d87da07a81e8f447fe271edd87579ae55f79d00d4a71b3694cc22c1a538"
       },
       "supplier" : "dev.noregressions.trace"
     },

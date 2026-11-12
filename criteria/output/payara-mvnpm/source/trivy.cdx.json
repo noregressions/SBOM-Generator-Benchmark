@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:26fd29e4-c4b1-421a-a2a8-4cf1733d4d3e",
+  "serialNumber": "urn:uuid:5f76868a-e1d8-405b-8e4c-c656368a2f4f",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:53:24+00:00",
+    "timestamp": "2026-11-12T14:47:40+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "382177d9-70d4-425d-89f8-e5a06ad262bb",
+      "bom-ref": "1744e1db-4cfb-42c6-b2b0-e19f96fae74c",
       "type": "application",
       "name": "/tmp/criteria-7/src",
       "properties": [
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "db03ad38-b0b5-43bc-8e8d-636c3ba005b2",
+      "bom-ref": "59a0093c-2642-4d56-845b-0bfb15f8503c",
       "type": "application",
       "name": "pom.xml",
       "properties": [
@@ -93,13 +93,13 @@
   ],
   "dependencies": [
     {
-      "ref": "382177d9-70d4-425d-89f8-e5a06ad262bb",
+      "ref": "1744e1db-4cfb-42c6-b2b0-e19f96fae74c",
       "dependsOn": [
-        "db03ad38-b0b5-43bc-8e8d-636c3ba005b2"
+        "59a0093c-2642-4d56-845b-0bfb15f8503c"
       ]
     },
     {
-      "ref": "db03ad38-b0b5-43bc-8e8d-636c3ba005b2",
+      "ref": "59a0093c-2642-4d56-845b-0bfb15f8503c",
       "dependsOn": [
         "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0"
       ]

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "image": "sha256:765567948f181f2fbab130e8f4845b06510cb304f3071f4d7add4c8d09cb1999",
+  "image": "sha256:25ada79f422c431a0a86c92fff71c7c74638670d0dae30016fd37b7065ef0245",
   "arch": "aarch64",
   "versions": {
     "PYTHON_IMAGE": "python:3.15.2-slim-trixie",
@@ -18,6 +18,9 @@
     "CYCLONEDX_NPM_VERSION": "6.0.1",
     "CYCLONEDX_PY_VERSION": "8.0.1",
     "SBOM4PYTHON_VERSION": "0.12.6",
+    "CAPYCLI_VERSION": "2.12.0",
+    "CAPYCLI_PYTHON": "3.14",
+    "UV_VERSION": "0.13.7",
     "DOCKER_SCOUT_VERSION": "1.24.0",
     "CYCLONEDX_MAVEN_PLUGIN": "org.cyclonedx:cyclonedx-maven-plugin:2.9.1",
     "SBOM_PLUS_MAVEN_PLUGIN": "dev.noregressions:sbom-plus-maven-plugin:1.1.0",

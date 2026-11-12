@@ -21,7 +21,6 @@ declare -a FILES=(
   "cyclonedx-python/output/python.environment.cdx.json"
   "cyclonedx-gomod/output/go.app.cdx.json"
   "cargo-cyclonedx/output/rust.host-target.cdx.json"
-  "spdx-sbom-generator/output/bom-Java-Maven.spdx"
   "microsoft-sbom-tool/output/_manifest/spdx_2.2/manifest.spdx.json"
   "kubernetes-bom/output/go.spdx.json"
   "sbom4python/output/python.cdx.json"
@@ -41,7 +40,7 @@ echo "== 1. Overall quality score per generator output (0-10)"
   for rel in "${FILES[@]}"; do
     f="$T/$rel"; [ -f "$f" ] || continue
     score=$(sbomqs score --basic "$f" 2>/dev/null | awk '$1 ~ /^[0-9]+\.[0-9]+$/ {print $1; exit}' || true)
-    [ -n "$score" ] || score="unparseable"   # e.g. spdx-sbom-generator's tag-value has malformed relationships
+    [ -n "$score" ] || score="unparseable"   # a document sbomqs cannot parse still gets a row
     ntia=$(sbomqs compliance --ntia --basic "$f" 2>/dev/null | grep -o 'Score:[0-9.]*' | head -1 | cut -d: -f2 || true)
     comps=$(sbomqs score --json "$f" 2>/dev/null | jq -r '.files[0].num_components // "?"' 2>/dev/null || echo "?")
     printf "%-62s %6s %6s %s\n" "$rel" "${score:-?}" "${ntia:-?}" "${comps:-?}"

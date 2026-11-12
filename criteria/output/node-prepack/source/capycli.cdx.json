@@ -1,0 +1,90 @@
+{
+  "components": [
+    {
+      "bom-ref": "pkg:npm/trace-route-package@1.0.0",
+      "externalReferences": [
+        {
+          "comment": "relativePath",
+          "type": "distribution",
+          "url": "file:///trace-route-package-1.0.0.tgz"
+        },
+        {
+          "comment": "binary (download location)",
+          "type": "distribution",
+          "url": "file:npm-repo/trace-route-package-1.0.0.tgz"
+        }
+      ],
+      "name": "trace-route-package",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Javascript"
+        }
+      ],
+      "purl": "pkg:npm/trace-route-package@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    }
+  ],
+  "definitions": {
+    "standards": [
+      {
+        "bom-ref": "standard-bom",
+        "description": "The Standard for Software Bills of Materials in Siemens",
+        "externalReferences": [
+          {
+            "type": "website",
+            "url": "https://sbom.siemens.io/"
+          }
+        ],
+        "name": "Standard BOM",
+        "owner": "Siemens AG",
+        "version": "3.0.0"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "ref": "pkg:npm/trace-route-package@1.0.0"
+    }
+  ],
+  "metadata": {
+    "licenses": [
+      {
+        "license": {
+          "id": "CC0-1.0"
+        }
+      }
+    ],
+    "properties": [
+      {
+        "name": "siemens:profile",
+        "value": "clearing"
+      }
+    ],
+    "timestamp": "2026-11-12T14:46:29.165016+00:00",
+    "tools": {
+      "components": [
+        {
+          "externalReferences": [
+            {
+              "type": "website",
+              "url": "https://github.com/sw360/capycli"
+            }
+          ],
+          "name": "CaPyCLI",
+          "supplier": {
+            "name": "Siemens AG"
+          },
+          "type": "application",
+          "version": "2.12.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:cd3f208d-49cb-4d62-8e99-cb531e927861",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

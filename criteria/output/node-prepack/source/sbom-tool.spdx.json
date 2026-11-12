@@ -1,8 +1,103 @@
 {
   "files": [
     {
-      "fileName": "./malicious-variant/case-b-generated-payload/package.json",
-      "SPDXID": "SPDXRef-File--malicious-variant-case-b-generated-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
+      "fileName": "./LESSON.md",
+      "SPDXID": "SPDXRef-File--LESSON.md-12A9F6E97011F8E12D7A22D1C54402B897B62613",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf69bf6c3724ea120044fc96e8c791adeabe80fa654758fc606d2aa8d185aa63"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "12a9f6e97011f8e12d7a22d1c54402b897b62613"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./malicious-variant/case-b-generated-payload/scripts/generate-dist.js",
+      "SPDXID": "SPDXRef-File--malicious-variant-case-b-generated-payload-scripts-generate-dist.js-999CF2574C3398FC0B5B8407E9264678A18C350A",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc1d5820660eba14f86b730df0f759595a9bfd69e745d39825f61c4def88302e"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "999cf2574c3398fc0b5b8407e9264678a18c350a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./src/server.js",
+      "SPDXID": "SPDXRef-File--src-server.js-3E0B664AA18D1A10E3AAE4C988E80CBDB21F896C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0851039b31bf2d75631cf7328a726f09d7191878b2917b117e48eb2ca2c7d15f"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3e0b664aa18d1a10e3aae4c988e80cbdb21f896c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./package.json",
+      "SPDXID": "SPDXRef-File--package.json-F2437D5AB501855784DABEF6793E8A6FE9E59C3C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5c60bd0a41d40b81810af66097c7e49ea0b2488ce7de9332fd1b1425a631c228"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f2437d5ab501855784dabef6793e8a6fe9e59c3c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./malicious-variant/scripts/build-variants.sh",
+      "SPDXID": "SPDXRef-File--malicious-variant-scripts-build-variants.sh-975ED85A7E270F10F66A9F1D556AFE349E8FA4B0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7be87fc116aaef0e58d32e2417ef0099dcfe7209a0ec1abdf0b29ad9786b1ce1"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "975ed85a7e270f10f66a9f1d556afe349e8fa4b0"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./malicious-variant/case-a-generator-payload/package.json",
+      "SPDXID": "SPDXRef-File--malicious-variant-case-a-generator-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
       "checksums": [
         {
           "algorithm": "SHA256",
@@ -20,16 +115,16 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./packages/trace-route-package/build-input/route.json",
-      "SPDXID": "SPDXRef-File--packages-trace-route-package-build-input-route.json-060A4800FB06BADE644BEC8C346715EAF2BED431",
+      "fileName": "./packages/trace-route-package/package.json",
+      "SPDXID": "SPDXRef-File--packages-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "59ac9a8653243abc8864cba724f7e47c215c1426260d853a1024b9f483e143aa"
+          "checksumValue": "a151a1da43b20e4c50abfa0e3521f182b79f82c6b267a79ed952617cc72ee3a6"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "060a4800fb06bade644bec8c346715eaf2bed431"
+          "checksumValue": "21172da5a58d278c3766f798f64dbdcf11735257"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -39,16 +134,149 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./scripts/proof-check.sh",
-      "SPDXID": "SPDXRef-File--scripts-proof-check.sh-A2BE58845326AC685933BB54ABEF6E5A489E27CC",
+      "fileName": "./packages/trace-route-package/dist/index.js",
+      "SPDXID": "SPDXRef-File--packages-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "d96310ae50f2998e8f25e73778b9a116e4fd90caf66475323ef4a6259520ec50"
+          "checksumValue": "850dd96872b80a7b4ab28da1bf2a237dfa919928c96afb63d8a782ea1a8908eb"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "a2be58845326ac685933bb54abef6e5a489e27cc"
+          "checksumValue": "b2fe1793ae816863875795cc29c961b832dfde77"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/run.sh",
+      "SPDXID": "SPDXRef-File--scripts-run.sh-B70DFBE318FB399CB6D6053425A33A737C3666A6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be43d4e59c2fe4d538a48c4eff720c3b567a658ddec988720db61319af89e675"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b70dfbe318fb399cb6d6053425a33a737c3666a6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./node_modules/trace-route-package/dist/prepack-evidence.json",
+      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf9b968dc4d3bf7527a8296b0171aa7acb87cde488b63c26ae23a377b660d0e8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "803e12f8a76faee74d440b6968b6826f3a4cf96f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./.gitignore",
+      "SPDXID": "SPDXRef-File--.gitignore-5899D492CD2AD39029112C126FFDAA2D93E9DFB2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8eea0ee729a5492d117343ec0e058a069552cbc26ddcfa4dd83049ddee91422b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5899d492cd2ad39029112c126ffdaa2d93e9dfb2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./malicious-variant/case-a-generator-payload/build-input/route.json",
+      "SPDXID": "SPDXRef-File--malicious-variant-case-a-generator-payload-build-input-route.json-19F7FFF639F5481A44A4FB994BDD450A0922DA14",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "223d14eb320ef2bde921c86bad15b2ddfc5312038c6127cf7ab1b9e0863ba146"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "19f7fff639f5481a44a4fb994bdd450a0922da14"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/clean.sh",
+      "SPDXID": "SPDXRef-File--scripts-clean.sh-2313A81BFC10FB8E566825AA3577EAD008029D82",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fa26692fb8b50a0baaa23d27bc59da148fab9ca78fcfa66c398582a69e3d7852"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2313a81bfc10fb8e566825aa3577ead008029d82"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./node_modules/trace-route-package/dist/index.js",
+      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "850dd96872b80a7b4ab28da1bf2a237dfa919928c96afb63d8a782ea1a8908eb"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b2fe1793ae816863875795cc29c961b832dfde77"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./packages/trace-route-package/dist/prepack-evidence.json",
+      "SPDXID": "SPDXRef-File--packages-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf9b968dc4d3bf7527a8296b0171aa7acb87cde488b63c26ae23a377b660d0e8"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "803e12f8a76faee74d440b6968b6826f3a4cf96f"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -134,329 +362,6 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./.gitignore",
-      "SPDXID": "SPDXRef-File--.gitignore-5899D492CD2AD39029112C126FFDAA2D93E9DFB2",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "8eea0ee729a5492d117343ec0e058a069552cbc26ddcfa4dd83049ddee91422b"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "5899d492cd2ad39029112c126ffdaa2d93e9dfb2"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./malicious-variant/case-a-generator-payload/build-input/route.json",
-      "SPDXID": "SPDXRef-File--malicious-variant-case-a-generator-payload-build-input-route.json-19F7FFF639F5481A44A4FB994BDD450A0922DA14",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "223d14eb320ef2bde921c86bad15b2ddfc5312038c6127cf7ab1b9e0863ba146"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "19f7fff639f5481a44a4fb994bdd450a0922da14"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./scripts/clean.sh",
-      "SPDXID": "SPDXRef-File--scripts-clean.sh-2313A81BFC10FB8E566825AA3577EAD008029D82",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "fa26692fb8b50a0baaa23d27bc59da148fab9ca78fcfa66c398582a69e3d7852"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "2313a81bfc10fb8e566825aa3577ead008029d82"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./malicious-variant/scripts/build-variants.sh",
-      "SPDXID": "SPDXRef-File--malicious-variant-scripts-build-variants.sh-975ED85A7E270F10F66A9F1D556AFE349E8FA4B0",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "7be87fc116aaef0e58d32e2417ef0099dcfe7209a0ec1abdf0b29ad9786b1ce1"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "975ed85a7e270f10f66a9f1d556afe349e8fa4b0"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./node_modules/trace-route-package/dist/index.js",
-      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "850dd96872b80a7b4ab28da1bf2a237dfa919928c96afb63d8a782ea1a8908eb"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "b2fe1793ae816863875795cc29c961b832dfde77"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./package.json",
-      "SPDXID": "SPDXRef-File--package.json-F2437D5AB501855784DABEF6793E8A6FE9E59C3C",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "5c60bd0a41d40b81810af66097c7e49ea0b2488ce7de9332fd1b1425a631c228"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "f2437d5ab501855784dabef6793e8a6fe9e59c3c"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./malicious-variant/case-a-generator-payload/package.json",
-      "SPDXID": "SPDXRef-File--malicious-variant-case-a-generator-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "138b87dfc2b6443287830ec7f524383644286f12f53614dda193f265631aa52b"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "3c05034d04081a732a1a428d37f68a3cc7ce112d"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./packages/trace-route-package/dist/index.js",
-      "SPDXID": "SPDXRef-File--packages-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "850dd96872b80a7b4ab28da1bf2a237dfa919928c96afb63d8a782ea1a8908eb"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "b2fe1793ae816863875795cc29c961b832dfde77"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./node_modules/trace-route-package/dist/prepack-evidence.json",
-      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cf9b968dc4d3bf7527a8296b0171aa7acb87cde488b63c26ae23a377b660d0e8"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "803e12f8a76faee74d440b6968b6826f3a4cf96f"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./packages/trace-route-package/package.json",
-      "SPDXID": "SPDXRef-File--packages-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "a151a1da43b20e4c50abfa0e3521f182b79f82c6b267a79ed952617cc72ee3a6"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "21172da5a58d278c3766f798f64dbdcf11735257"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./scripts/run.sh",
-      "SPDXID": "SPDXRef-File--scripts-run.sh-B70DFBE318FB399CB6D6053425A33A737C3666A6",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "be43d4e59c2fe4d538a48c4eff720c3b567a658ddec988720db61319af89e675"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "b70dfbe318fb399cb6d6053425a33a737c3666a6"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./LESSON.md",
-      "SPDXID": "SPDXRef-File--LESSON.md-12A9F6E97011F8E12D7A22D1C54402B897B62613",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cf69bf6c3724ea120044fc96e8c791adeabe80fa654758fc606d2aa8d185aa63"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "12a9f6e97011f8e12d7a22d1c54402b897b62613"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./malicious-variant/README.md",
-      "SPDXID": "SPDXRef-File--malicious-variant-README.md-1478298BF4CF61FB4D9D68E1F57C98F1A3328DE3",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "02d96a8aa1a138530817b106493f3ad399943806dea738fb5a67407544a73945"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "1478298bf4cf61fb4d9d68e1f57c98f1a3328de3"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./malicious-variant/case-b-generated-payload/scripts/generate-dist.js",
-      "SPDXID": "SPDXRef-File--malicious-variant-case-b-generated-payload-scripts-generate-dist.js-999CF2574C3398FC0B5B8407E9264678A18C350A",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cc1d5820660eba14f86b730df0f759595a9bfd69e745d39825f61c4def88302e"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "999cf2574c3398fc0b5b8407e9264678a18c350a"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./packages/trace-route-package/dist/prepack-evidence.json",
-      "SPDXID": "SPDXRef-File--packages-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cf9b968dc4d3bf7527a8296b0171aa7acb87cde488b63c26ae23a377b660d0e8"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "803e12f8a76faee74d440b6968b6826f3a4cf96f"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./src/server.js",
-      "SPDXID": "SPDXRef-File--src-server.js-3E0B664AA18D1A10E3AAE4C988E80CBDB21F896C",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "0851039b31bf2d75631cf7328a726f09d7191878b2917b117e48eb2ca2c7d15f"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "3e0b664aa18d1a10e3aae4c988e80cbdb21f896c"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./node_modules/trace-route-package/package.json",
-      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "a151a1da43b20e4c50abfa0e3521f182b79f82c6b267a79ed952617cc72ee3a6"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "21172da5a58d278c3766f798f64dbdcf11735257"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
       "fileName": "./malicious-variant/case-a-generator-payload/scripts/generate-dist.js",
       "SPDXID": "SPDXRef-File--malicious-variant-case-a-generator-payload-scripts-generate-dist.js-12DBA1FAAFC09D9FD83FC0D3191B2CCB06708497",
       "checksums": [
@@ -467,25 +372,6 @@
         {
           "algorithm": "SHA1",
           "checksumValue": "12dba1faafc09d9fd83fc0d3191b2ccb06708497"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./npm-repo/trace-route-package-1.0.0.tgz",
-      "SPDXID": "SPDXRef-File--npm-repo-trace-route-package-1.0.0.tgz-1FF27FF5ECA6BBD6AAA09A77F41F81C99102D581",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "15fae4019a008d3ce7692d7c81ab754e05c5ec1d61e4bb4325fb972f25a5ee8a"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "1ff27ff5eca6bbd6aaa09a77f41f81c99102d581"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -514,6 +400,101 @@
       "copyrightText": "NOASSERTION"
     },
     {
+      "fileName": "./malicious-variant/case-b-generated-payload/package.json",
+      "SPDXID": "SPDXRef-File--malicious-variant-case-b-generated-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "138b87dfc2b6443287830ec7f524383644286f12f53614dda193f265631aa52b"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3c05034d04081a732a1a428d37f68a3cc7ce112d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./packages/trace-route-package/build-input/route.json",
+      "SPDXID": "SPDXRef-File--packages-trace-route-package-build-input-route.json-060A4800FB06BADE644BEC8C346715EAF2BED431",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59ac9a8653243abc8864cba724f7e47c215c1426260d853a1024b9f483e143aa"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "060a4800fb06bade644bec8c346715eaf2bed431"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/proof-check.sh",
+      "SPDXID": "SPDXRef-File--scripts-proof-check.sh-A2BE58845326AC685933BB54ABEF6E5A489E27CC",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d96310ae50f2998e8f25e73778b9a116e4fd90caf66475323ef4a6259520ec50"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a2be58845326ac685933bb54abef6e5a489e27cc"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./malicious-variant/README.md",
+      "SPDXID": "SPDXRef-File--malicious-variant-README.md-1478298BF4CF61FB4D9D68E1F57C98F1A3328DE3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02d96a8aa1a138530817b106493f3ad399943806dea738fb5a67407544a73945"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1478298bf4cf61fb4d9d68e1f57c98f1a3328de3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./npm-repo/trace-route-package-1.0.0.tgz",
+      "SPDXID": "SPDXRef-File--npm-repo-trace-route-package-1.0.0.tgz-1FF27FF5ECA6BBD6AAA09A77F41F81C99102D581",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15fae4019a008d3ce7692d7c81ab754e05c5ec1d61e4bb4325fb972f25a5ee8a"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1ff27ff5eca6bbd6aaa09a77f41f81c99102d581"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
       "fileName": "./scripts/stop.sh",
       "SPDXID": "SPDXRef-File--scripts-stop.sh-7F1676064C3F7994F9330E867DB1EFDB7E6B6D7C",
       "checksums": [
@@ -524,6 +505,25 @@
         {
           "algorithm": "SHA1",
           "checksumValue": "7f1676064c3f7994f9330e867db1efdb7e6b6d7c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./node_modules/trace-route-package/package.json",
+      "SPDXID": "SPDXRef-File--node-modules-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a151a1da43b20e4c50abfa0e3521f182b79f82c6b267a79ed952617cc72ee3a6"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "21172da5a58d278c3766f798f64dbdcf11735257"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -589,44 +589,49 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:swid/criteria/example.com/node-prepack@1.0.0?tag_id=8839bcac-0a81-4a67-9095-0969b69d02ad"
+          "referenceLocator": "pkg:swid/criteria/example.com/node-prepack@1.0.0?tag_id=01dd13c8-b9c2-4c4a-b68e-65172e28dfb2"
         }
       ],
       "supplier": "Organization: criteria",
       "hasFiles": [
-        "SPDXRef-File--node-modules-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
-        "SPDXRef-File--scripts-clean.sh-2313A81BFC10FB8E566825AA3577EAD008029D82",
-        "SPDXRef-File--malicious-variant-case-a-generator-payload-build-input-route.json-19F7FFF639F5481A44A4FB994BDD450A0922DA14",
-        "SPDXRef-File--.gitignore-5899D492CD2AD39029112C126FFDAA2D93E9DFB2",
-        "SPDXRef-File--node-modules-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
-        "SPDXRef-File--packages-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
-        "SPDXRef-File--malicious-variant-case-a-generator-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
-        "SPDXRef-File--package.json-F2437D5AB501855784DABEF6793E8A6FE9E59C3C",
-        "SPDXRef-File--scripts-proof-check.sh-A2BE58845326AC685933BB54ABEF6E5A489E27CC",
-        "SPDXRef-File--packages-trace-route-package-build-input-route.json-060A4800FB06BADE644BEC8C346715EAF2BED431",
-        "SPDXRef-File--malicious-variant-case-b-generated-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
+        "SPDXRef-File--scripts-run.sh-B70DFBE318FB399CB6D6053425A33A737C3666A6",
+        "SPDXRef-File--packages-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
+        "SPDXRef-File--malicious-variant-scripts-build-variants.sh-975ED85A7E270F10F66A9F1D556AFE349E8FA4B0",
         "SPDXRef-File--node-modules-.package-lock.json-A54A94EA8BFD756674BF5051EF258E89E0F13241",
         "SPDXRef-File--packages-trace-route-package-scripts-generate-dist.js-89804EDD90BEFEDB669E76FEF3957126358D3ACD",
         "SPDXRef-File--malicious-variant-case-b-generated-payload-build-input-route.json-19F7FFF639F5481A44A4FB994BDD450A0922DA14",
         "SPDXRef-File--package-lock.json-53D0C03AB19E213AAB432121C9B829DCAB37F825",
+        "SPDXRef-File--scripts-build.sh-A50C4221FEF5307E0CA8451C3C5A1F22B63F74CC",
+        "SPDXRef-File--malicious-variant-case-a-generator-payload-scripts-generate-dist.js-12DBA1FAAFC09D9FD83FC0D3191B2CCB06708497",
+        "SPDXRef-File--src-server.js-3E0B664AA18D1A10E3AAE4C988E80CBDB21F896C",
         "SPDXRef-File--scripts-stop.sh-7F1676064C3F7994F9330E867DB1EFDB7E6B6D7C",
         "SPDXRef-File--npm-repo-trace-route-package-1.0.0.tgz-1FF27FF5ECA6BBD6AAA09A77F41F81C99102D581",
         "SPDXRef-File--malicious-variant-README.md-1478298BF4CF61FB4D9D68E1F57C98F1A3328DE3",
+        "SPDXRef-File--scripts-proof-check.sh-A2BE58845326AC685933BB54ABEF6E5A489E27CC",
+        "SPDXRef-File--packages-trace-route-package-build-input-route.json-060A4800FB06BADE644BEC8C346715EAF2BED431",
+        "SPDXRef-File--malicious-variant-case-b-generated-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
+        "SPDXRef-File--node-modules-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
+        "SPDXRef-File--packages-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
+        "SPDXRef-File--malicious-variant-case-a-generator-payload-package.json-3C05034D04081A732A1A428D37F68A3CC7CE112D",
+        "SPDXRef-File--package.json-F2437D5AB501855784DABEF6793E8A6FE9E59C3C",
         "SPDXRef-File--node-modules-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
         "SPDXRef-File--packages-trace-route-package-dist-prepack-evidence.json-803E12F8A76FAEE74D440B6968B6826F3A4CF96F",
         "SPDXRef-File--malicious-variant-case-b-generated-payload-scripts-generate-dist.js-999CF2574C3398FC0B5B8407E9264678A18C350A",
         "SPDXRef-File--LESSON.md-12A9F6E97011F8E12D7A22D1C54402B897B62613",
-        "SPDXRef-File--scripts-build.sh-A50C4221FEF5307E0CA8451C3C5A1F22B63F74CC",
-        "SPDXRef-File--malicious-variant-case-a-generator-payload-scripts-generate-dist.js-12DBA1FAAFC09D9FD83FC0D3191B2CCB06708497",
-        "SPDXRef-File--src-server.js-3E0B664AA18D1A10E3AAE4C988E80CBDB21F896C",
-        "SPDXRef-File--scripts-run.sh-B70DFBE318FB399CB6D6053425A33A737C3666A6",
-        "SPDXRef-File--packages-trace-route-package-package.json-21172DA5A58D278C3766F798F64DBDCF11735257",
-        "SPDXRef-File--malicious-variant-scripts-build-variants.sh-975ED85A7E270F10F66A9F1D556AFE349E8FA4B0"
+        "SPDXRef-File--node-modules-trace-route-package-dist-index.js-B2FE1793AE816863875795CC29C961B832DFDE77",
+        "SPDXRef-File--scripts-clean.sh-2313A81BFC10FB8E566825AA3577EAD008029D82",
+        "SPDXRef-File--malicious-variant-case-a-generator-payload-build-input-route.json-19F7FFF639F5481A44A4FB994BDD450A0922DA14",
+        "SPDXRef-File--.gitignore-5899D492CD2AD39029112C126FFDAA2D93E9DFB2"
       ]
     }
   ],
   "externalDocumentRefs": [],
   "relationships": [
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-2619D54969E582E94785954F6E9491CF12610D197A8EF0AE6EE81EE2D36400E9",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
     {
       "relationshipType": "DESCRIBES",
       "relatedSpdxElement": "SPDXRef-RootPackage",
@@ -636,20 +641,15 @@
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-9BB6906BAF85B3AB264290322E893D40280F0ECE037A5436BF08DCC260FDBA38",
       "spdxElementId": "SPDXRef-RootPackage"
-    },
-    {
-      "relationshipType": "DEPENDS_ON",
-      "relatedSpdxElement": "SPDXRef-Package-2619D54969E582E94785954F6E9491CF12610D197A8EF0AE6EE81EE2D36400E9",
-      "spdxElementId": "SPDXRef-RootPackage"
     }
   ],
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "node-prepack 1.0.0",
-  "documentNamespace": "https://example.com/criteria/node-prepack/1.0.0/L61NVgRrtU6WqTPI3w6Lvw",
+  "documentNamespace": "https://example.com/criteria/node-prepack/1.0.0/Ra231q-CnEWx0k1L3rSoJg",
   "creationInfo": {
-    "created": "2026-11-12T13:52:40Z",
+    "created": "2026-11-12T14:46:33Z",
     "creators": [
       "Organization: criteria",
       "Tool: Microsoft.SBOMTool-4.1.13"

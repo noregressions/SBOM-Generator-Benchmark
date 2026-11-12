@@ -28,7 +28,7 @@ consumer could filter them out?
 | cdxgen | yes | derived | yes | `--required-only` |
 | Trivy | yes | derived | yes | `--include-dev-deps` (npm, yarn, gradle lockfiles only) |
 | Syft | by input | derived | by input | no flag; scan a production-only install vs the full tree |
-| sbom-tool, bom, spdx-sbom-generator, ScanCode, GitHub | no | no | whatever is on disk | no scope concept |
+| sbom-tool, bom, ScanCode, GitHub | no | no | whatever is on disk | no scope concept |
 
 "Derived" means the tool has no way to emit *only* the non-runtime set, so we compute it as combined minus runtime.
 Most tools are in that position: they can include or exclude dev dependencies, but not isolate them.

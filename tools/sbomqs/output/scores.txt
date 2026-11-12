@@ -11,7 +11,6 @@ cyclonedx-npm/output/node.prod-only.cdx.json                      5.1    6.7 71
 cyclonedx-python/output/python.environment.cdx.json               4.8    5.8 15
 cyclonedx-gomod/output/go.app.cdx.json                            6.1    6.4 5
 cargo-cyclonedx/output/rust.host-target.cdx.json                  6.6    9.1 17
-spdx-sbom-generator/output/bom-Java-Maven.spdx                 unparseable      ? ?
 microsoft-sbom-tool/output/_manifest/spdx_2.2/manifest.spdx.json    5.3    4.3 396
 kubernetes-bom/output/go.spdx.json                                5.0    5.6 5
 sbom4python/output/python.cdx.json                                7.2    7.3 4

@@ -83,6 +83,15 @@ ARG CYCLONEDX_PY_VERSION
 ARG SBOM4PYTHON_VERSION
 RUN pip install --no-cache-dir "cyclonedx-bom==${CYCLONEDX_PY_VERSION}" "sbom4python==${SBOM4PYTHON_VERSION}"
 
+# CaPyCLI pins older versions of libraries cyclonedx-py also uses, and does not support the image's Python, so it lives
+# in its own environment with its own interpreter. uv creates both.
+ARG CAPYCLI_VERSION
+ARG CAPYCLI_PYTHON
+ARG UV_VERSION
+ENV UV_TOOL_DIR=/opt/uv/tools UV_TOOL_BIN_DIR=/usr/local/bin UV_PYTHON_INSTALL_DIR=/opt/uv/python
+RUN pip install --no-cache-dir "uv==${UV_VERSION}" \
+ && uv tool install --no-cache --python "${CAPYCLI_PYTHON}" "capycli==${CAPYCLI_VERSION}"
+
 ARG SBOM_TOOL_VERSION
 RUN dotnet tool install --tool-path /opt/dotnet-tools Microsoft.Sbom.DotNetTool --version "${SBOM_TOOL_VERSION}" \
  && ln -s /opt/dotnet-tools/sbom-tool /usr/local/bin/sbom-tool
@@ -103,7 +112,7 @@ RUN curl -fsSL "https://github.com/anchore/grype/releases/download/v${GRYPE_VERS
 # Fail the build, not the benchmark, if a tool does not start
 RUN java -version && mvn -v && node -v && npm -v && python3 -V && dotnet --version && docker --version && docker buildx version \
  && syft version && grype version && trivy --version && cdxgen --version && cyclonedx-npm --version \
- && cyclonedx-py --version && sbom4python --version && sbom-tool version && bom version \
+ && cyclonedx-py --version && sbom4python --version && capycli --version && sbom-tool version && bom version \
  && sbomqs version && cyclonedx --version && docker scout version
 
 WORKDIR /work

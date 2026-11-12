@@ -1,0 +1,94 @@
+{
+  "components": [
+    {
+      "bom-ref": "pkg:pypi/reportkit@1.0.0",
+      "description": "",
+      "name": "reportkit",
+      "properties": [
+        {
+          "name": "siemens:primaryLanguage",
+          "value": "Python"
+        }
+      ],
+      "purl": "pkg:pypi/reportkit@1.0.0",
+      "type": "library",
+      "version": "1.0.0"
+    }
+  ],
+  "definitions": {
+    "standards": [
+      {
+        "bom-ref": "standard-bom",
+        "description": "The Standard for Software Bills of Materials in Siemens",
+        "externalReferences": [
+          {
+            "type": "website",
+            "url": "https://sbom.siemens.io/"
+          }
+        ],
+        "name": "Standard BOM",
+        "owner": "Siemens AG",
+        "version": "3.0.0"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "ref": "pkg:pypi/reportkit@1.0.0"
+    }
+  ],
+  "metadata": {
+    "authors": [
+      {
+        "name": "CaPyCLI"
+      }
+    ],
+    "licenses": [
+      {
+        "license": {
+          "id": "CC0-1.0"
+        }
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "properties": [
+      {
+        "name": "siemens:profile",
+        "value": "clearing"
+      }
+    ],
+    "timestamp": "2026-11-12T14:51:20.569250+00:00",
+    "tools": {
+      "components": [
+        {
+          "externalReferences": [
+            {
+              "type": "website",
+              "url": "https://github.com/sw360/capycli"
+            }
+          ],
+          "name": "CaPyCLI",
+          "supplier": {
+            "name": "Siemens AG"
+          },
+          "type": "application",
+          "version": "2.12.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:bd46631e-a9a9-45e8-88dc-2c757e24a2f7",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "compositions": [
+    {
+      "aggregate": "unknown"
+    }
+  ]
+}

@@ -36,7 +36,6 @@ Run the generator demos first; this script reads their `output/` directories.
 | sbom4python (CycloneDX) | 7.2 | 7.3 | 4 |
 | Trivy CycloneDX | 4.7 | 5.1 | 120 |
 | cyclonedx-cli merge of the five native SBOMs | 6.0 | 7.0 | 116 |
-| spdx-sbom-generator (Maven) | unparseable | | |
 
 SBOM+ scores low on purpose: it enumerates build tooling and ships no licences or hashes, leaving enrichment to other
 tools, so sbomqs penalises it on exactly the fields it chose not to fill. A reminder that these scores measure
@@ -65,4 +64,4 @@ cdxgen adds `file` components, while Trivy and Scout report packages only. Decid
 ORT's CycloneDX report scored 9.4 on NTIA, the highest of everything in this repo, because the analyzer fetches full metadata
 (supplier, licences, VCS, hashes) for every package from the registries.
 
-See `output/scores.txt` for the full run (the spdx-sbom-generator file fails to parse).
+See `output/scores.txt` for the full run.

@@ -36,8 +36,6 @@ ROSTER = [
      "Go directories and registry images; `--file` on a jar yields no packages, local image tags are not readable"),
     ("docker-sbom", "image (Docker Scout, BuildKit)", "docker-scout", None, "docker-sbom/output/sbom-sample.scout.spdx.json",
      "image stage only; found the shaded codec via leftover pom.properties, SPDX output"),
-    ("spdx-sbom-generator", "multi-ecosystem (SPDX)", None, None, "spdx-sbom-generator/output/bom-Java-Maven.spdx",
-     "not in the criteria run; its Maven output was unparseable by sbomqs"),
     ("scancode-toolkit", "source scanner (licences, copyrights)", None, None, None,
      "optional in criteria (CRITERIA_SCANCODE=1); the only tool that would see vendored or copied source"),
     ("ort", "compliance pipeline", None, None, "ort/output/reports/bom.cyclonedx.json",

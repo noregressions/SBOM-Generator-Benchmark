@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:ff6cb57b-80cb-4de5-a4e2-7e71e0a43280",
+  "serialNumber": "urn:uuid:3de80d3d-ade5-43f9-9de8-cd8ef7c70bfe",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:52:36+00:00",
+    "timestamp": "2026-11-12T14:46:27+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "8d91b6dd-ae7b-4f57-b928-870861f27d1b",
+      "bom-ref": "df84469d-3f3c-433d-ac05-b00565de44c9",
       "type": "application",
       "name": "/work/testcases/maven-plugin-hidden-content/project/target/maven-plugin-hidden-content-1.0.0.jar",
       "properties": [
@@ -34,7 +34,7 @@
   "components": [],
   "dependencies": [
     {
-      "ref": "8d91b6dd-ae7b-4f57-b928-870861f27d1b",
+      "ref": "df84469d-3f3c-433d-ac05-b00565de44c9",
       "dependsOn": []
     }
   ],

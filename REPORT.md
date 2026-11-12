@@ -63,7 +63,7 @@ What this phase showed:
   745 from kubernetes bom and 2756 from Syft's XML.
 - Build tooling is invisible to every tool but one. SBOM+ lists 191 Maven plugin artifacts that run on the build machine
   and never ship. The CycloneDX Maven plugin, by design, lists none.
-- Validate everything. spdx-sbom-generator produced a file sbomqs could not parse.
+- Validate everything. spdx-sbom-generator (since removed) produced a file sbomqs could not parse.
 
 ## Phase 2: runtime versus non-runtime
 

@@ -4,7 +4,7 @@
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ORDER=(syft trivy cdxgen cyclonedx-maven-plugin sbom-plus-maven-plugin cyclonedx-gradle-plugin cyclonedx-npm cyclonedx-python cyclonedx-gomod
-       cargo-cyclonedx cyclonedx-dotnet spdx-sbom-generator microsoft-sbom-tool kubernetes-bom sbom4python scancode-toolkit
+       cargo-cyclonedx cyclonedx-dotnet microsoft-sbom-tool kubernetes-bom sbom4python scancode-toolkit
        jbom github-dependency-graph docker-sbom ort cyclonedx-cli sbomqs)
 pass=(); fail=()
 for t in "${ORDER[@]}"; do

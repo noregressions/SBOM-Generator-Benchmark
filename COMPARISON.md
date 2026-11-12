@@ -24,7 +24,6 @@ sample-app columns are one document per tool (the one the top-level README uses)
 | [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | multi-ecosystem (SPDX) | 396 | 5.3 | 4.3 | 5 | 5.3 | 10.0 | 5.2 | 3.8 |
 | [`kubernetes-bom`](tools/kubernetes-bom) | multi-ecosystem (SPDX) | 5 | 5.0 | 5.6 | 3 | 4.4 | 6.7 | 5.6 | 4.3 |
 | [`docker-sbom`](tools/docker-sbom) | image (Docker Scout, BuildKit) | 138 | 5.6 | 7.1 | 2 | 5.5 | 10.0 | 6.6 | 3.6 |
-| [`spdx-sbom-generator`](tools/spdx-sbom-generator) | multi-ecosystem (SPDX) |  | unparseable |  |  |  |  |  |  |
 | [`scancode-toolkit`](tools/scancode-toolkit) | source scanner (licences, copyrights) |  |  |  |  |  |  |  |  |
 | [`ort`](tools/ort) | compliance pipeline | 398 | 5.2 | 9.4 |  |  |  |  |  |
 | [`github-dependency-graph`](tools/github-dependency-graph) | hosted (GitHub) |  |  |  |  |  |  |  |  |
@@ -109,7 +108,6 @@ Hand-written from the numbers above; revise when the runs change.
 | [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | multi-ecosystem (SPDX) | high recall at source because it runs the Maven dependency tree, but test scope is included unlabelled; NTIA 2021 perfect, 2026 revision poor |
 | [`kubernetes-bom`](tools/kubernetes-bom) | multi-ecosystem (SPDX) | Go directories and registry images; `--file` on a jar yields no packages, local image tags are not readable |
 | [`docker-sbom`](tools/docker-sbom) | image (Docker Scout, BuildKit) | image stage only; found the shaded codec via leftover pom.properties, SPDX output |
-| [`spdx-sbom-generator`](tools/spdx-sbom-generator) | multi-ecosystem (SPDX) | not in the criteria run; its Maven output was unparseable by sbomqs |
 | [`scancode-toolkit`](tools/scancode-toolkit) | source scanner (licences, copyrights) | optional in criteria (CRITERIA_SCANCODE=1); the only tool that would see vendored or copied source |
 | [`ort`](tools/ort) | compliance pipeline | optional in criteria (CRITERIA_ORT=1); highest NTIA score on sample-app |
 | [`github-dependency-graph`](tools/github-dependency-graph) | hosted (GitHub) | manifest-based, repository-level; not part of either comparison run |

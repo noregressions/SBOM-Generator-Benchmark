@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:d97970fc-2260-492f-b93a-ec9591917469",
+  "serialNumber": "urn:uuid:ecda6fd8-5b59-438b-9c01-46c164b6847c",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T13:52:33+00:00",
+    "timestamp": "2026-11-12T14:46:25+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "93181f03-bae2-4d83-9efd-392d51609d44",
+      "bom-ref": "1d879870-7264-45d3-b7a7-0dfcc0b585ef",
       "type": "application",
       "name": "/tmp/criteria-7/src",
       "properties": [
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "4eefcf69-2068-45d8-ae92-1dc48ff6b1b3",
+      "bom-ref": "d782e1c6-dfc3-4c7c-a654-1908516cfd40",
       "type": "application",
       "name": "pom.xml",
       "properties": [
@@ -68,15 +68,15 @@
   ],
   "dependencies": [
     {
-      "ref": "4eefcf69-2068-45d8-ae92-1dc48ff6b1b3",
+      "ref": "1d879870-7264-45d3-b7a7-0dfcc0b585ef",
       "dependsOn": [
-        "pkg:maven/dev.noregressions.trace/maven-plugin-hidden-content@1.0.0"
+        "d782e1c6-dfc3-4c7c-a654-1908516cfd40"
       ]
     },
     {
-      "ref": "93181f03-bae2-4d83-9efd-392d51609d44",
+      "ref": "d782e1c6-dfc3-4c7c-a654-1908516cfd40",
       "dependsOn": [
-        "4eefcf69-2068-45d8-ae92-1dc48ff6b1b3"
+        "pkg:maven/dev.noregressions.trace/maven-plugin-hidden-content@1.0.0"
       ]
     },
     {
