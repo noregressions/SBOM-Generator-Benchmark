@@ -3,7 +3,7 @@
   "name": "spring-node",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2026-11-12T11:48:08Z",
+    "created": "2026-11-12T13:23:32Z",
     "creators": [
       "Tool: bom-v0.8.0"
     ],
@@ -29,15 +29,15 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "d9b63f2e80936b6084a81b986504317fa406ab7c"
+          "checksumValue": "7d3f12830699ddf3016469b7cb470ee937aae4c5"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "15417d42227c3fc2c9789c05a7cb8093599d745a8a88b0c81f254d7eb81ebd4d"
+          "checksumValue": "f0d7594d6342d928dc89d450275869254cebcf22aad77b5f54f00333d09e4663"
         },
         {
           "algorithm": "SHA512",
-          "checksumValue": "3d4a51b61e6418cdd100343d49964be08f9c8c0749e93f5a183979bc254bd2a5f502dab2a0b43878a59a77e4e49f7309a5b039e22068fded675109a291cb804e"
+          "checksumValue": "9c28d0882aac906f09945ef6ef7ec2f83edf26b4ef68d019f0b1fdd5aab26a1858736d70972174a3940d36e6d15a16478192a1f3a2ad8d7936273c6e685c6f87"
         }
       ]
     }

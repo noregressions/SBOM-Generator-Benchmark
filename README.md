@@ -1,4 +1,4 @@
-# SBOM evaluator
+# SBOM Generator Benchmark
 
 Most SBOM tools look reasonable on a tidy project. This repository runs them against projects built to be awkward,
 where we know what ends up in the artefact, and scores each document twice. The first score asks whether the
@@ -6,43 +6,83 @@ document is true. The second asks whether it carries the fields the published ba
 
 The two scores disagree, and that's the reason to keep them apart.
 
-The latest report is in [`docs/`](docs/index.html), published with GitHub Pages. The same numbers are in
+The results are published as the **SBOM Generator Index**: the site in [`docs/`](docs/index.html), served by GitHub Pages. The same numbers are in
 [`criteria/SCORECARD.md`](criteria/SCORECARD.md) and [`COMPARISON.md`](COMPARISON.md).
+
+## What's in the project
+
+The project has three parts: a benchmark, a way to run the same tools on your own code, and a set of demos.
+
+The **benchmark** is the main thing. It has five test cases, each a small project that hides a dependency from SBOM
+tools in a documented way, with a hand-written list of what really ships. It runs eleven free SBOM generators against
+them at up to three stages, scores every document, and publishes the result as the SBOM Generator Index. Two slower
+tools, ORT and ScanCode, have adapters but only run when you ask for them. One container image holds the tools at
+pinned versions, so a report can be reproduced from the commit that contains it.
+
+The **scan** command points those tools at any other source tree and writes a report into it.
+
+The **demos** came first and are still here: 22 tool folders, each showing what that tool is for on a small sample
+application. They cover more tools than the benchmark does, including ones that consume SBOMs instead of generating them.
+
+| Directory | What it holds |
+|---|---|
+| [`testcases/`](testcases) | The benchmark's projects. Each has `project/` (the code) and `expected.json` (what ships, what doesn't, what is hidden and how). |
+| [`tools/`](tools) | One folder per SBOM tool: `adapter.sh` is how the benchmark runs it, and `run.sh`, `README.md` and `output/` are its demo. `versions.env` pins every version. |
+| [`image/`](image) | The Dockerfile for the tool image, built from `tools/versions.env`. |
+| [`criteria/`](criteria) | The benchmark engine: it runs the adapters, scores the SBOMs and builds the site. `output/` holds the generated SBOMs and scores, and `SCORECARD.md` is the result in Markdown. |
+| [`docs/`](docs) | The SBOM Generator Index, a generated static site. Don't edit it by hand. |
+| [`scripts/`](scripts) | The commands behind the Makefile: `evaluate`, `scan`, `run-all.sh` for the demos, and `compare-tools.py`. |
+| [`sample-app/`](sample-app) | One small application written for Maven, Gradle, npm, pip, Go and Cargo. The demos scan it; the benchmark doesn't. |
+| [`scope-runs/`](scope-runs) | A separate experiment on the sample app: how each tool separates runtime dependencies from dev and test ones. |
+
+Three documents sit at the root beside this one. [`REPORT.md`](REPORT.md) is the narrative write-up of the first runs,
+[`COMPARISON.md`](COMPARISON.md) has one row per tool across the benchmark, the demos and the scope runs, and the
+`Makefile` is how you run everything.
 
 ## Run it
 
-You need Docker and nothing else.
+You need Docker, `make` and `git`.
 
 ```bash
-./evaluate
+make            # build everything and refresh the report
+make clean      # remove what the build left behind
 ```
 
 The first run builds a container image holding every tool at the version pinned in
-[`tools/versions.env`](tools/versions.env), which takes a few minutes and about 4 GB. After that, `./evaluate` builds
-the test cases, runs every tool at every stage, scores the output, and rewrites the report. A full run takes roughly
+[`tools/versions.env`](tools/versions.env), which takes a few minutes and about 4 GB. After that, `make` builds the
+test cases, runs every tool at every stage, scores the output, and rewrites the report. A full run takes roughly
 ten minutes. It ends by printing `Failed steps: none`, or the list of steps that failed.
 
 To publish, commit what changed. GitHub Pages serves `docs/` from the main branch, so there's no build step and no
 workflow to wait for.
 
+`make clean` removes the test cases' build outputs, the container images built from them, and Python caches. It
+deletes only files that `.gitignore` names, so it can't remove anything tracked. The report, the SBOMs in
+`criteria/output/` and the tool image stay. `make distclean` also removes the tool image and its cache volumes.
+
 ```bash
-./evaluate spring-node                    # one test case; the others keep their previous scores
-./evaluate --stages "source artefact"     # skip the image stage
-./evaluate --tools "syft trivy"           # re-run only these tools (folder names under tools/)
-./evaluate --no-build                     # don't rebuild the test cases first
-./evaluate --shell                        # open a shell in the tool image
+make CASE=spring-node              # one test case; the others keep their previous scores
+make STAGES="source artefact"      # skip the image stage
+make evaluate TOOLS="syft trivy"   # re-run only these tools (folder names under tools/), without rebuilding the test cases
+make report                        # re-score the SBOMs already generated and rebuild docs/; runs no tools
+make image                         # build the tool image only
+make build                         # build the test cases only
+make shell                         # open a shell in the tool image
+make help                          # every target
 ```
+
+The targets call `scripts/evaluate` and `scripts/scan`, which take the same choices as options if you'd rather run them directly.
 
 ## Scan your own project
 
-`./evaluate` scores the tools against test cases with known answers. `./scan` points the same tools at any source
-tree and writes the result into it.
+`make` scores the tools against test cases with known answers. `make scan` points the same tools at any source tree
+and writes the result into it.
 
 ```bash
-./scan /path/to/project
-./scan /path/to/project --artefact target/app.jar     # also scan a built artefact inside the tree
-./scan /path/to/project --image myapp:latest          # also scan an image your Docker daemon has
-./scan /path/to/project --exclude "target node_modules"   # hide these paths from the source-stage scanners
+make scan TREE=/path/to/project
+make scan TREE=/path/to/project ARTEFACT=target/app.jar      # also scan a built artefact inside the tree
+make scan TREE=/path/to/project SCAN_IMAGE=myapp:latest      # also scan an image your Docker daemon has
+make scan TREE=/path/to/project EXCLUDE="target node_modules"   # hide these paths from the source-stage scanners
 ```
 
 The report lands in `<project>/sbom-report/`: open `report.html`, or read `report.md`. Every SBOM the tools produced
@@ -51,12 +91,15 @@ is beside it under `sboms/<stage>/`.
 Your project has no ground truth, so the report can't say which tool is right. It gives each document's conformance
 scores, and it shows where the tools disagree: components only one tool reported, components a tool missed that two
 others found, and packages reported at conflicting versions. Those are the places to look first. If you do know what
-ships, write it down in the `expected.json` format and pass `--expected`; the report then adds the accuracy columns.
+ships, write it down in the `expected.json` format and pass `EXPECTED=<file>`; the report then adds the accuracy columns.
 
-`./scan` doesn't build anything, so build the project first if you want its artefact scanned. The two Maven plugins
+The scan doesn't build anything, so build the project first if you want its artefact scanned. The two Maven plugins
 run Maven in your tree and write under its `target/` directory.
 
-## How it fits together
+## How a run fits together
+
+`make` starts the tool image, builds the test cases, runs each tool's adapter against each one, then scores the
+SBOMs and rebuilds the site. These are the files that do it:
 
 ```text
 testcases/<name>/project/        a project that hides something from SBOM tools
@@ -67,8 +110,9 @@ image/Dockerfile                 the tool image, built from versions.env
 criteria/generate.sh             runs every adapter against every test case and stage
 criteria/score.py                scores the output -> criteria/output/scores.json, criteria/SCORECARD.md
 criteria/build_site.py           builds docs/ from the scores
-evaluate                         does all of the above inside the tool image
-scan                             runs the tools against any other source tree and reports into it
+Makefile                         the entry point: make, make clean, make scan, make help
+scripts/evaluate                 does all of the above inside the tool image (what `make` runs)
+scripts/scan                     runs the tools against any other source tree and reports into it (`make scan`)
 ```
 
 Each test case is scanned at up to three stages: the source checkout, the built artefact, and the container image.
@@ -90,10 +134,10 @@ Write the ground truth from the built artefact, not from what a tool reports.
    locations in environment variables. The adapter writes `<tool>.cdx.json` or `<tool>.spdx.json`, or exits through
    `na` when the stage doesn't apply to it. [`criteria/adapter-lib.sh`](criteria/adapter-lib.sh) documents the
    variables, and [`tools/syft/adapter.sh`](tools/syft/adapter.sh) is a short example.
-3. Run `./evaluate --tools <tool>`. The image rebuilds because `versions.env` changed, and the tool appears in the
+3. Run `make evaluate TOOLS=<tool>`. The image rebuilds because `versions.env` changed, and the tool appears in the
    report.
 
-To upgrade a tool, change its line in `versions.env`, run `./evaluate`, and read the diff in the scorecard.
+To upgrade a tool, change its line in `versions.env`, run `make`, and read the diff in the scorecard.
 
 We leave out commercial free tiers and tools with no release since 2023.
 
@@ -114,7 +158,7 @@ sample-app/            one app, six ways: Maven, Gradle, npm, pip, Go, Cargo (+ 
 tools/<tool>/run.sh    the demo
 tools/<tool>/README.md what the tool is for and what we saw
 tools/<tool>/output/   SBOMs from the last demo run
-run-all.sh             runs every demo in dependency order
+scripts/run-all.sh     runs every demo in dependency order
 scope-runs/            three SBOMs per tool (runtime / non-runtime / combined) and a comparison of them
 ```
 
@@ -169,7 +213,7 @@ pipx install sbom4python
 pipx install --python python3.12 scancode-toolkit
 
 ./tools/syft/run.sh          # or any other tool
-./run-all.sh                 # everything, in dependency order (cyclonedx-cli and sbomqs run last)
+scripts/run-all.sh           # everything, in dependency order (cyclonedx-cli and sbomqs run last)
 ```
 
 Each `run.sh` is self-contained and prints what it is doing; outputs land in that tool's `output/`.
@@ -221,7 +265,7 @@ FSCT). Results are in [`criteria/SCORECARD.md`](criteria/SCORECARD.md); the meth
 
 [`COMPARISON.md`](COMPARISON.md) puts the three runs side by side, one row per generator: baseline conformance (shape), content accuracy
 against ground truth (truth), hidden-dependency coverage by mechanism, and runtime/dev scope handling. It is generated by
-`compare-tools.py` from the outputs of `run-all.sh`, `scope-runs/run.sh` and `criteria/score.py`.
+`scripts/compare-tools.py` from the outputs of `scripts/run-all.sh`, `scope-runs/run.sh` and `criteria/score.py`.
 
 ## What the exercise taught us
 

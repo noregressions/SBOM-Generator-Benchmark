@@ -1,10 +1,10 @@
 {
   "bomFormat" : "CycloneDX",
   "specVersion" : "1.6",
-  "serialNumber" : "urn:uuid:17055ddb-c0ab-4077-a849-4b09265cc4da",
+  "serialNumber" : "urn:uuid:3e27df86-8351-490c-a1e8-cfa18dc1bf67",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2026-11-12T11:43:39.776400841Z",
+    "timestamp" : "2026-11-12T13:15:47.073366Z",
     "lifecycles" : [ {
       "phase" : "build"
     } ],
@@ -69,16 +69,16 @@
     "scope" : "excluded",
     "hashes" : [ {
       "alg" : "MD5",
-      "content" : "2bb94c6cfccfb06e325832f6a138c828"
+      "content" : "6cb2c9f40998753d80dab503b079879d"
     }, {
       "alg" : "SHA-1",
-      "content" : "e63597b44fab743b6fb577bbb764f75491ed6d72"
+      "content" : "6c061156e2ce0498659c16e49dc7030c1fb483bd"
     }, {
       "alg" : "SHA-256",
-      "content" : "979ab09c43e9347e873ec8011927e4412ef7b67251cde9e3805888fabdbd1a09"
+      "content" : "60d5cbfd27cc60e37846657955566b5eaff5a64f85eafada2fbf7ed73a20d18e"
     }, {
       "alg" : "SHA-512",
-      "content" : "b272df33ed6e289b730b0ee5b7936e6790b8716f9ab3ca51d6ed0bfbf411d30ca3e8a886e53f86a0b523f0bbf29d3c1dfff321f26119776487ef4ce4af0ec258"
+      "content" : "f7cbea484eebc0550c98482a773c59909ef2504e63e48ae101ed59c32672fccb417b9ec179e8209e31835b61cc352f9ff74fa1208064d14eb33205acc019aa52"
     } ],
     "purl" : "pkg:maven/dev.noregressions.trace/trace-injector-maven-plugin@1.0.0",
     "properties" : [ {
@@ -112,16 +112,16 @@
     "scope" : "excluded",
     "hashes" : [ {
       "alg" : "MD5",
-      "content" : "a0aa01dbbd8b0fbc088038813a0fa997"
+      "content" : "243c63e61b1f6aaa172e20a2aede3d37"
     }, {
       "alg" : "SHA-1",
-      "content" : "d4bad1870462f2399ab9291ef74ef2b30c613032"
+      "content" : "ead63e75b6f62e187f85550c6a79a20708f429fc"
     }, {
       "alg" : "SHA-256",
-      "content" : "edf40f03c4755df0415678acb5d4ee82c91f7901bfafa5baa0caea934815f23e"
+      "content" : "541a65ad86e36a806c9870ed1ace17e974f3a54e988a346fc05460e62a5d53cb"
     }, {
       "alg" : "SHA-512",
-      "content" : "7a5f21178355945d2c1686f938c50df7aff17c99e5d47682ef24451bfb79640cec4eec1a7b05933f19c2415eed5f6c65b56192ee20df9e4a51c87d80bcd1fd5a"
+      "content" : "5e628deb610a4d882f0a574b02233222558a87beb8c18d8d81f07e3b35ae9ab499cdee0aafd31499fe234aa2da74a741f70950d5a21eddf60b9ebe7298d1b116"
     } ],
     "purl" : "pkg:maven/dev.noregressions.trace/trace-route-payload@1.0.0",
     "properties" : [ {

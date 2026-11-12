@@ -22,10 +22,10 @@ scanning afterwards.
 |---|---|
 | `tools/<tool>/` | One folder per tool with a `run.sh`, a README and pre-run `output/`. 20 generators and 2 consumers; every generator but jbom is pre-run. |
 | `sample-app/` | One polyglot application: Maven, Gradle, npm, pip, Go, Cargo, .NET (on demand) and a Dockerfile. |
-| `run-all.sh` | Runs every tool in dependency order, with cyclonedx-cli and sbomqs last because they consume the others' output. |
+| `scripts/run-all.sh` | Runs every tool in dependency order, with cyclonedx-cli and sbomqs last because they consume the others' output. |
 | `scope-runs/` | Builds runtime, non-runtime and combined SBOMs with every tool that can express scope, and checks the set algebra. |
 | `criteria/` | Ground truth for five KCDC 2026 workshop scenarios, a generator that scans each at source, artefact and image stage, and a scorer. |
-| `compare-tools.py` | Joins the three runs into `COMPARISON.md`, one row per tool. |
+| `scripts/compare-tools.py` | Joins the three runs into `COMPARISON.md`, one row per tool. |
 
 Policy decisions: obsolete tools (no release since 2023, for example Tern) and commercial free tiers were excluded. jbom is
 documented but not pre-run because the sandbox could not download its jar. ORT and ScanCode are wired into the criteria run
@@ -198,10 +198,10 @@ would find.
 ## Reproducing
 
 ```bash
-./run-all.sh                                   # phase 1: every tool on sample-app, sbomqs last
+scripts/run-all.sh                             # phase 1: every tool on sample-app, sbomqs last
 ./scope-runs/run.sh                            # phase 2
-./evaluate                                     # phase 3, in the tool image; also rebuilds COMPARISON.md and docs/
-python3 compare-tools.py                       # joins the three into COMPARISON.md (if phases 1 or 2 changed)
+make                                           # phase 3, in the tool image; also rebuilds COMPARISON.md and docs/
+python3 scripts/compare-tools.py               # joins the three into COMPARISON.md (if phases 1 or 2 changed)
 ```
 
 Image-stage documents from the criteria run (about 22 MB) are gitignored; their scores are kept in `criteria/output/scores.json`.

@@ -14,11 +14,11 @@
 #   CRITERIA_STAGES="source artefact" ./criteria/generate.sh    # skip the image stage (no Docker)
 #   CRITERIA_TOOLS="sbom-plus-maven-plugin" ./criteria/generate.sh   # re-run one tool (folder name under tools/), keep the other outputs
 #
-# Normally run through ./evaluate, which does this inside the canonical tool image.
+# Normally run through `make` (scripts/evaluate), which does this inside the canonical tool image.
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CRIT="$ROOT/criteria"
-OUT="${CRITERIA_OUT:-$CRIT/output}"; CASES="${CRITERIA_CASES:-$ROOT/testcases}"   # overridden by ./scan to point at an arbitrary tree
+OUT="${CRITERIA_OUT:-$CRIT/output}"; CASES="${CRITERIA_CASES:-$ROOT/testcases}"   # overridden by scripts/scan to point at an arbitrary tree
 TMP="${TMPDIR:-/tmp}/criteria-$$"; mkdir -p "$TMP"; trap 'rm -rf "$TMP"' EXIT
 
 log(){ printf '\n== %s\n' "$*"; }

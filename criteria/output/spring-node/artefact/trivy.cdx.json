@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:5b152309-a2ac-4835-bcab-95fa1af33fa7",
+  "serialNumber": "urn:uuid:30ba55bb-7cb5-4968-b646-cecb8c524f3f",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:48:12+00:00",
+    "timestamp": "2026-11-12T13:23:34+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "033b30ec-c147-4c31-b7d0-52dd4e04e356",
+      "bom-ref": "2ee28790-08d5-41d1-a3e2-becef8526f30",
       "type": "application",
-      "name": "/tmp/criteria-6/a/x",
+      "name": "/tmp/criteria-7/a/x",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -299,7 +299,7 @@
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "5a07ddbb9273a17466cf8e84fa8b85c78c643079"
+          "content": "dd0e3ed4819f55b60fdb866812cbc037c3e2fbe4"
         }
       ],
       "purl": "pkg:maven/commons-codec/commons-codec@1.17.1",
@@ -354,7 +354,7 @@
       "hashes": [
         {
           "alg": "SHA-1",
-          "content": "5a07ddbb9273a17466cf8e84fa8b85c78c643079"
+          "content": "dd0e3ed4819f55b60fdb866812cbc037c3e2fbe4"
         }
       ],
       "purl": "pkg:maven/dev.noregressions.trace/normalizer@1.0.0",
@@ -1099,7 +1099,7 @@
   ],
   "dependencies": [
     {
-      "ref": "033b30ec-c147-4c31-b7d0-52dd4e04e356",
+      "ref": "2ee28790-08d5-41d1-a3e2-becef8526f30",
       "dependsOn": [
         "pkg:maven/ch.qos.logback/logback-classic@1.5.32",
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",

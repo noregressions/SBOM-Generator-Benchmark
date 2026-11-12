@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:8a609c12-d176-48e9-93ec-9b150933b20d",
+  "serialNumber": "urn:uuid:964792bc-e27a-4f73-b0d6-e70afd68c556",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:43:58+00:00",
+    "timestamp": "2026-11-12T13:16:04+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "bfd84d22-2daa-4961-9cfa-249a3379a76e",
+      "bom-ref": "a7f8bce5-4d70-4db9-808c-08acafe3a79a",
       "type": "application",
-      "name": "/tmp/criteria-6/src",
+      "name": "/tmp/criteria-7/src",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "9d2cc399-e62b-40be-8e1f-40afd0363eb4",
+      "bom-ref": "a6cc9780-b7fd-4cc1-a423-e994e665c60a",
       "type": "application",
       "name": "package-lock.json",
       "properties": [
@@ -74,15 +74,15 @@
   ],
   "dependencies": [
     {
-      "ref": "9d2cc399-e62b-40be-8e1f-40afd0363eb4",
+      "ref": "a6cc9780-b7fd-4cc1-a423-e994e665c60a",
       "dependsOn": [
         "pkg:npm/trace-route-package@1.0.0"
       ]
     },
     {
-      "ref": "bfd84d22-2daa-4961-9cfa-249a3379a76e",
+      "ref": "a7f8bce5-4d70-4db9-808c-08acafe3a79a",
       "dependsOn": [
-        "9d2cc399-e62b-40be-8e1f-40afd0363eb4"
+        "a6cc9780-b7fd-4cc1-a423-e994e665c60a"
       ]
     },
     {

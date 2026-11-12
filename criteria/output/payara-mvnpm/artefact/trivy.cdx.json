@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a73b83c6-6038-4d72-80a9-941f19d8662c",
+  "serialNumber": "urn:uuid:12c1a1c9-a852-4984-9392-372b3f4f199f",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:44:23+00:00",
+    "timestamp": "2026-11-12T13:16:29+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "010372e3-d4ca-4f3f-8821-6d8f43e70433",
+      "bom-ref": "f5cd0d5a-c385-4c0f-a4f4-574aebb9acb6",
       "type": "application",
-      "name": "/tmp/criteria-6/a/x",
+      "name": "/tmp/criteria-7/a/x",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -66,7 +66,7 @@
   ],
   "dependencies": [
     {
-      "ref": "010372e3-d4ca-4f3f-8821-6d8f43e70433",
+      "ref": "f5cd0d5a-c385-4c0f-a4f4-574aebb9acb6",
       "dependsOn": [
         "pkg:maven/org.apache.commons/commons-lang3@3.18.0"
       ]

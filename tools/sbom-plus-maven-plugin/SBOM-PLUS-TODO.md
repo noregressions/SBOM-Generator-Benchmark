@@ -5,7 +5,7 @@ recall, 0 leaked, 8/8 hidden components, the only tool that names Maven plugins,
 lowest baseline conformance (NTIA/CISA 2026 4.3, BSI v2.1 3.6, FSCT 4.3, sbomqs quality 4.6). Every component today carries
 only `name`, `version`, `purl`, `bom-ref` and `scope`. Every field below is available to a Maven plugin at build time.
 
-Numbers to re-check after each change: `python3 criteria/score.py` then `python3 compare-tools.py`.
+Numbers to re-check after each change: `python3 criteria/score.py` then `python3 scripts/compare-tools.py`.
 
 ## Status after the re-run of 2026-11-11 (local build of 1.0.0)
 

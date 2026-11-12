@@ -15,9 +15,9 @@ ships, what must not be reported as shipped, which components are hidden and by 
 ## Running
 
 ```bash
-testcases/build.sh                   # build every test case (or name one)
-./criteria/generate.sh               # builds anything unbuilt, then runs every tool at every stage
-python3 criteria/score.py            # scores the output against expected.json
+make                      # build every test case, run every tool, score, rebuild the report
+make CASE=<name>          # the same for one test case
+make build CASE=<name>    # only build it
 ```
 
 ## Adding a test case
@@ -31,7 +31,7 @@ python3 criteria/score.py            # scores the output against expected.json
    - `stages.artefact`: `path` and `kind` (`jar`, `war`, `dir`, `venv`); `embedded_jars` if nested jars should be hash-checked
    - `stages.image`: `dockerfile`, `context`, `tag` (optional)
    - `shipped` and `not_shipped`: lists of `{purl, note}`, with `hidden` naming the mechanism where one applies
-3. Run the three commands above. The new case appears in `criteria/SCORECARD.md` without further changes.
+3. Run `make CASE=<name>`. The new case appears in the report without further changes.
 
 Write the ground truth from the built artefact (the archive listing, the lockfile, the installed environment), not
 from what any SBOM tool reports.

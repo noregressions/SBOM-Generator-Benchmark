@@ -25,3 +25,4 @@ __pycache__/
 
 # scorer cache files
 *.conformance.json
+criteria/output/.lock/

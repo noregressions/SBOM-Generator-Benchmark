@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:de7d3e58-9245-4b9e-989b-8e917a4ddad4",
+  "serialNumber": "urn:uuid:9a006b35-8db0-4544-aca3-d8296f443321",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:47:40+00:00",
+    "timestamp": "2026-11-12T13:22:55+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "e8631d42-c2b0-47cc-86e9-4dd308cb7ec4",
+      "bom-ref": "c521f354-f39b-4ac2-96ab-1570b4e7491b",
       "type": "application",
       "name": "/work/testcases/python-pep517/project/.venv",
       "properties": [
@@ -34,7 +34,7 @@
   "components": [],
   "dependencies": [
     {
-      "ref": "e8631d42-c2b0-47cc-86e9-4dd308cb7ec4",
+      "ref": "c521f354-f39b-4ac2-96ab-1570b4e7491b",
       "dependsOn": []
     }
   ],

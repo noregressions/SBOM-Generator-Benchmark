@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:fc71d220-cbde-48d1-b94c-56146ecb92e5",
+  "serialNumber": "urn:uuid:a66f5c48-5406-4d35-abcc-e91f7c76a004",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:47:34+00:00",
+    "timestamp": "2026-11-12T13:22:48+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "730771c3-cce7-4d39-ae0f-bccdf69c8013",
+      "bom-ref": "a153cf02-87bd-47c9-8c98-88db569b2a1b",
       "type": "application",
-      "name": "/tmp/criteria-6/src",
+      "name": "/tmp/criteria-7/src",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "6e4fa98c-0e04-4768-9ffb-8788ec9210ba",
+      "bom-ref": "b61fadad-3807-4bce-9e08-f00bb950cb45",
       "type": "application",
       "name": "requirements.txt",
       "properties": [
@@ -63,15 +63,15 @@
   ],
   "dependencies": [
     {
-      "ref": "6e4fa98c-0e04-4768-9ffb-8788ec9210ba",
+      "ref": "a153cf02-87bd-47c9-8c98-88db569b2a1b",
       "dependsOn": [
-        "pkg:pypi/reportkit@1.0.0"
+        "b61fadad-3807-4bce-9e08-f00bb950cb45"
       ]
     },
     {
-      "ref": "730771c3-cce7-4d39-ae0f-bccdf69c8013",
+      "ref": "b61fadad-3807-4bce-9e08-f00bb950cb45",
       "dependsOn": [
-        "6e4fa98c-0e04-4768-9ffb-8788ec9210ba"
+        "pkg:pypi/reportkit@1.0.0"
       ]
     },
     {

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# The in-image half of ./scan: treat the tree mounted at /tree as a one-off test case, run every adapter against it,
-# and write the report into the tree. See ./scan for the options (passed here as SCAN_* variables).
+# The in-image half of scripts/scan: treat the tree mounted at /tree as a one-off test case, run every adapter against it,
+# and write the report into the tree. See scripts/scan for the options (passed here as SCAN_* variables).
 set -uo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 NAME="${SCAN_NAME:-tree}"; TREE="${SCAN_TREE:-/tree}"; REPORT="$TREE/${SCAN_OUT:-sbom-report}"

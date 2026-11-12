@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a531b8cf-ab14-43a5-8fa5-d2c18352ea50",
+  "serialNumber": "urn:uuid:98804b4b-4de3-49e2-bcff-800b05494992",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:44:21+00:00",
+    "timestamp": "2026-11-12T13:16:27+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "a5b84ff7-b046-43f3-9859-2f933f720ef2",
+      "bom-ref": "65909901-912f-4444-9cec-e8baf15dfd5f",
       "type": "application",
-      "name": "/tmp/criteria-6/src",
+      "name": "/tmp/criteria-7/src",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "b7457208-8f2f-4d92-9882-120bcadcf744",
+      "bom-ref": "2aa42703-4f2c-4c0d-89ce-056bf7bdf806",
       "type": "application",
       "name": "pom.xml",
       "properties": [
@@ -57,7 +57,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "dev.noregressions.trace:payara-mvnpm-trace-lab:1.0.0::8ff31baf"
+          "value": "dev.noregressions.trace:payara-mvnpm-trace-lab:1.0.0::6976beec"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -82,7 +82,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "org.apache.commons:commons-lang3:3.18.0::c731998c"
+          "value": "org.apache.commons:commons-lang3:3.18.0::34b7723c"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -93,15 +93,15 @@
   ],
   "dependencies": [
     {
-      "ref": "a5b84ff7-b046-43f3-9859-2f933f720ef2",
+      "ref": "2aa42703-4f2c-4c0d-89ce-056bf7bdf806",
       "dependsOn": [
-        "b7457208-8f2f-4d92-9882-120bcadcf744"
+        "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0"
       ]
     },
     {
-      "ref": "b7457208-8f2f-4d92-9882-120bcadcf744",
+      "ref": "65909901-912f-4444-9cec-e8baf15dfd5f",
       "dependsOn": [
-        "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0"
+        "2aa42703-4f2c-4c0d-89ce-056bf7bdf806"
       ]
     },
     {

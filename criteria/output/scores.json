@@ -478,12 +478,12 @@
      "unexpected": [],
      "extra_labelled": 0,
      "hits": {
-      "pkg:npm/trace-route-package@1.0.0": [
+      "pkg:npm/node-prepack-trace-lab@1.0.0": [
        "exact",
        null,
        "1.0.0"
       ],
-      "pkg:npm/node-prepack-trace-lab@1.0.0": [
+      "pkg:npm/trace-route-package@1.0.0": [
        "exact",
        null,
        "1.0.0"
@@ -1603,45 +1603,65 @@
      "unexpected": [],
      "extra_labelled": 0,
      "hits": {
+      "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0": [
+       "exact",
+       null,
+       "2.2.0"
+      ],
       "pkg:maven/dev.noregressions.trace/payara-mvnpm-trace-lab@1.0.0": [
        "exact",
        null,
        "1.0.0"
       ],
-      "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0": [
+      "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0": [
        "exact",
        null,
-       "3.0.0"
+       "11.0.0"
       ],
-      "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1": [
+      "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1": [
        "exact",
        null,
        "3.1.1"
       ],
-      "pkg:npm/@my-scope/package-b@0.0.0": [
+      "pkg:maven/jakarta.data/jakarta.data-api@1.0.1": [
        "exact",
        null,
-       "0.0.0"
+       "1.0.1"
       ],
-      "pkg:npm/supports-preserve-symlinks-flag@1.0.0": [
+      "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0": [
        "exact",
        null,
-       "1.0.0"
+       "4.1.0"
+      ],
+      "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0": [
+       "exact",
+       null,
+       "3.2.0"
+      ],
+      "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0": [
+       "exact",
+       null,
+       "4.1.0"
+      ],
+      "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1": [
+       "exact",
+       null,
+       "3.0.1"
+      ],
+      "pkg:npm/buffer-builder@0.2.0": [
+       "exact",
+       null,
+       "0.2.0"
+      ],
+      "pkg:npm/sync-child-process@1.0.2": [
+       "exact",
+       null,
+       "1.0.2"
       ],
       "pkg:npm/readdirp@4.1.2": [
        "exact",
        null,
        "4.1.2"
-      ],
-      "pkg:npm/mylib@0.0.0": [
-       "exact",
-       null,
-       "0.0.0"
-      ],
-      "pkg:maven/jakarta.interceptor/jakarta.interceptor-api@2.2.0": [
-       "exact",
-       null,
-       "2.2.0"
       ],
       "pkg:maven/jakarta.websocket/jakarta.websocket-client-api@2.2.0": [
        "exact",
@@ -1658,170 +1678,10 @@
        null,
        "4.0.1"
       ],
-      "pkg:npm/@esbuild/linux-arm64@0.25.10": [
-       "exact",
-       null,
-       "0.25.10"
-      ],
-      "pkg:npm/@bufbuild/protobuf@2.10.0": [
-       "exact",
-       null,
-       "2.10.0"
-      ],
-      "pkg:npm/has-flag@5.0.1": [
-       "exact",
-       null,
-       "5.0.1"
-      ],
-      "pkg:maven/jakarta.data/jakarta.data-api@1.0.1": [
-       "exact",
-       null,
-       "1.0.1"
-      ],
-      "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-api@4.1.0": [
-       "exact",
-       null,
-       "4.1.0"
-      ],
-      "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0": [
-       "exact",
-       null,
-       "11.0.0"
-      ],
-      "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1": [
-       "exact",
-       null,
-       "2.0.1"
-      ],
       "pkg:npm/supports-color@8.1.1": [
        "exact",
        null,
        "8.1.1"
-      ],
-      "pkg:npm/safe-identifier@0.4.2": [
-       "exact",
-       null,
-       "0.4.2"
-      ],
-      "pkg:npm/@my-scope/package-a@0.0.0": [
-       "exact",
-       null,
-       "0.0.0"
-      ],
-      "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2": [
-       "exact",
-       null,
-       "3.0.2"
-      ],
-      "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0": [
-       "exact",
-       null,
-       "6.1.0"
-      ],
-      "pkg:maven/org.apache.commons/commons-lang3@3.18.0": [
-       "exact",
-       null,
-       "3.18.0"
-      ],
-      "pkg:npm/source-map-js@1.2.1": [
-       "exact",
-       null,
-       "1.2.1"
-      ],
-      "pkg:maven/org.mvnpm/lodash-es@4.17.21": [
-       "exact",
-       null,
-       "4.17.21"
-      ],
-      "pkg:npm/function-bind@1.1.2": [
-       "exact",
-       null,
-       "1.1.2"
-      ],
-      "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2": [
-       "exact",
-       null,
-       "4.1.2"
-      ],
-      "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0": [
-       "exact",
-       null,
-       "4.0.0"
-      ],
-      "pkg:npm/path-parse@1.0.7": [
-       "exact",
-       null,
-       "1.0.7"
-      ],
-      "pkg:npm/esbuild-sass-plugin@3.3.1": [
-       "exact",
-       null,
-       "3.3.1"
-      ],
-      "pkg:npm/sync-message-port@1.1.3": [
-       "exact",
-       null,
-       "1.1.3"
-      ],
-      "pkg:npm/chokidar@4.0.3": [
-       "exact",
-       null,
-       "4.0.3"
-      ],
-      "pkg:maven/jakarta.enterprise.concurrent/jakarta.enterprise.concurrent-api@3.1.1": [
-       "exact",
-       null,
-       "3.1.1"
-      ],
-      "pkg:maven/jakarta.platform/jakarta.jakartaee-web-api@11.0.0": [
-       "exact",
-       null,
-       "11.0.0"
-      ],
-      "pkg:maven/jakarta.el/jakarta.el-api@6.0.1": [
-       "exact",
-       null,
-       "6.0.1"
-      ],
-      "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0": [
-       "exact",
-       null,
-       "4.1.0"
-      ],
-      "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1": [
-       "exact",
-       null,
-       "2.0.1"
-      ],
-      "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0": [
-       "exact",
-       null,
-       "2.2.0"
-      ],
-      "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0": [
-       "exact",
-       null,
-       "4.0.0"
-      ],
-      "pkg:maven/jakarta.json/jakarta.json-api@2.1.3": [
-       "exact",
-       null,
-       "2.1.3"
-      ],
-      "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.2.0": [
-       "exact",
-       null,
-       "3.2.0"
-      ],
-      "pkg:npm/sync-child-process@1.0.2": [
-       "exact",
-       null,
-       "1.0.2"
-      ],
-      "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0": [
-       "exact",
-       null,
-       "4.0.0"
       ],
       "pkg:npm/sass@1.94.2": [
        "exact",
@@ -1833,80 +1693,220 @@
        null,
        "0.0.0"
       ],
-      "pkg:maven/jakarta.enterprise/jakarta.enterprise.cdi-el-api@4.1.0": [
+      "pkg:maven/jakarta.annotation/jakarta.annotation-api@3.0.0": [
        "exact",
        null,
-       "4.1.0"
+       "3.0.0"
       ],
-      "pkg:npm/buffer-builder@0.2.0": [
+      "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.1": [
        "exact",
        null,
-       "0.2.0"
+       "3.1.1"
       ],
-      "pkg:npm/resolve@1.22.10": [
+      "pkg:npm/@my-scope/package-a@0.0.0": [
        "exact",
        null,
-       "1.22.10"
+       "0.0.0"
       ],
-      "pkg:npm/sass-embedded@1.93.2": [
+      "pkg:npm/path-parse@1.0.7": [
        "exact",
        null,
-       "1.93.2"
+       "1.0.7"
       ],
       "pkg:npm/rxjs@7.8.2": [
        "exact",
        null,
        "7.8.2"
       ],
-      "pkg:maven/jakarta.json.bind/jakarta.json.bind-api@3.0.1": [
-       "exact",
-       null,
-       "3.0.1"
-      ],
-      "pkg:npm/is-core-module@2.16.1": [
-       "exact",
-       null,
-       "2.16.1"
-      ],
-      "pkg:npm/esbuild@0.25.10": [
+      "pkg:npm/@esbuild/linux-arm64@0.25.10": [
        "exact",
        null,
        "0.25.10"
       ],
-      "pkg:npm/tslib@2.8.1": [
+      "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1": [
        "exact",
        null,
-       "2.8.1"
+       "2.0.1"
       ],
-      "pkg:npm/immutable@5.1.4": [
+      "pkg:npm/has-flag@5.0.1": [
        "exact",
        null,
-       "5.1.4"
+       "5.0.1"
+      ],
+      "pkg:npm/safe-identifier@0.4.2": [
+       "exact",
+       null,
+       "0.4.2"
+      ],
+      "pkg:maven/jakarta.json/jakarta.json-api@2.1.3": [
+       "exact",
+       null,
+       "2.1.3"
+      ],
+      "pkg:maven/jakarta.platform/jakarta.jakartaee-core-api@11.0.0": [
+       "exact",
+       null,
+       "11.0.0"
       ],
       "pkg:npm/hasown@2.0.2": [
        "exact",
        null,
        "2.0.2"
       ],
+      "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1": [
+       "exact",
+       null,
+       "2.0.1"
+      ],
+      "pkg:npm/varint@6.0.0": [
+       "exact",
+       null,
+       "6.0.0"
+      ],
+      "pkg:npm/@bufbuild/protobuf@2.10.0": [
+       "exact",
+       null,
+       "2.10.0"
+      ],
+      "pkg:npm/chokidar@4.0.3": [
+       "exact",
+       null,
+       "4.0.3"
+      ],
+      "pkg:npm/esbuild@0.25.10": [
+       "exact",
+       null,
+       "0.25.10"
+      ],
+      "pkg:npm/esbuild-sass-plugin@3.3.1": [
+       "exact",
+       null,
+       "3.3.1"
+      ],
       "pkg:npm/@deno/linux-arm64-glibc@2.5.4": [
        "exact",
        null,
        "2.5.4"
       ],
-      "pkg:npm/colorjs.io@0.5.2": [
+      "pkg:npm/mylib@0.0.0": [
        "exact",
        null,
-       "0.5.2"
+       "0.0.0"
+      ],
+      "pkg:maven/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api@3.0.2": [
+       "exact",
+       null,
+       "3.0.2"
+      ],
+      "pkg:maven/jakarta.faces/jakarta.faces-api@4.1.2": [
+       "exact",
+       null,
+       "4.1.2"
+      ],
+      "pkg:maven/jakarta.security.enterprise/jakarta.security.enterprise-api@4.0.0": [
+       "exact",
+       null,
+       "4.0.0"
+      ],
+      "pkg:maven/jakarta.enterprise/jakarta.enterprise.lang-model@4.1.0": [
+       "exact",
+       null,
+       "4.1.0"
+      ],
+      "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.1.0": [
+       "exact",
+       null,
+       "6.1.0"
+      ],
+      "pkg:maven/org.apache.commons/commons-lang3@3.18.0": [
+       "exact",
+       null,
+       "3.18.0"
+      ],
+      "pkg:maven/jakarta.ws.rs/jakarta.ws.rs-api@4.0.0": [
+       "exact",
+       null,
+       "4.0.0"
+      ],
+      "pkg:npm/source-map-js@1.2.1": [
+       "exact",
+       null,
+       "1.2.1"
+      ],
+      "pkg:maven/jakarta.el/jakarta.el-api@6.0.1": [
+       "exact",
+       null,
+       "6.0.1"
+      ],
+      "pkg:maven/jakarta.servlet.jsp/jakarta.servlet.jsp-api@4.0.0": [
+       "exact",
+       null,
+       "4.0.0"
       ],
       "pkg:npm/binary-extensions@3.1.0": [
        "exact",
        null,
        "3.1.0"
       ],
-      "pkg:npm/varint@6.0.0": [
+      "pkg:npm/function-bind@1.1.2": [
        "exact",
        null,
-       "6.0.0"
+       "1.1.2"
+      ],
+      "pkg:npm/tslib@2.8.1": [
+       "exact",
+       null,
+       "2.8.1"
+      ],
+      "pkg:npm/is-core-module@2.16.1": [
+       "exact",
+       null,
+       "2.16.1"
+      ],
+      "pkg:maven/jakarta.websocket/jakarta.websocket-api@2.2.0": [
+       "exact",
+       null,
+       "2.2.0"
+      ],
+      "pkg:npm/resolve@1.22.10": [
+       "exact",
+       null,
+       "1.22.10"
+      ],
+      "pkg:npm/colorjs.io@0.5.2": [
+       "exact",
+       null,
+       "0.5.2"
+      ],
+      "pkg:npm/immutable@5.1.4": [
+       "exact",
+       null,
+       "5.1.4"
+      ],
+      "pkg:npm/sass-embedded@1.93.2": [
+       "exact",
+       null,
+       "1.93.2"
+      ],
+      "pkg:npm/supports-preserve-symlinks-flag@1.0.0": [
+       "exact",
+       null,
+       "1.0.0"
+      ],
+      "pkg:npm/sync-message-port@1.1.3": [
+       "exact",
+       null,
+       "1.1.3"
+      ],
+      "pkg:maven/org.mvnpm/lodash-es@4.17.21": [
+       "exact",
+       null,
+       "4.17.21"
+      ],
+      "pkg:npm/@my-scope/package-b@0.0.0": [
+       "exact",
+       null,
+       "0.0.0"
       ]
      },
      "hash_emitted": 0,
@@ -6494,221 +6494,6 @@
      "unexpected": [],
      "extra_labelled": 0,
      "hits": {
-      "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2": [
-       "exact",
-       null,
-       "5.12.2"
-      ],
-      "pkg:maven/org.springframework/spring-jcl@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2": [
-       "exact",
-       null,
-       "1.12.2"
-      ],
-      "pkg:maven/org.hamcrest/hamcrest@3.0": [
-       "exact",
-       null,
-       "3.0"
-      ],
-      "pkg:maven/org.yaml/snakeyaml@2.4": [
-       "exact",
-       null,
-       "2.4"
-      ],
-      "pkg:maven/org.springframework/spring-aop@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/org.springframework/spring-core@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:npm/@babel/parser@7.29.8": [
-       "exact",
-       null,
-       "7.29.8"
-      ],
-      "pkg:npm/update-browserslist-db@1.3.1": [
-       "exact",
-       null,
-       "1.3.1"
-      ],
-      "pkg:npm/rollup@4.62.5": [
-       "exact",
-       null,
-       "4.62.5"
-      ],
-      "pkg:npm/@babel/helpers@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:npm/@babel/helper-plugin-utils@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:npm/@babel/types@7.29.8": [
-       "exact",
-       null,
-       "7.29.8"
-      ],
-      "pkg:npm/json5@2.2.3": [
-       "exact",
-       null,
-       "2.2.3"
-      ],
-      "pkg:npm/@babel/code-frame@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
-      "pkg:maven/org.springframework.boot/spring-boot@3.5.12": [
-       "exact",
-       null,
-       "3.5.12"
-      ],
-      "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12": [
-       "exact",
-       null,
-       "3.5.12"
-      ],
-      "pkg:maven/org.springframework/spring-beans@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/org.ow2.asm/asm@9.7.1": [
-       "exact",
-       null,
-       "9.7.1"
-      ],
-      "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12": [
-       "exact",
-       null,
-       "3.5.12"
-      ],
-      "pkg:maven/io.micrometer/micrometer-commons@1.15.10": [
-       "exact",
-       null,
-       "1.15.10"
-      ],
-      "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4": [
-       "exact",
-       null,
-       "4.0.4"
-      ],
-      "pkg:maven/ch.qos.logback/logback-classic@1.5.32": [
-       "exact",
-       null,
-       "1.5.32"
-      ],
-      "pkg:npm/picocolors@1.1.1": [
-       "exact",
-       null,
-       "1.1.1"
-      ],
-      "pkg:maven/org.skyscreamer/jsonassert@1.5.3": [
-       "exact",
-       null,
-       "1.5.3"
-      ],
-      "pkg:npm/@babel/generator@7.29.8": [
-       "exact",
-       null,
-       "7.29.8"
-      ],
-      "pkg:maven/io.micrometer/micrometer-observation@1.15.10": [
-       "exact",
-       null,
-       "1.15.10"
-      ],
-      "pkg:npm/@babel/compat-data@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4": [
-       "exact",
-       null,
-       "2.1.4"
-      ],
-      "pkg:maven/org.springframework/spring-expression@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:npm/@babel/helper-module-transforms@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2": [
-       "exact",
-       null,
-       "1.12.2"
-      ],
-      "pkg:npm/@babel/helper-compilation-targets@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3": [
-       "exact",
-       null,
-       "2.24.3"
-      ],
-      "pkg:npm/nanoid@3.3.18": [
-       "exact",
-       null,
-       "3.3.18"
-      ],
-      "pkg:npm/ms@2.1.3": [
-       "exact",
-       null,
-       "2.1.3"
-      ],
-      "pkg:npm/node-releases@2.0.53": [
-       "exact",
-       null,
-       "2.0.53"
-      ],
-      "pkg:npm/vite@5.4.21": [
-       "exact",
-       null,
-       "5.4.21"
-      ],
-      "pkg:npm/@jridgewell/remapping@2.3.5": [
-       "exact",
-       null,
-       "2.3.5"
-      ],
-      "pkg:npm/@jridgewell/gen-mapping@0.3.13": [
-       "exact",
-       null,
-       "0.3.13"
-      ],
-      "pkg:npm/@jridgewell/resolve-uri@3.1.2": [
-       "exact",
-       null,
-       "3.1.2"
-      ],
-      "pkg:npm/@babel/helper-globals@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
       "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52": [
        "exact",
        null,
@@ -6739,105 +6524,65 @@
        null,
        "1.3.0"
       ],
-      "pkg:maven/dev.noregressions.trace/normalizer@1.0.0": [
-       "exact",
-       null,
-       "1.0.0"
-      ],
       "pkg:maven/org.xmlunit/xmlunit-core@2.10.4": [
        "exact",
        null,
        "2.10.4"
-      ],
-      "pkg:maven/com.jayway.jsonpath/json-path@2.9.0": [
-       "exact",
-       null,
-       "2.9.0"
       ],
       "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52": [
        "exact",
        null,
        "10.1.52"
       ],
-      "pkg:npm/@babel/helper-module-imports@7.29.7": [
+      "pkg:npm/@jridgewell/resolve-uri@3.1.2": [
+       "exact",
+       null,
+       "3.1.2"
+      ],
+      "pkg:npm/rollup@4.62.5": [
+       "exact",
+       null,
+       "4.62.5"
+      ],
+      "pkg:npm/source-map-js@1.2.1": [
+       "exact",
+       null,
+       "1.2.1"
+      ],
+      "pkg:npm/@jridgewell/trace-mapping@0.3.31": [
+       "exact",
+       null,
+       "0.3.31"
+      ],
+      "pkg:npm/postcss@8.5.26": [
+       "exact",
+       null,
+       "8.5.26"
+      ],
+      "pkg:npm/@jridgewell/gen-mapping@0.3.13": [
+       "exact",
+       null,
+       "0.3.13"
+      ],
+      "pkg:npm/@babel/template@7.29.7": [
        "exact",
        null,
        "7.29.7"
       ],
-      "pkg:npm/debug@4.4.3": [
+      "pkg:npm/@rollup/rollup-linux-arm64-gnu@4.62.5": [
        "exact",
        null,
-       "4.4.3"
-      ],
-      "pkg:npm/scheduler@0.23.2": [
-       "exact",
-       null,
-       "0.23.2"
-      ],
-      "pkg:npm/@types/estree@1.0.9": [
-       "exact",
-       null,
-       "1.0.9"
-      ],
-      "pkg:maven/dev.noregressions.trace/service@1.0.0": [
-       "exact",
-       null,
-       "1.0.0"
-      ],
-      "pkg:npm/@babel/helper-validator-option@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
-      "pkg:npm/@rolldown/pluginutils@1.0.0-beta.27": [
-       "exact",
-       null,
-       "1.0.0-beta.27"
-      ],
-      "pkg:maven/org.objenesis/objenesis@3.3": [
-       "exact",
-       null,
-       "3.3"
-      ],
-      "pkg:npm/lru-cache@5.1.1": [
-       "exact",
-       null,
-       "5.1.1"
-      ],
-      "pkg:npm/gensync@1.0.0-beta.2": [
-       "exact",
-       null,
-       "1.0.0-beta.2"
+       "4.62.5"
       ],
       "pkg:maven/org.springframework/spring-webmvc@6.2.17": [
        "exact",
        null,
        "6.2.17"
       ],
-      "pkg:maven/org.slf4j/slf4j-api@2.0.17": [
-       "exact",
-       null,
-       "2.0.17"
-      ],
-      "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2": [
-       "exact",
-       null,
-       "5.12.2"
-      ],
       "pkg:maven/org.springframework/spring-context@6.2.17": [
        "exact",
        null,
        "6.2.17"
-      ],
-      "pkg:maven/org.apiguardian/apiguardian-api@1.1.2": [
-       "exact",
-       null,
-       "1.1.2"
       ],
       "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.12.2": [
        "exact",
@@ -6849,180 +6594,105 @@
        null,
        "2.5.2"
       ],
-      "pkg:npm/esbuild@0.21.5": [
-       "exact",
-       null,
-       "0.21.5"
-      ],
-      "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
-      "pkg:npm/@babel/plugin-transform-react-jsx-self@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:maven/commons-codec/commons-codec@1.18.0": [
-       "exact",
-       null,
-       "1.18.0"
-      ],
-      "pkg:maven/ch.qos.logback/logback-core@1.5.32": [
-       "exact",
-       null,
-       "1.5.32"
-      ],
-      "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3": [
-       "exact",
-       null,
-       "2.24.3"
-      ],
-      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52": [
-       "exact",
-       null,
-       "10.1.52"
-      ],
-      "pkg:maven/org.assertj/assertj-core@3.27.7": [
-       "exact",
-       null,
-       "3.27.7"
-      ],
       "pkg:maven/org.springframework/spring-web@6.2.17": [
        "exact",
        null,
        "6.2.17"
-      ],
-      "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0": [
-       "exact",
-       null,
-       "5.17.0"
-      ],
-      "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12": [
-       "exact",
-       null,
-       "3.5.12"
-      ],
-      "pkg:maven/net.bytebuddy/byte-buddy@1.17.8": [
-       "exact",
-       null,
-       "1.17.8"
-      ],
-      "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8": [
-       "exact",
-       null,
-       "1.17.8"
       ],
       "pkg:maven/org.awaitility/awaitility@4.2.2": [
        "exact",
        null,
        "4.2.2"
       ],
-      "pkg:maven/org.springframework/spring-test@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17": [
-       "exact",
-       null,
-       "2.0.17"
-      ],
       "pkg:maven/commons-codec/commons-codec@1.17.1": [
        "exact",
        null,
        "1.17.1"
       ],
-      "pkg:maven/net.minidev/accessors-smart@2.5.2": [
-       "exact",
-       null,
-       "2.5.2"
-      ],
-      "pkg:npm/convert-source-map@2.0.0": [
-       "exact",
-       null,
-       "2.0.0"
-      ],
-      "pkg:npm/yallist@3.1.1": [
-       "exact",
-       null,
-       "3.1.1"
-      ],
-      "pkg:npm/@babel/helper-string-parser@7.29.7": [
+      "pkg:npm/@babel/helpers@7.29.7": [
        "exact",
        null,
        "7.29.7"
       ],
-      "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1": [
+      "pkg:npm/node-releases@2.0.53": [
        "exact",
        null,
-       "2.1.1"
-      ],
-      "pkg:npm/@babel/template@7.29.7": [
-       "exact",
-       null,
-       "7.29.7"
-      ],
-      "pkg:npm/postcss@8.5.26": [
-       "exact",
-       null,
-       "8.5.26"
-      ],
-      "pkg:npm/react-dom@18.3.1": [
-       "exact",
-       null,
-       "18.3.1"
-      ],
-      "pkg:npm/react-refresh@0.17.0": [
-       "exact",
-       null,
-       "0.17.0"
+       "2.0.53"
       ],
       "pkg:npm/@babel/helper-validator-identifier@7.29.7": [
        "exact",
        null,
        "7.29.7"
       ],
-      "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4": [
+      "pkg:npm/@types/babel__generator@7.27.0": [
        "exact",
        null,
-       "2.19.4"
+       "7.27.0"
       ],
-      "pkg:npm/loose-envify@1.4.0": [
+      "pkg:npm/@babel/code-frame@7.29.7": [
        "exact",
        null,
-       "1.4.0"
+       "7.29.7"
       ],
-      "pkg:npm/browserslist@4.28.8": [
+      "pkg:npm/yallist@3.1.1": [
        "exact",
        null,
-       "4.28.8"
-      ],
-      "pkg:npm/@jridgewell/trace-mapping@0.3.31": [
-       "exact",
-       null,
-       "0.3.31"
-      ],
-      "pkg:npm/@rollup/rollup-linux-arm64-gnu@4.62.5": [
-       "exact",
-       null,
-       "4.62.5"
+       "3.1.1"
       ],
       "pkg:npm/caniuse-lite@1.0.30001809": [
        "exact",
        null,
        "1.0.30001809"
       ],
-      "pkg:npm/baseline-browser-mapping@2.11.17": [
+      "pkg:npm/@types/babel__core@7.20.5": [
        "exact",
        null,
-       "2.11.17"
+       "7.20.5"
       ],
-      "pkg:npm/electron-to-chromium@1.5.412": [
+      "pkg:maven/dev.noregressions.trace/service@1.0.0": [
        "exact",
        null,
-       "1.5.412"
+       "1.0.0"
+      ],
+      "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/org.objenesis/objenesis@3.3": [
+       "exact",
+       null,
+       "3.3"
+      ],
+      "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.12.2": [
+       "exact",
+       null,
+       "5.12.2"
+      ],
+      "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3": [
+       "exact",
+       null,
+       "2.24.3"
+      ],
+      "pkg:maven/org.springframework/spring-jcl@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/net.bytebuddy/byte-buddy@1.17.8": [
+       "exact",
+       null,
+       "1.17.8"
+      ],
+      "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17": [
+       "exact",
+       null,
+       "2.0.17"
+      ],
+      "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
       ],
       "pkg:maven/org.mockito/mockito-core@5.17.0": [
        "exact",
@@ -7034,35 +6704,375 @@
        null,
        "3.5.12"
       ],
-      "pkg:npm/@jridgewell/sourcemap-codec@1.5.5": [
+      "pkg:npm/@babel/compat-data@7.29.7": [
        "exact",
        null,
-       "1.5.5"
+       "7.29.7"
       ],
-      "pkg:npm/@types/babel__traverse@7.28.0": [
+      "pkg:npm/vite@5.4.21": [
        "exact",
        null,
-       "7.28.0"
+       "5.4.21"
+      ],
+      "pkg:npm/loose-envify@1.4.0": [
+       "exact",
+       null,
+       "1.4.0"
+      ],
+      "pkg:npm/@babel/parser@7.29.8": [
+       "exact",
+       null,
+       "7.29.8"
+      ],
+      "pkg:maven/org.slf4j/slf4j-api@2.0.17": [
+       "exact",
+       null,
+       "2.0.17"
+      ],
+      "pkg:npm/lru-cache@5.1.1": [
+       "exact",
+       null,
+       "5.1.1"
+      ],
+      "pkg:npm/@babel/types@7.29.8": [
+       "exact",
+       null,
+       "7.29.8"
       ],
       "pkg:npm/@vitejs/plugin-react@4.7.0": [
        "exact",
        null,
        "4.7.0"
       ],
-      "pkg:npm/source-map-js@1.2.1": [
+      "pkg:maven/dev.noregressions.trace/normalizer@1.0.0": [
        "exact",
        null,
-       "1.2.1"
+       "1.0.0"
+      ],
+      "pkg:npm/esbuild@0.21.5": [
+       "exact",
+       null,
+       "0.21.5"
+      ],
+      "pkg:maven/com.jayway.jsonpath/json-path@2.9.0": [
+       "exact",
+       null,
+       "2.9.0"
+      ],
+      "pkg:maven/org.junit.jupiter/junit-jupiter@5.12.2": [
+       "exact",
+       null,
+       "5.12.2"
+      ],
+      "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/org.apiguardian/apiguardian-api@1.1.2": [
+       "exact",
+       null,
+       "1.1.2"
+      ],
+      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52": [
+       "exact",
+       null,
+       "10.1.52"
+      ],
+      "pkg:maven/commons-codec/commons-codec@1.18.0": [
+       "exact",
+       null,
+       "1.18.0"
+      ],
+      "pkg:maven/org.assertj/assertj-core@3.27.7": [
+       "exact",
+       null,
+       "3.27.7"
+      ],
+      "pkg:maven/ch.qos.logback/logback-core@1.5.32": [
+       "exact",
+       null,
+       "1.5.32"
+      ],
+      "pkg:maven/org.mockito/mockito-junit-jupiter@5.17.0": [
+       "exact",
+       null,
+       "5.17.0"
+      ],
+      "pkg:maven/org.springframework.boot/spring-boot-test@3.5.12": [
+       "exact",
+       null,
+       "3.5.12"
+      ],
+      "pkg:maven/net.bytebuddy/byte-buddy-agent@1.17.8": [
+       "exact",
+       null,
+       "1.17.8"
+      ],
+      "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/org.springframework.boot/spring-boot@3.5.12": [
+       "exact",
+       null,
+       "3.5.12"
+      ],
+      "pkg:maven/net.minidev/accessors-smart@2.5.2": [
+       "exact",
+       null,
+       "2.5.2"
+      ],
+      "pkg:maven/io.micrometer/micrometer-commons@1.15.10": [
+       "exact",
+       null,
+       "1.15.10"
+      ],
+      "pkg:maven/ch.qos.logback/logback-classic@1.5.32": [
+       "exact",
+       null,
+       "1.5.32"
+      ],
+      "pkg:npm/debug@4.4.3": [
+       "exact",
+       null,
+       "4.4.3"
+      ],
+      "pkg:maven/org.springframework/spring-test@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/org.skyscreamer/jsonassert@1.5.3": [
+       "exact",
+       null,
+       "1.5.3"
+      ],
+      "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12": [
+       "exact",
+       null,
+       "3.5.12"
+      ],
+      "pkg:maven/org.junit.platform/junit-platform-engine@1.12.2": [
+       "exact",
+       null,
+       "1.12.2"
+      ],
+      "pkg:npm/picocolors@1.1.1": [
+       "exact",
+       null,
+       "1.1.1"
+      ],
+      "pkg:npm/electron-to-chromium@1.5.412": [
+       "exact",
+       null,
+       "1.5.412"
+      ],
+      "pkg:npm/@babel/helper-validator-option@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1": [
+       "exact",
+       null,
+       "2.1.1"
+      ],
+      "pkg:maven/org.hamcrest/hamcrest@3.0": [
+       "exact",
+       null,
+       "3.0"
+      ],
+      "pkg:maven/org.springframework/spring-beans@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:npm/@babel/helper-string-parser@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:maven/io.micrometer/micrometer-observation@1.15.10": [
+       "exact",
+       null,
+       "1.15.10"
+      ],
+      "pkg:npm/json5@2.2.3": [
+       "exact",
+       null,
+       "2.2.3"
+      ],
+      "pkg:npm/semver@6.3.1": [
+       "exact",
+       null,
+       "6.3.1"
+      ],
+      "pkg:maven/org.yaml/snakeyaml@2.4": [
+       "exact",
+       null,
+       "2.4"
+      ],
+      "pkg:maven/org.ow2.asm/asm@9.7.1": [
+       "exact",
+       null,
+       "9.7.1"
+      ],
+      "pkg:npm/nanoid@3.3.18": [
+       "exact",
+       null,
+       "3.3.18"
+      ],
+      "pkg:npm/@types/estree@1.0.9": [
+       "exact",
+       null,
+       "1.0.9"
+      ],
+      "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.4": [
+       "exact",
+       null,
+       "2.1.4"
+      ],
+      "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.5.12": [
+       "exact",
+       null,
+       "3.5.12"
+      ],
+      "pkg:maven/org.springframework/spring-aop@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:npm/js-tokens@4.0.0": [
+       "exact",
+       null,
+       "4.0.0"
+      ],
+      "pkg:maven/org.springframework/spring-expression@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/org.springframework/spring-core@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.4": [
+       "exact",
+       null,
+       "4.0.4"
+      ],
+      "pkg:npm/scheduler@0.23.2": [
+       "exact",
+       null,
+       "0.23.2"
+      ],
+      "pkg:npm/@babel/helper-globals@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:npm/@babel/core@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:maven/org.junit.platform/junit-platform-commons@1.12.2": [
+       "exact",
+       null,
+       "1.12.2"
+      ],
+      "pkg:npm/react@18.3.1": [
+       "exact",
+       null,
+       "18.3.1"
+      ],
+      "pkg:npm/@types/babel__template@7.4.4": [
+       "exact",
+       null,
+       "7.4.4"
+      ],
+      "pkg:npm/@rolldown/pluginutils@1.0.0-beta.27": [
+       "exact",
+       null,
+       "1.0.0-beta.27"
+      ],
+      "pkg:npm/@babel/helper-compilation-targets@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3": [
+       "exact",
+       null,
+       "2.24.3"
+      ],
+      "pkg:npm/@babel/generator@7.29.8": [
+       "exact",
+       null,
+       "7.29.8"
       ],
       "pkg:npm/jsesc@3.1.0": [
        "exact",
        null,
        "3.1.0"
       ],
-      "pkg:npm/react@18.3.1": [
+      "pkg:npm/@babel/plugin-transform-react-jsx-source@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:npm/convert-source-map@2.0.0": [
+       "exact",
+       null,
+       "2.0.0"
+      ],
+      "pkg:npm/browserslist@4.28.8": [
+       "exact",
+       null,
+       "4.28.8"
+      ],
+      "pkg:npm/@jridgewell/sourcemap-codec@1.5.5": [
+       "exact",
+       null,
+       "1.5.5"
+      ],
+      "pkg:npm/gensync@1.0.0-beta.2": [
+       "exact",
+       null,
+       "1.0.0-beta.2"
+      ],
+      "pkg:npm/react-refresh@0.17.0": [
+       "exact",
+       null,
+       "0.17.0"
+      ],
+      "pkg:npm/baseline-browser-mapping@2.11.17": [
+       "exact",
+       null,
+       "2.11.17"
+      ],
+      "pkg:npm/react-dom@18.3.1": [
        "exact",
        null,
        "18.3.1"
+      ],
+      "pkg:npm/@esbuild/linux-arm64@0.21.5": [
+       "exact",
+       null,
+       "0.21.5"
+      ],
+      "pkg:npm/@babel/helper-plugin-utils@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:npm/@types/babel__traverse@7.28.0": [
+       "exact",
+       null,
+       "7.28.0"
       ],
       "pkg:npm/@babel/traverse@7.29.8": [
        "exact",
@@ -7074,50 +7084,40 @@
        null,
        "4.17.21"
       ],
-      "pkg:npm/@types/babel__generator@7.27.0": [
-       "exact",
-       null,
-       "7.27.0"
-      ],
-      "pkg:npm/@types/babel__template@7.4.4": [
-       "exact",
-       null,
-       "7.4.4"
-      ],
-      "pkg:npm/js-tokens@4.0.0": [
-       "exact",
-       null,
-       "4.0.0"
-      ],
-      "pkg:npm/@babel/core@7.29.7": [
+      "pkg:npm/@babel/helper-module-transforms@7.29.7": [
        "exact",
        null,
        "7.29.7"
       ],
-      "pkg:npm/semver@6.3.1": [
+      "pkg:npm/@jridgewell/remapping@2.3.5": [
        "exact",
        null,
-       "6.3.1"
+       "2.3.5"
       ],
-      "pkg:npm/@types/babel__core@7.20.5": [
+      "pkg:npm/@babel/plugin-transform-react-jsx-self@7.29.7": [
        "exact",
        null,
-       "7.20.5"
+       "7.29.7"
+      ],
+      "pkg:npm/@babel/helper-module-imports@7.29.7": [
+       "exact",
+       null,
+       "7.29.7"
+      ],
+      "pkg:npm/ms@2.1.3": [
+       "exact",
+       null,
+       "2.1.3"
       ],
       "pkg:npm/escalade@3.2.0": [
        "exact",
        null,
        "3.2.0"
       ],
-      "pkg:npm/@babel/plugin-transform-react-jsx-source@7.29.7": [
+      "pkg:npm/update-browserslist-db@1.3.1": [
        "exact",
        null,
-       "7.29.7"
-      ],
-      "pkg:npm/@esbuild/linux-arm64@0.21.5": [
-       "exact",
-       null,
-       "0.21.5"
+       "1.3.1"
       ]
      },
      "hash_emitted": 0,
@@ -7246,120 +7246,95 @@
        null,
        "3.5.12"
       ],
-      "pkg:maven/io.micrometer/micrometer-observation@1.15.10": [
-       "exact",
-       null,
-       "1.15.10"
-      ],
-      "pkg:maven/org.springframework/spring-web@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/dev.noregressions.trace/normalizer@1.0.0": [
-       "exact",
-       null,
-       "1.0.0"
-      ],
-      "pkg:maven/org.yaml/snakeyaml@2.4": [
-       "exact",
-       null,
-       "2.4"
-      ],
       "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.19.4": [
        "exact",
        null,
        "2.19.4"
-      ],
-      "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17": [
-       "exact",
-       null,
-       "2.0.17"
       ],
       "pkg:maven/org.slf4j/slf4j-api@2.0.17": [
        "exact",
        null,
        "2.0.17"
       ],
-      "pkg:maven/io.micrometer/micrometer-commons@1.15.10": [
-       "exact",
-       null,
-       "1.15.10"
-      ],
-      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52": [
-       "exact",
-       null,
-       "10.1.52"
-      ],
-      "pkg:maven/org.springframework/spring-expression@6.2.17": [
+      "pkg:maven/org.springframework/spring-jcl@6.2.17": [
        "exact",
        null,
        "6.2.17"
-      ],
-      "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
-      "pkg:maven/org.springframework.boot/spring-boot@3.5.12": [
-       "exact",
-       null,
-       "3.5.12"
-      ],
-      "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
-      "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3": [
-       "exact",
-       null,
-       "2.24.3"
-      ],
-      "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
       ],
       "pkg:maven/org.springframework/spring-beans@6.2.17": [
        "exact",
        null,
        "6.2.17"
       ],
-      "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4": [
+      "pkg:maven/ch.qos.logback/logback-classic@1.5.32": [
+       "exact",
+       null,
+       "1.5.32"
+      ],
+      "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4": [
        "exact",
        null,
        "2.19.4"
       ],
-      "pkg:maven/dev.noregressions.trace/service@1.0.0": [
+      "pkg:maven/org.springframework/spring-context@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52": [
+       "exact",
+       null,
+       "10.1.52"
+      ],
+      "pkg:maven/dev.noregressions.trace/normalizer@1.0.0": [
        "exact",
        null,
        "1.0.0"
+      ],
+      "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1": [
+       "exact",
+       null,
+       "2.1.1"
       ],
       "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3": [
        "exact",
        null,
        "2.24.3"
       ],
-      "pkg:maven/org.springframework/spring-aop@6.2.17": [
+      "pkg:maven/org.yaml/snakeyaml@2.4": [
        "exact",
        null,
-       "6.2.17"
+       "2.4"
       ],
-      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52": [
+      "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.24.3": [
+       "exact",
+       null,
+       "2.24.3"
+      ],
+      "pkg:maven/org.springframework.boot/spring-boot@3.5.12": [
+       "exact",
+       null,
+       "3.5.12"
+      ],
+      "pkg:maven/io.micrometer/micrometer-observation@1.15.10": [
+       "exact",
+       null,
+       "1.15.10"
+      ],
+      "pkg:maven/dev.noregressions.trace/service@1.0.0": [
+       "exact",
+       null,
+       "1.0.0"
+      ],
+      "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52": [
        "exact",
        null,
        "10.1.52"
-      ],
-      "pkg:maven/commons-codec/commons-codec@1.17.1": [
-       "exact",
-       null,
-       "1.17.1"
-      ],
-      "pkg:maven/ch.qos.logback/logback-classic@1.5.32": [
-       "exact",
-       null,
-       "1.5.32"
       ],
       "pkg:maven/org.springframework/spring-webmvc@6.2.17": [
        "exact",
@@ -7371,35 +7346,60 @@
        null,
        "6.2.17"
       ],
-      "pkg:maven/org.springframework/spring-jcl@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/org.springframework/spring-context@6.2.17": [
-       "exact",
-       null,
-       "6.2.17"
-      ],
-      "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.19.4": [
-       "exact",
-       null,
-       "2.19.4"
-      ],
       "pkg:maven/ch.qos.logback/logback-core@1.5.32": [
        "exact",
        null,
        "1.5.32"
       ],
-      "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1": [
+      "pkg:maven/org.springframework/spring-web@6.2.17": [
        "exact",
        null,
-       "2.1.1"
+       "6.2.17"
       ],
-      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.52": [
+      "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/org.springframework/spring-aop@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.19.4": [
+       "exact",
+       null,
+       "2.19.4"
+      ],
+      "pkg:maven/commons-codec/commons-codec@1.17.1": [
+       "exact",
+       null,
+       "1.17.1"
+      ],
+      "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52": [
        "exact",
        null,
        "10.1.52"
+      ],
+      "pkg:maven/org.springframework/spring-expression@6.2.17": [
+       "exact",
+       null,
+       "6.2.17"
+      ],
+      "pkg:maven/io.micrometer/micrometer-commons@1.15.10": [
+       "exact",
+       null,
+       "1.15.10"
+      ],
+      "pkg:maven/org.slf4j/jul-to-slf4j@2.0.17": [
+       "exact",
+       null,
+       "2.0.17"
       ],
       "pkg:npm/js-tokens@4.0.0": [
        "exact",

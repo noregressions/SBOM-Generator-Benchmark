@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+# SBOM Generator Benchmark: run the evaluation in the canonical tool image and refresh the SBOM Generator Index.
+#
+#   scripts/evaluate                         build every test case, run every tool at every stage, score, rebuild the reports
+#   scripts/evaluate spring-node             one test case (others keep their previous outputs and scores)
+#   scripts/evaluate --stages "source artefact"     skip the image stage
+#   scripts/evaluate --tools "syft trivy"           re-run only these tools
+#   scripts/evaluate --no-build              do not rebuild the test cases first
+#   scripts/evaluate --rebuild-image         rebuild the tool image from tools/versions.env, then run
+#   scripts/evaluate --shell                 open a shell in the image instead
+#   scripts/evaluate --image-only            build the tool image (if it is missing or out of date) and stop
+#   scripts/evaluate --build-only            build the test cases in the image and stop
+#
+# To run the tools against some other source tree, use scripts/scan. `make help` lists the same operations as make targets.
+#
+# Needs only Docker on the host. The image stage builds each test case's container through the host's Docker daemon
+# (the socket is mounted). Docker Scout needs a Docker Hub login: export DOCKER_SCOUT_HUB_USER and
+# DOCKER_SCOUT_HUB_PASSWORD (a personal access token) or it is reported as a failed step.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+REBUILD_IMAGE=0; shell=0; build=1; only=; stages=""; tools=""; targets=()
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --rebuild-image) REBUILD_IMAGE=1 ;;
+    --shell) shell=1 ;;
+    --image-only) only=image ;;
+    --build-only) only=build ;;
+    --no-build) build=0 ;;
+    --stages) stages="$2"; shift ;;
+    --tools) tools="$2"; shift ;;
+    -h|--help) sed -n '2,19p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -*) echo "unknown option: $1" >&2; exit 2 ;;
+    *) targets+=("$1") ;;
+  esac; shift
+done
+
+. "$ROOT/image/run.sh"      # ensures the tool image is built; sets IMAGE and the docker run prefix RUN
+run=("${RUN[@]}" -v "$ROOT:/work" -w /work
+     -e CRITERIA_STAGES="$stages" -e CRITERIA_TOOLS="$tools" -e CRITERIA_BUILD="$build" -e CRITERIA_ORT -e CRITERIA_SCANCODE)
+
+if [[ $shell == 1 ]]; then exec "${run[@]}" -it "$IMAGE" bash; fi
+if [[ $only == image ]]; then echo "Tool image ready: $IMAGE"; exit 0; fi
+
+# One run at a time: every run empties and refills the stage folders under criteria/output, so two at once delete each
+# other's files. The lock is a directory holding the owner's PID; a lock whose owner has gone is taken over.
+LOCK="$ROOT/criteria/output/.lock"; mkdir -p "$ROOT/criteria/output"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  owner=$(cat "$LOCK/pid" 2>/dev/null || true)
+  if [[ -n "$owner" ]] && kill -0 "$owner" 2>/dev/null; then
+    echo "Another run is in progress (PID $owner). Wait for it to finish; two runs would overwrite each other's output." >&2; exit 1
+  fi
+  echo "== removing a stale lock left by a run that did not finish"
+fi
+echo $$ > "$LOCK/pid"; trap 'rm -rf "$LOCK"' EXIT
+
+if [[ $only == build ]]; then "${run[@]}" "$IMAGE" testcases/build.sh ${targets[@]+"${targets[@]}"}; exit $?; fi
+
+"${run[@]}" "$IMAGE" bash -c '
+  set -uo pipefail
+  ./criteria/generate.sh "$@"; gen=$?
+  python3 criteria/score.py && python3 scripts/compare-tools.py
+  python3 - <<PY
+import json, os, platform, datetime, pathlib
+v = dict(l.split("=", 1) for l in pathlib.Path("tools/versions.env").read_text().splitlines() if l and not l.startswith("#"))
+pathlib.Path("criteria/output/run.json").write_text(json.dumps({
+    "date": datetime.date.today().isoformat(), "image": os.environ.get("BENCHMARK_IMAGE_ID", ""),
+    "arch": platform.machine(), "versions": v}, indent=2) + "\n")
+PY
+  python3 criteria/build_site.py
+  exit $gen' evaluate ${targets[@]+"${targets[@]}"}
+echo; echo "Report refreshed: docs/ (the site), criteria/SCORECARD.md, COMPARISON.md, criteria/output/{scores,run}.json"

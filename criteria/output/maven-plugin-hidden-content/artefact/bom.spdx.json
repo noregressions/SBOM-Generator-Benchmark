@@ -3,7 +3,7 @@
   "name": "maven-plugin-hidden-content",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2026-11-12T11:43:48Z",
+    "created": "2026-11-12T13:15:56Z",
     "creators": [
       "Tool: bom-v0.8.0"
     ],
@@ -29,15 +29,15 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "ea8df17876a387178eedae8efdaa6bc734bf68b9"
+          "checksumValue": "b79a5f1598c5711d1962da677e7c51d9770f06ff"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "5fdfdd37fd9e1b0687fee301a72b27a7ae55eede7742aaa6a2aa678a2b556edc"
+          "checksumValue": "8b6e4a2dbccf96ec265cac0c742219ae437a8ee0274842a686fd742742b14caa"
         },
         {
           "algorithm": "SHA512",
-          "checksumValue": "f4aec4585f7518923ec4d6a39d39f23d56d3382cbc57cb9b062e8c5977907ba279507f68751b041f915973e6f2115273743d8872583a1ba58d115ed6dabfee19"
+          "checksumValue": "52c0529a6a0519418b5496fb3183ee9c37d84cf7dd219588a0cc5e930c0a4dfe804eeb7c15129b2520f47ce2c2c01ae4fc56f9e174640f0df10673354d9f76cc"
         }
       ]
     }

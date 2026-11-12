@@ -29,10 +29,10 @@ criteria/
   SCORECARD.md             the result (generated; do not edit)
   ../testcases/<name>/     project/ (the code) and expected.json (ground truth: what ships, what must not, what is hidden and how)
   ../tools/<tool>/adapter.sh   how one tool is run
-  ../COMPARISON.md         one row per tool across this run, scope-runs and the sample-app sbomqs table (python3 compare-tools.py)
+  ../COMPARISON.md         one row per tool across this run, scope-runs and the sample-app sbomqs table (python3 scripts/compare-tools.py)
 ```
 
-Run it with `./evaluate` from the repository root, which does every step inside the tool image. The steps can also be
+Run it with `make` from the repository root, which does every step inside the tool image. The steps can also be
 run one at a time on a host that has the tools installed:
 
 ```bash

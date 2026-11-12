@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:3aa3e98a-89e7-4830-b553-5141d072c8f3",
+  "serialNumber": "urn:uuid:fc5cdb90-5004-48e3-8d4a-d214a4797935",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T11:43:44+00:00",
+    "timestamp": "2026-11-12T13:15:53+00:00",
     "tools": {
       "components": [
         {
@@ -20,9 +20,9 @@
       ]
     },
     "component": {
-      "bom-ref": "48c60cf3-c95c-4113-b2c0-ea616443b817",
+      "bom-ref": "756d50fd-2ff8-4677-a781-4e2f8cd187d2",
       "type": "application",
-      "name": "/tmp/criteria-6/src",
+      "name": "/tmp/criteria-7/src",
       "properties": [
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "f67269a6-9b1f-4344-ac0b-f41e607174f0",
+      "bom-ref": "c191c3be-df1a-448d-892e-d02f394fe4df",
       "type": "application",
       "name": "pom.xml",
       "properties": [
@@ -57,7 +57,7 @@
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "dev.noregressions.trace:maven-plugin-hidden-content:1.0.0::b76cb09d"
+          "value": "dev.noregressions.trace:maven-plugin-hidden-content:1.0.0::8c5947cb"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -68,13 +68,13 @@
   ],
   "dependencies": [
     {
-      "ref": "48c60cf3-c95c-4113-b2c0-ea616443b817",
+      "ref": "756d50fd-2ff8-4677-a781-4e2f8cd187d2",
       "dependsOn": [
-        "f67269a6-9b1f-4344-ac0b-f41e607174f0"
+        "c191c3be-df1a-448d-892e-d02f394fe4df"
       ]
     },
     {
-      "ref": "f67269a6-9b1f-4344-ac0b-f41e607174f0",
+      "ref": "c191c3be-df1a-448d-892e-d02f394fe4df",
       "dependsOn": [
         "pkg:maven/dev.noregressions.trace/maven-plugin-hidden-content@1.0.0"
       ]
