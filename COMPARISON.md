@@ -17,13 +17,13 @@ sample-app columns are one document per tool (the one the top-level README uses)
 
 | Tool | Kind | sample-app comps | sample-app quality | sample-app NTIA | criteria docs | criteria quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`syft`](tools/syft) | multi-ecosystem scanner | 198 | 5.3 | 5.0 | 12 | 4.7 | 4.8 | 4.6 | 3.3 |
-| [`trivy`](tools/trivy) | multi-ecosystem scanner | 120 | 4.7 | 5.1 | 12 | 3.9 | 5.9 | 5.2 | 3.9 |
+| [`syft`](tools/syft) | multi-ecosystem scanner | 198 | 5.3 | 5.0 | 15 | 4.8 | 5.2 | 4.6 | 3.4 |
+| [`trivy`](tools/trivy) | multi-ecosystem scanner | 120 | 4.7 | 5.1 | 15 | 3.9 | 6.1 | 5.0 | 3.8 |
 | `trivy` (raw jar) | multi-ecosystem scanner (raw jar, no unzip) |  |  |  | 3 | 3.0 | 3.1 | 4.4 | 4.1 |
-| [`cdxgen`](tools/cdxgen) | multi-ecosystem, build-tool driven | 399 | 6.8 | 8.1 | 11 | 4.8 | 8.1 | 6.4 | 4.3 |
-| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | multi-ecosystem (SPDX) | 396 | 5.3 | 4.3 | 5 | 5.3 | 10.0 | 5.2 | 3.8 |
-| [`kubernetes-bom`](tools/kubernetes-bom) | multi-ecosystem (SPDX) | 5 | 5.0 | 5.6 | 3 | 4.4 | 6.7 | 5.6 | 4.3 |
-| [`docker-sbom`](tools/docker-sbom) | image (Docker Scout, BuildKit) | 138 | 5.6 | 7.1 | 2 | 5.5 | 10.0 | 6.6 | 3.6 |
+| [`cdxgen`](tools/cdxgen) | multi-ecosystem, build-tool driven | 399 | 6.8 | 8.1 | 13 | 4.9 | 8.2 | 6.4 | 4.3 |
+| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | multi-ecosystem (SPDX) | 396 | 5.3 | 4.3 | 6 | 5.3 | 10.0 | 5.2 | 3.8 |
+| [`kubernetes-bom`](tools/kubernetes-bom) | multi-ecosystem (SPDX) | 5 | 5.0 | 5.6 | 5 | 4.6 | 7.4 | 5.5 | 4.3 |
+| [`docker-sbom`](tools/docker-sbom) | image (Docker Scout, BuildKit) | 138 | 5.6 | 7.1 | 3 | 5.4 | 9.9 | 6.3 | 3.7 |
 | [`scancode-toolkit`](tools/scancode-toolkit) | source scanner (licences, copyrights) |  |  |  |  |  |  |  |  |
 | [`ort`](tools/ort) | compliance pipeline | 398 | 5.2 | 9.4 |  |  |  |  |  |
 | [`github-dependency-graph`](tools/github-dependency-graph) | hosted (GitHub) |  |  |  |  |  |  |  |  |
@@ -45,36 +45,36 @@ sample-app columns are one document per tool (the one the top-level README uses)
 | Tool | Docs | Recall (mean) | Source | Artefact | Image | Wrong purl | Wrong version | Leaked | Labelled | Hashes ok |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | [`sbom-plus-maven-plugin`](tools/sbom-plus-maven-plugin) | 3 | 93% | 93% | – | – | 0 | 0 | 0 | 67+579 | 30/30 |
-| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | 5 | 89% | 89% | – | – | 0 | 0 | 144 | 0 | 0 emitted |
+| [`docker-sbom`](tools/docker-sbom) | 3 | 84% | – | – | 84% | 0 | 0 | 0 | 0 | 0 emitted |
 | [`cyclonedx-maven-plugin`](tools/cyclonedx-maven-plugin) | 3 | 83% | 83% | – | – | 0 | 0 | 26 | 0 | 31/31 |
-| [`docker-sbom`](tools/docker-sbom) | 2 | 76% | – | – | 76% | 0 | 0 | 0 | 0 | 0 emitted |
+| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | 6 | 83% | 83% | – | – | 0 | 0 | 146 | 0 | 0 emitted |
 | [`cyclonedx-python`](tools/cyclonedx-python) | 2 | 75% | 50% | 100% | – | 0 | 0 | 1 | 0 | 0 emitted |
-| [`syft`](tools/syft) | 12 | 70% | 68% | 70% | 75% | 2 | 3 | 2 | 0 | 0 emitted |
+| [`syft`](tools/syft) | 15 | 74% | 69% | 75% | 83% | 2 | 3 | 5 | 0 | 0 emitted |
+| [`trivy`](tools/trivy) | 15 | 60% | 73% | 36% | 84% | 0 | 0 | 3 | 0 | 66/66 |
 | [`cyclonedx-npm`](tools/cyclonedx-npm) | 2 | 57% | 57% | – | – | 0 | 0 | 0 | 57 | 0 emitted |
-| [`trivy`](tools/trivy) | 12 | 52% | 72% | 23% | 76% | 0 | 0 | 0 | 0 | 66/66 |
-| [`cdxgen`](tools/cdxgen) | 11 | 52% | 69% | 49% | 17% | 7 | 0 | 0 | 201 | 0 emitted |
+| [`cdxgen`](tools/cdxgen) | 13 | 54% | 70% | 50% | 28% | 5 | 0 | 0 | 201 | 0 emitted |
 | [`sbom4python`](tools/sbom4python) | 1 | 50% | – | 50% | – | 0 | 0 | 0 | 0 | 0 emitted |
+| [`kubernetes-bom`](tools/kubernetes-bom) | 5 | 35% | 75% | 25% | – | 0 | 1 | 2 | 0 | 0 emitted |
 | `trivy` (raw jar) | 3 | 0% | – | 0% | – | 0 | 0 | 0 | 0 | 0 emitted |
-| [`kubernetes-bom`](tools/kubernetes-bom) | 3 | 0% | – | 0% | – | 0 | 0 | 0 | 0 | 0 emitted |
 
 ## 3. Hidden: components that no manifest declares
 
 Cells are found/applicable, where applicable counts the hidden components in every target the tool ran against, restricted to purl types the tool produced for that target (an npm-only tool is not asked about Maven plugins). A component counts as found if the tool named it at the exact version at any stage. Mechanisms: *shaded* = relocated bytecode inside another jar; *bundled* = Vite/esbuild output inside the jar; *plugin-realm* = Maven plugin or plugin dependency; *plugin-realm+bundled* = a plugin dependency that is also bundled; *bom-import* = an imported BOM; *prepack-generated* / *pep517-generated* = files written by a hook or build backend.
 
-| Tool | bom-import | bundled | pep517-generated | plugin-realm | plugin-realm+bundled | prepack-generated | shaded | Total |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| [`sbom-plus-maven-plugin`](tools/sbom-plus-maven-plugin) | 1/1 | – | – | 5/5 | 1/1 | – | 1/1 | 8/8 |
-| [`cyclonedx-npm`](tools/cyclonedx-npm) | – | 3/3 | – | – | – | 1/1 | – | 4/4 |
-| [`cyclonedx-python`](tools/cyclonedx-python) | – | – | 1/1 | – | – | – | – | 1/1 |
-| [`syft`](tools/syft) | 0/1 | 3/3 | 1/1 | 0/5 | 0/1 | 1/1 | 1/1 | 6/13 |
-| [`cdxgen`](tools/cdxgen) | 0/1 | 3/3 | 0/1 | 0/5 | 1/1 | 1/1 | 1/1 | 6/13 |
-| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | 0/1 | 3/3 | 0/1 | 0/5 | 1/1 | 1/1 | 1/1 | 6/13 |
-| [`trivy`](tools/trivy) | 0/1 | 3/3 | 0/1 | 0/5 | 0/1 | 1/1 | 1/1 | 5/13 |
-| [`docker-sbom`](tools/docker-sbom) | 0/1 | – | – | 0/3 | 0/1 | – | 1/1 | 1/6 |
-| [`cyclonedx-maven-plugin`](tools/cyclonedx-maven-plugin) | 0/1 | – | – | 0/5 | 0/1 | – | 1/1 | 1/8 |
-| `trivy` (raw jar) | 0/1 | 0/3 | – | 0/5 | 0/1 | – | 0/1 | 0/11 |
-| [`kubernetes-bom`](tools/kubernetes-bom) | 0/1 | 0/3 | – | 0/5 | 0/1 | – | 0/1 | 0/11 |
-| [`sbom4python`](tools/sbom4python) | – | – | 0/1 | – | – | – | – | 0/1 |
+| Tool | bom-import | build-tag | bundled | graph-only | pep517-generated | plugin-realm | plugin-realm+bundled | prepack-generated | shaded | test-only | toolchain | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| [`sbom-plus-maven-plugin`](tools/sbom-plus-maven-plugin) | 1/1 | – | – | – | – | 5/5 | 1/1 | – | 1/1 | – | – | 8/8 |
+| [`cyclonedx-npm`](tools/cyclonedx-npm) | – | – | 3/3 | – | – | – | – | 1/1 | – | – | – | 4/4 |
+| [`cyclonedx-python`](tools/cyclonedx-python) | – | – | – | – | 1/1 | – | – | – | – | – | – | 1/1 |
+| [`syft`](tools/syft) | 0/1 | 1/1 | 3/3 | 0/1 | 1/1 | 0/5 | 0/1 | 1/1 | 1/1 | 1/1 | 1/1 | 9/17 |
+| [`trivy`](tools/trivy) | 0/1 | 1/1 | 3/3 | 0/1 | 0/1 | 0/5 | 0/1 | 1/1 | 1/1 | 1/1 | 1/1 | 8/17 |
+| [`microsoft-sbom-tool`](tools/microsoft-sbom-tool) | 0/1 | 1/1 | 3/3 | 0/1 | 0/1 | 0/5 | 1/1 | 1/1 | 1/1 | 1/1 | 0/1 | 8/17 |
+| [`cdxgen`](tools/cdxgen) | 0/1 | 0/1 | 3/3 | 0/1 | 0/1 | 0/5 | 1/1 | 1/1 | 1/1 | 0/1 | 0/1 | 6/17 |
+| [`kubernetes-bom`](tools/kubernetes-bom) | 0/1 | 1/1 | 0/3 | 0/1 | – | 0/5 | 0/1 | – | 0/1 | 1/1 | 1/1 | 3/15 |
+| [`docker-sbom`](tools/docker-sbom) | 0/1 | 0/1 | – | 0/1 | – | 0/3 | 0/1 | – | 1/1 | 0/1 | 1/1 | 2/10 |
+| [`cyclonedx-maven-plugin`](tools/cyclonedx-maven-plugin) | 0/1 | – | – | – | – | 0/5 | 0/1 | – | 1/1 | – | – | 1/8 |
+| `trivy` (raw jar) | 0/1 | – | 0/3 | – | – | 0/5 | 0/1 | – | 0/1 | – | – | 0/11 |
+| [`sbom4python`](tools/sbom4python) | – | – | – | – | 0/1 | – | – | – | – | – | – | 0/1 |
 
 ## 4. Scope: runtime-only output and dev labelling (sample-app)
 

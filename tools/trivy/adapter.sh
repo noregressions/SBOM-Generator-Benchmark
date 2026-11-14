@@ -9,5 +9,7 @@ case "$EV_KIND" in
            trivy rootfs -q --format cyclonedx --output "$EV_OUT/trivy.cdx.json" "$EV_TMP/x"; rc=$?
            trivy fs -q --format cyclonedx --output "$EV_OUT/trivy-rawfile.cdx.json" "$EV_INPUT" || rc=$?
            exit $rc ;;
+  binary)  mkdir -p "$EV_TMP/b" && cp "$EV_INPUT" "$EV_TMP/b/"      # trivy reads Go binaries it finds in a filesystem
+           trivy rootfs -q --format cyclonedx --output "$EV_OUT/trivy.cdx.json" "$EV_TMP/b" ;;
   *)       trivy fs -q --format cyclonedx --output "$EV_OUT/trivy.cdx.json" "$EV_INPUT" ;;
 esac

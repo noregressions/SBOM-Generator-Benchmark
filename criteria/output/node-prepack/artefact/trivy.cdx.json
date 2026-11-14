@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:482287e8-4ab9-4246-adb2-09f3d77fc143",
+  "serialNumber": "urn:uuid:376b4ef4-0e53-4660-928a-aa63158df91a",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-11-12T14:46:36+00:00",
+    "timestamp": "2026-11-12T16:22:09+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "2267b9f3-2a5c-408c-80f8-78630f72aeac",
+      "bom-ref": "7b9ed5dd-33a6-48cc-bca7-b242b633d568",
       "type": "application",
       "name": "/work/testcases/node-prepack/project/node_modules/trace-route-package",
       "properties": [
@@ -34,7 +34,7 @@
   "components": [],
   "dependencies": [
     {
-      "ref": "2267b9f3-2a5c-408c-80f8-78630f72aeac",
+      "ref": "7b9ed5dd-33a6-48cc-bca7-b242b633d568",
       "dependsOn": []
     }
   ],

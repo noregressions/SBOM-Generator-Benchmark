@@ -4,6 +4,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/sample-app/python/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/testcases/python-pep517/project/.venv" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

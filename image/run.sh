@@ -21,9 +21,12 @@ RUN=(docker run --rm
      -v sbom-benchmark-m2:/root/.m2 -v sbom-benchmark-cache:/root/.cache
      -e DOCKER_SCOUT_HUB_USER -e DOCKER_SCOUT_HUB_PASSWORD
      -e BENCHMARK_IMAGE_ID="$(docker image inspect -f '{{.Id}}' "$IMAGE")")
-# A locally built SBOM+ (not yet on Maven Central) is made visible to Maven inside the image, read-only.
+# SBOM+ comes from Maven Central like every other Maven plugin. To evaluate a build that is not published yet, set
+# SBOM_PLUS_LOCAL=1: the copy in your ~/.m2 is then made visible to Maven inside the image (read-only), and the report
+# says that an unpublished build was used.
 _plus="$HOME/.m2/repository/dev/noregressions/sbom-plus-maven-plugin"
-if [[ -d "$_plus" ]]; then
-  RUN+=(-v "$_plus:/root/.m2/repository/dev/noregressions/sbom-plus-maven-plugin:ro")
-  echo "== note: using the SBOM+ build from $_plus"
+if [[ "${SBOM_PLUS_LOCAL:-0}" == 1 ]]; then
+  [[ -d "$_plus" ]] || { echo "SBOM_PLUS_LOCAL=1 but there is no SBOM+ in $_plus" >&2; exit 1; }
+  RUN+=(-v "$_plus:/root/.m2/repository/dev/noregressions/sbom-plus-maven-plugin:ro" -e SBOM_PLUS_LOCAL=1)
+  echo "== note: using the LOCAL SBOM+ build from $_plus (the report will say so)"
 fi

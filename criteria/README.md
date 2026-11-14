@@ -25,7 +25,9 @@ criteria/
   generate.sh              runs every tool adapter at every stage of every test case -> output/<test case>/<stage>/<tool>.*.json
   adapter-lib.sh           the contract between generate.sh and tools/<tool>/adapter.sh
   score.py                 scores output/ against the ground truth and sbomqs -> SCORECARD.md, output/scores.json
+  vuln.py                  looks every component of every SBOM up in Grype's database -> output/vulns.json
   build_site.py            builds ../docs/ (the published report) from output/scores.json
+  editorial.json           the site's words; build_site.py fills in the numbers from the scores on every run
   SCORECARD.md             the result (generated; do not edit)
   ../testcases/<name>/     project/ (the code) and expected.json (ground truth: what ships, what must not, what is hidden and how)
   ../tools/<tool>/adapter.sh   how one tool is run

@@ -28,7 +28,7 @@ VERSION_KEYS = {
     "syft": "SYFT_VERSION", "trivy": "TRIVY_VERSION", "trivy-rawfile": "TRIVY_VERSION", "cdxgen": "CDXGEN_VERSION",
     "sbom-tool": "SBOM_TOOL_VERSION", "bom": "BOM_VERSION", "docker-scout": "DOCKER_SCOUT_VERSION",
     "cyclonedx-npm": "CYCLONEDX_NPM_VERSION", "cyclonedx-python": "CYCLONEDX_PY_VERSION", "sbom4python": "SBOM4PYTHON_VERSION",
-    "capycli": "CAPYCLI_VERSION",
+    "capycli": "CAPYCLI_VERSION", "cyclonedx-gomod": "CYCLONEDX_GOMOD_VERSION", "cyclonedx-gomod-mod": "CYCLONEDX_GOMOD_VERSION",
     "cyclonedx-maven-plugin": "CYCLONEDX_MAVEN_PLUGIN", "sbom-plus-maven-plugin": "SBOM_PLUS_MAVEN_PLUGIN",
 }
 
@@ -52,6 +52,7 @@ def purl_key(p):
     """pkg:type/ns/name@version with qualifiers/subpath stripped; '@*' means any version."""
     p = p.split("?")[0].split("#")[0]
     p = p.replace("%40", "@").replace("%2F", "/").replace("%2f", "/")  # sbom-tool percent-encodes scoped npm names
+    p = p.replace("%2B", "+").replace("%2b", "+")                       # Go's v3.2.0+incompatible, encoded by some tools and not others
     return p
 
 
@@ -234,7 +235,7 @@ def score_file(path, exp, ecos, jar_hashes, stage):
             continue
         prev = hits.get(e["purl"])
         if prev is None or (prev[0] != "exact" and how == "exact"):
-            hits[e["purl"]] = (how, c.label, c.version)
+            hits[e["purl"]] = (how, c.label, c.version, c.key)     # c.key: the identity the tool reported, for the site's component grid
         if how == "wrong-version":
             wrong_ver.add(e["purl"])
             continue
@@ -400,9 +401,11 @@ def write_scorecard(results):
     P("")
 
     # ---- 4. the two scores side by side, per tool
-    P("## 4. Per tool: conformance vs accuracy\n")
-    P("Averages over every document the tool produced in this run. Recall is shipped-found divided by shipped-total, averaged per document. "
-      "A high conformance score with low recall means a well-formed document about the wrong inventory.\n")
+    P("## 4. Per tool: conformance beside accuracy\n")
+    P("Averages over every document the tool produced in this run, in alphabetical order. **This is not a ranking.** Tools ran at different stages and "
+      "on different test cases, so their averages are not like for like: a plugin that only sees source is averaged over fewer, different documents "
+      "than a scanner that also reads images. The per-stage tables on the site's results page are the fair comparison. "
+      "Recall is shipped-found divided by shipped-total, averaged per document.\n")
     agg = {}
     for r in results.values():
         for rows in r["stages"].values():
@@ -419,7 +422,7 @@ def write_scorecard(results):
     versions = read_versions()
     P("| Tool | Version | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |")
     P("|---|---|---:|---:|---:|---:|---:|---:|---:|")
-    for tool, a in sorted(agg.items(), key=lambda kv: -sum(kv[1]["recall"]) / max(1, len(kv[1]["recall"]))):
+    for tool, a in sorted(agg.items()):
         P(f'| {tool} | {tool_version(tool, versions)} | {a["docs"]} | {avg(a["q"])} | {avg(a["ntia"])} | {avg(a["bsi"])} | {sum(a["recall"])/len(a["recall"]):.0%} | {a["leak"]} | {a["label"]} |')
     P("")
     (CRIT / "SCORECARD.md").write_text("\n".join(L))

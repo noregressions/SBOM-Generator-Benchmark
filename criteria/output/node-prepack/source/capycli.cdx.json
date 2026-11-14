@@ -62,7 +62,7 @@
         "value": "clearing"
       }
     ],
-    "timestamp": "2026-11-12T14:46:29.165016+00:00",
+    "timestamp": "2026-11-12T16:22:00.239149+00:00",
     "tools": {
       "components": [
         {
@@ -82,7 +82,7 @@
       ]
     }
   },
-  "serialNumber": "urn:uuid:cd3f208d-49cb-4d62-8e99-cb531e927861",
+  "serialNumber": "urn:uuid:2889b8fb-3b1e-44ee-a4f6-a4717a3b85e6",
   "version": 1,
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",

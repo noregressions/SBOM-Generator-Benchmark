@@ -1,6 +1,6 @@
 {
   "formatVersion" : 2,
-  "generatedAt" : "2026-11-12T14:46:18.861905927Z",
+  "generatedAt" : "2026-11-12T16:21:55.359041505Z",
   "modules" : [ {
     "module" : "dev.noregressions.trace:maven-plugin-hidden-content",
     "version" : "1.0.0",

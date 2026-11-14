@@ -3,7 +3,7 @@
   "name": "payara-mvnpm",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2026-11-12T14:47:46Z",
+    "created": "2026-11-12T16:23:00Z",
     "creators": [
       "Tool: bom-v0.8.0"
     ],
@@ -28,15 +28,15 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "327501f5e5e081cd98e277affc5d20b0ba827dbc"
+          "checksumValue": "d940fd793f604b7306fc5af778162c9bfdc2be61"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "ecf7f74626714259c30e815a1d10de6293b5d8030ad6b1403b3b254b6397c438"
+          "checksumValue": "3fa860818be30a2788638b5ae1b38d87aa499016f3fc6ce4eb2b692db74aa606"
         },
         {
           "algorithm": "SHA512",
-          "checksumValue": "732d761f8628a5457ece5182b9a97d5a28e657132be034969108bbe11d34364c8eb5ca72dedf7f13981bb8c198fb194a32d5bffeebeb0bf426d18c5dda374b41"
+          "checksumValue": "66d70535b33e9c60a8e9b6632d26f53f0aa6a2656bb16a67aac64154812400dd2fd554d9e0a388b4fcc834bf16cfa000ca499852a885af1934b45b2fa36f96aa"
         }
       ]
     }

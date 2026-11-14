@@ -6,16 +6,22 @@ document is true. **Baseline conformance** asks whether it carries the fields th
 
 The two scores disagree, and that's the reason to keep them apart.
 
-The results are published as the **SBOM Generator Index**: the site in [`docs/`](docs/index.html), served by GitHub Pages. The same numbers are in
+The results are published as the **SBOM Generator Index**: the site in [`docs/`](docs/index.html), served by GitHub Pages. It opens
+with the findings, compares tools stage by stage, and has a methodology page with the limits. The same numbers are in
 [`criteria/SCORECARD.md`](criteria/SCORECARD.md) and [`COMPARISON.md`](COMPARISON.md).
+
+The author of this benchmark also develops SBOM+ (`sbom-plus-maven-plugin`), one of the tools measured, and wrote the
+workshop the test cases come from. Every SBOM, the ground truth and the scoring code are here so that any result can be
+checked; if you maintain one of these tools and think a result or a test case is wrong, open an issue.
 
 ## What's in the project
 
 The project has three parts: a benchmark, a way to run the same tools on your own code, and a set of demos.
 
-The **benchmark** is the main thing. It has five test cases, each a small project that hides a dependency from SBOM
-tools in a documented way, with a hand-written list of what really ships. It runs twelve free SBOM generators against
-them at up to three stages, scores every document, and publishes the result as the SBOM Generator Index. Two slower
+The **benchmark** is the main thing. It has six test cases, each a small project whose dependency list and shipped
+artefact disagree in a documented way, with a hand-written list of what really ships. It runs thirteen free SBOM
+generators against them at up to three stages, scores every document, looks up the advisories each SBOM would raise,
+and publishes the result as the SBOM Generator Index. Two slower
 tools, ORT and ScanCode, have adapters but only run when you ask for them. One container image holds the tools at
 pinned versions, so a report can be reproduced from the commit that contains it.
 
@@ -109,7 +115,9 @@ tools/versions.env               every tool and toolchain version, in one place
 image/Dockerfile                 the tool image, built from versions.env
 criteria/generate.sh             runs every adapter against every test case and stage
 criteria/score.py                scores the output -> criteria/output/scores.json, criteria/SCORECARD.md
+criteria/vuln.py                 looks every component up in Grype's database -> criteria/output/vulns.json (the site's security view)
 criteria/build_site.py           builds docs/ from the scores
+criteria/editorial.json          the site's words: the question, the findings, each test case's story, the disclosure (numbers come from the scores)
 Makefile                         the entry point: make, make clean, make scan, make help
 scripts/evaluate                 does all of the above inside the tool image (what `make` runs)
 scripts/scan                     runs the tools against any other source tree and reports into it (`make scan`)
@@ -126,6 +134,9 @@ it by folder; nothing else needs editing. [`testcases/README.md`](testcases/READ
 
 Write the ground truth from the built artefact, not from what a tool reports.
 
+To give the new case a readable title and a story on the site, add an entry for it under `cases` in
+[`criteria/editorial.json`](criteria/editorial.json). Without one, its page still has the chart, the component grid and the tables.
+
 ## Add a tool
 
 1. Pin its version in `tools/versions.env` and install it in `image/Dockerfile`. Add it to the last `RUN` line there,
@@ -140,13 +151,22 @@ Write the ground truth from the built artefact, not from what a tool reports.
 
 To upgrade a tool, change its line in `versions.env`, run `make`, and read the diff in the scorecard.
 
+SBOM+ is fetched from Maven Central like any other plugin. To evaluate a build of it that isn't published yet, install
+it in your `~/.m2` and run `SBOM_PLUS_LOCAL=1 make`. The report then states that an unpublished build was used.
+
 We leave out commercial free tiers and tools with no release since 2023.
 
 ## Where the test cases came from
 
-The first five are the scenarios from the [KCDC 2026 workshop](https://github.com/noregressions/kcdc2026workshop):
+Five are the scenarios from the [KCDC 2026 workshop](https://github.com/noregressions/kcdc2026workshop):
 mixed Maven and npm builds, shaded and bundled libraries, Maven plugin realms, npm `prepack` hooks and PEP 517 build
 backends. Each one comes with a script that asserts what ends up in the artefact, and that's what makes scoring possible.
+
+The sixth, `go-unlinked`, was written for the benchmark. It runs the other way: nothing is hidden, and `go.mod` lists
+modules that never reach the binary.
+
+Some test cases pin old dependency versions on purpose, so the security view has advisories to find. GitHub's Dependabot
+will raise alerts for them. They're fixtures, not something to fix.
 
 ## Tool demos
 

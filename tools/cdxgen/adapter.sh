@@ -5,6 +5,6 @@ need cdxgen
 case "$EV_KIND" in
   jar|war) cdxgen -t jar -o "$EV_OUT/cdxgen.cdx.json" "$EV_INPUT" ;;
   image)   cdxgen -t docker -o "$EV_OUT/cdxgen.cdx.json" "$EV_INPUT" ;;
-  venv)    na ;;
+  venv|binary) na ;;      # the npm-installed cdxgen has no reader for a bare binary
   *)       cdxgen -r -o "$EV_OUT/cdxgen.cdx.json" "$EV_INPUT" ;;
 esac

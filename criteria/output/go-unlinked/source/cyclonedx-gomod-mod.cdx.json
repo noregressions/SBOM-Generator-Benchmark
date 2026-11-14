@@ -1,0 +1,131 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:c687b5e1-b463-4f1f-a058-36bd6d86d27f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T16:21:13Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-gomod",
+        "version": "v1.12.0",
+        "hashes": [
+          {
+            "alg": "MD5",
+            "content": "20a529e30d78311bcaad1f0af50337fd"
+          },
+          {
+            "alg": "SHA-1",
+            "content": "6b5f13d22753265e54f242fcfc3879625acdc80d"
+          },
+          {
+            "alg": "SHA-256",
+            "content": "896bd0edde78aa87e80a228aa5612950bae1ebfb1889b54e89f234c11bd2675b"
+          },
+          {
+            "alg": "SHA-384",
+            "content": "ee215cef05a816fe37fd74675348c8a95d542f6d0f390d1fec30228f5407af341728e083b89dd16903c25551e4f7550e"
+          },
+          {
+            "alg": "SHA-512",
+            "content": "d21f738f9824b6ee151f9a94a8120b9cded20686c5ba6d78e95d5c7ef161502f0a9941ca3c7c3534cdc5abc34f7cd1d58febc9fefea04dab4ebf87682f2f0294"
+          }
+        ],
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-gomod",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:golang/example.com/trace/go-unlinked@v0.0.0-20261112151146-780ae25d6f3a?type=module",
+      "type": "application",
+      "name": "example.com/trace/go-unlinked",
+      "version": "v0.0.0-20261112151146-780ae25d6f3a",
+      "purl": "pkg:golang/example.com/trace/go-unlinked@v0.0.0-20261112151146-780ae25d6f3a?goarch=arm64\u0026goos=linux\u0026type=module"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible?type=module",
+      "type": "library",
+      "name": "github.com/dgrijalva/jwt-go",
+      "version": "v3.2.0+incompatible",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eea94e1a58842995d30e0e8e4e37e804a0d75abba608032997f4c5438ff990b3"
+        }
+      ],
+      "purl": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible?goarch=arm64\u0026goos=linux\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/dgrijalva/jwt-go",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.6.0?type=module",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.6.0",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "348bda24330eb231c0f27d630212d2833ac0cf2d4782bfa136b6f9edefbde05d"
+        }
+      ],
+      "purl": "pkg:golang/github.com/google/uuid@v1.6.0?goarch=arm64\u0026goos=linux\u0026type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/google/uuid",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7?type=module",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.7",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a25a70bcfd8a69c5b5656bec47bb90868c9362f280ba97d0ad118114cdf9d869"
+        }
+      ],
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7?goarch=arm64\u0026goos=linux\u0026type=module"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:golang/example.com/trace/go-unlinked@v0.0.0-20261112151146-780ae25d6f3a?type=module",
+      "dependsOn": [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible?type=module",
+        "pkg:golang/github.com/google/uuid@v1.6.0?type=module",
+        "pkg:golang/golang.org/x/text@v0.3.7?type=module"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible?type=module"
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@v1.6.0?type=module"
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/text@v0.3.7?type=module"
+    }
+  ]
+}

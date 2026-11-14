@@ -1,0 +1,76 @@
+{
+  "target": "go-unlinked",
+  "title": "Go command whose go.mod requires four modules and whose binary contains two",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "golang"
+  ],
+  "stages": {
+    "source": {
+      "path": ".",
+      "go": ".",
+      "go_main": "cmd/app",
+      "exclude": [
+        "/bin"
+      ],
+      "exclude_note": "bin/ is the build output; the source stage is the checkout without it"
+    },
+    "artefact": {
+      "path": "bin/app",
+      "kind": "binary",
+      "note": "a static Go binary; the toolchain records the modules it linked inside it"
+    },
+    "image": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "tag": "criteria-go-unlinked:local"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:golang/example.com/trace/go-unlinked@*",
+      "note": "primary component; a development build has no version of its own, so any version is accepted"
+    },
+    {
+      "purl": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "note": "imported by main.go; linked"
+    },
+    {
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+      "note": "imported by main.go; linked. An old version with known advisories, chosen so that the security view has something real to find"
+    },
+    {
+      "purl": "pkg:golang/stdlib@1.27.4",
+      "alt": [
+        "pkg:golang/stdlib@v1.27.4"
+      ],
+      "hidden": "toolchain",
+      "note": "the Go standard library, compiled into every Go binary at the version of the toolchain that built it (GO_VERSION in tools/versions.env; update this line when that changes)"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+      "kind": "test",
+      "hidden": "test-only",
+      "note": "imported only by main_test.go; go.mod has to require it, the binary never contains it"
+    },
+    {
+      "purl": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+      "kind": "build-tag",
+      "hidden": "build-tag",
+      "note": "imported only by debug.go, which is compiled only with -tags debug; the release build leaves it out"
+    },
+    {
+      "purl": "pkg:golang/golang.org/x/tools@v0.0.0-20180917221912-90fa682c2a6e",
+      "kind": "graph-only",
+      "hidden": "graph-only",
+      "note": "required by golang.org/x/text's own go.mod; no package of it is imported, so it is in the module graph and nowhere else"
+    },
+    {
+      "purl": "pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405",
+      "kind": "graph-only",
+      "note": "a test dependency of gopkg.in/yaml.v3; in the module graph only"
+    }
+  ]
+}

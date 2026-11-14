@@ -1,0 +1,197 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:071634bc-c595-422d-a39e-f6904e638ac7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-12T16:21:23+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "d98d1fc0-c0eb-4bec-a260-9fc19f45ee4b",
+      "type": "application",
+      "name": "/tmp/criteria-7/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "d65780b9-18bb-4a94-9c25-703cc350f898",
+      "type": "application",
+      "name": "go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/example.com/trace/go-unlinked",
+      "type": "library",
+      "name": "example.com/trace/go-unlinked",
+      "purl": "pkg:golang/example.com/trace/go-unlinked",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "example.com/trace/go-unlinked"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
+      "type": "library",
+      "name": "github.com/dgrijalva/jwt-go",
+      "version": "v3.2.0+incompatible",
+      "purl": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/dgrijalva/jwt-go@v3.2.0+incompatible"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.6.0",
+      "purl": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/google/uuid@v1.6.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.7",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "golang.org/x/text@v0.3.7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405",
+      "type": "library",
+      "name": "gopkg.in/check.v1",
+      "version": "v0.0.0-20161208181325-20d25e280405",
+      "purl": "pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gopkg.in/yaml.v3@v3.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "d65780b9-18bb-4a94-9c25-703cc350f898",
+      "dependsOn": [
+        "pkg:golang/example.com/trace/go-unlinked"
+      ]
+    },
+    {
+      "ref": "d98d1fc0-c0eb-4bec-a260-9fc19f45ee4b",
+      "dependsOn": [
+        "d65780b9-18bb-4a94-9c25-703cc350f898"
+      ]
+    },
+    {
+      "ref": "pkg:golang/example.com/trace/go-unlinked",
+      "dependsOn": [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
+        "pkg:golang/github.com/google/uuid@v1.6.0",
+        "pkg:golang/golang.org/x/text@v0.3.7",
+        "pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405",
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/text@v0.3.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/check.v1@v0.0.0-20161208181325-20d25e280405",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

@@ -6,6 +6,36 @@ Column meanings: *in scope* = package components whose purl type is one of the t
 
 ## 1. Content accuracy
 
+### go-unlinked
+
+*Go command whose go.mod requires four modules and whose binary contains two*  
+Shipped components: 4; known non-shipping: 4; ecosystems: golang
+
+| Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | bom | spd | 6 | 6 | 3/4 | 1 | 0 | 2 | 0 | 0 | 0/0 |
+| source | cdxgen | cyc | 3 | 3 | 3/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| source | cyclonedx-gomod-mod | cyc | 4 | 4 | 3/4 | 0 | 0 | 1 | 0 | 0 | 0/0 |
+| source | cyclonedx-gomod | cyc | 3 | 3 | 3/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| source | sbom-tool | spd | 4 | 4 | 2/4 | 0 | 0 | 2 | 0 | 0 | 0/0 |
+| source | syft | cyc | 6 | 6 | 3/4 | 0 | 0 | 3 | 0 | 0 | 0/0 |
+| source | trivy | cyc | 8 | 7 | 3/4 | 0 | 0 | 3 | 0 | 0 | 0/0 |
+| artefact | bom | spd | 4 | 4 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| artefact | cyclonedx-gomod | cyc | 3 | 3 | 3/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| artefact | syft | cyc | 4 | 4 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| artefact | trivy | cyc | 6 | 5 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | cdxgen | cyc | 2 | 2 | 2/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | docker-scout | spd | 5 | 4 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | syft | cyc | 4 | 4 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | trivy | cyc | 5 | 4 | 4/4 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+
+- **source/bom** wrong version: stdlib@1.27.4→1.21
+- **source/bom** leaked unlabelled: jwt-go@v3.2.0+incompatible, yaml.v3@v3.0.0
+- **source/cyclonedx-gomod-mod** leaked unlabelled: jwt-go@v3.2.0+incompatible
+- **source/sbom-tool** leaked unlabelled: jwt-go@v3.2.0+incompatible, yaml.v3@v3.0.0
+- **source/syft** leaked unlabelled: jwt-go@v3.2.0+incompatible, check.v1@v0.0.0-20161208181325-20d25e280405, yaml.v3@v3.0.0
+- **source/trivy** leaked unlabelled: jwt-go@v3.2.0+incompatible, check.v1@v0.0.0-20161208181325-20d25e280405, yaml.v3@v3.0.0
+
 ### maven-plugin-hidden-content
 
 *Zero declared dependencies; a Maven plugin's transitive payload generates runtime code during the build*  
@@ -109,7 +139,7 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 | source | syft | cyc | 21 | 15 | 9/40 | 3 | 0 | 0 | 0 | 0 | 0/0 |
 | source | trivy | cyc | 88 | 84 | 38/40 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | artefact | bom | spd | 0 | 0 | 0/40 | 0 | 0 | 0 | 0 | 0 | 0/0 |
-| artefact | cdxgen | cyc | 33 | 33 | 25/40 | 0 | 7 | 0 | 0 | 0 | 0/0 |
+| artefact | cdxgen | cyc | 33 | 33 | 27/40 | 0 | 5 | 0 | 0 | 0 | 0/0 |
 | artefact | syft | cyc | 34 | 34 | 33/40 | 0 | 1 | 0 | 0 | 0 | 0/0 |
 | artefact | trivy-rawfile | cyc | 1 | 1 | 0/40 | 0 | 0 | 0 | 0 | 0 | 0/0 |
 | artefact | trivy | cyc | 34 | 34 | 33/40 | 0 | 0 | 0 | 0 | 0 | 32/32 |
@@ -121,7 +151,7 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 - **source/capycli** leaked unlabelled: json-path@2.9.0, android-json@0.0.20131108.vaadin1, jakarta.activation-api@2.1.4, jakarta.xml.bind-api@4.0.4, byte-buddy-agent@1.17.8, byte-buddy@1.17.8, accessors-smart@2.5.2, json-smart@2.5.2 …
 - **source/sbom-tool** leaked unlabelled: json-path@2.9.0, android-json@0.0.20131108.vaadin1, jakarta.activation-api@2.1.4, jakarta.xml.bind-api@4.0.4, byte-buddy-agent@1.17.8, byte-buddy@1.17.8, accessors-smart@2.5.2, json-smart@2.5.2 …
 - **source/syft** wrong version: jackson-databind@2.19.4→UNKNOWN, junit-jupiter@5.12.2→UNKNOWN, spring-boot-starter-test@3.5.12→UNKNOWN
-- **artefact/cdxgen** wrong purl (group guessed): micrometer-commons@1.15.10, micrometer-observation@1.15.10, tomcat-embed-core@10.1.52, tomcat-embed-el@10.1.52, spring-boot-autoconfigure@3.5.12, spring-boot-jarmode-tools@3.5.12 …
+- **artefact/cdxgen** wrong purl (group guessed): micrometer-commons@1.15.10, micrometer-observation@1.15.10, spring-boot-autoconfigure@3.5.12, spring-boot-jarmode-tools@3.5.12, spring-boot@3.5.12
 - **artefact/syft** wrong purl (group guessed): spring-boot-jarmode-tools@3.5.12
 - **image/syft** wrong purl (group guessed): spring-boot-jarmode-tools@3.5.12
 
@@ -129,21 +159,25 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 
 Cells show one letter per stage the target has, in order source / artefact / image: **Y** named at the right version, **v** named at a wrong version, **p** named under a wrong purl, **n** not named, **·** tool did not run at that stage. For build-tooling rows a **Y** only counts as correct if the row is also labelled (see leaks above); here we only ask whether the tool knew it existed.
 
-| Target | Component | Mechanism | bom | capycli | cdxgen | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | n· | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | n· | nn | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Y· | Yn | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
-| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | n·· | Ynn | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
-| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | n·· | nnn | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | n· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
-| spring-node | commons-codec@1.17.1 | shaded | ·n· | Y·· | Ynn | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
-| spring-node | lodash@4.17.21 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react@18.3.1 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react-dom@18.3.1 | bundled | ·n· | Y·· | Ynn | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | n·· | nnn | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| Target | Component | Mechanism | bom | capycli | cdxgen | cyclonedx-gomod | cyclonedx-gomod-mod | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| go-unlinked | stdlib@1.27.4 | toolchain | vY· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··Y | ··· | n·· | ··· | nYY | nYY | ··· |
+| go-unlinked | yaml.v3@v3.0.0 | test-only | Yn· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
+| go-unlinked | jwt-go@v3.2.0+incompatible | build-tag | Yn· | ··· | n·n | nn· | Y·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
+| go-unlinked | tools@v0.0.0-20180917221912-90fa682c2a6e | graph-only | nn· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··n | ··· | n·· | ··· | nnn | nnn | ··· |
+| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Y· | Yn | ·· | ·· | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
+| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | n·· | Ynn | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
+| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | n· | ·· | ·· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
+| spring-node | commons-codec@1.17.1 | shaded | ·n· | Y·· | Ynn | ··· | ··· | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
+| spring-node | lodash@4.17.21 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react-dom@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
 
 ## 3. Baseline conformance (sbomqs)
 
@@ -151,6 +185,21 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 
 | Target | Stage | Tool | Spec | Valid | Quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 | FSCT v3 | Shipped found |
 |---|---|---|---|---|---:|---:|---:|---:|---:|---:|
+| go-unlinked | source | bom | spdx 2.3 | n/a | 5.0 | 8.5 | 5.6 | 4.6 | 5.6 | 3/4 |
+| go-unlinked | source | cdxgen | cyclonedx 1.6 | valid | 6.3 | 8.6 | 7 | 4.1 | 5.8 | 3/4 |
+| go-unlinked | source | cyclonedx-gomod-mod | cyclonedx 1.6 | valid | 6.2 | 8.8 | 6.8 | 4.4 | 5.3 | 3/4 |
+| go-unlinked | source | cyclonedx-gomod | cyclonedx 1.6 | valid | 6.1 | 8.9 | 6.7 | 4.5 | 5.2 | 3/4 |
+| go-unlinked | source | sbom-tool | spdx 2.3 | n/a | 5.3 | 10 | 5.1 | 3.7 | 6.2 | 2/4 |
+| go-unlinked | source | syft | cyclonedx 1.7 | valid | 5.2 | 6.9 | 4.9 | 3.8 | 4.6 | 3/4 |
+| go-unlinked | source | trivy | cyclonedx 1.7 | valid | 4.2 | 6.9 | 4 | 3.5 | 3.4 | 3/4 |
+| go-unlinked | artefact | bom | spdx 2.3 | n/a | 5.0 | 8.5 | 5 | 4.2 | 5.1 | 4/4 |
+| go-unlinked | artefact | cyclonedx-gomod | cyclonedx 1.6 | valid | 6.3 | 8.6 | 6.3 | 4.4 | 5.2 | 3/4 |
+| go-unlinked | artefact | syft | cyclonedx 1.7 | valid | 5.1 | 6.6 | 4.7 | 3.8 | 4.1 | 4/4 |
+| go-unlinked | artefact | trivy | cyclonedx 1.7 | valid | 4.0 | 6.4 | 3.9 | 3.5 | 3.2 | 4/4 |
+| go-unlinked | image | cdxgen | cyclonedx 1.6 | valid | 5.1 | 8.9 | 6 | 4.4 | 5.3 | 2/4 |
+| go-unlinked | image | docker-scout | spdx 2.3 | n/a | 5.4 | 9.8 | 5.8 | 3.7 | 6.2 | 4/4 |
+| go-unlinked | image | syft | cyclonedx 1.7 | valid | 5.1 | 6.6 | 4.7 | 3.8 | 4.1 | 4/4 |
+| go-unlinked | image | trivy | cyclonedx 1.7 | valid | 4.2 | 7.2 | 4.1 | 3.5 | 3.4 | 4/4 |
 | maven-plugin-hidden-content | source | capycli | cyclonedx 1.6 | valid | 3.6 | 6.7 | 6 | 5.7 | 2 | 0/1 |
 | maven-plugin-hidden-content | source | cdxgen | cyclonedx 1.6 | valid | 2.2 | 6.7 | 8 | 5.7 | 7.4 | 0/1 |
 | maven-plugin-hidden-content | source | cyclonedx-maven-plugin | cyclonedx 1.6 | valid | 4.8 | 8.8 | 6.2 | 5 | 5.4 | 1/1 |
@@ -207,7 +256,7 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | spring-node | source | syft | cyclonedx 1.7 | valid | 5.2 | 6.7 | 4.7 | 3.5 | 4.4 | 9/40 |
 | spring-node | source | trivy | cyclonedx 1.7 | valid | 4.8 | 8.0 | 5.4 | 4.0 | 5.6 | 38/40 |
 | spring-node | artefact | bom | spdx 2.3 | n/a | 4.4 | 6.7 | 5.6 | 4.3 | 7 | 0/40 |
-| spring-node | artefact | cdxgen | cyclonedx 1.6 | valid | 5.1 | 8.4 | 4.5 | 3.7 | 4.4 | 25/40 |
+| spring-node | artefact | cdxgen | cyclonedx 1.6 | valid | 5.1 | 8.4 | 4.5 | 3.7 | 4.4 | 27/40 |
 | spring-node | artefact | syft | cyclonedx 1.7 | valid | 5.5 | 8.0 | 5.6 | 3.9 | 5.7 | 33/40 |
 | spring-node | artefact | trivy-rawfile | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/40 |
 | spring-node | artefact | trivy | cyclonedx 1.7 | valid | 4.8 | 8.2 | 8.3 | 4.1 | 7.1 | 33/40 |
@@ -216,22 +265,24 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 | spring-node | image | syft | cyclonedx 1.7 | valid | 4.5 | 1.9 | 4.3 | 2.1 | 3.2 | 33/40 |
 | spring-node | image | trivy | cyclonedx 1.7 | valid | 4.8 | 9.6 | 6.1 | 3.9 | 7.2 | 34/40 |
 
-## 4. Per tool: conformance vs accuracy
+## 4. Per tool: conformance beside accuracy
 
-Averages over every document the tool produced in this run. Recall is shipped-found divided by shipped-total, averaged per document. A high conformance score with low recall means a well-formed document about the wrong inventory.
+Averages over every document the tool produced in this run, in alphabetical order. **This is not a ranking.** Tools ran at different stages and on different test cases, so their averages are not like for like: a plugin that only sees source is averaged over fewer, different documents than a scanner that also reads images. The per-stage tables on the site's results page are the fair comparison. Recall is shipped-found divided by shipped-total, averaged per document.
 
 | Tool | Version | Docs | Quality | NTIA/CISA 2026 | BSI v2.1 | Mean recall | Leaked total | Labelled total |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| sbom-plus-maven-plugin | 1.1.0 | 3 | 7.9 | 9.9 | 9.2 | 93% | 0 | 67 |
-| sbom-tool | 4.1.13 | 5 | 5.3 | 5.2 | 3.8 | 89% | 144 | 0 |
-| cyclonedx-maven-plugin | 2.9.1 | 3 | 6.2 | 7.6 | 4.8 | 83% | 26 | 0 |
-| docker-scout | 1.24.0 | 2 | 5.5 | 6.6 | 3.6 | 76% | 0 | 0 |
-| cyclonedx-python | 8.0.1 | 2 | 4.4 | 5.4 | 4.8 | 75% | 1 | 0 |
-| syft | 1.51.0 | 12 | 4.7 | 4.6 | 3.3 | 70% | 2 | 0 |
-| cyclonedx-npm | 6.0.1 | 2 | 4.9 | 6.4 | 5.1 | 57% | 0 | 57 |
-| trivy | 0.74.0 | 12 | 3.9 | 5.2 | 3.9 | 52% | 0 | 0 |
-| cdxgen | 11.3.2 | 11 | 4.8 | 6.4 | 4.3 | 52% | 0 | 201 |
-| sbom4python | 0.12.6 | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
+| bom | 0.8.0 | 5 | 4.6 | 5.5 | 4.3 | 35% | 2 | 0 |
 | capycli | 2.12.0 | 5 | 4.4 | 5.4 | 4.5 | 46% | 55 | 0 |
-| bom | 0.8.0 | 3 | 4.4 | 5.6 | 4.3 | 0% | 0 | 0 |
+| cdxgen | 11.3.2 | 13 | 4.9 | 6.4 | 4.3 | 54% | 0 | 201 |
+| cyclonedx-gomod | 1.12.0 | 2 | 6.2 | 6.5 | 4.5 | 75% | 0 | 0 |
+| cyclonedx-gomod-mod | 1.12.0 | 1 | 6.2 | 6.8 | 4.4 | 75% | 1 | 0 |
+| cyclonedx-maven-plugin | 2.9.1 | 3 | 6.2 | 7.6 | 4.8 | 83% | 26 | 0 |
+| cyclonedx-npm | 6.0.1 | 2 | 4.9 | 6.4 | 5.1 | 57% | 0 | 57 |
+| cyclonedx-python | 8.0.1 | 2 | 4.4 | 5.4 | 4.8 | 75% | 1 | 0 |
+| docker-scout | 1.24.0 | 3 | 5.4 | 6.3 | 3.7 | 84% | 0 | 0 |
+| sbom-plus-maven-plugin | 1.1.0 | 3 | 7.9 | 9.9 | 9.2 | 93% | 0 | 67 |
+| sbom-tool | 4.1.13 | 6 | 5.3 | 5.2 | 3.8 | 83% | 146 | 0 |
+| sbom4python | 0.12.6 | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
+| syft | 1.51.0 | 15 | 4.8 | 4.6 | 3.4 | 74% | 5 | 0 |
+| trivy | 0.74.0 | 15 | 3.9 | 5.0 | 3.8 | 60% | 3 | 0 |
 | trivy-rawfile | 0.74.0 | 3 | 3.0 | 4.4 | 4.1 | 0% | 0 | 0 |

@@ -1,0 +1,75 @@
+{
+  "_about": "The editorial layer of the SBOM Generator Index. Words live here; numbers never do. criteria/build_site.py picks the evidence for each finding from scores.json on every run and fills the {placeholders}, so a finding cannot drift from the data. 'explanation' is a proposed reason, shown as such; 'observed' is generated from the run.",
+  "repository": "https://github.com/noregressions/SBOM-Generator-Benchmark",
+  "question": "Does your SBOM describe what you actually shipped?",
+  "proposition": "A well-formed SBOM is not necessarily a complete or accurate account of the software shipped.",
+  "disclosure": "The author of this benchmark also develops SBOM+ (sbom-plus-maven-plugin), one of the tools measured, and most of the test cases come from the same author's workshop on hidden dependencies. Read SBOM+'s results with that in mind. Every generated SBOM, the ground truth and the scoring code are in the repository, so any result can be checked. Maintainers of the tools measured here are invited to reproduce the run and to challenge a result or a test case by opening an issue.",
+  "findings": [
+    {
+      "id": "conformance",
+      "title": "Conformance is not completeness",
+      "observed": "On {case} at the {stage} stage, {tool} scored {score} out of 10 against the NTIA 2021 minimum elements. The same document lists {leaked} components that do not ship, with nothing to tell a consumer so, and names {found} of the {total} that do.",
+      "explanation": "The baseline checks that every component has a supplier, a name, a version and an identifier. It does not ask whether the component belongs in the list, and a test or build-time dependency carries those fields as readily as a runtime one.",
+      "consequence": "Anyone matching this document against vulnerability data will chase advisories for code that was never deployed, and has no field to filter on."
+    },
+    {
+      "id": "stage",
+      "title": "Scan stage changes the answer",
+      "observed": "On {case}, {tool_a} named {a_source} of the {total} shipped components from the source tree, {a_artefact} from the built artefact and {a_image} from the container image. {tool_b} went the other way: {b_source}, {b_artefact} and {b_image}.",
+      "explanation": "At the source stage a tool can ask the build what it resolved, or read manifests without resolving them. In the artefact it has only the files that were packaged. In an image it first has to find the application among the operating system's files. Tools differ in which of these they do well.",
+      "consequence": "No stage is best for every tool, so the stage is a decision to make and to record. An SBOM that does not say what was scanned cannot be compared with another."
+    },
+    {
+      "id": "bundling",
+      "title": "Bundling conceals identity",
+      "observed": "{count} components in these test cases are compiled into a JavaScript bundle during the build ({names}). Tools named them in {source_hit} of {source_tries} attempts at the source stage, and in {later_hit} of {later_tries} at the artefact and image stages.",
+      "explanation": "After bundling, a library is bytes inside a file such as index-*.js. No manifest, lockfile or package directory survives for a tool to read, so there is nothing to recognise.",
+      "consequence": "The library still ships and can still be vulnerable. An SBOM taken from the artefact or the image will not mention it; only one taken where the build can be seen will."
+    },
+    {
+      "id": "advisories",
+      "title": "What the SBOM leaves out, nobody is warned about",
+      "observed": "{component} ships inside {case} and has {n} published advisories. {source_hit} of {source_docs} SBOMs taken at the source stage raise them, and {later_hit} of {later_docs} taken from the artefact or the image. In the other direction, {fa_tool}'s {fa_stage}-stage SBOM for {fa_case} raises {fa_count} advisories against components that are not in what ships.",
+      "explanation": "An advisory is found by looking up a component's identity. If the SBOM does not name the component, or names it under the wrong group, the lookup returns nothing. If it names something that never shipped, the lookup returns advisories that do not apply.",
+      "consequence": "The first is a vulnerability nobody is told about. The second is work: someone has to investigate and dismiss every false alarm, and a team that learns to dismiss them will dismiss a real one."
+    }
+  ],
+  "cases": {
+    "maven-plugin-hidden-content": {
+      "headline": "When build plugins generate application code",
+      "application": "A Java application that declares no dependencies at all. Its build runs a Maven plugin, trace-injector-maven-plugin, in the generate-sources phase. The plugin has a dependency of its own, trace-route-payload, which carries a route definition. The plugin turns that into a Java class and a ServiceLoader entry, and both are compiled into the application's jar.",
+      "mechanism": "Maven resolves a plugin and the plugin's dependencies into a classloader of their own, separate from the project's dependency graph. Code the plugin generates ends up in the jar as the application's own classes, with nothing to say where it came from.",
+      "interpretation": "The jar contains one package, the application itself, so a tool that names only that has described what ships. What it has not described is that part of the application's behaviour came from a plugin's dependency. That is a build-time influence, and an SBOM can record it only by listing what the build ran. Whether it should depends on what the SBOM is for. The benchmark counts such a listing as correct when it is marked as not shipping."
+    },
+    "node-prepack": {
+      "headline": "Dependencies that change during packaging",
+      "application": "A Node application with one dependency, trace-route-package. The package's entry point is dist/index.js, but dist/ is not in the package's source. A prepack lifecycle script, scripts/generate-dist.js, writes it when the package is packed, and the script itself is left out of the tarball that gets installed.",
+      "mechanism": "npm runs a package's lifecycle scripts while the distributable is being made. What is installed can therefore differ from what is in the package's repository, and the code that made the difference never ships.",
+      "interpretation": "A tool that reads the lockfile can name the package. None can tell that its contents were generated, because an SBOM identifies a package by name and version and says nothing about how its files came to be. Scanned on its own as an installed directory, the package has no lockfile beside it, which leaves a scanner little to go on."
+    },
+    "payara-mvnpm": {
+      "headline": "Java applications containing bundled JavaScript",
+      "application": "A Jakarta EE web application packaged as a WAR and deployed on a Payara server image. It has one ordinary Maven dependency, commons-lang3, which ships as a jar in WEB-INF/lib. Its browser code uses lodash-es, which arrives as a Maven artifact from mvnpm, declared as a dependency of the esbuild Maven plugin and not of the project. esbuild bundles it into assets/app.js. The Jakarta API is provided scope: needed to compile, supplied by the server, and absent from the WAR.",
+      "mechanism": "lodash-es is hidden twice. It enters through a plugin's dependencies, so it is never in the project's dependency graph. It is then bundled, so no package boundary survives in the WAR.",
+      "interpretation": "A tool that reads the project's dependency graph has no way to see lodash-es; a tool that lists what the build ran can name it at the source stage. The provided-scope API is the opposite case: it is in the graph and does not ship, so a tool that lists it without a scope overstates the WAR. In the image, the server's own libraries far outnumber the application's three components. Recall against so short a list says little about an image SBOM on its own."
+    },
+    "python-pep517": {
+      "headline": "Dependencies generated during Python builds",
+      "application": "A Python application whose requirements.txt names one package, reportkit. reportkit's metadata requires tracehook-demo, which is available only as a source distribution. When pip installs it, pip runs the build backend the package nominates, tracehook_backend, and that backend generates the module that gets installed.",
+      "mechanism": "Installing a source distribution means running code the dependency supplies. The installed files are the output of that code, and the transitive dependency is not written anywhere in the application's own files.",
+      "interpretation": "From requirements.txt alone a tool cannot name tracehook-demo, because it is not written there and has to be resolved. A tool that reads the installed environment can. None can say that the module's contents were generated at install time. pip is also in the environment, as tooling, and a tool that lists it without a mark counts as a leak here."
+    },
+    "spring-node": {
+      "headline": "What happens to dependencies in a full-stack application",
+      "application": "A Spring Boot service with a React front end, shipped as one executable jar on a Temurin JRE image. It is a Maven multi-module build: a normalizer module, a service module, and a front end built by Vite whose output is copied into the jar as static files. Spring's BOM chooses the versions of most of the Java dependencies.",
+      "mechanism": "Three things happen to dependencies on the way in. commons-codec is shaded: its classes are relocated into normalizer's jar under another package name. lodash, react and react-dom are bundled into one JavaScript file. And versions such as jackson-databind's are decided by an imported BOM, not written in the service's POM.",
+      "interpretation": "Where a scanner reports the shaded commons-codec, it is reading a pom.properties file the shade plugin left behind, not the relocated classes. The workshop this case comes from shows the identification vanish when that one file is removed, so a match here does not mean the tool can see shaded code. The bundled libraries can be named from the lockfile at the source stage; after the build there is no package left to find. Test and dev dependencies outnumber what ships several times over, so how a tool treats scope decides whether its document describes the application or the whole project."
+    },
+    "go-unlinked": {
+      "headline": "Modules a Go build requires that never reach the binary",
+      "application": "A small Go command. Its go.mod requires four modules. The main package imports two of them, google/uuid and golang.org/x/text. A third, yaml.v3, is imported only by the tests. The fourth, jwt-go, is imported only by a file that is compiled when the build is given the debug tag, which the release build is not. The result is one static binary, shipped alone in an image built from scratch.",
+      "mechanism": "This case runs the other way from the rest: nothing is hidden from the dependency list, and the list says too much. go.mod must require every module any file in the module imports, under any build tag and in any test. The linker then includes only the packages the release build reaches. The Go toolchain also compiles its standard library into the binary, at its own version, and no dependency file mentions that.",
+      "interpretation": "A tool that reads go.mod reports what the module requires, and a tool that reads the binary reports what was linked; both are answering correctly, to different questions. The difference matters most for security. The unlinked modules here are old versions with published advisories, so an SBOM built from go.mod raises alarms about code that is not in the product, while one built from the binary does not. The standard library is the opposite risk: it is in every Go binary, and a source-stage SBOM usually cannot name the version that will be compiled in."
+    }
+  }
+}

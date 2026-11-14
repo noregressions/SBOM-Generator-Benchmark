@@ -1,0 +1,490 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "go-unlinked",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-12T16:21:13Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/criteria/go-unlinked",
+  "documentDescribes": [
+    "SPDXRef-Package-example.com-trace-go-unlinked"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-.gitignore",
+      "fileName": ".gitignore",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0ff1285e877a25ba8117ea767a9b6a219c6595bf"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aaccb1a00557171b31d00a99a6a2666856e417964732490685cdcba9f02de491"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8f88606a64e8ef4096c9d390659005cbfdf0d04930f22727b31514beffe6632421bb98b1ceffda6a4715fbfa62235047f83f46e65e641ecd9566b7f19ded08a2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-Dockerfile",
+      "fileName": "Dockerfile",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "TEXT",
+        "DOCUMENTATION"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ce84d1f8ba26f919d1e01b0c620e0c4371f77c6c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4905a051d42444b352f63fe937cbcd6f2a0f9a6900c951261ecfb8aea789160d"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3714799cf609893efc88aa1aa9ecdfde9c5bb53d39efb1d222d69bc6733528b72e38577e9764492dcbfaec9bc67838e5f77fc2e14b9ec87d3a6ae91586c46dd4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-debug.go",
+      "fileName": "cmd/app/debug.go",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b4fe0ab7978281a03178caf45a1426ca0ce7309e"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "14e2729a90127b4e8f2b4921934305de96e1f943b3b3fcf9c57e52cf8205f576"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5017bdab9593d0f455605efcc95c9d263165d468945861ae524bde37af3e210a203089f1261186f9d149e7256ab5aa05bd6b311412fa0fe734f53c74353ee5d6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-main.go",
+      "fileName": "cmd/app/main.go",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4eeb821ae55bc00ace5f892d622a39a734d4ea8f"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "49604c5c54fd54767893bd9b70ae141585c381a4336f3e0217b4beb64c3c9f0c"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6981dd598dda57a4e73ed7575df9b36967f7a0b81837799406968fc4c7facd02509ab2d7df5a7fdb6c4818242318197368fc332b65814a766d2db51fdd4c642b"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-mainC95test.go",
+      "fileName": "cmd/app/main_test.go",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4cc9bba33e5b37b1cc1090158f93a35fab60bafa"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e290c12682058e4b4fe368e75bf3a7376962fa30b3008f03689b49003cac54ad"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e9cd9caa89bb60944e37ddd9e0786ab7338312fc07717a641a3187a6d7e1e7ef950dafefaf010e3737ffc91776debb54ffd3e679cc372dbfc9fc52a594eadbf3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-nodebug.go",
+      "fileName": "cmd/app/nodebug.go",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fc54bf39e8c44527e74f75a00b8ec31bdcb66cb9"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a951c43e2149a9ef8b9ce54664bc50cb159d2abbf294fe8f248de1378f1eed23"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1e4c6993f427e47c94e349d1ab36cb32de268317bade5859f88abde0f5cd2e64f2b4112c86e4e3f526c8492c4fd7bf395fb8f266d2b3f01bd0070be6be2adfd4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-go.mod",
+      "fileName": "go.mod",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd2b15f605ffe7c7942ae8e6ec7a68ecfb8bddeb"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2e26c8637cf5e0f81638d3515bdb5915487b922843cc94aa694084ea0d92d678"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e5a23cb1a713b21855b8ccac5b8d19a97e018ad39818207cb7757a856314066d74bfb484a690d56fe231599d29f6b9e81a5215380f87a94e60ab5bdbea3e8e55"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-go.sum",
+      "fileName": "go.sum",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e3694a033a1e5fc30d4ae82c3e259032dfcf9e3d"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "97b50546bc78c10b349901786b0ecb47337e04c88e6c291547da10cc7089fba2"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e54da145cd7a04c871d3dd6db589bbfdf0ab03328c6964e37d302f8c85dcdddfde0c885e320f14b0d133e3af2efdc91e5dc56af6b640afd3b0ceb87251956a53"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-scripts-build.sh",
+      "fileName": "scripts/build.sh",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bcdde8f4bd62637e3837f7f4e0580ae3905ea1e3"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d5d44636d67b40fccc39f3602f290697ae82ce509442e4bbe640d4f751c83f18"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b84fd595c09cecffbe29f97841a8a3b0a1d8089bfa58ff23dcae0de0875ace7eff1b50f168891efcccf3c621d7299e50f2171091ffd33b258fb70f18f0792acd"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-example.com-trace-go-unlinked-scripts-proof-check.sh",
+      "fileName": "scripts/proof-check.sh",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseInfoInFiles": [
+        "NONE"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2549144dc5c5f8f992849a4ac8cfdc76b32bf06b"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d5de9e1055a85aebd70c3740e2e0ca11d5ea4afdb55e860d6f9f93dc5110577"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b5409bdc0b902bfcd01895868a61fdf58dcae4794c3d94b9f05b3c15f390a3c6e4336204185ed5768a2b3695c4acbf54297dd6432bd9408382efa4bada8db139"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "name": "example.com/trace/go-unlinked",
+      "versionInfo": "",
+      "filesAnalyzed": true,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "hasFiles": [
+        "SPDXRef-File-example.com-trace-go-unlinked-.gitignore",
+        "SPDXRef-File-example.com-trace-go-unlinked-Dockerfile",
+        "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-debug.go",
+        "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-main.go",
+        "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-mainC95test.go",
+        "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-nodebug.go",
+        "SPDXRef-File-example.com-trace-go-unlinked-go.mod",
+        "SPDXRef-File-example.com-trace-go-unlinked-go.sum",
+        "SPDXRef-File-example.com-trace-go-unlinked-scripts-build.sh",
+        "SPDXRef-File-example.com-trace-go-unlinked-scripts-proof-check.sh"
+      ],
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/example.com/trace/go-unlinked",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "57a0d1a0024fbe2491b0d53dca64fd99d292de52"
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-github.com-dgrijalva-jwt-go-v3.2.0C43incompatible",
+      "name": "github.com/dgrijalva/jwt-go",
+      "versionInfo": "v3.2.0+incompatible",
+      "filesAnalyzed": false,
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://proxy.golang.org/github.com/dgrijalva/jwt-go/@v/v3.2.0+incompatible.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "https://github.com/dgrijalva/jwt-go",
+          "referenceType": "vcs"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-github.com-google-uuid-v1.6.0",
+      "name": "github.com/google/uuid",
+      "versionInfo": "v1.6.0",
+      "filesAnalyzed": false,
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/github.com/google/uuid/@v/v1.6.0.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "https://github.com/google/uuid",
+          "referenceType": "vcs"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/google/uuid@v1.6.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-golang.org-x-text-v0.3.7",
+      "name": "golang.org/x/text",
+      "versionInfo": "v0.3.7",
+      "filesAnalyzed": false,
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/text/@v/v0.3.7.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "https://go.googlesource.com/text",
+          "referenceType": "vcs"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gopkg.in-yaml.v3-v3.0.0",
+      "name": "gopkg.in/yaml.v3",
+      "versionInfo": "v3.0.0",
+      "filesAnalyzed": false,
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://proxy.golang.org/gopkg.in/yaml.v3/@v/v3.0.0.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "https://gopkg.in/yaml.v3",
+          "referenceType": "vcs"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-stdlib-1.21",
+      "name": "stdlib",
+      "versionInfo": "1.21",
+      "filesAnalyzed": false,
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/stdlib@1.21",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-.gitignore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-Dockerfile"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-debug.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-main.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-mainC95test.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-cmd-app-nodebug.go"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-go.mod"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-go.sum"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-scripts-build.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-example.com-trace-go-unlinked-scripts-proof-check.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-github.com-dgrijalva-jwt-go-v3.2.0C43incompatible"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-github.com-google-uuid-v1.6.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-golang.org-x-text-v0.3.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-gopkg.in-yaml.v3-v3.0.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-example.com-trace-go-unlinked",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-stdlib-1.21"
+    }
+  ]
+}

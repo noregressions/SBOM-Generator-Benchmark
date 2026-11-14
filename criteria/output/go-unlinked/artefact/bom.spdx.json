@@ -1,0 +1,139 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "go-unlinked",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-11-12T16:21:23Z",
+    "creators": [
+      "Tool: bom-v0.8.0"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://example.com/criteria/go-unlinked",
+  "documentDescribes": [
+    "SPDXRef-File-work-testcases-go-unlinked-project-bin-app"
+  ],
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-work-testcases-go-unlinked-project-bin-app",
+      "fileName": "work/testcases/go-unlinked/project/bin/app",
+      "copyrightText": "NOASSERTION",
+      "fileTypes": [
+        "BINARY",
+        "APPLICATION"
+      ],
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "001a539c850430ac8bc0d3349d068676f0e06eec"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0460be0dead5f0c9b1a97f7d9680a7a62243924590162a8c64516859a2c502c8"
+        },
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ad2efd4540c5360eed28dc315fa89d7ec32927590d19eed6e76526198b2d3bd009b3c20ef2d31e72dc0ee5865416ae5d1ea27e774f7f8835c0f5caabbc0cb431"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-work-testcases-go-unlinked-project-bin-app-example.com-trace-go-unlinked-C40develC41",
+      "name": "example.com/trace/go-unlinked",
+      "versionInfo": "(devel)",
+      "packageFileName": "work/testcases/go-unlinked/project/bin/app",
+      "filesAnalyzed": false,
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/example.com/trace/go-unlinked",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-github.com-google-uuid-v1.6.0",
+      "name": "github.com/google/uuid",
+      "versionInfo": "v1.6.0",
+      "filesAnalyzed": false,
+      "downloadLocation": "https://proxy.golang.org/github.com/google/uuid/@v/v1.6.0.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/github.com/google/uuid@v1.6.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-golang.org-x-text-v0.3.7",
+      "name": "golang.org/x/text",
+      "versionInfo": "v0.3.7",
+      "filesAnalyzed": false,
+      "downloadLocation": "https://proxy.golang.org/golang.org/x/text/@v/v0.3.7.zip",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-stdlib-1.27.4",
+      "name": "stdlib",
+      "versionInfo": "1.27.4",
+      "filesAnalyzed": false,
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "NONE",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "LIBRARY",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:golang/stdlib@1.27.4",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-File-work-testcases-go-unlinked-project-bin-app",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-work-testcases-go-unlinked-project-bin-app-example.com-trace-go-unlinked-C40develC41"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-work-testcases-go-unlinked-project-bin-app-example.com-trace-go-unlinked-C40develC41",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-github.com-google-uuid-v1.6.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-work-testcases-go-unlinked-project-bin-app-example.com-trace-go-unlinked-C40develC41",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-golang.org-x-text-v0.3.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-work-testcases-go-unlinked-project-bin-app-example.com-trace-go-unlinked-C40develC41",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-stdlib-1.27.4"
+    }
+  ]
+}

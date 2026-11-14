@@ -41,6 +41,10 @@ ARG DOTNET_SDK_VERSION
 RUN . /etc/arch.env; mkdir -p /opt/dotnet \
  && curl -fsSL "https://builds.dotnet.microsoft.com/dotnet/Sdk/${DOTNET_SDK_VERSION}/dotnet-sdk-${DOTNET_SDK_VERSION}-linux-${A_X64}.tar.gz" | tar -xz -C /opt/dotnet
 
+ARG GO_VERSION
+RUN mkdir -p /opt/go \
+ && curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz" | tar -xz -C /opt/go --strip-components=1
+
 # The Docker client only: the image stage talks to the host's daemon through the mounted socket
 ARG DOCKER_CLI_VERSION
 ARG DOCKER_BUILDX_VERSION
@@ -56,7 +60,8 @@ ENV JAVA_HOME=/opt/java \
     DOTNET_CLI_TELEMETRY_OPTOUT=1 \
     DOTNET_NOLOGO=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
-    PATH=/opt/java/bin:/opt/maven/bin:/opt/node/bin:/opt/dotnet:$PATH
+    GOTOOLCHAIN=local GOFLAGS=-buildvcs=false GOMODCACHE=/root/.cache/go/mod GOCACHE=/root/.cache/go/build \
+    PATH=/opt/java/bin:/opt/maven/bin:/opt/node/bin:/opt/dotnet:/opt/go/bin:$PATH
 
 # --- generators -------------------------------------------------------------------------------------------------------
 ARG SYFT_VERSION
@@ -82,6 +87,10 @@ RUN npm install -g --no-audit --no-fund "@cyclonedx/cdxgen@${CDXGEN_VERSION}" "@
 ARG CYCLONEDX_PY_VERSION
 ARG SBOM4PYTHON_VERSION
 RUN pip install --no-cache-dir "cyclonedx-bom==${CYCLONEDX_PY_VERSION}" "sbom4python==${SBOM4PYTHON_VERSION}"
+
+ARG CYCLONEDX_GOMOD_VERSION
+RUN curl -fsSL "https://github.com/CycloneDX/cyclonedx-gomod/releases/download/v${CYCLONEDX_GOMOD_VERSION}/cyclonedx-gomod_${CYCLONEDX_GOMOD_VERSION}_linux_${TARGETARCH}.tar.gz" \
+    | tar -xz -C /usr/local/bin cyclonedx-gomod
 
 # CaPyCLI pins older versions of libraries cyclonedx-py also uses, and does not support the image's Python, so it lives
 # in its own environment with its own interpreter. uv creates both.
@@ -110,7 +119,7 @@ ARG GRYPE_VERSION
 RUN curl -fsSL "https://github.com/anchore/grype/releases/download/v${GRYPE_VERSION}/grype_${GRYPE_VERSION}_linux_${TARGETARCH}.tar.gz" | tar -xz -C /usr/local/bin grype
 
 # Fail the build, not the benchmark, if a tool does not start
-RUN java -version && mvn -v && node -v && npm -v && python3 -V && dotnet --version && docker --version && docker buildx version \
+RUN java -version && mvn -v && node -v && npm -v && python3 -V && dotnet --version && go version && cyclonedx-gomod version && docker --version && docker buildx version \
  && syft version && grype version && trivy --version && cdxgen --version && cyclonedx-npm --version \
  && cyclonedx-py --version && sbom4python --version && capycli --version && sbom-tool version && bom version \
  && sbomqs version && cyclonedx --version && docker scout version

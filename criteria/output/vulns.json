@@ -1,0 +1,3354 @@
+{
+ "database": {
+  "built": "2026-11-12",
+  "schema": "v6.1.10"
+ },
+ "grype": "0.115.0",
+ "components_looked_up": 1012,
+ "cases": {
+  "go-unlinked": {
+   "reference": [
+    {
+     "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+     "id": "GHSA-69ch-w2m2-3vjp",
+     "severity": "High",
+     "fixed_in": "0.3.8",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+     "id": "GO-2026-5970",
+     "severity": "High",
+     "fixed_in": "0.39.0",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+     "id": "GO-2026-6629",
+     "severity": "High",
+     "fixed_in": "0.41.0",
+     "hidden": ""
+    }
+   ],
+   "stages": {
+    "source": [
+     {
+      "tool": "bom",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+        "GHSA-w73w-5m7g-f7qc",
+        "High"
+       ],
+       [
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+        "GHSA-hp87-p4gw-j4gq",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 90,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-gomod-mod",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+        "GHSA-w73w-5m7g-f7qc",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-gomod",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+        "GHSA-w73w-5m7g-f7qc",
+        "High"
+       ],
+       [
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+        "GHSA-hp87-p4gw-j4gq",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+        "GHSA-w73w-5m7g-f7qc",
+        "High"
+       ],
+       [
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+        "GHSA-hp87-p4gw-j4gq",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+        "GHSA-w73w-5m7g-f7qc",
+        "High"
+       ],
+       [
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.0",
+        "GHSA-hp87-p4gw-j4gq",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "bom",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-gomod",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "image": [
+     {
+      "tool": "cdxgen",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "docker-scout",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 3,
+      "total": 3,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  },
+  "maven-plugin-hidden-content": {
+   "reference": [],
+   "stages": {
+    "source": [
+     {
+      "tool": "capycli",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-maven-plugin",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-plus-maven-plugin",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 42,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "bom",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy-rawfile",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  },
+  "node-prepack": {
+   "reference": [],
+   "stages": {
+    "source": [
+     {
+      "tool": "capycli",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-npm",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  },
+  "payara-mvnpm": {
+   "reference": [],
+   "stages": {
+    "source": [
+     {
+      "tool": "capycli",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 4,
+      "wrong_version": 0,
+      "other": 2
+     },
+     {
+      "tool": "cyclonedx-maven-plugin",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-plus-maven-plugin",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 51,
+      "wrong_version": 1,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:npm/immutable@5.1.4",
+        "GHSA-v56q-mh7h-f735",
+        "High"
+       ],
+       [
+        "pkg:npm/immutable@5.1.4",
+        "GHSA-wf6x-7x77-mvgw",
+        "High"
+       ],
+       [
+        "pkg:npm/immutable@5.1.4",
+        "GHSA-xvcm-6775-5m9r",
+        "High"
+       ],
+       [
+        "pkg:npm/source-map-js@1.2.1",
+        "GHSA-68fv-2mgg-jv7q",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 2
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "bom",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy-rawfile",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "image": [
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 2
+     },
+     {
+      "tool": "docker-scout",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 9
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 9
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 9
+     }
+    ]
+   }
+  },
+  "python-pep517": {
+   "reference": [],
+   "stages": {
+    "source": [
+     {
+      "tool": "capycli",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-python",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "cyclonedx-python",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom4python",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 0,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  },
+  "spring-node": {
+   "reference": [
+    {
+     "purl": "pkg:npm/lodash@4.17.21",
+     "id": "GHSA-r5fr-rjxr-66jc",
+     "severity": "High",
+     "fixed_in": "4.18.0",
+     "hidden": "bundled"
+    },
+    {
+     "purl": "pkg:npm/lodash@4.17.21",
+     "id": "GHSA-xxjr-mmjv-4gpg",
+     "severity": "Medium",
+     "fixed_in": "4.17.23",
+     "hidden": "bundled"
+    },
+    {
+     "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+     "id": "GHSA-72hv-8253-57qq",
+     "severity": "Medium",
+     "fixed_in": "2.21.1",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+     "id": "GHSA-7hhh-6rmp-j9qf",
+     "severity": "High",
+     "fixed_in": "2.21.7",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+     "id": "GHSA-p6pp-m3f8-5c89",
+     "severity": "High",
+     "fixed_in": "2.21.7",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+     "id": "GHSA-r7wm-3cxj-wff9",
+     "severity": "High",
+     "fixed_in": "2.21.4",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+     "id": "GHSA-qv9r-c865-cp47",
+     "severity": "Medium",
+     "fixed_in": "2.25.5",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+     "id": "GHSA-jhq6-gfmj-v8fx",
+     "severity": "Low",
+     "fixed_in": "1.5.34",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+     "id": "GHSA-p47f-322f-whfh",
+     "severity": "Low",
+     "fixed_in": "1.5.33",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-core@6.2.17",
+     "id": "GHSA-659m-px2c-25wj",
+     "severity": "Low",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+     "id": "GHSA-9f52-rjqv-25qv",
+     "severity": "Low",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+     "id": "GHSA-r5w3-xv2f-j59q",
+     "severity": "High",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-expression@6.2.17",
+     "id": "GHSA-wxpp-56q6-5pcg",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-web@6.2.17",
+     "id": "GHSA-7m2p-62gw-p8qq",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-3chg-m5w7-qfv5",
+     "severity": "High",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-6p4f-wcwh-5vvm",
+     "severity": "Medium",
+     "fixed_in": "6.2.18",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-72pg-x5f8-j25j",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-957g-f97v-vppc",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-cjpg-rgq5-fr37",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-h3qp-gqrc-q736",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-j9f9-w8pj-32f8",
+     "severity": "Critical",
+     "fixed_in": "",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-mq64-j8f9-9gcj",
+     "severity": "Medium",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-pc63-qcmh-9cmg",
+     "severity": "Critical",
+     "fixed_in": "",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-wg35-8jpf-2xv3",
+     "severity": "Low",
+     "fixed_in": "6.2.18",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+     "id": "GHSA-x23c-287f-qqv5",
+     "severity": "High",
+     "fixed_in": "6.2.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+     "id": "GHSA-wwpq-f5c3-7hvx",
+     "severity": "High",
+     "fixed_in": "3.5.14",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+     "id": "GHSA-ggg2-9786-hwc8",
+     "severity": "Medium",
+     "fixed_in": "3.5.15",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-101296",
+     "severity": "Critical",
+     "fixed_in": "9.0.123,10.1.61,11.0.27",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-24880",
+     "severity": "High",
+     "fixed_in": "9.0.116,10.1.53,11.0.20",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-25854",
+     "severity": "Medium",
+     "fixed_in": "9.0.116,10.1.53,11.0.20",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-29129",
+     "severity": "High",
+     "fixed_in": "9.0.116,10.1.53,11.0.20",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-29145",
+     "severity": "Critical",
+     "fixed_in": "9.0.116,10.1.53,11.0.20",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-29146",
+     "severity": "High",
+     "fixed_in": "9.0.116,10.1.53,11.0.19",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-32990",
+     "severity": "Medium",
+     "fixed_in": "9.0.116,10.1.53,11.0.20",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-34483",
+     "severity": "High",
+     "fixed_in": "9.0.117,10.1.54,11.0.21",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-34487",
+     "severity": "High",
+     "fixed_in": "9.0.117,10.1.54,11.0.21",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-34500",
+     "severity": "Medium",
+     "fixed_in": "9.0.117,10.1.54,11.0.21",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-41284",
+     "severity": "High",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-41293",
+     "severity": "Critical",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-43512",
+     "severity": "Critical",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-43513",
+     "severity": "High",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-43514",
+     "severity": "Low",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-43515",
+     "severity": "Critical",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-55276",
+     "severity": "Critical",
+     "fixed_in": "9.0.119,10.1.56,11.0.23",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-55955",
+     "severity": "Medium",
+     "fixed_in": "9.0.119,10.1.56,11.0.23",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-55956",
+     "severity": "Medium",
+     "fixed_in": "9.0.119,10.1.56,11.0.23",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-65182",
+     "severity": "Critical",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-65183",
+     "severity": "High",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-65905",
+     "severity": "Critical",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-65927",
+     "severity": "High",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-66422",
+     "severity": "High",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-68525",
+     "severity": "Critical",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-68569",
+     "severity": "High",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-68763",
+     "severity": "High",
+     "fixed_in": "9.0.121,10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-73180",
+     "severity": "Medium",
+     "fixed_in": "10.1.58,11.0.25",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-73581",
+     "severity": "Medium",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-74048",
+     "severity": "Medium",
+     "fixed_in": "9.0.123,10.1.61,11.0.27",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-75973",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-77756",
+     "severity": "Low",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-77762",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-78383",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-88041",
+     "severity": "High",
+     "fixed_in": "9.0.123,10.1.61,11.0.27",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-93446",
+     "severity": "High",
+     "fixed_in": "9.0.123,10.1.61,11.0.27",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-5m62-pw8w-7w9f",
+     "severity": "Critical",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-5mp6-jrq3-r938",
+     "severity": "High",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-5v3h-fjv2-54fg",
+     "severity": "Medium",
+     "fixed_in": "10.1.56",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-69cc-cv78-qc8g",
+     "severity": "High",
+     "fixed_in": "10.1.53",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-8mc5-53m5-3qj2",
+     "severity": "Medium",
+     "fixed_in": "10.1.53",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-9m3c-qcxr-9x87",
+     "severity": "Medium",
+     "fixed_in": "10.1.53",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-9m89-8frq-c98c",
+     "severity": "Low",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-9xv2-5v5q-p794",
+     "severity": "Critical",
+     "fixed_in": "10.1.58",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-fv25-8xcx-gqjc",
+     "severity": "High",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-gcx9-497g-6cp6",
+     "severity": "Critical",
+     "fixed_in": "10.1.58",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-gx5v-xp9w-j4cg",
+     "severity": "High",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-h3x4-894j-xpx5",
+     "severity": "Critical",
+     "fixed_in": "10.1.58",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-h6fc-48rj-7qqh",
+     "severity": "Critical",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-h792-v28v-ppgr",
+     "severity": "High",
+     "fixed_in": "10.1.56",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-mqg3-r7h5-24x4",
+     "severity": "Critical",
+     "fixed_in": "10.1.56",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-r29c-68gh-xp6x",
+     "severity": "Critical",
+     "fixed_in": "10.1.55",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-rv64-5gf8-9qq8",
+     "severity": "High",
+     "fixed_in": "10.1.54",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "GHSA-x4m4-345f-5h5g",
+     "severity": "High",
+     "fixed_in": "10.1.54",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+     "id": "CVE-2026-42498",
+     "severity": "High",
+     "fixed_in": "9.0.118,10.1.55,11.0.22",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+     "id": "CVE-2026-76183",
+     "severity": "Critical",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+     "id": "CVE-2026-77791",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    }
+   ],
+   "stages": {
+    "source": [
+     {
+      "tool": "capycli",
+      "found": 84,
+      "total": 84,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 84,
+      "total": 84,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 10,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-maven-plugin",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-npm",
+      "found": 2,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-jhq6-gfmj-v8fx"
+       ],
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-p47f-322f-whfh"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-72hv-8253-57qq"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-7hhh-6rmp-j9qf"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-p6pp-m3f8-5c89"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-r7wm-3cxj-wff9"
+       ],
+       [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+        "GHSA-qv9r-c865-cp47"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-101296"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-24880"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-25854"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29129"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29145"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29146"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-32990"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34483"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34487"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34500"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41284"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41293"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43512"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43513"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43514"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43515"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55276"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55955"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55956"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65182"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65905"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65927"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-66422"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68525"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68569"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68763"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73180"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73581"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-74048"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-75973"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77756"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77762"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-78383"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-88041"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-93446"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5m62-pw8w-7w9f"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5mp6-jrq3-r938"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5v3h-fjv2-54fg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-69cc-cv78-qc8g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-8mc5-53m5-3qj2"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m3c-qcxr-9x87"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m89-8frq-c98c"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9xv2-5v5q-p794"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-fv25-8xcx-gqjc"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gcx9-497g-6cp6"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gx5v-xp9w-j4cg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h3x4-894j-xpx5"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h6fc-48rj-7qqh"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h792-v28v-ppgr"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-mqg3-r7h5-24x4"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-r29c-68gh-xp6x"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-rv64-5gf8-9qq8"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-x4m4-345f-5h5g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-core@6.2.17",
+        "GHSA-659m-px2c-25wj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-9f52-rjqv-25qv"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-r5w3-xv2f-j59q"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-wxpp-56q6-5pcg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-web@6.2.17",
+        "GHSA-7m2p-62gw-p8qq"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-3chg-m5w7-qfv5"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-6p4f-wcwh-5vvm"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-72pg-x5f8-j25j"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-957g-f97v-vppc"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-cjpg-rgq5-fr37"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-h3qp-gqrc-q736"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-j9f9-w8pj-32f8"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-mq64-j8f9-9gcj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-pc63-qcmh-9cmg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-wg35-8jpf-2xv3"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-x23c-287f-qqv5"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 10,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-plus-maven-plugin",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 48,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 84,
+      "total": 84,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:npm/esbuild@0.21.5",
+        "GHSA-67mh-4wv8-2f99",
+        "Medium"
+       ],
+       [
+        "pkg:npm/source-map-js@1.2.1",
+        "GHSA-68fv-2mgg-jv7q",
+        "High"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-4w7w-66w2-5vf9",
+        "Medium"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-587h-7wmj-h5pm",
+        "High"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-698v-4r3x-3vcv",
+        "Medium"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-9jrq-w75r-8gcw",
+        "Low"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-fx2h-pf6j-xcff",
+        "Medium"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-r825-w8mm-5pxw",
+        "Medium"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-rq7h-c2jc-7f22",
+        "Medium"
+       ],
+       [
+        "pkg:npm/vite@5.4.21",
+        "GHSA-v6wh-96g9-6wx3",
+        "Medium"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 2,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-jhq6-gfmj-v8fx"
+       ],
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-p47f-322f-whfh"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-72hv-8253-57qq"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-7hhh-6rmp-j9qf"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-p6pp-m3f8-5c89"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-r7wm-3cxj-wff9"
+       ],
+       [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+        "GHSA-qv9r-c865-cp47"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-101296"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-24880"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-25854"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29129"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29145"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29146"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-32990"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34483"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34487"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34500"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41284"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41293"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43512"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43513"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43514"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43515"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55276"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55955"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55956"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65182"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65905"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65927"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-66422"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68525"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68569"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68763"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73180"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73581"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-74048"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-75973"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77756"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77762"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-78383"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-88041"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-93446"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5m62-pw8w-7w9f"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5mp6-jrq3-r938"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5v3h-fjv2-54fg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-69cc-cv78-qc8g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-8mc5-53m5-3qj2"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m3c-qcxr-9x87"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m89-8frq-c98c"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9xv2-5v5q-p794"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-fv25-8xcx-gqjc"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gcx9-497g-6cp6"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gx5v-xp9w-j4cg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h3x4-894j-xpx5"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h6fc-48rj-7qqh"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h792-v28v-ppgr"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-mqg3-r7h5-24x4"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-r29c-68gh-xp6x"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-rv64-5gf8-9qq8"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-x4m4-345f-5h5g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-core@6.2.17",
+        "GHSA-659m-px2c-25wj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-9f52-rjqv-25qv"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-r5w3-xv2f-j59q"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-wxpp-56q6-5pcg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-web@6.2.17",
+        "GHSA-7m2p-62gw-p8qq"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-3chg-m5w7-qfv5"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-6p4f-wcwh-5vvm"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-72pg-x5f8-j25j"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-957g-f97v-vppc"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-cjpg-rgq5-fr37"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-h3qp-gqrc-q736"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-j9f9-w8pj-32f8"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-mq64-j8f9-9gcj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-pc63-qcmh-9cmg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-wg35-8jpf-2xv3"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-x23c-287f-qqv5"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 4,
+      "other": 2
+     },
+     {
+      "tool": "trivy",
+      "found": 84,
+      "total": 84,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "bom",
+      "found": 0,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-jhq6-gfmj-v8fx"
+       ],
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-p47f-322f-whfh"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-72hv-8253-57qq"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-7hhh-6rmp-j9qf"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-p6pp-m3f8-5c89"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-r7wm-3cxj-wff9"
+       ],
+       [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+        "GHSA-qv9r-c865-cp47"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-101296"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-24880"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-25854"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29129"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29145"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29146"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-32990"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34483"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34487"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34500"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41284"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41293"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43512"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43513"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43514"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43515"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55276"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55955"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55956"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65182"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65905"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65927"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-66422"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68525"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68569"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68763"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73180"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73581"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-74048"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-75973"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77756"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77762"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-78383"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-88041"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-93446"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5m62-pw8w-7w9f"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5mp6-jrq3-r938"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5v3h-fjv2-54fg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-69cc-cv78-qc8g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-8mc5-53m5-3qj2"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m3c-qcxr-9x87"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m89-8frq-c98c"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9xv2-5v5q-p794"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-fv25-8xcx-gqjc"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gcx9-497g-6cp6"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gx5v-xp9w-j4cg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h3x4-894j-xpx5"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h6fc-48rj-7qqh"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h792-v28v-ppgr"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-mqg3-r7h5-24x4"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-r29c-68gh-xp6x"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-rv64-5gf8-9qq8"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-x4m4-345f-5h5g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-core@6.2.17",
+        "GHSA-659m-px2c-25wj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-9f52-rjqv-25qv"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-r5w3-xv2f-j59q"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-wxpp-56q6-5pcg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-web@6.2.17",
+        "GHSA-7m2p-62gw-p8qq"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-3chg-m5w7-qfv5"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-6p4f-wcwh-5vvm"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-72pg-x5f8-j25j"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-957g-f97v-vppc"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-cjpg-rgq5-fr37"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-h3qp-gqrc-q736"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-j9f9-w8pj-32f8"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-mq64-j8f9-9gcj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-pc63-qcmh-9cmg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-wg35-8jpf-2xv3"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-x23c-287f-qqv5"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cdxgen",
+      "found": 77,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy-rawfile",
+      "found": 0,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-jhq6-gfmj-v8fx"
+       ],
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-p47f-322f-whfh"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-72hv-8253-57qq"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-7hhh-6rmp-j9qf"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-p6pp-m3f8-5c89"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-r7wm-3cxj-wff9"
+       ],
+       [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+        "GHSA-qv9r-c865-cp47"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-101296"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-24880"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-25854"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29129"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29145"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29146"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-32990"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34483"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34487"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34500"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41284"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41293"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43512"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43513"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43514"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43515"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55276"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55955"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55956"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65182"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65905"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65927"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-66422"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68525"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68569"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68763"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73180"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73581"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-74048"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-75973"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77756"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77762"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-78383"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-88041"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-93446"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5m62-pw8w-7w9f"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5mp6-jrq3-r938"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5v3h-fjv2-54fg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-69cc-cv78-qc8g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-8mc5-53m5-3qj2"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m3c-qcxr-9x87"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m89-8frq-c98c"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9xv2-5v5q-p794"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-fv25-8xcx-gqjc"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gcx9-497g-6cp6"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gx5v-xp9w-j4cg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h3x4-894j-xpx5"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h6fc-48rj-7qqh"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h792-v28v-ppgr"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-mqg3-r7h5-24x4"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-r29c-68gh-xp6x"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-rv64-5gf8-9qq8"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-x4m4-345f-5h5g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-core@6.2.17",
+        "GHSA-659m-px2c-25wj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-9f52-rjqv-25qv"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-r5w3-xv2f-j59q"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-wxpp-56q6-5pcg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-web@6.2.17",
+        "GHSA-7m2p-62gw-p8qq"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-3chg-m5w7-qfv5"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-6p4f-wcwh-5vvm"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-72pg-x5f8-j25j"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-957g-f97v-vppc"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-cjpg-rgq5-fr37"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-h3qp-gqrc-q736"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-j9f9-w8pj-32f8"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-mq64-j8f9-9gcj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-pc63-qcmh-9cmg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-wg35-8jpf-2xv3"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-x23c-287f-qqv5"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "image": [
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-jhq6-gfmj-v8fx"
+       ],
+       [
+        "pkg:maven/ch.qos.logback/logback-core@1.5.32",
+        "GHSA-p47f-322f-whfh"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-72hv-8253-57qq"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-7hhh-6rmp-j9qf"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-p6pp-m3f8-5c89"
+       ],
+       [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.19.4",
+        "GHSA-r7wm-3cxj-wff9"
+       ],
+       [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.24.3",
+        "GHSA-qv9r-c865-cp47"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-101296"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-24880"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-25854"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29129"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29145"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-29146"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-32990"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34483"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34487"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-34500"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41284"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-41293"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43512"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43513"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43514"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-43515"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55276"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55955"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-55956"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65182"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65905"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-65927"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-66422"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68525"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68569"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-68763"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73180"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-73581"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-74048"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-75973"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77756"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-77762"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-78383"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-88041"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-93446"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5m62-pw8w-7w9f"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5mp6-jrq3-r938"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-5v3h-fjv2-54fg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-69cc-cv78-qc8g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-8mc5-53m5-3qj2"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m3c-qcxr-9x87"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9m89-8frq-c98c"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-9xv2-5v5q-p794"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-fv25-8xcx-gqjc"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gcx9-497g-6cp6"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-gx5v-xp9w-j4cg"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h3x4-894j-xpx5"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h6fc-48rj-7qqh"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-h792-v28v-ppgr"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-mqg3-r7h5-24x4"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-r29c-68gh-xp6x"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-rv64-5gf8-9qq8"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "GHSA-x4m4-345f-5h5g"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-42498"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-76183"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
+        "GHSA-ggg2-9786-hwc8"
+       ],
+       [
+        "pkg:maven/org.springframework.boot/spring-boot@3.5.12",
+        "GHSA-wwpq-f5c3-7hvx"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-core@6.2.17",
+        "GHSA-659m-px2c-25wj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-9f52-rjqv-25qv"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-r5w3-xv2f-j59q"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-expression@6.2.17",
+        "GHSA-wxpp-56q6-5pcg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-web@6.2.17",
+        "GHSA-7m2p-62gw-p8qq"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-3chg-m5w7-qfv5"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-6p4f-wcwh-5vvm"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-72pg-x5f8-j25j"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-957g-f97v-vppc"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-cjpg-rgq5-fr37"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-h3qp-gqrc-q736"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-j9f9-w8pj-32f8"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-mq64-j8f9-9gcj"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-pc63-qcmh-9cmg"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-wg35-8jpf-2xv3"
+       ],
+       [
+        "pkg:maven/org.springframework/spring-webmvc@6.2.17",
+        "GHSA-x23c-287f-qqv5"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "docker-scout",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 82,
+      "total": 84,
+      "missed": [
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-r5fr-rjxr-66jc"
+       ],
+       [
+        "pkg:npm/lodash@4.17.21",
+        "GHSA-xxjr-mmjv-4gpg"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  }
+ }
+}

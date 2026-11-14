@@ -1,16 +1,35 @@
 {
   "files": [
     {
-      "fileName": "./LESSON.md",
-      "SPDXID": "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
+      "fileName": "./scripts/trace-plugin.sh",
+      "SPDXID": "SPDXRef-File--scripts-trace-plugin.sh-B679959DC07AB65557894E8E9F5C4CA3B6A25E3D",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "3d8e1d464a093620ac70371c374cbcc6cf3124a957044647c5418114fa4f3248"
+          "checksumValue": "556a29d880cf4cc88cb6b913afc49547281adc81e6d201fd720d177a3c2e118d"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "0929e969588790d3f1098055d9012a1e0d9d62f6"
+          "checksumValue": "b679959dc07ab65557894e8e9f5c4ca3b6a25e3d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/clean.sh",
+      "SPDXID": "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8ff01e7b86332fbc43aa503b80de2f4d79a0c78c42df8634e00df81cfd7d2cae"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "25362f41b5bd658bbc9424be13dac4390cdd4d74"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -58,25 +77,6 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./scripts/build.sh",
-      "SPDXID": "SPDXRef-File--scripts-build.sh-60286D059C6BC04E2CFD67B0FAB384EC10541772",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "f391d11243022d7e1bf5595419e27248e5677466a2cf9dfdfb12f8fc07227952"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "60286d059c6bc04e2cfd67b0fab384ec10541772"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
       "fileName": "./src/main/java/dev/noregressions/trace/s04/TraceServer.java",
       "SPDXID": "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceServer.java-DD8D5E334899160E4055BCDD266DB7151F737B6B",
       "checksums": [
@@ -87,25 +87,6 @@
         {
           "algorithm": "SHA1",
           "checksumValue": "dd8d5e334899160e4055bcdd266db7151f737b6b"
-        }
-      ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseInfoInFiles": [
-        "NOASSERTION"
-      ],
-      "copyrightText": "NOASSERTION"
-    },
-    {
-      "fileName": "./scripts/stop.sh",
-      "SPDXID": "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "581c5736362b7d76f7f609744540a3fb1bcafb4afcaf97d182ebbea97560bede"
-        },
-        {
-          "algorithm": "SHA1",
-          "checksumValue": "983d96df6dd165f9473144d01f8dbd98bf59fbcb"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -172,16 +153,16 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./scripts/clean.sh",
-      "SPDXID": "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
+      "fileName": "./scripts/build.sh",
+      "SPDXID": "SPDXRef-File--scripts-build.sh-60286D059C6BC04E2CFD67B0FAB384EC10541772",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "8ff01e7b86332fbc43aa503b80de2f4d79a0c78c42df8634e00df81cfd7d2cae"
+          "checksumValue": "f391d11243022d7e1bf5595419e27248e5677466a2cf9dfdfb12f8fc07227952"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "25362f41b5bd658bbc9424be13dac4390cdd4d74"
+          "checksumValue": "60286d059c6bc04e2cfd67b0fab384ec10541772"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -191,16 +172,35 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./scripts/trace-plugin.sh",
-      "SPDXID": "SPDXRef-File--scripts-trace-plugin.sh-B679959DC07AB65557894E8E9F5C4CA3B6A25E3D",
+      "fileName": "./LESSON.md",
+      "SPDXID": "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "556a29d880cf4cc88cb6b913afc49547281adc81e6d201fd720d177a3c2e118d"
+          "checksumValue": "3d8e1d464a093620ac70371c374cbcc6cf3124a957044647c5418114fa4f3248"
         },
         {
           "algorithm": "SHA1",
-          "checksumValue": "b679959dc07ab65557894e8e9f5c4ca3b6a25e3d"
+          "checksumValue": "0929e969588790d3f1098055d9012a1e0d9d62f6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/stop.sh",
+      "SPDXID": "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "581c5736362b7d76f7f609744540a3fb1bcafb4afcaf97d182ebbea97560bede"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "983d96df6dd165f9473144d01f8dbd98bf59fbcb"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -248,45 +248,45 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:swid/criteria/example.com/maven-plugin-hidden-content@1.0.0?tag_id=25d8d421-0c62-4c16-bb11-b0426f3ac081"
+          "referenceLocator": "pkg:swid/criteria/example.com/maven-plugin-hidden-content@1.0.0?tag_id=5611072a-eab6-4dbf-8ee0-9eac61fdf11c"
         }
       ],
       "supplier": "Organization: criteria",
       "hasFiles": [
-        "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceRoute.java-0561F207BAE36FB86551DE4BA5C683510FE06E2B",
-        "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceServer.java-DD8D5E334899160E4055BCDD266DB7151F737B6B",
-        "SPDXRef-File--scripts-run.sh-B04DDA2F1689D26E316C22C210A2112F2DB4F142",
-        "SPDXRef-File--.gitignore-A80601117460043B367ECDB1E5AA6F389DE488FD",
-        "SPDXRef-File--scripts-trace-plugin.sh-B679959DC07AB65557894E8E9F5C4CA3B6A25E3D",
         "SPDXRef-File--scripts-proof-check.sh-00E2D06AE12231E3EB99FAC81DED4C68AFF8F7C0",
         "SPDXRef-File--pom.xml-7544BAD63DCCB1EDBD752657E6111B738B7457DB",
-        "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
-        "SPDXRef-File--scripts-build.sh-60286D059C6BC04E2CFD67B0FAB384EC10541772",
+        "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceServer.java-DD8D5E334899160E4055BCDD266DB7151F737B6B",
         "SPDXRef-File--scripts-stop.sh-983D96DF6DD165F9473144D01F8DBD98BF59FBCB",
-        "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6"
+        "SPDXRef-File--LESSON.md-0929E969588790D3F1098055D9012A1E0D9D62F6",
+        "SPDXRef-File--scripts-build.sh-60286D059C6BC04E2CFD67B0FAB384EC10541772",
+        "SPDXRef-File--scripts-clean.sh-25362F41B5BD658BBC9424BE13DAC4390CDD4D74",
+        "SPDXRef-File--scripts-trace-plugin.sh-B679959DC07AB65557894E8E9F5C4CA3B6A25E3D",
+        "SPDXRef-File--scripts-run.sh-B04DDA2F1689D26E316C22C210A2112F2DB4F142",
+        "SPDXRef-File--.gitignore-A80601117460043B367ECDB1E5AA6F389DE488FD",
+        "SPDXRef-File--src-main-java-dev-noregressions-trace-s04-TraceRoute.java-0561F207BAE36FB86551DE4BA5C683510FE06E2B"
       ]
     }
   ],
   "externalDocumentRefs": [],
   "relationships": [
     {
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-RootPackage",
-      "spdxElementId": "SPDXRef-DOCUMENT"
-    },
-    {
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-1B0D3ED6AF16D3E32229E6D6B4B69268AC8BB39A6E913E1A122BFC5DD55E643D",
       "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
     }
   ],
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "maven-plugin-hidden-content 1.0.0",
-  "documentNamespace": "https://example.com/criteria/maven-plugin-hidden-content/1.0.0/StuqOPhU2ESHs2rlsZLkfg",
+  "documentNamespace": "https://example.com/criteria/maven-plugin-hidden-content/1.0.0/VfXgEkII9kGP3-25b7fycA",
   "creationInfo": {
-    "created": "2026-11-12T14:46:05Z",
+    "created": "2026-11-12T16:21:52Z",
     "creators": [
       "Organization: criteria",
       "Tool: Microsoft.SBOMTool-4.1.13"

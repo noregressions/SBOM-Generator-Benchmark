@@ -3,7 +3,7 @@
 # Syft: every stage. Directories and images as they are, archives as a single file.
 need syft
 case "$EV_KIND" in
-  jar|war) src="file:$EV_INPUT" ;;
+  jar|war|binary) src="file:$EV_INPUT" ;;
   image)   src="$EV_INPUT" ;;
   *)       src="dir:$EV_INPUT" ;;
 esac

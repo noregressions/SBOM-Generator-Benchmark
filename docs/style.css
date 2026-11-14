@@ -38,6 +38,29 @@ dl.meta { display:grid; grid-template-columns:max-content 1fr; gap:2px 16px; fon
 dl.meta dt { color:var(--muted); } dl.meta dd { margin:0; }
 tr.groups th { border-bottom:0; padding-bottom:0; text-transform:none; letter-spacing:0; font-size:13px; }
 tr.groups th.group { color:var(--ink); border-left:1px solid var(--line); } thead tr:not(.groups) th { vertical-align:bottom; }
+header nav { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; } header nav .links { margin-left:auto; display:flex; gap:18px; font-weight:500; }
+h1.hero { font-size:40px; line-height:1.12; max-width:20ch; margin-top:28px; }
+.thesis { font-size:20px; max-width:60ch; border-left:3px solid var(--accent); padding:2px 0 2px 16px; margin:18px 0; }
+.finding { border:1px solid var(--line); border-radius:8px; background:var(--panel); padding:16px 18px; margin:14px 0; max-width:100ch; }
+.finding h3 { margin:0 0 6px; font-size:19px; } .finding p { max-width:none; }
+.finding .label { display:inline-block; min-width:9.5em; font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:0.03em; color:var(--muted); }
+.note { border:1px solid var(--line); border-left:3px solid var(--warn); border-radius:6px; background:var(--panel); padding:10px 14px; margin:14px 0; max-width:100ch; font-size:15px; }
+.note p { margin:4px 0; max-width:none; }
+.viz { --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --grid:#e1e0d9; --axis:#c3c2b7; border:1px solid var(--line); border-radius:8px; background:var(--panel); padding:14px 16px 10px; margin:12px 0; max-width:760px; }
+@media (prefers-color-scheme: dark) { .viz { --s1:#3987e5; --s2:#d95926; --s3:#199e70; --grid:#2c2c2a; --axis:#383835; } }
+.viz svg { width:100%; height:auto; display:block; } .viz text { fill:var(--muted); font:12px system-ui,-apple-system,"Segoe UI",sans-serif; } .viz text.lab { fill:var(--ink); font-size:12.5px; }
+.viz .title { font-weight:600; font-size:15px; margin:0 0 2px; } .viz .sub { color:var(--muted); font-size:13px; margin:0 0 6px; }
+.legend { display:flex; flex-wrap:wrap; gap:4px 16px; font-size:13px; color:var(--muted); margin:6px 0 2px; } .legend span::before { content:""; display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; background:var(--c); }
+table.grid th.tool { height:160px; vertical-align:bottom; padding:6px 3px; text-transform:none; letter-spacing:0; font-weight:500; } table.grid th.tool span { writing-mode:vertical-rl; transform:rotate(180deg); white-space:nowrap; }
+table.grid { width:auto; } table.grid td { padding:3px; } table.grid td.comp, table.grid th.comp { padding:4px 10px; } table.grid th.stage { text-align:center; border-left:1px solid var(--line); color:var(--ink); text-transform:none; letter-spacing:0; font-size:13px; }
+table.grid td.first { border-left:1px solid var(--line); } table.grid tr.sep td { background:var(--chip); font-size:12.5px; color:var(--muted); padding:6px 10px; white-space:normal; }
+table.grid button { all:unset; cursor:pointer; display:block; border-radius:4px; } table.grid button:focus-visible { outline:2px solid var(--accent); outline-offset:1px; }
+.cell i.L { background:var(--good); color:var(--panel); } .cell i.X { background:var(--bad); color:var(--panel); } .cell i.o { opacity:0.45; }
+#cellinfo { border:1px solid var(--line); border-radius:8px; background:var(--panel); padding:10px 14px; margin:10px 0; font-size:14px; max-width:100ch; min-height:3.2em; } #cellinfo p { margin:2px 0; max-width:none; }
+.card b small { font-weight:400; color:var(--muted); font-size:12.5px; }
+tr.kind td { background:var(--chip); font-size:13px; color:var(--muted); white-space:normal; } tr.kind td b { color:var(--ink); }
+td.notrun { color:var(--muted); text-align:right; }
+pre { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px 14px; overflow-x:auto; font:13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; max-width:100ch; }
 th abbr { text-decoration:underline dotted; text-underline-offset:3px; cursor:help; }
 dl.cols { display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; font-size:14px; margin:14px 0; max-width:100ch; }
 dl.cols dt { font-weight:600; } dl.cols dd { margin:0; color:var(--muted); }

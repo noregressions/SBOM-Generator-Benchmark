@@ -1,0 +1,347 @@
+{
+  "files": [
+    {
+      "fileName": "./scripts/build.sh",
+      "SPDXID": "SPDXRef-File--scripts-build.sh-BCDDE8F4BD62637E3837F7F4E0580AE3905EA1E3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d5d44636d67b40fccc39f3602f290697ae82ce509442e4bbe640d4f751c83f18"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bcdde8f4bd62637e3837f7f4e0580ae3905ea1e3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./cmd/app/main.go",
+      "SPDXID": "SPDXRef-File--cmd-app-main.go-4EEB821AE55BC00ACE5F892D622A39A734D4EA8F",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "49604c5c54fd54767893bd9b70ae141585c381a4336f3e0217b4beb64c3c9f0c"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4eeb821ae55bc00ace5f892d622a39a734d4ea8f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./.gitignore",
+      "SPDXID": "SPDXRef-File--.gitignore-0FF1285E877A25BA8117EA767A9B6A219C6595BF",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aaccb1a00557171b31d00a99a6a2666856e417964732490685cdcba9f02de491"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0ff1285e877a25ba8117ea767a9b6a219c6595bf"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./scripts/proof-check.sh",
+      "SPDXID": "SPDXRef-File--scripts-proof-check.sh-2549144DC5C5F8F992849A4AC8CFDC76B32BF06B",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d5de9e1055a85aebd70c3740e2e0ca11d5ea4afdb55e860d6f9f93dc5110577"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2549144dc5c5f8f992849a4ac8cfdc76b32bf06b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./go.sum",
+      "SPDXID": "SPDXRef-File--go.sum-E3694A033A1E5FC30D4AE82C3E259032DFCF9E3D",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "97b50546bc78c10b349901786b0ecb47337e04c88e6c291547da10cc7089fba2"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e3694a033a1e5fc30d4ae82c3e259032dfcf9e3d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./cmd/app/nodebug.go",
+      "SPDXID": "SPDXRef-File--cmd-app-nodebug.go-FC54BF39E8C44527E74F75A00B8EC31BDCB66CB9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a951c43e2149a9ef8b9ce54664bc50cb159d2abbf294fe8f248de1378f1eed23"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "fc54bf39e8c44527e74f75a00b8ec31bdcb66cb9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./go.mod",
+      "SPDXID": "SPDXRef-File--go.mod-DD2B15F605FFE7C7942AE8E6EC7A68ECFB8BDDEB",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2e26c8637cf5e0f81638d3515bdb5915487b922843cc94aa694084ea0d92d678"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dd2b15f605ffe7c7942ae8e6ec7a68ecfb8bddeb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./cmd/app/debug.go",
+      "SPDXID": "SPDXRef-File--cmd-app-debug.go-B4FE0AB7978281A03178CAF45A1426CA0CE7309E",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "14e2729a90127b4e8f2b4921934305de96e1f943b3b3fcf9c57e52cf8205f576"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b4fe0ab7978281a03178caf45a1426ca0ce7309e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./Dockerfile",
+      "SPDXID": "SPDXRef-File--Dockerfile-CE84D1F8BA26F919D1E01B0C620E0C4371F77C6C",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4905a051d42444b352f63fe937cbcd6f2a0f9a6900c951261ecfb8aea789160d"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ce84d1f8ba26f919d1e01b0c620e0c4371f77c6c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./cmd/app/main_test.go",
+      "SPDXID": "SPDXRef-File--cmd-app-main-test.go-4CC9BBA33E5B37B1CC1090158F93A35FAB60BAFA",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e290c12682058e4b4fe368e75bf3a7376962fa30b3008f03689b49003cac54ad"
+        },
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4cc9bba33e5b37b1cc1090158f93a35fab60bafa"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "packages": [
+    {
+      "name": "golang.org/x/text",
+      "SPDXID": "SPDXRef-Package-D990ECE851B331FBBEED822D6F8104B0C4F4825E8D356C4C40AE7D318F0EAA90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v0.3.7",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "github.com/google/uuid",
+      "SPDXID": "SPDXRef-Package-F2B9FF990B8D109206CBADA6531E5D1BBDA5CC5296E66153EA38221BF197925B",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v1.6.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:golang/github.com/google/uuid@v1.6.0"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "github.com/dgrijalva/jwt-go",
+      "SPDXID": "SPDXRef-Package-D2396164A1321E0431FE75CD9905510E1F78553ABAB2B5F6B29DA003BB5A4DD6",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v3.2.0+incompatible",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0%2Bincompatible"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "gopkg.in/yaml.v3",
+      "SPDXID": "SPDXRef-Package-0B7994671FE0E4A27FE6F68E5168C89DC40C9B269C2532F5C087C1B0FB92A502",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "v3.0.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@v3.0.0"
+        }
+      ],
+      "supplier": "NOASSERTION"
+    },
+    {
+      "name": "go-unlinked",
+      "SPDXID": "SPDXRef-RootPackage",
+      "downloadLocation": "NOASSERTION",
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "cf448037b27fc92041b22a4fa298ae564e5d0d30"
+      },
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "versionInfo": "1.0.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:swid/criteria/example.com/go-unlinked@1.0.0?tag_id=a25e95d8-ccbe-4a8d-baa7-b34cefd57f52"
+        }
+      ],
+      "supplier": "Organization: criteria",
+      "hasFiles": [
+        "SPDXRef-File--scripts-proof-check.sh-2549144DC5C5F8F992849A4AC8CFDC76B32BF06B",
+        "SPDXRef-File--cmd-app-debug.go-B4FE0AB7978281A03178CAF45A1426CA0CE7309E",
+        "SPDXRef-File--go.mod-DD2B15F605FFE7C7942AE8E6EC7A68ECFB8BDDEB",
+        "SPDXRef-File--cmd-app-main.go-4EEB821AE55BC00ACE5F892D622A39A734D4EA8F",
+        "SPDXRef-File--cmd-app-main-test.go-4CC9BBA33E5B37B1CC1090158F93A35FAB60BAFA",
+        "SPDXRef-File--scripts-build.sh-BCDDE8F4BD62637E3837F7F4E0580AE3905EA1E3",
+        "SPDXRef-File--Dockerfile-CE84D1F8BA26F919D1E01B0C620E0C4371F77C6C",
+        "SPDXRef-File--.gitignore-0FF1285E877A25BA8117EA767A9B6A219C6595BF",
+        "SPDXRef-File--go.sum-E3694A033A1E5FC30D4AE82C3E259032DFCF9E3D",
+        "SPDXRef-File--cmd-app-nodebug.go-FC54BF39E8C44527E74F75A00B8EC31BDCB66CB9"
+      ]
+    }
+  ],
+  "externalDocumentRefs": [],
+  "relationships": [
+    {
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-RootPackage",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-0B7994671FE0E4A27FE6F68E5168C89DC40C9B269C2532F5C087C1B0FB92A502",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-D2396164A1321E0431FE75CD9905510E1F78553ABAB2B5F6B29DA003BB5A4DD6",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-F2B9FF990B8D109206CBADA6531E5D1BBDA5CC5296E66153EA38221BF197925B",
+      "spdxElementId": "SPDXRef-RootPackage"
+    },
+    {
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-D990ECE851B331FBBEED822D6F8104B0C4F4825E8D356C4C40AE7D318F0EAA90",
+      "spdxElementId": "SPDXRef-RootPackage"
+    }
+  ],
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "go-unlinked 1.0.0",
+  "documentNamespace": "https://example.com/criteria/go-unlinked/1.0.0/YyUK1ylH10qmyji-dRcyCQ",
+  "creationInfo": {
+    "created": "2026-11-12T16:21:20Z",
+    "creators": [
+      "Organization: criteria",
+      "Tool: Microsoft.SBOMTool-4.1.13"
+    ]
+  },
+  "documentDescribes": [
+    "SPDXRef-RootPackage"
+  ]
+}
