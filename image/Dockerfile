@@ -105,6 +105,10 @@ ARG SBOM_TOOL_VERSION
 RUN dotnet tool install --tool-path /opt/dotnet-tools Microsoft.Sbom.DotNetTool --version "${SBOM_TOOL_VERSION}" \
  && ln -s /opt/dotnet-tools/sbom-tool /usr/local/bin/sbom-tool
 
+ARG CYCLONEDX_DOTNET_VERSION
+RUN dotnet tool install --tool-path /opt/dotnet-tools CycloneDX --version "${CYCLONEDX_DOTNET_VERSION}" \
+ && ln -s /opt/dotnet-tools/dotnet-CycloneDX /usr/local/bin/dotnet-CycloneDX
+
 # --- scoring and consumers --------------------------------------------------------------------------------------------
 ARG SBOMQS_VERSION
 RUN . /etc/arch.env \

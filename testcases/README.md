@@ -12,6 +12,7 @@ ships, what must not be reported as shipped, which components are hidden and by 
 | `node-prepack` | npm | `dist/` is written by a dependency's `prepack` hook |
 | `python-pep517` | pip | a transitive sdist's PEP 517 backend generates the installed module |
 | `go-unlinked` | Go | nothing: `go.mod` requires four modules and the binary contains two, plus a standard library no file mentions |
+| `dotnet-selfcontained` | NuGet | the .NET 6 runtime, shipped inside the artefact as a runtime pack no file names; and the other way, ~100 restore-graph packages the framework supplies, which never ship |
 
 ## Running
 
@@ -44,8 +45,10 @@ Five of the cases were copied from the `scenarios/` directory of the
 [KCDC 2026 workshop](https://github.com/noregressions/kcdc2026workshop) at commit `e0b955c` (2026-10-25), Apache-2.0.
 Each of those has a `project/LESSON.md`, the workshop's walkthrough of the scenario.
 
-`go-unlinked` was written for this benchmark. Its ground truth comes from the binary itself: the Go toolchain records
+`go-unlinked` and `dotnet-selfcontained` were written for this benchmark. Its ground truth comes from the binary itself: the Go toolchain records
 the modules it linked, and `scripts/proof-check.sh` reads that record back with `go version -m`.
+
+`dotnet-selfcontained` takes its ground truth from the publish output's `LegacyApp.deps.json`, the runtime's own list of what it loads, checked against the files in the output and the restore graph in `obj/project.assets.json`.
 
 Every case has a `scripts/proof-check.sh` that asserts what ends up in the artefact.
 

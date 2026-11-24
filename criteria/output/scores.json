@@ -1,4 +1,2307 @@
 {
+ "dotnet-selfcontained": {
+  "stages": {
+   "source": [
+    {
+     "file": "cdxgen.cdx.json",
+     "tool": "cdxgen",
+     "format": "cyclonedx",
+     "components": 88,
+     "in_scope": 88,
+     "shipped_found": 4,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [
+      "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "pkg:nuget/System.Net.Http@4.3.0",
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0",
+      "pkg:nuget/microsoft.netcore.targets@1.1.0",
+      "pkg:nuget/microsoft.win32.primitives@4.0.1",
+      "pkg:nuget/microsoft.win32.registry@4.0.0",
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system.net.http@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system@4.3.0",
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.appcontext@4.1.0",
+      "pkg:nuget/system.collections.concurrent@4.3.0",
+      "pkg:nuget/system.collections.immutable@1.2.0",
+      "pkg:nuget/system.collections.nongeneric@4.0.1",
+      "pkg:nuget/system.collections@4.3.0",
+      "pkg:nuget/system.console@4.0.0",
+      "pkg:nuget/system.diagnostics.debug@4.3.0",
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0",
+      "pkg:nuget/system.diagnostics.process@4.1.0",
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1",
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0",
+      "pkg:nuget/system.diagnostics.tracing@4.3.0",
+      "pkg:nuget/system.globalization.calendars@4.3.0",
+      "pkg:nuget/system.globalization.extensions@4.3.0",
+      "pkg:nuget/system.globalization@4.3.0",
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0",
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0",
+      "pkg:nuget/system.io.filesystem@4.3.0",
+      "pkg:nuget/system.io@4.3.0",
+      "pkg:nuget/system.linq@4.3.0",
+      "pkg:nuget/system.net.nameresolution@4.0.0",
+      "pkg:nuget/system.net.primitives@4.3.0",
+      "pkg:nuget/system.net.requests@4.0.11",
+      "pkg:nuget/system.net.sockets@4.1.0",
+      "pkg:nuget/system.net.webheadercollection@4.0.1",
+      "pkg:nuget/system.reflection.extensions@4.0.1",
+      "pkg:nuget/system.reflection.metadata@1.3.0",
+      "pkg:nuget/system.reflection.primitives@4.3.0",
+      "pkg:nuget/system.reflection.typeextensions@4.1.0",
+      "pkg:nuget/system.reflection@4.3.0",
+      "pkg:nuget/system.resources.resourcemanager@4.3.0",
+      "pkg:nuget/system.runtime.extensions@4.3.0",
+      "pkg:nuget/system.runtime.handles@4.3.0",
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0",
+      "pkg:nuget/system.runtime.interopservices@4.3.0",
+      "pkg:nuget/system.runtime.numerics@4.3.0",
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0",
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0",
+      "pkg:nuget/system.runtime@4.3.0",
+      "pkg:nuget/system.security.claims@4.0.1",
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0",
+      "pkg:nuget/system.security.cryptography.cng@4.3.0",
+      "pkg:nuget/system.security.cryptography.csp@4.3.0",
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0",
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0",
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0",
+      "pkg:nuget/system.security.principal.windows@4.0.0",
+      "pkg:nuget/system.security.principal@4.0.1",
+      "pkg:nuget/system.text.encoding.extensions@4.0.11",
+      "pkg:nuget/system.text.encoding@4.3.0",
+      "pkg:nuget/system.threading.overlapped@4.0.1",
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0",
+      "pkg:nuget/system.threading.tasks@4.3.0",
+      "pkg:nuget/system.threading.thread@4.0.0",
+      "pkg:nuget/system.threading.threadpool@4.0.10",
+      "pkg:nuget/system.threading.timer@4.0.1",
+      "pkg:nuget/system.threading@4.3.0",
+      "pkg:nuget/system.xml.readerwriter@4.0.11",
+      "pkg:nuget/system.xml.xmldocument@4.0.1"
+     ],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ],
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.platforms@1.1.0"
+      ],
+      "pkg:nuget/microsoft.netcore.targets@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.targets@1.1.0"
+      ],
+      "pkg:nuget/microsoft.win32.primitives@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/microsoft.win32.primitives@4.0.1"
+      ],
+      "pkg:nuget/microsoft.win32.registry@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/microsoft.win32.registry@4.0.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.net.http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.net.http@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/StyleCop.Analyzers@1.1.118": [
+       "exact",
+       null,
+       "1.1.118",
+       "pkg:nuget/stylecop.analyzers@1.1.118"
+      ],
+      "pkg:nuget/system.appcontext@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.appcontext@4.1.0"
+      ],
+      "pkg:nuget/system.collections@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections@4.3.0"
+      ],
+      "pkg:nuget/system.collections.concurrent@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections.concurrent@4.3.0"
+      ],
+      "pkg:nuget/system.collections.immutable@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/system.collections.immutable@1.2.0"
+      ],
+      "pkg:nuget/system.collections.nongeneric@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.collections.nongeneric@4.0.1"
+      ],
+      "pkg:nuget/system.console@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.console@4.0.0"
+      ],
+      "pkg:nuget/system.diagnostics.debug@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.debug@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.process@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.diagnostics.process@4.1.0"
+      ],
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.diagnostics.stacktrace@4.0.1"
+      ],
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.diagnostics.tracesource@4.0.0"
+      ],
+      "pkg:nuget/system.diagnostics.tracing@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.tracing@4.3.0"
+      ],
+      "pkg:nuget/system.globalization@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.calendars@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.calendars@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.extensions@4.3.0"
+      ],
+      "pkg:nuget/system.io@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.io.filesystem.watcher@4.0.0"
+      ],
+      "pkg:nuget/system.linq@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.linq@4.3.0"
+      ],
+      "pkg:nuget/System.Net.Http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.http@4.3.0"
+      ],
+      "pkg:nuget/system.net.nameresolution@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.net.nameresolution@4.0.0"
+      ],
+      "pkg:nuget/system.net.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.net.requests@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.net.requests@4.0.11"
+      ],
+      "pkg:nuget/system.net.sockets@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.net.sockets@4.1.0"
+      ],
+      "pkg:nuget/system.net.webheadercollection@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.net.webheadercollection@4.0.1"
+      ],
+      "pkg:nuget/system.reflection@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.extensions@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.reflection.extensions@4.0.1"
+      ],
+      "pkg:nuget/system.reflection.metadata@1.3.0": [
+       "exact",
+       null,
+       "1.3.0",
+       "pkg:nuget/system.reflection.metadata@1.3.0"
+      ],
+      "pkg:nuget/system.reflection.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.typeextensions@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.reflection.typeextensions@4.1.0"
+      ],
+      "pkg:nuget/system.resources.resourcemanager@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.resources.resourcemanager@4.3.0"
+      ],
+      "pkg:nuget/system.runtime@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.extensions@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.handles@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.handles@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.interopservices@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0"
+      ],
+      "pkg:nuget/system.runtime.numerics@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.numerics@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.formatters@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.security.claims@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.claims@4.0.1"
+      ],
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.algorithms@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.cng@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.cng@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.csp@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.csp@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.encoding@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.x509certificates@4.3.0"
+      ],
+      "pkg:nuget/system.security.principal@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.principal@4.0.1"
+      ],
+      "pkg:nuget/system.security.principal.windows@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.security.principal.windows@4.0.0"
+      ],
+      "pkg:nuget/system.text.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.encoding@4.3.0"
+      ],
+      "pkg:nuget/system.text.encoding.extensions@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.text.encoding.extensions@4.0.11"
+      ],
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0": [
+       "exact",
+       null,
+       "4.5.0",
+       "pkg:nuget/system.text.encodings.web@4.5.0"
+      ],
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.regularexpressions@4.3.0"
+      ],
+      "pkg:nuget/system.threading@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading@4.3.0"
+      ],
+      "pkg:nuget/system.threading.overlapped@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.overlapped@4.0.1"
+      ],
+      "pkg:nuget/system.threading.tasks@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading.tasks@4.3.0"
+      ],
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.tasks.extensions@4.0.0"
+      ],
+      "pkg:nuget/system.threading.thread@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.thread@4.0.0"
+      ],
+      "pkg:nuget/system.threading.threadpool@4.0.10": [
+       "exact",
+       null,
+       "4.0.10",
+       "pkg:nuget/system.threading.threadpool@4.0.10"
+      ],
+      "pkg:nuget/system.threading.timer@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.timer@4.0.1"
+      ],
+      "pkg:nuget/system.xml.readerwriter@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.xml.readerwriter@4.0.11"
+      ],
+      "pkg:nuget/system.xml.xmldocument@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.xml.xmldocument@4.0.1"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 6.7,
+      "grade": "D",
+      "spec": "cyclonedx 1.6",
+      "ntia-2021": 8.3,
+      "ntia": 7.1,
+      "bsi-v21": 3.7,
+      "fsct": 6.0,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "cyclonedx-dotnet.cdx.json",
+     "tool": "cyclonedx-dotnet",
+     "format": "cyclonedx",
+     "components": 87,
+     "in_scope": 87,
+     "shipped_found": 3,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [
+      "pkg:nuget/System.Net.Http@4.3.0",
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0",
+      "pkg:nuget/microsoft.netcore.targets@1.1.0",
+      "pkg:nuget/microsoft.win32.primitives@4.0.1",
+      "pkg:nuget/microsoft.win32.registry@4.0.0",
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system.net.http@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system@4.3.0",
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.appcontext@4.1.0",
+      "pkg:nuget/system.collections.concurrent@4.3.0",
+      "pkg:nuget/system.collections.immutable@1.2.0",
+      "pkg:nuget/system.collections.nongeneric@4.0.1",
+      "pkg:nuget/system.collections@4.3.0",
+      "pkg:nuget/system.console@4.0.0",
+      "pkg:nuget/system.diagnostics.debug@4.3.0",
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0",
+      "pkg:nuget/system.diagnostics.process@4.1.0",
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1",
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0",
+      "pkg:nuget/system.diagnostics.tracing@4.3.0",
+      "pkg:nuget/system.globalization.calendars@4.3.0",
+      "pkg:nuget/system.globalization.extensions@4.3.0",
+      "pkg:nuget/system.globalization@4.3.0",
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0",
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0",
+      "pkg:nuget/system.io.filesystem@4.3.0",
+      "pkg:nuget/system.io@4.3.0",
+      "pkg:nuget/system.linq@4.3.0",
+      "pkg:nuget/system.net.nameresolution@4.0.0",
+      "pkg:nuget/system.net.primitives@4.3.0",
+      "pkg:nuget/system.net.requests@4.0.11",
+      "pkg:nuget/system.net.sockets@4.1.0",
+      "pkg:nuget/system.net.webheadercollection@4.0.1",
+      "pkg:nuget/system.reflection.extensions@4.0.1",
+      "pkg:nuget/system.reflection.metadata@1.3.0",
+      "pkg:nuget/system.reflection.primitives@4.3.0",
+      "pkg:nuget/system.reflection.typeextensions@4.1.0",
+      "pkg:nuget/system.reflection@4.3.0",
+      "pkg:nuget/system.resources.resourcemanager@4.3.0",
+      "pkg:nuget/system.runtime.extensions@4.3.0",
+      "pkg:nuget/system.runtime.handles@4.3.0",
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0",
+      "pkg:nuget/system.runtime.interopservices@4.3.0",
+      "pkg:nuget/system.runtime.numerics@4.3.0",
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0",
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0",
+      "pkg:nuget/system.runtime@4.3.0",
+      "pkg:nuget/system.security.claims@4.0.1",
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0",
+      "pkg:nuget/system.security.cryptography.cng@4.3.0",
+      "pkg:nuget/system.security.cryptography.csp@4.3.0",
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0",
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0",
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0",
+      "pkg:nuget/system.security.principal.windows@4.0.0",
+      "pkg:nuget/system.security.principal@4.0.1",
+      "pkg:nuget/system.text.encoding.extensions@4.0.11",
+      "pkg:nuget/system.text.encoding@4.3.0",
+      "pkg:nuget/system.threading.overlapped@4.0.1",
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0",
+      "pkg:nuget/system.threading.tasks@4.3.0",
+      "pkg:nuget/system.threading.thread@4.0.0",
+      "pkg:nuget/system.threading.threadpool@4.0.10",
+      "pkg:nuget/system.threading.timer@4.0.1",
+      "pkg:nuget/system.threading@4.3.0",
+      "pkg:nuget/system.xml.readerwriter@4.0.11",
+      "pkg:nuget/system.xml.xmldocument@4.0.1"
+     ],
+     "labelled": [
+      "pkg:nuget/StyleCop.Analyzers@1.1.118"
+     ],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ],
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.platforms@1.1.0"
+      ],
+      "pkg:nuget/microsoft.netcore.targets@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.targets@1.1.0"
+      ],
+      "pkg:nuget/microsoft.win32.primitives@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/microsoft.win32.primitives@4.0.1"
+      ],
+      "pkg:nuget/microsoft.win32.registry@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/microsoft.win32.registry@4.0.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.net.http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.net.http@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/StyleCop.Analyzers@1.1.118": [
+       "exact",
+       "scope=excluded",
+       "1.1.118",
+       "pkg:nuget/stylecop.analyzers@1.1.118"
+      ],
+      "pkg:nuget/system.appcontext@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.appcontext@4.1.0"
+      ],
+      "pkg:nuget/system.collections@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections@4.3.0"
+      ],
+      "pkg:nuget/system.collections.concurrent@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections.concurrent@4.3.0"
+      ],
+      "pkg:nuget/system.collections.immutable@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/system.collections.immutable@1.2.0"
+      ],
+      "pkg:nuget/system.collections.nongeneric@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.collections.nongeneric@4.0.1"
+      ],
+      "pkg:nuget/system.console@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.console@4.0.0"
+      ],
+      "pkg:nuget/system.diagnostics.debug@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.debug@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.process@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.diagnostics.process@4.1.0"
+      ],
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.diagnostics.stacktrace@4.0.1"
+      ],
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.diagnostics.tracesource@4.0.0"
+      ],
+      "pkg:nuget/system.diagnostics.tracing@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.tracing@4.3.0"
+      ],
+      "pkg:nuget/system.globalization@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.calendars@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.calendars@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.extensions@4.3.0"
+      ],
+      "pkg:nuget/system.io@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.io.filesystem.watcher@4.0.0"
+      ],
+      "pkg:nuget/system.linq@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.linq@4.3.0"
+      ],
+      "pkg:nuget/System.Net.Http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.http@4.3.0"
+      ],
+      "pkg:nuget/system.net.nameresolution@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.net.nameresolution@4.0.0"
+      ],
+      "pkg:nuget/system.net.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.net.requests@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.net.requests@4.0.11"
+      ],
+      "pkg:nuget/system.net.sockets@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.net.sockets@4.1.0"
+      ],
+      "pkg:nuget/system.net.webheadercollection@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.net.webheadercollection@4.0.1"
+      ],
+      "pkg:nuget/system.reflection@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.extensions@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.reflection.extensions@4.0.1"
+      ],
+      "pkg:nuget/system.reflection.metadata@1.3.0": [
+       "exact",
+       null,
+       "1.3.0",
+       "pkg:nuget/system.reflection.metadata@1.3.0"
+      ],
+      "pkg:nuget/system.reflection.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.typeextensions@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.reflection.typeextensions@4.1.0"
+      ],
+      "pkg:nuget/system.resources.resourcemanager@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.resources.resourcemanager@4.3.0"
+      ],
+      "pkg:nuget/system.runtime@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.extensions@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.handles@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.handles@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.interopservices@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0"
+      ],
+      "pkg:nuget/system.runtime.numerics@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.numerics@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.formatters@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.security.claims@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.claims@4.0.1"
+      ],
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.algorithms@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.cng@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.cng@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.csp@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.csp@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.encoding@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.x509certificates@4.3.0"
+      ],
+      "pkg:nuget/system.security.principal@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.principal@4.0.1"
+      ],
+      "pkg:nuget/system.security.principal.windows@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.security.principal.windows@4.0.0"
+      ],
+      "pkg:nuget/system.text.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.encoding@4.3.0"
+      ],
+      "pkg:nuget/system.text.encoding.extensions@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.text.encoding.extensions@4.0.11"
+      ],
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0": [
+       "exact",
+       null,
+       "4.5.0",
+       "pkg:nuget/system.text.encodings.web@4.5.0"
+      ],
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.regularexpressions@4.3.0"
+      ],
+      "pkg:nuget/system.threading@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading@4.3.0"
+      ],
+      "pkg:nuget/system.threading.overlapped@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.overlapped@4.0.1"
+      ],
+      "pkg:nuget/system.threading.tasks@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading.tasks@4.3.0"
+      ],
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.tasks.extensions@4.0.0"
+      ],
+      "pkg:nuget/system.threading.thread@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.thread@4.0.0"
+      ],
+      "pkg:nuget/system.threading.threadpool@4.0.10": [
+       "exact",
+       null,
+       "4.0.10",
+       "pkg:nuget/system.threading.threadpool@4.0.10"
+      ],
+      "pkg:nuget/system.threading.timer@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.timer@4.0.1"
+      ],
+      "pkg:nuget/system.xml.readerwriter@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.xml.readerwriter@4.0.11"
+      ],
+      "pkg:nuget/system.xml.xmldocument@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.xml.xmldocument@4.0.1"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 6.5,
+      "grade": "D",
+      "spec": "cyclonedx 1.6",
+      "ntia-2021": 8.3,
+      "ntia": 9.9,
+      "bsi-v21": 3.4,
+      "fsct": 9.0,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "sbom-tool.spdx.json",
+     "tool": "sbom-tool",
+     "format": "spdx",
+     "components": 89,
+     "in_scope": 89,
+     "shipped_found": 3,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [
+      "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "pkg:nuget/System.Net.Http@4.3.0",
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0",
+      "pkg:nuget/microsoft.netcore.targets@1.1.0",
+      "pkg:nuget/microsoft.win32.primitives@4.0.1",
+      "pkg:nuget/microsoft.win32.registry@4.0.0",
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system.net.http@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.native.system@4.3.0",
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0",
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.appcontext@4.1.0",
+      "pkg:nuget/system.collections.concurrent@4.3.0",
+      "pkg:nuget/system.collections.immutable@1.2.0",
+      "pkg:nuget/system.collections.nongeneric@4.0.1",
+      "pkg:nuget/system.collections@4.3.0",
+      "pkg:nuget/system.console@4.0.0",
+      "pkg:nuget/system.diagnostics.debug@4.3.0",
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0",
+      "pkg:nuget/system.diagnostics.process@4.1.0",
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1",
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0",
+      "pkg:nuget/system.diagnostics.tracing@4.3.0",
+      "pkg:nuget/system.globalization.calendars@4.3.0",
+      "pkg:nuget/system.globalization.extensions@4.3.0",
+      "pkg:nuget/system.globalization@4.3.0",
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0",
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0",
+      "pkg:nuget/system.io.filesystem@4.3.0",
+      "pkg:nuget/system.io@4.3.0",
+      "pkg:nuget/system.linq@4.3.0",
+      "pkg:nuget/system.net.nameresolution@4.0.0",
+      "pkg:nuget/system.net.primitives@4.3.0",
+      "pkg:nuget/system.net.requests@4.0.11",
+      "pkg:nuget/system.net.sockets@4.1.0",
+      "pkg:nuget/system.net.webheadercollection@4.0.1",
+      "pkg:nuget/system.reflection.extensions@4.0.1",
+      "pkg:nuget/system.reflection.metadata@1.3.0",
+      "pkg:nuget/system.reflection.primitives@4.3.0",
+      "pkg:nuget/system.reflection.typeextensions@4.1.0",
+      "pkg:nuget/system.reflection@4.3.0",
+      "pkg:nuget/system.resources.resourcemanager@4.3.0",
+      "pkg:nuget/system.runtime.extensions@4.3.0",
+      "pkg:nuget/system.runtime.handles@4.3.0",
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0",
+      "pkg:nuget/system.runtime.interopservices@4.3.0",
+      "pkg:nuget/system.runtime.numerics@4.3.0",
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0",
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0",
+      "pkg:nuget/system.runtime@4.3.0",
+      "pkg:nuget/system.security.claims@4.0.1",
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0",
+      "pkg:nuget/system.security.cryptography.cng@4.3.0",
+      "pkg:nuget/system.security.cryptography.csp@4.3.0",
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0",
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0",
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0",
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0",
+      "pkg:nuget/system.security.principal.windows@4.0.0",
+      "pkg:nuget/system.security.principal@4.0.1",
+      "pkg:nuget/system.text.encoding.extensions@4.0.11",
+      "pkg:nuget/system.text.encoding@4.3.0",
+      "pkg:nuget/system.threading.overlapped@4.0.1",
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0",
+      "pkg:nuget/system.threading.tasks@4.3.0",
+      "pkg:nuget/system.threading.thread@4.0.0",
+      "pkg:nuget/system.threading.threadpool@4.0.10",
+      "pkg:nuget/system.threading.timer@4.0.1",
+      "pkg:nuget/system.threading@4.3.0",
+      "pkg:nuget/system.xml.readerwriter@4.0.11",
+      "pkg:nuget/system.xml.xmldocument@4.0.1"
+     ],
+     "labelled": [],
+     "unexpected": [
+      "pkg:nuget/microsoft.aspnetcore.app.ref@6.0.36",
+      "pkg:nuget/microsoft.netcore.app.host.linux-arm64@6.0.36",
+      "pkg:nuget/microsoft.netcore.app.ref@6.0.36"
+     ],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/system.runtime.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.extensions@4.3.0"
+      ],
+      "pkg:nuget/StyleCop.Analyzers@1.1.118": [
+       "exact",
+       null,
+       "1.1.118",
+       "pkg:nuget/stylecop.analyzers@1.1.118"
+      ],
+      "pkg:nuget/system.runtime.serialization.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.primitives@4.3.0"
+      ],
+      "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/System.Text.Encodings.Web@4.5.0": [
+       "exact",
+       null,
+       "4.5.0",
+       "pkg:nuget/system.text.encodings.web@4.5.0"
+      ],
+      "pkg:nuget/runtime.native.system.net.http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.net.http@4.3.0"
+      ],
+      "pkg:nuget/microsoft.win32.primitives@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/microsoft.win32.primitives@4.0.1"
+      ],
+      "pkg:nuget/system.io.filesystem@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.threading.tasks.extensions@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.tasks.extensions@4.0.0"
+      ],
+      "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.x509certificates@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.x509certificates@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.reflection@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection@4.3.0"
+      ],
+      "pkg:nuget/system.xml.xmldocument@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.xml.xmldocument@4.0.1"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/system.security.claims@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.claims@4.0.1"
+      ],
+      "pkg:nuget/system.collections.nongeneric@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.collections.nongeneric@4.0.1"
+      ],
+      "pkg:nuget/system.diagnostics.tracing@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.tracing@4.3.0"
+      ],
+      "pkg:nuget/system.net.sockets@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.net.sockets@4.1.0"
+      ],
+      "pkg:nuget/system.security.cryptography.algorithms@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.algorithms@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/system.threading.threadpool@4.0.10": [
+       "exact",
+       null,
+       "4.0.10",
+       "pkg:nuget/system.threading.threadpool@4.0.10"
+      ],
+      "pkg:nuget/system.xml.readerwriter@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.xml.readerwriter@4.0.11"
+      ],
+      "pkg:nuget/system.net.requests@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.net.requests@4.0.11"
+      ],
+      "pkg:nuget/system.runtime@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.stacktrace@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.diagnostics.stacktrace@4.0.1"
+      ],
+      "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple@4.3.0"
+      ],
+      "pkg:nuget/system.collections.immutable@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/system.collections.immutable@1.2.0"
+      ],
+      "pkg:nuget/system.io@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io@4.3.0"
+      ],
+      "pkg:nuget/system.threading.timer@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.timer@4.0.1"
+      ],
+      "pkg:nuget/system.diagnostics.process@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.diagnostics.process@4.1.0"
+      ],
+      "pkg:nuget/system.security.cryptography.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.linq@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.linq@4.3.0"
+      ],
+      "pkg:nuget/system.resources.resourcemanager@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.resources.resourcemanager@4.3.0"
+      ],
+      "pkg:nuget/system.collections.concurrent@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections.concurrent@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.typeextensions@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.reflection.typeextensions@4.1.0"
+      ],
+      "pkg:nuget/system.appcontext@4.1.0": [
+       "exact",
+       null,
+       "4.1.0",
+       "pkg:nuget/system.appcontext@4.1.0"
+      ],
+      "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/System.Net.Http@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.http@4.3.0"
+      ],
+      "pkg:nuget/system.globalization@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.interopservices@4.3.0"
+      ],
+      "pkg:nuget/system.threading.overlapped@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.threading.overlapped@4.0.1"
+      ],
+      "pkg:nuget/microsoft.netcore.targets@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.targets@1.1.0"
+      ],
+      "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.reflection.extensions@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.reflection.extensions@4.0.1"
+      ],
+      "pkg:nuget/system.net.webheadercollection@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.net.webheadercollection@4.0.1"
+      ],
+      "pkg:nuget/system.net.nameresolution@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.net.nameresolution@4.0.0"
+      ],
+      "pkg:nuget/system.security.principal@4.0.1": [
+       "exact",
+       null,
+       "4.0.1",
+       "pkg:nuget/system.security.principal@4.0.1"
+      ],
+      "pkg:nuget/system.security.principal.windows@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.security.principal.windows@4.0.0"
+      ],
+      "pkg:nuget/system.reflection.metadata@1.3.0": [
+       "exact",
+       null,
+       "1.3.0",
+       "pkg:nuget/system.reflection.metadata@1.3.0"
+      ],
+      "pkg:nuget/system.reflection.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.reflection.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.encoding@4.3.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ],
+      "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.threading.thread@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.threading.thread@4.0.0"
+      ],
+      "pkg:nuget/system.runtime.numerics@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.numerics@4.3.0"
+      ],
+      "pkg:nuget/system.io.filesystem.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.io.filesystem.primitives@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.extensions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.extensions@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.runtime.interopservices.runtimeinformation@4.0.0"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/system.diagnostics.tracesource@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.diagnostics.tracesource@4.0.0"
+      ],
+      "pkg:nuget/system.text.encoding.extensions@4.0.11": [
+       "exact",
+       null,
+       "4.0.11",
+       "pkg:nuget/system.text.encoding.extensions@4.0.11"
+      ],
+      "pkg:nuget/System.Text.RegularExpressions@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.regularexpressions@4.3.0"
+      ],
+      "pkg:nuget/system.globalization.calendars@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.globalization.calendars@4.3.0"
+      ],
+      "pkg:nuget/system.threading@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.serialization.formatters@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.serialization.formatters@4.3.0"
+      ],
+      "pkg:nuget/system.net.primitives@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.net.primitives@4.3.0"
+      ],
+      "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.threading.tasks@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.threading.tasks@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.openssl@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.openssl@4.3.0"
+      ],
+      "pkg:nuget/system.runtime.handles@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.runtime.handles@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.debug@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.debug@4.3.0"
+      ],
+      "pkg:nuget/microsoft.win32.registry@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/microsoft.win32.registry@4.0.0"
+      ],
+      "pkg:nuget/system.io.filesystem.watcher@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.io.filesystem.watcher@4.0.0"
+      ],
+      "pkg:nuget/system.security.cryptography.csp@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.csp@4.3.0"
+      ],
+      "pkg:nuget/microsoft.netcore.platforms@1.1.0": [
+       "exact",
+       null,
+       "1.1.0",
+       "pkg:nuget/microsoft.netcore.platforms@1.1.0"
+      ],
+      "pkg:nuget/system.text.encoding@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.text.encoding@4.3.0"
+      ],
+      "pkg:nuget/system.security.cryptography.cng@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.security.cryptography.cng@4.3.0"
+      ],
+      "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.diagnostics.diagnosticsource@4.3.0"
+      ],
+      "pkg:nuget/runtime.native.system@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/runtime.native.system@4.3.0"
+      ],
+      "pkg:nuget/system.collections@4.3.0": [
+       "exact",
+       null,
+       "4.3.0",
+       "pkg:nuget/system.collections@4.3.0"
+      ],
+      "pkg:nuget/system.console@4.0.0": [
+       "exact",
+       null,
+       "4.0.0",
+       "pkg:nuget/system.console@4.0.0"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 5.3,
+      "grade": "D",
+      "spec": "spdx 2.3",
+      "ntia-2021": 10,
+      "ntia": 4.3,
+      "bsi-v21": 3.4,
+      "fsct": 5.7,
+      "valid": "n/a"
+     }
+    },
+    {
+     "file": "syft.cdx.json",
+     "tool": "syft",
+     "format": "cyclonedx",
+     "components": 0,
+     "in_scope": 0,
+     "shipped_found": 0,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {},
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 3.0,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 3.1,
+      "ntia": 4.4,
+      "bsi-v21": 4.1,
+      "fsct": 2.5,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "trivy.cdx.json",
+     "tool": "trivy",
+     "format": "cyclonedx",
+     "components": 1,
+     "in_scope": 1,
+     "shipped_found": 0,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {},
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 3.0,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 3.1,
+      "ntia": 4.4,
+      "bsi-v21": 4.1,
+      "fsct": 2.5,
+      "valid": "valid"
+     }
+    }
+   ],
+   "artefact": [
+    {
+     "file": "cdxgen.cdx.json",
+     "tool": "cdxgen",
+     "format": "cyclonedx",
+     "components": 0,
+     "in_scope": 0,
+     "shipped_found": 0,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {},
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 2.2,
+      "grade": "F",
+      "spec": "cyclonedx 1.6",
+      "ntia-2021": 6.7,
+      "ntia": 8,
+      "bsi-v21": 5.7,
+      "fsct": 7.4,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "syft.cdx.json",
+     "tool": "syft",
+     "format": "cyclonedx",
+     "components": 5,
+     "in_scope": 5,
+     "shipped_found": 4,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [
+      "pkg:nuget/runtimepack.microsoft.netcore.app.runtime.linux-arm64@6.0.36"
+     ],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 4.7,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 1.9,
+      "ntia": 4.3,
+      "bsi-v21": 2.1,
+      "fsct": 3.2,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "trivy.cdx.json",
+     "tool": "trivy",
+     "format": "cyclonedx",
+     "components": 7,
+     "in_scope": 6,
+     "shipped_found": 5,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-x64@6.0.36": [
+       "exact",
+       null,
+       "6.0.36",
+       "pkg:nuget/microsoft.netcore.app.runtime.linux-arm64@6.0.36"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 4.2,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 6.8,
+      "ntia": 4.1,
+      "bsi-v21": 3.6,
+      "fsct": 3.5,
+      "valid": "valid"
+     }
+    }
+   ],
+   "image": [
+    {
+     "file": "cdxgen.cdx.json",
+     "tool": "cdxgen",
+     "format": "cyclonedx",
+     "components": 151,
+     "in_scope": 0,
+     "shipped_found": 0,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {},
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 5.3,
+      "grade": "D",
+      "spec": "cyclonedx 1.6",
+      "ntia-2021": 7.6,
+      "ntia": 6.0,
+      "bsi-v21": 3.0,
+      "fsct": 5.1,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "docker-scout.spdx.json",
+     "tool": "docker-scout",
+     "format": "spdx",
+     "components": 148,
+     "in_scope": 5,
+     "shipped_found": 4,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [
+      "pkg:nuget/runtimepack.microsoft.netcore.app.runtime.linux-arm64@6.0.36"
+     ],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 5.5,
+      "grade": "D",
+      "spec": "spdx 2.3",
+      "ntia-2021": 10.0,
+      "ntia": 6.8,
+      "bsi-v21": 3.7,
+      "fsct": 7.0,
+      "valid": "n/a"
+     }
+    },
+    {
+     "file": "syft.cdx.json",
+     "tool": "syft",
+     "format": "cyclonedx",
+     "components": 104,
+     "in_scope": 5,
+     "shipped_found": 4,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [
+      "pkg:nuget/runtimepack.microsoft.netcore.app.runtime.linux-arm64@6.0.36"
+     ],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 4.5,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 1.8,
+      "ntia": 4.3,
+      "bsi-v21": 2.1,
+      "fsct": 3.2,
+      "valid": "valid"
+     }
+    },
+    {
+     "file": "trivy.cdx.json",
+     "tool": "trivy",
+     "format": "cyclonedx",
+     "components": 105,
+     "in_scope": 5,
+     "shipped_found": 5,
+     "shipped_total": 5,
+     "wrong_version": [],
+     "wrong_purl": [],
+     "leaked": [],
+     "labelled": [],
+     "unexpected": [],
+     "extra_labelled": 0,
+     "hits": {
+      "pkg:nuget/LegacyApp@*": [
+       "exact",
+       null,
+       "1.0.0",
+       "pkg:nuget/legacyapp@1.0.0"
+      ],
+      "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-x64@6.0.36": [
+       "exact",
+       null,
+       "6.0.36",
+       "pkg:nuget/microsoft.netcore.app.runtime.linux-arm64@6.0.36"
+      ],
+      "pkg:nuget/Newtonsoft.Json@12.0.1": [
+       "exact",
+       null,
+       "12.0.1",
+       "pkg:nuget/newtonsoft.json@12.0.1"
+      ],
+      "pkg:nuget/SharpZipLib@1.2.0": [
+       "exact",
+       null,
+       "1.2.0",
+       "pkg:nuget/sharpziplib@1.2.0"
+      ],
+      "pkg:nuget/log4net@2.0.8": [
+       "exact",
+       null,
+       "2.0.8",
+       "pkg:nuget/log4net@2.0.8"
+      ]
+     },
+     "hash_emitted": 0,
+     "hash_ok": 0,
+     "conformance": {
+      "quality": 4.8,
+      "grade": "F",
+      "spec": "cyclonedx 1.7",
+      "ntia-2021": 9.8,
+      "ntia": 5.4,
+      "bsi-v21": 3.8,
+      "fsct": 6.9,
+      "valid": "valid"
+     }
+    }
+   ]
+  }
+ },
  "go-unlinked": {
   "stages": {
    "source": [

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- A .NET 6 console app (.NET 6 left support in November 2024) published self-contained: the runtime ships
+       inside the artefact as a NuGet runtime pack. See expected.json for what ships and what doesn't. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <NuGetAudit>false</NuGetAudit>
+    <NoWarn>$(NoWarn);NU1605;NU1603</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- ship: their DLLs are copied into the publish output -->
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="SharpZipLib" Version="1.2.0" />
+    <!-- referenced, never shipped: .NET 6 provides newer copies, so publish leaves these out -->
+    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.0" />
+    <!-- build-time only: a Roslyn analyzer with PrivateAssets=all -->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

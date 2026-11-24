@@ -1,11 +1,310 @@
 {
  "database": {
-  "built": "2026-11-12",
+  "built": "2026-11-24",
   "schema": "v6.1.10"
  },
  "grype": "0.115.0",
- "components_looked_up": 1012,
+ "components_looked_up": 1106,
  "cases": {
+  "dotnet-selfcontained": {
+   "reference": [
+    {
+     "purl": "pkg:nuget/Newtonsoft.Json@12.0.1",
+     "id": "GHSA-5crp-9r3c-p9vr",
+     "severity": "High",
+     "fixed_in": "13.0.1",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:nuget/log4net@2.0.8",
+     "id": "GHSA-2cwj-8chv-9pp9",
+     "severity": "Critical",
+     "fixed_in": "2.0.10",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:nuget/log4net@2.0.8",
+     "id": "GHSA-4f7c-pmjv-c25w",
+     "severity": "Medium",
+     "fixed_in": "3.3.0",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:nuget/SharpZipLib@1.2.0",
+     "id": "GHSA-m22m-h4rf-pwq3",
+     "severity": "High",
+     "fixed_in": "1.3.3",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:nuget/SharpZipLib@1.2.0",
+     "id": "GHSA-mm6g-mmq6-53ff",
+     "severity": "Medium",
+     "fixed_in": "1.3.3",
+     "hidden": ""
+    }
+   ],
+   "stages": {
+    "source": [
+     {
+      "tool": "cdxgen",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:nuget/system.net.http@4.3.0",
+        "GHSA-7jgj-8wvc-jh57",
+        "High"
+       ],
+       [
+        "pkg:nuget/system.text.encodings.web@4.5.0",
+        "GHSA-ghhp-997w-qr28",
+        "Critical"
+       ],
+       [
+        "pkg:nuget/system.text.regularexpressions@4.3.0",
+        "GHSA-cmhx-cq75-c4mj",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "cyclonedx-dotnet",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:nuget/system.net.http@4.3.0",
+        "GHSA-7jgj-8wvc-jh57",
+        "High"
+       ],
+       [
+        "pkg:nuget/system.text.encodings.web@4.5.0",
+        "GHSA-ghhp-997w-qr28",
+        "Critical"
+       ],
+       [
+        "pkg:nuget/system.text.regularexpressions@4.3.0",
+        "GHSA-cmhx-cq75-c4mj",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "sbom-tool",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [
+       [
+        "pkg:nuget/system.net.http@4.3.0",
+        "GHSA-7jgj-8wvc-jh57",
+        "High"
+       ],
+       [
+        "pkg:nuget/system.text.encodings.web@4.5.0",
+        "GHSA-ghhp-997w-qr28",
+        "Critical"
+       ],
+       [
+        "pkg:nuget/system.text.regularexpressions@4.3.0",
+        "GHSA-cmhx-cq75-c4mj",
+        "High"
+       ]
+      ],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 0,
+      "total": 5,
+      "missed": [
+       [
+        "pkg:nuget/Newtonsoft.Json@12.0.1",
+        "GHSA-5crp-9r3c-p9vr"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-m22m-h4rf-pwq3"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-mm6g-mmq6-53ff"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-2cwj-8chv-9pp9"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-4f7c-pmjv-c25w"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 0,
+      "total": 5,
+      "missed": [
+       [
+        "pkg:nuget/Newtonsoft.Json@12.0.1",
+        "GHSA-5crp-9r3c-p9vr"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-m22m-h4rf-pwq3"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-mm6g-mmq6-53ff"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-2cwj-8chv-9pp9"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-4f7c-pmjv-c25w"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "artefact": [
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 5,
+      "missed": [
+       [
+        "pkg:nuget/Newtonsoft.Json@12.0.1",
+        "GHSA-5crp-9r3c-p9vr"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-m22m-h4rf-pwq3"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-mm6g-mmq6-53ff"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-2cwj-8chv-9pp9"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-4f7c-pmjv-c25w"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ],
+    "image": [
+     {
+      "tool": "cdxgen",
+      "found": 0,
+      "total": 5,
+      "missed": [
+       [
+        "pkg:nuget/Newtonsoft.Json@12.0.1",
+        "GHSA-5crp-9r3c-p9vr"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-m22m-h4rf-pwq3"
+       ],
+       [
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "GHSA-mm6g-mmq6-53ff"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-2cwj-8chv-9pp9"
+       ],
+       [
+        "pkg:nuget/log4net@2.0.8",
+        "GHSA-4f7c-pmjv-c25w"
+       ]
+      ],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "docker-scout",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "syft",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     },
+     {
+      "tool": "trivy",
+      "found": 5,
+      "total": 5,
+      "missed": [],
+      "false_alarms": [],
+      "filterable": 0,
+      "wrong_version": 0,
+      "other": 0
+     }
+    ]
+   }
+  },
   "go-unlinked": {
    "reference": [
     {
@@ -1199,6 +1498,13 @@
     },
     {
      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+     "id": "CVE-2026-86248",
+     "severity": "Critical",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
      "id": "CVE-2026-88041",
      "severity": "High",
      "fixed_in": "9.0.123,10.1.61,11.0.27",
@@ -1357,14 +1663,28 @@
      "severity": "High",
      "fixed_in": "9.0.122,10.1.60,11.0.26",
      "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+     "id": "CVE-2026-79677",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
+    },
+    {
+     "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+     "id": "CVE-2026-87022",
+     "severity": "High",
+     "fixed_in": "9.0.122,10.1.60,11.0.26",
+     "hidden": ""
     }
    ],
    "stages": {
     "source": [
      {
       "tool": "capycli",
-      "found": 84,
-      "total": 84,
+      "found": 87,
+      "total": 87,
       "missed": [],
       "false_alarms": [],
       "filterable": 0,
@@ -1373,8 +1693,8 @@
      },
      {
       "tool": "cdxgen",
-      "found": 84,
-      "total": 84,
+      "found": 87,
+      "total": 87,
       "missed": [],
       "false_alarms": [],
       "filterable": 10,
@@ -1383,8 +1703,8 @@
      },
      {
       "tool": "cyclonedx-maven-plugin",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -1403,7 +1723,7 @@
      {
       "tool": "cyclonedx-npm",
       "found": 2,
-      "total": 84,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",
@@ -1571,6 +1891,10 @@
        ],
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-86248"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
         "CVE-2026-88041"
        ],
        [
@@ -1660,6 +1984,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -1741,8 +2073,8 @@
      },
      {
       "tool": "sbom-plus-maven-plugin",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -1760,8 +2092,8 @@
      },
      {
       "tool": "sbom-tool",
-      "found": 84,
-      "total": 84,
+      "found": 87,
+      "total": 87,
       "missed": [],
       "false_alarms": [
        [
@@ -1822,7 +2154,7 @@
      {
       "tool": "syft",
       "found": 2,
-      "total": 84,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",
@@ -1990,6 +2322,10 @@
        ],
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-86248"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
         "CVE-2026-88041"
        ],
        [
@@ -2079,6 +2415,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -2160,8 +2504,8 @@
      },
      {
       "tool": "trivy",
-      "found": 84,
-      "total": 84,
+      "found": 87,
+      "total": 87,
       "missed": [],
       "false_alarms": [],
       "filterable": 0,
@@ -2173,7 +2517,7 @@
      {
       "tool": "bom",
       "found": 0,
-      "total": 84,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",
@@ -2341,6 +2685,10 @@
        ],
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-86248"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
         "CVE-2026-88041"
        ],
        [
@@ -2430,6 +2778,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -2519,8 +2875,8 @@
      },
      {
       "tool": "cdxgen",
-      "found": 77,
-      "total": 84,
+      "found": 78,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
@@ -2533,6 +2889,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -2558,8 +2922,8 @@
      },
      {
       "tool": "syft",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -2578,7 +2942,7 @@
      {
       "tool": "trivy-rawfile",
       "found": 0,
-      "total": 84,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",
@@ -2746,6 +3110,10 @@
        ],
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-86248"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
         "CVE-2026-88041"
        ],
        [
@@ -2835,6 +3203,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -2924,8 +3300,8 @@
      },
      {
       "tool": "trivy",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -2946,7 +3322,7 @@
      {
       "tool": "cdxgen",
       "found": 0,
-      "total": 84,
+      "total": 87,
       "missed": [
        [
         "pkg:maven/ch.qos.logback/logback-core@1.5.32",
@@ -3114,6 +3490,10 @@
        ],
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
+        "CVE-2026-86248"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.52",
         "CVE-2026-88041"
        ],
        [
@@ -3203,6 +3583,14 @@
        [
         "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
         "CVE-2026-77791"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-79677"
+       ],
+       [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.52",
+        "CVE-2026-87022"
        ],
        [
         "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.5.12",
@@ -3292,8 +3680,8 @@
      },
      {
       "tool": "docker-scout",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -3311,8 +3699,8 @@
      },
      {
       "tool": "syft",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
@@ -3330,8 +3718,8 @@
      },
      {
       "tool": "trivy",
-      "found": 82,
-      "total": 84,
+      "found": 85,
+      "total": 87,
       "missed": [
        [
         "pkg:npm/lodash@4.17.21",
