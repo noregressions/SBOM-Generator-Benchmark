@@ -6,6 +6,32 @@ Column meanings: *in scope* = package components whose purl type is one of the t
 
 ## 1. Content accuracy
 
+### dotnet-selfcontained
+
+*.NET 6 console app published self-contained: the runtime ships inside the artefact as a NuGet package*  
+Shipped components: 5; known non-shipping: 4; ecosystems: nuget
+
+| Stage | Tool | Fmt | Comps | In scope | Shipped found | Wrong ver | Wrong purl | Leaked | Labelled | Unexpected | Hashes ok |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| source | cdxgen | cyc | 88 | 88 | 4/5 | 0 | 0 | 83 | 0 | 0 | 0/0 |
+| source | cyclonedx-dotnet | cyc | 87 | 87 | 3/5 | 0 | 0 | 82 | 1 | 0 | 0/0 |
+| source | sbom-tool | spd | 89 | 89 | 3/5 | 0 | 0 | 83 | 0 | 3 | 0/0 |
+| source | syft | cyc | 0 | 0 | 0/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| source | trivy | cyc | 1 | 1 | 0/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| artefact | cdxgen | cyc | 0 | 0 | 0/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| artefact | syft | cyc | 5 | 5 | 4/5 | 0 | 0 | 0 | 0 | 1 | 0/0 |
+| artefact | trivy | cyc | 7 | 6 | 5/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | cdxgen | cyc | 151 | 0 | 0/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+| image | docker-scout | spd | 148 | 5 | 4/5 | 0 | 0 | 0 | 0 | 1 | 0/0 |
+| image | syft | cyc | 104 | 5 | 4/5 | 0 | 0 | 0 | 0 | 1 | 0/0 |
+| image | trivy | cyc | 105 | 5 | 5/5 | 0 | 0 | 0 | 0 | 0 | 0/0 |
+
+- **source/cdxgen** leaked unlabelled: stylecop.analyzers@1.1.118, system.net.http@4.3.0, system.text.encodings.web@4.5.0, system.text.regularexpressions@4.3.0, microsoft.netcore.platforms@1.1.0, microsoft.netcore.targets@1.1.0, microsoft.win32.primitives@4.0.1, microsoft.win32.registry@4.0.0 …
+- **source/cyclonedx-dotnet** leaked unlabelled: system.net.http@4.3.0, system.text.encodings.web@4.5.0, system.text.regularexpressions@4.3.0, microsoft.netcore.platforms@1.1.0, microsoft.netcore.targets@1.1.0, microsoft.win32.primitives@4.0.1, microsoft.win32.registry@4.0.0, runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl@4.3.0 …
+- **source/sbom-tool** leaked unlabelled: stylecop.analyzers@1.1.118, system.net.http@4.3.0, system.text.encodings.web@4.5.0, system.text.regularexpressions@4.3.0, microsoft.netcore.platforms@1.1.0, microsoft.netcore.targets@1.1.0, microsoft.win32.primitives@4.0.1, microsoft.win32.registry@4.0.0 …
+- **source/sbom-tool** unexpected (3): microsoft.aspnetcore.app.ref@6.0.36, microsoft.netcore.app.host.linux-arm64@6.0.36, microsoft.netcore.app.ref@6.0.36
+- **artefact/syft** unexpected (1): runtimepack.microsoft.netcore.app.runtime.linux-arm64@6.0.36
+
 ### go-unlinked
 
 *Go command whose go.mod requires four modules and whose binary contains two*  
@@ -159,25 +185,27 @@ Shipped components: 40; known non-shipping: 139; ecosystems: maven, npm
 
 Cells show one letter per stage the target has, in order source / artefact / image: **Y** named at the right version, **v** named at a wrong version, **p** named under a wrong purl, **n** not named, **·** tool did not run at that stage. For build-tooling rows a **Y** only counts as correct if the row is also labelled (see leaks above); here we only ask whether the tool knew it existed.
 
-| Target | Component | Mechanism | bom | capycli | cdxgen | cyclonedx-gomod | cyclonedx-gomod-mod | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| go-unlinked | stdlib@1.27.4 | toolchain | vY· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··Y | ··· | n·· | ··· | nYY | nYY | ··· |
-| go-unlinked | yaml.v3@v3.0.0 | test-only | Yn· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
-| go-unlinked | jwt-go@v3.2.0+incompatible | build-tag | Yn· | ··· | n·n | nn· | Y·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
-| go-unlinked | tools@v0.0.0-20180917221912-90fa682c2a6e | graph-only | nn· | ··· | n·n | nn· | n·· | ··· | ··· | ··· | ··n | ··· | n·· | ··· | nnn | nnn | ··· |
-| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
-| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Y· | Yn | ·· | ·· | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
-| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | n·· | Ynn | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
-| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | n· | ·· | ·· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
-| spring-node | commons-codec@1.17.1 | shaded | ·n· | Y·· | Ynn | ··· | ··· | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
-| spring-node | lodash@4.17.21 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | react-dom@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
-| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
-| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | n·· | nnn | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| Target | Component | Mechanism | bom | capycli | cdxgen | cyclonedx-dotnet | cyclonedx-gomod | cyclonedx-gomod-mod | cyclonedx-maven-plugin | cyclonedx-npm | cyclonedx-python | docker-scout | sbom-plus-maven-plugin | sbom-tool | sbom4python | syft | trivy | trivy-rawfile |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| dotnet-selfcontained | microsoft.netcore.app.runtime.linux-x64@6.0.36 | runtime-pack | ··· | ··· | nnn | n·· | ··· | ··· | ··· | ··· | ··· | ··n | ··· | n·· | ··· | nnn | nYY | ··· |
+| dotnet-selfcontained | system.text.encodings.web@4.5.0 | framework-provided | ··· | ··· | Ynn | Y·· | ··· | ··· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | nnn | nnn | ··· |
+| go-unlinked | stdlib@1.27.4 | toolchain | vY· | ··· | n·n | ··· | nn· | n·· | ··· | ··· | ··· | ··Y | ··· | n·· | ··· | nYY | nYY | ··· |
+| go-unlinked | yaml.v3@v3.0.0 | test-only | Yn· | ··· | n·n | ··· | nn· | n·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
+| go-unlinked | jwt-go@v3.2.0+incompatible | build-tag | Yn· | ··· | n·n | ··· | nn· | Y·· | ··· | ··· | ··· | ··n | ··· | Y·· | ··· | Ynn | Ynn | ··· |
+| go-unlinked | tools@v0.0.0-20180917221912-90fa682c2a6e | graph-only | nn· | ··· | n·n | ··· | nn· | n·· | ··· | ··· | ··· | ··n | ··· | n·· | ··· | nnn | nnn | ··· |
+| maven-plugin-hidden-content | trace-injector-maven-plugin@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| maven-plugin-hidden-content | trace-route-payload@1.0.0 | plugin-realm | ·n | n· | nn | ·· | ·· | ·· | n· | ·· | ·· | ·· | Y· | n· | ·· | nn | nn | ·n |
+| node-prepack | trace-route-package@1.0.0 | prepack-generated | ·· | Y· | Yn | ·· | ·· | ·· | ·· | Y· | ·· | ·· | ·· | Y· | ·· | Yn | Yn | ·· |
+| payara-mvnpm | lodash-es@4.17.21 | plugin-realm+bundled | ·n· | n·· | Ynn | ··· | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | Y·· | ··· | nnn | nnn | ·n· |
+| payara-mvnpm | esbuild-maven-plugin@2.0.0 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | ··· | n·· | ··· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| python-pep517 | tracehook-demo@1.0.0 | pep517-generated | ·· | n· | n· | ·· | ·· | ·· | ·· | ·· | nY | ·· | ·· | n· | ·n | nY | nn | ·· |
+| spring-node | commons-codec@1.17.1 | shaded | ·n· | Y·· | Ynn | ··· | ··· | ··· | Y·· | n·· | ··· | ··Y | Y·· | Y·· | ··· | YYY | YYY | ·n· |
+| spring-node | lodash@4.17.21 | bundled | ·n· | Y·· | Ynn | ··· | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | react-dom@18.3.1 | bundled | ·n· | Y·· | Ynn | ··· | ··· | ··· | n·· | Y·· | ··· | ··n | n·· | Y·· | ··· | Ynn | Ynn | ·n· |
+| spring-node | maven-shade-plugin@3.6.2 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-maven-plugin@3.5.12 | plugin-realm | ·n· | n·· | nnn | ··· | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
+| spring-node | spring-boot-dependencies@3.5.12 | bom-import | ·n· | n·· | nnn | ··· | ··· | ··· | n·· | n·· | ··· | ··n | Y·· | n·· | ··· | nnn | nnn | ·n· |
 
 ## 3. Baseline conformance (sbomqs)
 
@@ -185,6 +213,18 @@ Quality is sbomqs' own 0–10 score. The profile columns are sbomqs `compliance`
 
 | Target | Stage | Tool | Spec | Valid | Quality | NTIA 2021 | NTIA/CISA 2026 | BSI v2.1 | FSCT v3 | Shipped found |
 |---|---|---|---|---|---:|---:|---:|---:|---:|---:|
+| dotnet-selfcontained | source | cdxgen | cyclonedx 1.6 | valid | 6.7 | 8.3 | 7.1 | 3.7 | 6.0 | 4/5 |
+| dotnet-selfcontained | source | cyclonedx-dotnet | cyclonedx 1.6 | valid | 6.5 | 8.3 | 9.9 | 3.4 | 9.0 | 3/5 |
+| dotnet-selfcontained | source | sbom-tool | spdx 2.3 | n/a | 5.3 | 10 | 4.3 | 3.4 | 5.7 | 3/5 |
+| dotnet-selfcontained | source | syft | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/5 |
+| dotnet-selfcontained | source | trivy | cyclonedx 1.7 | valid | 3.0 | 3.1 | 4.4 | 4.1 | 2.5 | 0/5 |
+| dotnet-selfcontained | artefact | cdxgen | cyclonedx 1.6 | valid | 2.2 | 6.7 | 8 | 5.7 | 7.4 | 0/5 |
+| dotnet-selfcontained | artefact | syft | cyclonedx 1.7 | valid | 4.7 | 1.9 | 4.3 | 2.1 | 3.2 | 4/5 |
+| dotnet-selfcontained | artefact | trivy | cyclonedx 1.7 | valid | 4.2 | 6.8 | 4.1 | 3.6 | 3.5 | 5/5 |
+| dotnet-selfcontained | image | cdxgen | cyclonedx 1.6 | valid | 5.3 | 7.6 | 6.0 | 3.0 | 5.1 | 0/5 |
+| dotnet-selfcontained | image | docker-scout | spdx 2.3 | n/a | 5.5 | 10.0 | 6.8 | 3.7 | 7.0 | 4/5 |
+| dotnet-selfcontained | image | syft | cyclonedx 1.7 | valid | 4.5 | 1.8 | 4.3 | 2.1 | 3.2 | 4/5 |
+| dotnet-selfcontained | image | trivy | cyclonedx 1.7 | valid | 4.8 | 9.8 | 5.4 | 3.8 | 6.9 | 5/5 |
 | go-unlinked | source | bom | spdx 2.3 | n/a | 5.0 | 8.5 | 5.6 | 4.6 | 5.6 | 3/4 |
 | go-unlinked | source | cdxgen | cyclonedx 1.6 | valid | 6.3 | 8.6 | 7 | 4.1 | 5.8 | 3/4 |
 | go-unlinked | source | cyclonedx-gomod-mod | cyclonedx 1.6 | valid | 6.2 | 8.8 | 6.8 | 4.4 | 5.3 | 3/4 |
@@ -273,16 +313,17 @@ Averages over every document the tool produced in this run, in alphabetical orde
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | bom | 0.8.0 | 5 | 4.6 | 5.5 | 4.3 | 35% | 2 | 0 |
 | capycli | 2.12.0 | 5 | 4.4 | 5.4 | 4.5 | 46% | 55 | 0 |
-| cdxgen | 11.3.2 | 13 | 4.9 | 6.4 | 4.3 | 54% | 0 | 201 |
+| cdxgen | 11.3.2 | 16 | 4.9 | 6.5 | 4.3 | 49% | 83 | 201 |
+| cyclonedx-dotnet |  | 1 | 6.5 | 9.9 | 3.4 | 60% | 82 | 1 |
 | cyclonedx-gomod | 1.12.0 | 2 | 6.2 | 6.5 | 4.5 | 75% | 0 | 0 |
 | cyclonedx-gomod-mod | 1.12.0 | 1 | 6.2 | 6.8 | 4.4 | 75% | 1 | 0 |
 | cyclonedx-maven-plugin | 2.9.1 | 3 | 6.2 | 7.6 | 4.8 | 83% | 26 | 0 |
 | cyclonedx-npm | 6.0.1 | 2 | 4.9 | 6.4 | 5.1 | 57% | 0 | 57 |
 | cyclonedx-python | 8.0.1 | 2 | 4.4 | 5.4 | 4.8 | 75% | 1 | 0 |
-| docker-scout | 1.24.0 | 3 | 5.4 | 6.3 | 3.7 | 84% | 0 | 0 |
+| docker-scout | 1.24.0 | 4 | 5.5 | 6.4 | 3.7 | 83% | 0 | 0 |
 | sbom-plus-maven-plugin | 1.1.0 | 3 | 7.9 | 9.9 | 9.2 | 93% | 0 | 67 |
-| sbom-tool | 4.1.13 | 6 | 5.3 | 5.2 | 3.8 | 83% | 146 | 0 |
+| sbom-tool | 4.1.13 | 7 | 5.3 | 5.1 | 3.7 | 80% | 229 | 0 |
 | sbom4python | 0.12.6 | 1 | 4.0 | 5.2 | 4.3 | 50% | 0 | 0 |
-| syft | 1.51.0 | 15 | 4.8 | 4.6 | 3.4 | 74% | 5 | 0 |
-| trivy | 0.74.0 | 15 | 3.9 | 5.0 | 3.8 | 60% | 3 | 0 |
+| syft | 1.51.0 | 18 | 4.7 | 4.6 | 3.3 | 71% | 5 | 0 |
+| trivy | 0.74.0 | 18 | 3.9 | 4.9 | 3.8 | 61% | 3 | 0 |
 | trivy-rawfile | 0.74.0 | 3 | 3.0 | 4.4 | 4.1 | 0% | 0 | 0 |

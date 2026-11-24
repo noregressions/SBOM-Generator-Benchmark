@@ -1,0 +1,176 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:0deb0d66-1437-471f-9320-28dbd29664ee",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-24T13:45:56+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "dae38b04-2f4f-480f-b4e5-911f9f7c0a89",
+      "type": "application",
+      "name": "/work/testcases/dotnet-selfcontained/project/bin/publish",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "b65c3527-9caa-4f60-85b4-a8be0e0b38f8",
+      "type": "application",
+      "name": "LegacyApp.deps.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/LegacyApp@1.0.0",
+      "type": "library",
+      "name": "LegacyApp",
+      "version": "1.0.0",
+      "purl": "pkg:nuget/LegacyApp@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "LegacyApp/1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64@6.0.36",
+      "type": "library",
+      "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
+      "version": "6.0.36",
+      "purl": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64@6.0.36",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.NETCore.App.Runtime.linux-arm64/6.0.36"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Newtonsoft.Json@12.0.1",
+      "type": "library",
+      "name": "Newtonsoft.Json",
+      "version": "12.0.1",
+      "purl": "pkg:nuget/Newtonsoft.Json@12.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Newtonsoft.Json/12.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/SharpZipLib@1.2.0",
+      "type": "library",
+      "name": "SharpZipLib",
+      "version": "1.2.0",
+      "purl": "pkg:nuget/SharpZipLib@1.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "SharpZipLib/1.2.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/log4net@2.0.8",
+      "type": "library",
+      "name": "log4net",
+      "version": "2.0.8",
+      "purl": "pkg:nuget/log4net@2.0.8",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "log4net/2.0.8"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "b65c3527-9caa-4f60-85b4-a8be0e0b38f8",
+      "dependsOn": [
+        "pkg:nuget/LegacyApp@1.0.0"
+      ]
+    },
+    {
+      "ref": "dae38b04-2f4f-480f-b4e5-911f9f7c0a89",
+      "dependsOn": [
+        "b65c3527-9caa-4f60-85b4-a8be0e0b38f8"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/LegacyApp@1.0.0",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64@6.0.36",
+        "pkg:nuget/Newtonsoft.Json@12.0.1",
+        "pkg:nuget/SharpZipLib@1.2.0",
+        "pkg:nuget/log4net@2.0.8"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64@6.0.36",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Newtonsoft.Json@12.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/SharpZipLib@1.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/log4net@2.0.8",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

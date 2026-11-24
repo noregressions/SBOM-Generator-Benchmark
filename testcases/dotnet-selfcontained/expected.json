@@ -1,0 +1,105 @@
+{
+  "target": "dotnet-selfcontained",
+  "title": ".NET 6 console app published self-contained: the runtime ships inside the artefact as a NuGet package",
+  "build": "scripts/build.sh",
+  "ecosystems": [
+    "nuget"
+  ],
+  "stages": {
+    "source": {
+      "path": ".",
+      "dotnet": "LegacyApp.csproj",
+      "exclude": [
+        "/bin",
+        "/obj"
+      ],
+      "exclude_note": "bin/ and obj/ are build outputs; obj/project.assets.json is written by restore, so the source stage is the checkout without it"
+    },
+    "artefact": {
+      "path": "bin/publish",
+      "kind": "dir",
+      "note": "dotnet publish --self-contained: the app's DLLs, LegacyApp.deps.json, and the whole .NET 6 runtime"
+    },
+    "image": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "tag": "criteria-dotnet-selfcontained:local"
+    }
+  },
+  "shipped": [
+    {
+      "purl": "pkg:nuget/LegacyApp@*",
+      "note": "primary component"
+    },
+    {
+      "purl": "pkg:nuget/Newtonsoft.Json@12.0.1",
+      "note": "direct reference; Newtonsoft.Json.dll is in the output. An old version with a published advisory (CVE-2024-21907)"
+    },
+    {
+      "purl": "pkg:nuget/log4net@2.0.8",
+      "note": "direct reference; log4net.dll is in the output. Old, with a published advisory (CVE-2018-1285)"
+    },
+    {
+      "purl": "pkg:nuget/SharpZipLib@1.2.0",
+      "note": "direct reference; ships as ICSharpCode.SharpZipLib.dll, so the file name doesn't match the package name. Old, with published advisories"
+    },
+    {
+      "purl": "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-x64@6.0.36",
+      "alt": [
+        "pkg:nuget/Microsoft.NETCore.App.Runtime.linux-arm64@6.0.36"
+      ],
+      "hidden": "runtime-pack",
+      "note": "the .NET 6 runtime itself, copied into the output by --self-contained. It comes from NuGet as a runtime pack named for the build machine (linux-x64 or linux-arm64 in the tool image), and LegacyApp.deps.json lists it with type runtimepack. No file in the source tree names it; 6.0.36 is the last public .NET 6 release"
+    }
+  ],
+  "not_shipped": [
+    {
+      "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+      "kind": "framework-provided",
+      "hidden": "framework-provided",
+      "note": "a direct reference in the project file, but .NET 6 contains a newer copy, so publish leaves the package out. An old version with a published advisory (CVE-2021-26701), so a tool that reports it raises a finding for code that never ships"
+    },
+    {
+      "purl": "pkg:nuget/System.Net.Http@4.3.0",
+      "kind": "framework-provided",
+      "note": "direct reference; supplied by the framework at runtime, absent from deps.json. Old, with a published advisory (CVE-2018-8292)"
+    },
+    {
+      "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+      "kind": "framework-provided",
+      "note": "direct reference; supplied by the framework at runtime, absent from deps.json. Old, with a published advisory (CVE-2019-0820)"
+    },
+    {
+      "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+      "kind": "build-tooling",
+      "note": "a Roslyn analyzer referenced with PrivateAssets=all: it runs inside the compiler and nothing of it reaches the output"
+    }
+  ],
+  "not_shipped_prefixes": [
+    {
+      "prefix": "pkg:nuget/system.",
+      "kind": "framework-provided",
+      "note": "the System.* closure that log4net 2.0.8 and the old System.* references pull into the restore graph (67 packages): all supplied by the framework, none in deps.json"
+    },
+    {
+      "prefix": "pkg:nuget/runtime.",
+      "kind": "framework-provided",
+      "note": "runtime.* platform packages from the same closure (39); none in deps.json"
+    },
+    {
+      "prefix": "pkg:nuget/microsoft.win32.",
+      "kind": "framework-provided",
+      "note": "Microsoft.Win32.* packages from the same closure; none in deps.json"
+    },
+    {
+      "prefix": "pkg:nuget/microsoft.netcore.platforms",
+      "kind": "build-tooling",
+      "note": "a restore-time metadata package; nothing ships"
+    },
+    {
+      "prefix": "pkg:nuget/microsoft.netcore.targets",
+      "kind": "build-tooling",
+      "note": "a restore-time metadata package; nothing ships"
+    }
+  ]
+}

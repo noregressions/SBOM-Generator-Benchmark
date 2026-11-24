@@ -53,6 +53,9 @@ def purl_key(p):
     p = p.split("?")[0].split("#")[0]
     p = p.replace("%40", "@").replace("%2F", "/").replace("%2f", "/")  # sbom-tool percent-encodes scoped npm names
     p = p.replace("%2B", "+").replace("%2b", "+")                       # Go's v3.2.0+incompatible, encoded by some tools and not others
+    if p.startswith("pkg:nuget/"):                                        # NuGet package IDs are case-insensitive, and
+        base, at, ver = p.rpartition("@")                                 # tools differ: deps.json keeps the publisher's
+        p = (base.lower() + at + ver.lower()) if at else p.lower()        # case, purl libraries often lowercase it
     return p
 
 
