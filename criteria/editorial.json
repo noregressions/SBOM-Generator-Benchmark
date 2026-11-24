@@ -3,7 +3,6 @@
   "repository": "https://github.com/noregressions/SBOM-Generator-Benchmark",
   "question": "Does your SBOM describe what you actually shipped?",
   "proposition": "A well-formed SBOM is not necessarily a complete or accurate account of the software shipped.",
-  "disclosure": "The author of this benchmark also develops SBOM+ (sbom-plus-maven-plugin), one of the tools measured, and most of the test cases come from the same author's workshop on hidden dependencies. Read SBOM+'s results with that in mind. Every generated SBOM, the ground truth and the scoring code are in the repository, so any result can be checked. Maintainers of the tools measured here are invited to reproduce the run and to challenge a result or a test case by opening an issue.",
   "findings": [
     {
       "id": "conformance",

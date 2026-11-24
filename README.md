@@ -117,7 +117,7 @@ criteria/generate.sh             runs every adapter against every test case and 
 criteria/score.py                scores the output -> criteria/output/scores.json, criteria/SCORECARD.md
 criteria/vuln.py                 looks every component up in Grype's database -> criteria/output/vulns.json (the site's security view)
 criteria/build_site.py           builds docs/ from the scores
-criteria/editorial.json          the site's words: the question, the findings, each test case's story, the disclosure (numbers come from the scores)
+criteria/editorial.json          the site's words: the question, the findings, each test case's story (numbers come from the scores)
 Makefile                         the entry point: make, make clean, make scan, make help
 scripts/evaluate                 does all of the above inside the tool image (what `make` runs)
 scripts/scan                     runs the tools against any other source tree and reports into it (`make scan`)

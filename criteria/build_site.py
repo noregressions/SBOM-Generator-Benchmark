@@ -459,9 +459,9 @@ def main():
     generators = sorted({VARIANTS.get(t, (t,))[0] for t in tools})
     n_docs = sum(len(v) for v in per_tool.values())
     repo = EDITORIAL["repository"]
-    disclosure = f'<div class="note"><p><b>Disclosure.</b> {e(EDITORIAL["disclosure"])}</p></div>'
+    build_note = ""
     if run.get("sbom_plus_local"):
-        disclosure += ('<div class="note"><p><b>Unpublished build.</b> This run used a local build of SBOM+ that is not the one on Maven Central, '
+        build_note = ('<div class="note"><p><b>Unpublished build.</b> This run used a local build of SBOM+ that is not the one on Maven Central, '
                        "so its results cannot be reproduced from the published plugin.</p></div>")
 
     # ------------------------------------------------------------------ findings: evidence chosen from this run
@@ -602,7 +602,8 @@ def main():
     B.append(f'<div class="cards">{"".join(cards)}</div>')
 
     B.append("<h2>Before you rely on this</h2>")
-    B.append(disclosure)
+    if build_note:
+        B.append(build_note)
     B.append(f'<p>The benchmark is small: {len(cases)} test cases covering {eco_text}. It measures how tools cope with specific hiding mechanisms, '
              'not how they do on a typical project, and it does not name a best tool. <a href="methodology.html#limits">The limits are listed in full</a> under Methodology. '
              f'Everything is in the <a href="{e(repo)}">repository</a>: the test cases, every generated SBOM, the scores and the code that produced them.</p>')
@@ -783,7 +784,8 @@ def main():
              "<li><b>The ground truth is hand-written.</b> It can be wrong. If you find an error, open an issue.</li>"
              f'<li><b>Platform.</b> This run was made on {e(run.get("arch", "an unrecorded architecture"))} Linux. Some npm packages are platform-specific, so the dev-dependency lists differ on other platforms.</li>'
              "</ul>")
-    B.append("<h2>Who made this</h2>" + disclosure)
+    if build_note:
+        B.append(build_note)
 
     B.append('<h2 id="versions">Tool versions and commands</h2>')
     B.append("<p>Every tool runs in one container image built from <code>tools/versions.env</code>, so a report can be reproduced from the commit that holds it. "
